@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2004101100      ; Serial
+                              2004081101      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -26,6 +26,8 @@
 ; Hosted at Frontier Internet -- hamster@korenwolf.net
                     IN  A     217.154.246.86
 www                 IN  A     217.154.246.86
+
+mistral.proftpd.org	IN	A	217.154.246.86
 
 ; Main ftpsite
 ; Hosted by Robe -- robe@amd.co.at
