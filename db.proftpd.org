@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2004012300      ; Serial
+                              2004020200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -17,8 +17,6 @@
 ; mail handling
 ;; mail.vom.org.uk -- hamster@korenwolf.net
                     IN  MX    10 mail.vom.org.uk.
-;; library.lspace.org -- hamster@korenwolf.net or ops@lspace.org
-                    IN  MX    20 library.lspace.org.
 ;; groundhog.korenwolf.net -- hamster@korenwolf.net
                     IN  MX    10 groundhog.korenwolf.net.
 ;; mail1.cluenet.de -- dr@proftpd.org
