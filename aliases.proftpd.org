@@ -59,6 +59,9 @@ bugs:		core
 #
 #------------------------------------------------------------
 # proftpd-users
+proftp-user:		proftpd-users
+proftpd-user:		proftpd-users
+proftp-users:		proftpd-users
 proftpd-users:            proftp-user@lists.sourceforge.net
 proftpd-users-admin:      proftp-user-admin@lists.sourceforge.net
 proftpd-users-request:    proftp-user-request@lists.sourceforge.net
