@@ -38,8 +38,14 @@ Release Checklist:
    * Update index.epl to announce the new release.
    * add docs/NEWS-versionnum
 
-9. Upload tarball, MD5 signature, PGP signatures, RPMs, to ftp.proftpd.org.
-   Make sure to update MD5SUMS file in /distrib/packages/RPMS
+9. Upload tarball, MD5 signature, PGP signatures, RPMs
+   a. on core account (currently library.lspace.org, user proftpd),
+      run ~/.bin/proftpd-sync-ftp.sh.  This syncs the local mirror via rsync.
+   b. upload files to core account, in the proper place under
+      Proftpd/ftp.proftpd.org/.  Make sure to update MD5SUMS file in
+      distrib/packages/RPMS.
+   c. then run: sitecopy -you proftpd-rsync-ftp.  This will propagate the
+      new files as necessary
 
 10. Announce on lists: -announce, -devel, -users
 
