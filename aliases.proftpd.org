@@ -52,7 +52,7 @@ tj:		tj@castaglia.org
 # Daniel Roesen
 dr:		dr@cluenet.de
 # Mark Lowes 
-hamster:	hamster@korenwolf.net
+hamster:	proftpd.org@flyhmstr.demon.co.uk
 # Andrew Houghton 
 aah:		aah@acm.org
 # John Morrissey 
