@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2004062800      ; Serial
+                              2004072300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -42,6 +42,9 @@ rsync               IN  A     195.22.134.14
 ; generic services/playground
 ; -- robe@amd.co.at
 workshop            IN  A     81.223.238.142
+
+; User forums
+forums              IN  A     81.223.20.37
 
 ; ***********************************************************************
 ; Language mirrors
