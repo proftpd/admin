@@ -30,6 +30,7 @@ Release Checklist:
    * Update md5_pgp.epl file w/ new MD5 sum, PGP signatures.
    * Update include/globals.epl with new version number(s).
    * Update index.epl to announce the new release.
+   * add docs/NEWS-versionnum
 
 9. Upload tarball, MD5 signature, PGP signatures, RPMs, to ftp.proftpd.org.
    Make sure to update MD5SUMS file in /distrib/packages/RPMS
