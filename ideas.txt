@@ -55,9 +55,64 @@ Events API
     events: the event name need only be added in the future, but the
     API need not change.
 
-FSIO, NetIO APIs
- + both of these APIs need to support stackable layers, such that multiple
-   modules can supply FSIO and/or NetIO callbacks to handle data
+Stackable FSIO
+
+  pr_register_fs() needs a flags parameter, to register whether an fs_t is
+  an FSIO_FILTER or an FSIO_ANCHOR (can a module possibly function as both?
+  Perhaps...but it will have to choose which mode to use).  "anchor" is
+  just an easy/short way of saying "source/sink".
+
+  Only some of the I/O routines (e.g. read()/write()) will cascade through the
+  stacked module list (pr_fh_t will point to a list of fs_t's, rather than
+  to a single fs_t).  Or, better: some will start with the anchor, then
+  progress (bottom up) through the filters (e.g. open(), read()); others
+  will start with the filters (top down) and end with the anchor (e.g.
+  write(), close()).  The list of fs_t's is assigned when a filehandle is
+  opened.  The code looking through the fs map will need to be changed.
+  Registration order will be important.  The output (len) from filters
+  will be input into the FSIO call.  Any error output should stop the
+  cascading through the stack (or maybe it shouldn't...what if a fs doesn't
+  support a given operation, but the fs's above/below it do?)
+
+    Function:    Direction:
+
+    stat         anchor -> head
+    lstat        anchor -> head
+    open         anchor -> head
+    creat        anchor -> head
+    read         anchor -> head
+    lseek        anchor -> head
+    readlink     anchor -> head
+    opendir      anchor -> head
+    readdir      anchor -> head
+    mkdir        anchor -> head
+
+    rename       head -> anchor
+    unlink       head -> anchor
+    close        head -> anchor
+    write        head -> anchor
+    link         head -> anchor
+    symlink      head -> anchor
+    truncate     head -> anchor
+    chmod        head -> anchor
+    chown        head -> anchor
+    chroot       head -> anchor
+    chdir        head -> anchor
+    closedir     head -> anchor
+    rmdir        head -> anchor
+
+ With the new mapping, it will be possible for an fh to have the same fs
+ multiple times (e.g. fs1 is registered for /, fs2 is registered for /tmp);
+ however, the same fs cannot be registered _to the same mount point_ multiple
+ times.
+
+ The storage of registered fs_t's, and their mount points, will be...fun.
+ Order of registration is important (not _inverse_ order).  The opening of
+ a filehandle will necessary mean a search through the registration list,
+ finding all fs_t's whose mount point touches on the opened file's path.
+ Hmmm...will it be by order of fs_t registration, or by scope of mount
+ point?  Probably by mount point first, general (e.g. '/') to specific;
+ in the case of matching mount points, then in the order of registration.
 
 mod_conf_ldap
   + module for reading/constructing proftpd.conf information from LDAP
