@@ -1,0 +1,55 @@
+Hello, ProFTPD community. The ProFTPD Project team is pleased to announce
+that the second release candidate for ProFTPD 1.2.6 is now available
+for public consumption.
+
+You can download 1.2.6rc2, including PGP signatures and MD5 sums, from any
+of the proftpd mirrors.  Mirrors are available via FTP as
+
+  ftp.<two_letter_iso_country_code>.proftpd.org
+
+(example: ftp.nl.proftpd.org).  Not all countries have mirrors; however
+you should select one that is geographically close to you.
+
+Alternatively, you can download proftpd from the main site:
+
+  ftp://ftp.proftpd.org/distrib/source
+
+RPMs, once available, will be placed here:
+
+  ftp://ftp.proftpd.org/distrib/packages/RPMS
+
+The 1.2.6rc2 includes several bug fixes and portability changes,
+including:
+
+  - fixed segfault when using AuthUserFiles under FreeBSD
+  - fixed minor memory leak when using regular expressions in directives
+
+Please read the included NEWS and ChangeLog files for the full details.
+
+The MD5 sums for the source tarballs are:
+
+  7d8b9ca12fa50566f53d9b53d6de85f6  proftpd-1.2.6rc2.tar.bz2
+  8664f55234b4174b6e9ab74c19f2a3df  proftpd-1.2.6rc2.tar.gz
+
+The PGP signatures for the source tarballs are:
+
+  proftpd-1.2.6rc2.tar.bz2:
+  -----BEGIN PGP SIGNATURE-----
+  Version: PGP 6.5.8
+
+  iQA/AwUAPVvEUreOiT+lEZdqEQIiZgCbBI5m2CQUMQZ82v3/iBykRynQTuAAni9T
+  KX2ttwaJYeE6rHXaPp9RYIQz
+  =V9aA
+  -----END PGP SIGNATURE-----
+
+  proftpd-1.2.6rc2.tar.gz:
+  -----BEGIN PGP SIGNATURE-----
+  Version: PGP 6.5.8
+
+  iQA/AwUAPVvESreOiT+lEZdqEQK2ogCffcPl2sSQEIVvrBoZpCk9Q/M9mNcAn1O7
+  5IXTA2CEChIfQ1pFYnwz7f/G
+  =fli/
+  -----END PGP SIGNATURE-----
+
+My PGP key has been used to sign the source tarballs as well as this
+announcement; it is available via MIT's public keyserver.

@@ -1,0 +1,52 @@
+Hello, ProFTPD community. The ProFTPD Project team is pleased to announce
+that the final release for ProFTPD 1.2.7 is now available for public
+consumption.
+
+You can download 1.2.7, including PGP signatures and MD5 sums, from any
+of the proftpd mirrors.  Mirrors are available via FTP as
+
+  ftp.<two_letter_iso_country_code>.proftpd.org
+
+(example: ftp.nl.proftpd.org).  Not all countries have mirrors; however
+you should select one that is geographically close to you.
+
+Alternatively, you can download proftpd from the main site:
+
+  ftp://ftp.proftpd.org/distrib/source
+
+RPMs, once available, will be placed here:
+
+  ftp://ftp.proftpd.org/distrib/packages/RPMS
+
+The 1.2.7 release is mostly a bugfix release.  Please read the included
+NEWS and ChangeLog files for the full details.
+
+The MD5 sums for the source tarballs are:
+
+  7f2f7890742255e703437046149a1c31  proftpd-1.2.7.tar.bz2
+  1ead67595bd416c6fbc90448405a0ace  proftpd-1.2.7.tar.gz
+
+The PGP signatures for the source tarballs are:
+
+  proftpd-1.2.7.tar.bz2:
+
+    -----BEGIN PGP SIGNATURE-----
+    Version: PGP 6.5.8
+
+    iQA/AwUAPe98RbeOiT+lEZdqEQLgsACeMwnaFqirEYdht5z1JEBKzkEAzh8AoIL+
+    2UOeBy8iucx8I3aakyrhzSVj
+    =2diu
+    -----END PGP SIGNATURE-----
+
+  proftpd-1.2.7.tar.gz:
+
+    -----BEGIN PGP SIGNATURE-----
+    Version: PGP 6.5.8
+
+    iQA/AwUAPe98TLeOiT+lEZdqEQL8jQCfUPXNSjoJo53CIDNQ7LXA6pCsQCsAoJ68
+    Ybzukdnicui3i6EK/3O0cfkr
+    =8s37
+    -----END PGP SIGNATURE-----
+
+My PGP key has been used to sign the source tarballs as well as this
+announcement; it is available via MIT's public keyserver.

@@ -1,0 +1,139 @@
+Hello, ProFTPD community. The ProFTPD Project team is pleased to announce
+that the first release candidate for ProFTPD 1.2.8 is now available
+for public consumption.
+
+You can download 1.2.8rc1, including PGP signatures and MD5 sums, from any
+of the proftpd mirrors.  Mirrors are available via FTP as:
+
+  ftp.<two_letter_iso_country_code>.proftpd.org
+
+(example: ftp.nl.proftpd.org).  Not all countries have mirrors; however
+you should select one that is geographically close to you.
+
+Alternatively, you can download proftpd from the main site:
+
+  ftp://ftp.proftpd.org/distrib/source
+
+RPMs, once available, will be placed here:
+
+  ftp://ftp.proftpd.org/distrib/packages/RPMS
+
+The 1.2.8rc1 release includes numerous new features, including:
+
+  - New configuration directives:
+       AuthOrder:
+         Configure the order in which authentication modules are called,
+         on a per-virtual server basis.
+
+       DebugLevel:
+         Configure the debugging level in the configuration file, rather
+         than just on the command line.  This is similar to the -d 
+         command line option.  Using this directive, obtaining debugging
+         output from inetd-run servers now requires modifiying the
+         proftpd.conf file, rather than the inetd configuration.
+
+       ListOptions:
+         The LsDefaultOptions configuration directive has been replaced
+         with this new directive.  ListOptions provides the same features
+         as LsDefaultOptions, with the ability to "override" whatever
+         options are used by the client when requesting directory
+         listings; this allows for administrators to block recursive
+         directory listing requests from clients, if they wish.
+ 
+       LinuxPrivsEngine, LinuxPrivsCapabilities:
+         These new directives allow for an administrator to disable
+         mod_linuxprivs, if need be, and to allow finer-grained control
+         over the capabilities manipulated by mod_linuxprivs.
+
+       ServerLog:
+         This directive allows for separate per-virtual server logs.
+
+       TransferRate:
+         The six Rate* directives are deprecated, and replaced with
+         this single new directive.  TransferRate can be used on a per-
+         directory basis, and set per-user, per-group, and per-Class. 
+
+  - Enhanced configuration directives:
+      Allow/Deny User/Group:
+        A 'regex' keyword has been added to the AllowUser, DenyUser,
+        AllowGroup, and DenyGroup directives, so that an administrator
+        can specify user or group name filters based on regular
+        expressions.
+
+      ExtendedLog:
+        The ExtendedLog directive can now take a "path" of the form:
+        "syslog:level", where the "syslog:" prefix tells mod_log to log
+        that ExtendedLog data via syslog, and the "level" informs mod_log
+        of which syslog level to use.
+
+  - New modules:
+      mod_auth_file:
+        The handling of AuthUserFile and AuthGroupFile has been condensed
+        into this module; those directives have also been enhanced with
+        the addition of "filters", which allow the administrator to exert
+        some control over the contents of these replacement files.
+
+      mod_rewrite:
+        A command rewriting module based on regular expressions, similar
+        to Apache's module of the same name.
+
+      mod_tls:
+        A module that implements FTP over SSL, according to an IETF Draft
+        describing the technique.  This allows for encrypted control and
+        data FTP connections.
+
+    Also, the mod_pam module has been renamed to mod_auth_pam, and the
+    mod_unixpw module has been renamed to mod_auth_unix, for naming
+    consistency.  The configure options for these modules have been
+    altered accordingly.
+
+  - New Display file variables:
+      %i, %o, %t:
+        These variables expand to the total number of files uploaded
+        (input), downloaded (output), and transferred, respectively.
+
+  - New log format variables:
+      %d, %D:
+        %d will log just the directory name, not the full path, for the
+        following FTP commands: CDUP, CWD, MKD, RMD, XCWD, XCUP, XMKD,
+        and XRMD.  %D will log the full path for those same commands.
+
+      %U:
+        This variable expands the USER command originally sent by the
+        client; in some cases (e.g. when UserAlias is used), this name
+        will be different from that reported by %u (which expands to
+        the name of the authenticated user).
+
+  - RFC2389 support
+
+Please read the included NEWS and ChangeLog files for the full details.
+
+The MD5 sums for the source tarballs are:
+
+  d9e341d0f3ba5775b05fc35c04d5768e  proftpd-1.2.8rc1.tar.bz2
+  3acf6da0aedec3855770b73f85985ef3  proftpd-1.2.8rc1.tar.gz
+
+The PGP signatures for the source tarballs are:
+
+  proftpd-1.2.8rc1.tar.bz2:
+
+    -----BEGIN PGP SIGNATURE-----
+    Version: PGP 6.5.8
+
+    iQA/AwUAPg3v7beOiT+lEZdqEQKbqACg/lpOdNKM4HIwLTFYt3NojIlWwZoAnAqX
+    HhZ6iQGQzUqLGbv3Gx7jPeVK
+    =u80x
+    -----END PGP SIGNATURE-----
+
+  proftpd-1.2.8rc1.tar.gz:
+
+    -----BEGIN PGP SIGNATURE-----
+    Version: PGP 6.5.8
+
+    iQA/AwUAPg3v57eOiT+lEZdqEQLOYgCeNSEm9h3G+6Ob5dMPg5KtOsMyajYAn2TX
+    RxbdJs+3w6E9PZFuUE+8mJMK
+    =abo3
+    -----END PGP SIGNATURE-----
+
+My PGP key has been used to sign the source tarballs as well as this
+announcement; it is available via MIT's public keyserver.

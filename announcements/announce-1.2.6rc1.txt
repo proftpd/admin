@@ -1,0 +1,42 @@
+Hello, ProFTPD community. The ProFTPD Project team is pleased to announce
+that the first release candidate for ProFTPD 1.2.6 is now available
+for public consumption.
+
+You can download 1.2.6rc1, including PGP signatures and MD5 sums, from any
+of the proftpd mirrors.  Mirrors are available via FTP as
+
+  ftp.<two_letter_iso_country_code>.proftpd.org
+
+(example: ftp.nl.proftpd.org).  Not all countries have mirrors; however
+you should select one that is geographically close to you.
+
+Alternatively, you can download proftpd from the main site:
+
+  ftp://ftp.proftpd.org/distrib/source
+
+RPMs, once available, will be placed here:
+
+  ftp://ftp.proftpd.org/distrib/packages/RPMS
+
+The 1.2.6rc1 includes numerous new features, including:
+
+  - Large File Support:
+     If the host system supports files larger than 2 GB, proftpd detects
+     and configures itself to support these large files.
+
+  - New configuration directives:
+     <IfDefine>, <IfModule>, Define (and the -D command-line option), all
+     of which function similarly to their Apache equivalents
+
+  - Support for the STOU (STOre Unique) FTP command
+
+  - Cygwin support:
+     See README.cygwin for details.
+ 
+  - New mod_sql, version 4.09:
+     This version adds support for additional groups
+
+Please read the included NEWS and ChangeLog files for the full details.
+
+My PGP key has been used to sign the source tarballs as well as this
+announcement; it is available via MIT's public keyserver.

@@ -1,0 +1,81 @@
+Hello, ProFTPD community. The ProFTPD Project team is pleased to announce
+that the first release candidate for ProFTPD 1.2.7 is now available
+for public consumption.
+
+You can download 1.2.7rc1, including PGP signatures and MD5 sums, from any
+of the proftpd mirrors.  Mirrors are available via FTP as
+
+  ftp.<two_letter_iso_country_code>.proftpd.org
+
+(example: ftp.nl.proftpd.org).  Not all countries have mirrors; however
+you should select one that is geographically close to you.
+
+Alternatively, you can download proftpd from the main site:
+
+  ftp://ftp.proftpd.org/distrib/source
+
+RPMs, once available, will be placed here:
+
+  ftp://ftp.proftpd.org/distrib/packages/RPMS
+
+The 1.2.7rc1 release includes numerous new features, including:
+
+  - New configuration directives:
+       AllowOverride:
+         Toggle parsing of .ftpaccess files.
+
+       DefaultAddress:
+         Configure address of default server; for multi-homed machines.
+
+       HideFiles:
+         Hide files based on regex matching of file names.
+
+       MaxClientsPerUser:
+         Limit number of simultaneous connections per user.
+
+       MaxConnectionRate:
+         Connection rate throttling; for standlone daemons.
+
+       MaxRetrieveFileSize, MaxStoreFileSize:
+         Limit the maximum size of individual files being transferred
+
+  - Support for a SITE CHGRP FTP command
+
+  - New mod_sql, version 4.10:
+     This version supports a new SQLNegativeCache directive
+
+  - A new authentication contrib module: mod_radius
+
+  - Optimizations when listing directories, transferring ASCII files.
+
+Please read the included NEWS and ChangeLog files for the full details.
+
+The MD5 sums for the source tarballs are:
+
+  6038639e6919efb85eb740d46ddf387e  proftpd-1.2.7rc1.tar.bz2
+  2ff3290621b30e7249e20ee0c7963bae  proftpd-1.2.7rc1.tar.gz
+
+The PGP signatures for the source tarballs are:
+
+  proftpd-1.2.7rc1.tar.bz2:
+
+    -----BEGIN PGP SIGNATURE-----
+    Version: PGP 6.5.8
+
+    iQA/AwUAPZnx5reOiT+lEZdqEQI5hgCbB3lX6Ru4qQa/Lgo2hIAESB0toYgAni70
+    XS0/D+vuGnGh8ZYfOGUucnJ3
+    =yAXd
+    -----END PGP SIGNATURE-----
+
+  proftpd-1.2.7rc1.tar.gz:
+
+    -----BEGIN PGP SIGNATURE-----
+    Version: PGP 6.5.8
+
+    iQA/AwUAPZnx3reOiT+lEZdqEQIldgCgph45kVKo+3O1ycTrp2TeIfqOLecAnjG6
+    X51SCj1PBhxynLdWr/PpTRo9
+    =DdHp
+    -----END PGP SIGNATURE-----
+
+My PGP key has been used to sign the source tarballs as well as this
+announcement; it is available via MIT's public keyserver.
