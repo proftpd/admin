@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2004092300      ; Serial
+                              2004092700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -84,10 +84,6 @@ www2.at		IN	A	192.35.244.50
 www2.au		IN	A	203.16.234.20
 www2.au		IN	A	203.16.234.19
 
-; http://proftpd.urc.bl.ac.yu/
-; Dragan Simic <dsimic@urc.bl.ac.yu>
-www1.ba		IN	A	217.23.202.130
-
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
 www1.be		IN	A	212.100.160.33
@@ -147,10 +143,6 @@ www1.id		IN	A	202.145.6.61
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
-
-; http://proftpd.ogreland.lv/
-; core <core@ogreland.lv>
-www1.lv		IN	A	159.148.92.140
 
 ; http://proftpd.MyBSD.org.my/
 ; Ahmad Faisal <faisal@MyBSD.org.my>
@@ -212,10 +204,6 @@ www2.tw		IN	A	140.126.1.54
 ; Alexander Ryumshin <mizi@alkar.net>
 www1.ua		IN	A	195.248.190.23
 
-; http://proftpd.dnepr.net/
-; Andrey Lakhno <land@dnepr.net>
-www2.ua		IN	A	217.198.131.181
-
 ; http://programming.ccp14.ac.uk/ftp-mirror/programming/proftpd/
 ; Lachlan Cranswick <lzc@dl.ac.uk>
 www2.uk		IN	A	193.61.32.164
@@ -235,10 +223,6 @@ www5.uk		IN	A	82.7.64.144
 ; http://proftpd.mirror.evowebdesign.co.uk/
 ; Andy Harding <andy.harding@evowebdesign.co.uk>
 www6.uk		IN	A	82.197.81.4
-
-; http://www.eerie.us/mirror/
-; Eric Gragg <shamrock@eerie.us>
-www2.us		IN	A	216.90.96.125
 
 ; http://proftpd.theuw.net/
 ; dan laffin <lung@theuw.net>
@@ -275,7 +259,6 @@ www21.us		IN	A	66.92.74.33
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.20
 www.au		IN	A	203.16.234.19
-www.ba		IN	A	217.23.202.130
 www.be		IN	A	212.100.160.33
 www.bg		IN	A	212.50.21.33
 www.bg		IN	A	194.12.255.250
@@ -290,7 +273,6 @@ www.fr		IN	A	213.166.201.49
 www.hk		IN	A	202.64.181.18
 www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
-www.lv		IN	A	159.148.92.140
 www.nl		IN	A	80.84.224.16
 www.nl		IN	A	213.197.11.24
 www.nl		IN	A	82.150.134.174
@@ -305,11 +287,9 @@ www.sg		IN	A	202.79.178.225
 www.tw		IN	A	140.127.177.17
 www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
-www.ua		IN	A	217.198.131.181
 www.uk		IN	A	195.22.134.136
 www.uk		IN	A	82.138.249.1
 www.uk		IN	A	82.7.64.144
-www.us		IN	A	216.90.96.125
 www.us		IN	A	216.240.32.40
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.90.104.101
