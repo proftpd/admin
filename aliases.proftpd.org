@@ -17,14 +17,16 @@ flood:		jss@inflicted.net
 jss:		flood
 # TJ Saunders
 tj:		tj@castaglia.org
-#
-dr:
+# Daniel Roesen <dr@cluenet.de>
+dr:		dr@cluenet.de
 # Mark Lowes 
 hamster:	hamster@korenwolf.net
 # Andrew Houghton 
 aah:		aah@acm.org
 # John Morrissey 
 jwm:		jwm@horde.net
+# MacGyver
+macgyver:	macgyver@tos.net
 #------------------------------------------------------------
 #
 # Core aliases
