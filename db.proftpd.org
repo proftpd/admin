@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003032003      ; Serial
+                              2003032100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -21,20 +21,23 @@
                     IN  MX    10 library.lspace.org.
 ;; mail1.cluenet.de -- dr@proftpd.org
                     IN  MX    10 mail1.cluenet.de.
-; default IP
-                    IN  A     195.200.3.70
 
+; Main website
+; Hosted at Frontier Internet -- hamster@korenwolf.net
+                    IN  A     195.200.3.70
 www                 IN  A     195.200.3.70
-;; Old evcom site
-;;ftp                 IN  A     216.10.40.219
-;; Robe/inode.at site
+
+; Main ftpsite
+; Hosted by Robe -- robe@amd.co.at
 ftp                 IN  A     81.223.20.36
+
+; bugs and cvs servers
+; -- jwm@horde.net
 bugs                IN  CNAME boost.horde.net.
 cvs                 IN  CNAME boost.horde.net.
+
 ; Daniel Austin <daniel@g-mapps.com>
 rsync               IN  A     195.22.134.14
-;; Spanish translation site
-es                  IN  A     193.146.38.63
 
 ; ***********************************************************************
 ; Language mirrors
