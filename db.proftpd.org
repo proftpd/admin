@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003112002      ; Serial
+                              2003121601      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -163,6 +163,10 @@ ftp8.de		IN	A	141.24.190.77
 ; ftp://ftp.empora.de/pub/mirrors/ftp.proftpd.org/
 ; Andreas Mallek <mallek@empora.de>
 ftp9.de		IN	A	195.247.131.34
+
+; ftp://proftp.serveftp.org/proftp/
+; Flo Spiege <flospiegel@gmx.de>
+ftp10.de		IN	A	213.113.29.211
 
 ; ftp://leela.physik.uni-kl.de/linux/proftpd/
 ; Christian Schumann <schumann@physik.uni-kl.de>
@@ -353,7 +357,7 @@ ftp1.ru		IN	A	195.19.235.116
 
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
-ftp1.se		IN	A	193.13.79.175
+ftp1.se		IN	A	193.12.56.13
 
 ; ftp://ftp.du.se/pub/mirrors/proftpd/
 ; tol & dempa <ftpadmin@du.se>
@@ -405,7 +409,7 @@ ftp4.uk		IN	A	195.22.134.136
 
 ; ftp://proftpd.ulimit.org/proftpd/
 ; Michael Pye <michael@ulimit.org>
-ftp5.uk		IN	A	195.157.37.113
+ftp5.uk		IN	A	82.138.249.1
 
 ; ftp://ftp.midnightsoftware.co.uk/mirrors/ftp.proftpd.org/
 ; Leigh Jepson <leigh@midnightsoftware.co.uk>
@@ -417,7 +421,7 @@ ftp1.us		IN	A	152.2.210.81
 
 ; ftp://ftp.kracked.com/pub/proftpd/
 ;  <micah@kracked.com>
-ftp3.us		IN	A	68.62.246.243
+ftp3.us		IN	A	207.44.233.155
 
 ; ftp://ftp.infoteam.com/pub/proftpd/
 ; Kenn Martin <kmartin@infoteam.com>
@@ -479,6 +483,7 @@ ftp.de		IN	A	143.93.152.20
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	141.24.190.77
 ftp.de		IN	A	195.247.131.34
+ftp.de		IN	A	213.113.29.211
 ftp.de		IN	A	131.246.236.201
 ftp.dk		IN	A	217.157.160.207
 ftp.es		IN	A	193.146.160.10
@@ -523,7 +528,7 @@ ftp.ro		IN	A	217.73.174.7
 ftp.ro		IN	A	192.129.4.100
 ftp.ro		IN	A	193.226.37.6
 ftp.ru		IN	A	195.19.235.116
-ftp.se		IN	A	193.13.79.175
+ftp.se		IN	A	193.12.56.13
 ftp.se		IN	A	130.243.32.22
 ftp.se		IN	A	212.37.1.26
 ftp.sg		IN	A	202.79.178.226
@@ -536,7 +541,7 @@ ftp.uk		IN	A	195.200.4.15
 ftp.uk		IN	A	193.61.32.162
 ftp.uk		IN	A	195.22.134.136
 ftp.uk		IN	A	62.255.248.218
-ftp.us		IN	A	68.62.246.243
+ftp.us		IN	A	207.44.233.155
 ftp.us		IN	A	207.246.83.6
 ftp.us		IN	A	66.116.76.13
 ftp.us		IN	A	207.250.4.2
@@ -647,11 +652,7 @@ www2.pt		IN	A	213.190.192.119
 
 ; http://proftpd.sonet.pt/
 ; Jorge Andrade <jfa@mail.sonet.pt>
-www2.pt		IN	A	213.58.153.153
-
-; http://proftpd.darcompany.net/
-; Doru Popa <doru@mail.darcompany.net>
-www2.ro		IN	A	80.97.112.172
+www2.pt		IN	A	80.91.90.14
 
 ; http://lich.phys.spbu.ru/
 ; Dima Veselov <kab00m@lich.phys.spbu.ru>
@@ -687,7 +688,7 @@ www3.uk		IN	A	195.22.134.136
 
 ; http://proftpd.ulimit.org/
 ; Michael Pye <michael@ulimit.org>
-www4.uk		IN	A	195.157.37.113
+www4.uk		IN	A	82.138.249.1
 
 ; http://proftpd.thedigitaldream.co.uk/
 ; Matthew Jones <matt@ecphosting.net>
@@ -736,8 +737,7 @@ www.lv		IN	A	195.244.128.24
 www.nl		IN	A	80.84.224.16
 www.nl		IN	A	213.197.11.24
 www.pt		IN	A	213.190.192.119
-www.pt		IN	A	213.58.153.153
-www.ro		IN	A	80.97.112.172
+www.pt		IN	A	80.91.90.14
 www.ru		IN	A	195.19.235.116
 www.sg		IN	A	202.79.178.225
 www.tw		IN	A	140.127.177.17
@@ -746,7 +746,7 @@ www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
 www.uk		IN	A	195.200.3.70
 www.uk		IN	A	195.22.134.136
-www.uk		IN	A	195.157.37.113
+www.uk		IN	A	82.138.249.1
 www.uk		IN	A	81.97.225.82
 www.us		IN	A	216.90.96.125
 www.us		IN	A	65.208.228.223
