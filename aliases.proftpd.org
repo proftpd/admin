@@ -46,23 +46,23 @@ security:	core
 #
 #------------------------------------------------------------
 # proftpd-users
-proftpd-users:            proftp-users@lists.sourceforge.net
-proftpd-users-admin:      proftp-users-admin@lists.sourceforge.net
-proftpd-users-request:    proftp-users-request@lists.sourceforge.net
-owner-proftpd-users:      proftp-users-admin@lists.sourceforge.net
-proftpd-users-owner:      proftp-users-admin@lists.sourceforge.net
+proftpd-users:            proftp-user@lists.sourceforge.net
+proftpd-users-admin:      proftp-user-admin@lists.sourceforge.net
+proftpd-users-request:    proftp-user-request@lists.sourceforge.net
+owner-proftpd-users:      proftp-user-admin@lists.sourceforge.net
+proftpd-users-owner:      proftp-user-admin@lists.sourceforge.net
 
-proftpd-user:            proftp-users@lists.sourceforge.net
-proftpd-user-admin:      proftp-users-admin@lists.sourceforge.net
-proftpd-user-request:    proftp-users-request@lists.sourceforge.net
-owner-proftpd-user:      proftp-users-admin@lists.sourceforge.net
-proftpd-user-owner:      proftp-users-admin@lists.sourceforge.net
+proftpd-user:            proftp-user@lists.sourceforge.net
+proftpd-user-admin:      proftp-user-admin@lists.sourceforge.net
+proftpd-user-request:    proftp-user-request@lists.sourceforge.net
+owner-proftpd-user:      proftp-user-admin@lists.sourceforge.net
+proftpd-user-owner:      proftp-user-admin@lists.sourceforge.net
 
-proftp-user:            proftp-users@lists.sourceforge.net
-proftp-user-admin:      proftp-users-admin@lists.sourceforge.net
-proftp-user-request:    proftp-users-request@lists.sourceforge.net
-owner-proftp-user:      proftp-users-admin@lists.sourceforge.net
-proftp-user-owner:      proftp-users-admin@lists.sourceforge.net
+proftp-user:            proftp-user@lists.sourceforge.net
+proftp-user-admin:      proftp-user-admin@lists.sourceforge.net
+proftp-user-request:    proftp-user-request@lists.sourceforge.net
+owner-proftp-user:      proftp-user-admin@lists.sourceforge.net
+proftp-user-owner:      proftp-user-admin@lists.sourceforge.net
 #------------------------------------------------------------
 # proftpd-devel
 proftpd-devel:            proftp-devel@lists.sourceforge.net
