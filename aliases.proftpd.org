@@ -120,3 +120,18 @@ owner-proftp-docs:     proftp-docs-admin@lists.sourceforge.net
 proftp-docs-owner:     proftp-docs-admin@lists.sourceforge.net
 
 
+#------------------------------------------------------------
+# proftpd-committers
+proftpd-committers:          proftp-committers@lists.sourceforge.net
+proftpd-committers:          proftp-committers@lists.sourceforge.net
+proftpd-committers-admin:    proftp-committers-admin@lists.sourceforge.net
+proftpd-committers-request:  proftp-committers-request@lists.sourceforge.net
+owner-proftpd-committers:    proftp-committers-admin@lists.sourceforge.net
+proftpd-committers-owner:    proftp-committers-admin@lists.sourceforge.net
+
+proftp-committers:           proftp-committers@lists.sourceforge.net
+proftp-committers-admin:     proftp-committers-admin@lists.sourceforge.net
+proftp-committers-request:   proftp-committers-request@lists.sourceforge.net
+owner-proftp-committers:     proftp-committers-admin@lists.sourceforge.net
+proftp-committers-owner:     proftp-committers-admin@lists.sourceforge.net
+
