@@ -92,6 +92,12 @@ Policy
 
     + Feature Deprecation
 
+    + Distribution
+      - As a general rule, once development has reached a stable/final
+        release of a given cycle, all RCs for that release should no longer
+        be distributed from the FTP site, and should not be explicitly
+        mentioned on the web site.
+
   Donations
  
 Support
