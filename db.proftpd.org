@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2004031800      ; Serial
+                              2004062200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -20,7 +20,7 @@
 ;; groundhog.korenwolf.net -- hamster@korenwolf.net
                     IN  MX    10 groundhog.korenwolf.net.
 ;; mail1.cluenet.de -- dr@proftpd.org
-                    IN  MX    10 mail1.cluenet.de.
+;                    IN  MX    10 mail1.cluenet.de.
 
 ; Main website
 ; Hosted at Frontier Internet -- hamster@korenwolf.net
