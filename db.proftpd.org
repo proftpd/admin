@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003111601      ; Serial
+                              2003111801      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -94,7 +94,7 @@ ftp1.be		IN	A	212.100.160.33
 
 ; ftp://ftp.skynet.be/mirror/ftp.proftpd.org/
 ; Vincent Luyckx <ftp@skynet.be>
-ftp2.be		IN	A	195.238.1.6
+ftp2.be		IN	A	195.238.1.14
 
 ; ftp://proftpd.zadnik.org/
 ; Alexander Velin <velin@bastun.net>
@@ -482,7 +482,7 @@ ftp.au		IN	A	203.16.234.20
 ftp.au		IN	A	203.16.234.19
 ftp.ba		IN	A	195.252.66.130
 ftp.be		IN	A	212.100.160.33
-ftp.be		IN	A	195.238.1.6
+ftp.be		IN	A	195.238.1.14
 ftp.bg		IN	A	194.12.255.250
 ftp.bg		IN	A	194.12.244.90
 ftp.br		IN	A	200.201.192.33
@@ -657,10 +657,6 @@ www3.id		IN	A	202.59.161.81
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
 
-; http://proftpd.web-spread.com/
-; Fabio Massi <mirrors@web-spread.com>
-www2.it		IN	A	213.203.144.41
-
 ; http://proftpd.ayamura.org/
 ; Ayamura Kikuchi <ayamura@ayamura.org>
 www1.jp		IN	A	219.165.110.102
@@ -688,6 +684,10 @@ www1.pl		IN	A	80.55.61.130
 ; http://proftpd.mysiar.net/
 ; Mysiar <mysiar@mysiar.net>
 www3.pl		IN	A	80.48.165.51
+
+; http://proftpd.zarco.org/
+; Carlos Filipe <filipe@zarco.org>
+www2.pt		IN	A	213.190.192.119
 
 ; http://proftpd.sonet.pt/
 ; Jorge Andrade <jfa@mail.sonet.pt>
@@ -782,6 +782,8 @@ www.nl		IN	A	80.84.224.16
 www.nl		IN	A	213.197.11.24
 www.pl		IN	A	80.55.61.130
 www.pl		IN	A	80.48.165.51
+www.pt		IN	A	213.190.192.119
+www.pt		IN	A	213.58.153.153
 www.ro		IN	A	80.97.112.172
 www.ru		IN	A	195.19.235.116
 www.sg		IN	A	202.79.178.225
