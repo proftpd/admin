@@ -3,6 +3,10 @@
 # proftpd.org email alias file
 #
 #------------------------------------------------------------
+*:		hamster
+#
+#
+#
 abuse:		flood
 postmaster:	flood
 hostmaster:	core
