@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2004010801      ; Serial
+                              2004010900      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -92,11 +92,19 @@ ftp1.ba		IN	A	195.252.66.130
 ; Bert Vermeulen <ftp@be.easynet.net>
 ftp1.be		IN	A	212.100.160.33
 
+; ftp://ftp.proftpd.skynet.be/mirror/ftp.proftpd.org/
+; Vincent Luyckx <ftp@skynet.be>
+ftp2.be		IN	A	195.238.1.5
+
+; ftp://ftp.fixity.net/pub/proftpd/
+; Krasimir Ganchev <admin@fixity.net>
+ftp3.bg		IN	A	212.50.21.40
+
 ; ftp://ftp.samurai.com/pub/proftpd/
 ; Bryan Fullerton <bryanf@samurai.com>
 ftp1.ca		IN	A	216.95.162.46
 
-; ftp://ftp.solnet.ch/pub/proftpd/
+; ftp://ftp.solnet.ch/mirror/proftpd.org/
 ; Erich Hohermuth <hostmaster@solnet.ch>
 ftp1.ch		IN	A	212.101.4.244
 
@@ -458,6 +466,8 @@ ftp.au		IN	A	203.16.234.20
 ftp.au		IN	A	203.16.234.19
 ftp.ba		IN	A	195.252.66.130
 ftp.be		IN	A	212.100.160.33
+ftp.be		IN	A	195.238.1.5
+ftp.bg		IN	A	212.50.21.40
 ftp.ca		IN	A	216.95.162.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cn		IN	A	61.152.210.194
@@ -601,6 +611,10 @@ www3.fr		IN	A	80.236.0.239
 ; Alain Bidaud <crihan-tech@crihan.fr>
 www4.fr		IN	A	195.221.21.36
 
+; http://proftpd.worldakt.com/
+; CHAILLAN Nicolas <nicos@worldakt.com>
+www5.fr		IN	A	213.186.36.219
+
 ; http://proftpd.bylinux.net/
 ; pyjamas <pyjamas@bylinux.net>
 www1.hk		IN	A	202.181.239.19
@@ -731,6 +745,7 @@ www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
 www.fr		IN	A	80.236.0.239
 www.fr		IN	A	195.221.21.36
+www.fr		IN	A	213.186.36.219
 www.hk		IN	A	202.181.239.19
 www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
