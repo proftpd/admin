@@ -63,9 +63,34 @@ Policy
   New Core Members
 
   Release Cycles
-    Branching/Merging
-    Feature Addition
-    Feature Deprecation
+    + Branching/Merging
+      - For this, I'm tentatively thinking that we stick with the RC kind
+        of development/release system, for now.  With this in mind, any
+        major feature changes (additions, deprecations, removals) should
+        happen in a cycle's RC1 release, and not in any subsequent RCs.
+        The idea is that an RC1 release would be released from the main
+        trunk of the project.  After that, a release branch for the release
+        cycle is branched from the trunk, and all ensuing RCs will be
+        issued from the release branch.  This will help to keep only
+        bug fixes in branches.
+
+        Merges from the release branches back into the main trunk _must_
+        happen before an RC release from that branch, and _may_ happen
+        before then.
+
+        Before each release, before each branch, and before each merge,
+        the branch (or trunk) must be tagged.  Tag names should reflect
+        the nature of the change.  The current naming scheme for release
+        tags is R<major>_<minor>_<revision>(RC<num>). For example:
+
+          R1_2_8RC2
+          R1_2_8
+
+        Ideas for branch and merge tag names?
+
+    + Feature Addition
+
+    + Feature Deprecation
 
   Donations
  
