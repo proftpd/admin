@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2004081101      ; Serial
+                              2004081103      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -97,7 +97,7 @@ ftp1.be		IN	A	212.100.160.33
 
 ; ftp://ftp.proftpd.skynet.be/mirror/ftp.proftpd.org/
 ; Vincent Luyckx <ftp@skynet.be>
-ftp2.be		IN	A	195.238.1.5
+ftp2.be		IN	A	195.238.1.14
 
 ; ftp://ftp.fixity.net/pub/proftpd/
 ; Krasimir Ganchev <admin@fixity.net>
@@ -105,7 +105,7 @@ ftp3.bg		IN	A	212.50.21.40
 
 ; ftp://ftp.samurai.com/pub/proftpd/
 ; Bryan Fullerton <bryanf@samurai.com>
-ftp1.ca		IN	A	216.95.162.46
+ftp1.ca		IN	A	66.241.141.46
 
 ; ftp://ftp.solnet.ch/mirror/proftpd.org/
 ; Erich Hohermuth <hostmaster@solnet.ch>
@@ -122,10 +122,6 @@ ftp1.cz		IN	A	194.108.36.130
 ; ftp://pech.cz/MIRRORS/proftpd.org/ftp/
 ; Jirka Pech <mirrors@pech.cz>
 ftp2.cz		IN	A	213.168.161.134
-
-; ftp://de.samba.org/proftpd.org/
-; Noel Koethe <noel@koethe.net>
-ftp1.de		IN	A	131.220.43.1
 
 ; ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/
 ; Adrian Reber <adrian@lisas.de>
@@ -155,14 +151,6 @@ ftp7.de		IN	A	141.41.5.16
 ; Silvio Schloeffel <ftp@tu-ilmenau.de>
 ftp8.de		IN	A	141.24.190.77
 
-; ftp://ftp.empora.de/pub/mirrors/ftp.proftpd.org/
-; Andreas Mallek <mallek@empora.de>
-ftp9.de		IN	A	195.247.131.34
-
-; ftp://proftp.serveftp.org/proftp/
-; Flo Spiege <flospiegel@gmx.de>
-ftp10.de		IN	A	213.113.29.201
-
 ; ftp://leela.physik.uni-kl.de/linux/proftpd/
 ; Christian Schumann <schumann@physik.uni-kl.de>
 ftp11.de		IN	A	131.246.236.201
@@ -183,21 +171,13 @@ ftp1.ee		IN	A	194.204.30.173
 ; Pedro R. Benito <pedro@ubu.es>
 ftp2.es		IN	A	193.146.160.10
 
-; ftp://ftp.model-fx.com/pub/mirrors/proftpd/
-; elk <>
-ftp1.fr		IN	A	62.39.106.16
-
 ; ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/
 ; Carlos Inacio <>
-ftp2.fr		IN	A	213.44.136.56
+ftp2.fr		IN	A	194.158.99.22
 
-; ftp://ftp.free.fr/pub/Networking/proftpd/
-;  <>
-ftp3.fr		IN	A	213.228.0.141
-
-; ftp://ftp.fastorama.com/
-; MrJacK <>
-ftp4.fr		IN	A	212.95.87.13
+; ftp://ftp.fastorama.com/mirrors/ftp.proftpd.org/
+; MrJacK <mrjack@fastorama.com>
+ftp4.fr		IN	A	213.166.201.49
 
 ; ftp://ftp.crihan.fr/mirrors/ftp.proftpd.org/
 ; Alain Bidaud <crihan-tech@crihan.fr>
@@ -211,28 +191,12 @@ ftp6.fr		IN	A	193.54.153.246
 ; Yannick Lecaillez <mirrors@seasonfive.com>
 ftp7.fr		IN	A	212.43.248.244
 
-; ftp://proftpd.anwire.org/pub/mirrors/proftpd.org/
-; Vaggelis Georgatos <proftpd@anwire.org>
-ftp1.gr		IN	A	195.134.99.74
-
-; ftp://ftp.404-not-found.net/proftpd.org/
-; Johnson <Johnson@404-not-found.net>
-ftp1.hk		IN	A	203.129.67.116
-
-; ftp://proftpd.bylinux.net/pub/mirror/proftpd/
-; pyjamas <pyjamas@bylinux.net>
-ftp2.hk		IN	A	202.181.239.19
-
 ; ftp://ftp.fsn.hu/pub/proftpd/
 ; Attila Nagy <bra@fsn.hu>
 ftp1.hu		IN	A	195.228.252.133
 ftp1.hu		IN	A	195.228.252.132
 
-; ftp://proftpd.mirror.stop.hu/proftpd/
-;  telnet Co. mirror admin < mirror@download.stop.hu>
-ftp2.hu		IN	A	212.75.128.75
-
-; ftp://ftp.linuxforum.hu/mirror/ftp.proftpd.org/
+; ftp://ftp.linuxforum.hu/mirrors/ftp.proftpd.org/
 ; Christian Hamar alias krix <krics@sd.externet.hu>
 ftp3.hu		IN	A	212.40.96.80
 
@@ -240,19 +204,11 @@ ftp3.hu		IN	A	212.40.96.80
 ; Asfihani <asfik@its-sby.edu>
 ftp1.id		IN	A	202.145.6.63
 
-; ftp://ftp.middle-earth.it/proftpd/
-; Saverio Salatino <ssalatino@supereva.it>
-ftp1.it		IN	A	194.242.226.124
-
-; ftp://venom.ath.cx/mirror/proftpd/
-; Matteo <drummino@yahoo.com>
-ftp2.it		IN	A	195.110.108.75
-
 ; ftp://ftp.ayamura.org/pub/proftpd/
 ; Ayamura Kikuchi <ayamura@ayamura.org>
 ftp1.jp		IN	A	203.174.65.13
 
-; ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/
+; ftp://ftp.win.jp/pub/proftpd/
 ; Ayamura Kikuchi <ayamura@ayamura.org>
 ftp2.jp		IN	A	219.106.240.235
 
@@ -264,17 +220,9 @@ ftp3.jp		IN	A	210.138.109.182
 ;  <redhands@linux.sarang.net>
 ftp1.kr		IN	A	211.47.128.157
 
-; ftp://ftp.vejas.lt/ProFTPd/
-; Simas Mockevicius <symka@aideta.lt>
-ftp1.lt		IN	A	213.226.169.169
-
 ; ftp://ftp.eurofmc.com/proftpd/
 ; Francois MONNET <fmonnet@fmc-lu.net>
 ftp1.lu		IN	A	213.161.195.235
-
-; ftp://ftp.ogreland.lv/proftpd.org/
-; core <core@ogreland.lv>
-ftp1.lv		IN	A	62.85.68.65
 
 ; ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/
 ;  <mark@NL.UU.NET>
@@ -287,7 +235,7 @@ ftp2.nl		IN	A	213.204.195.9
 
 ; ftp://proftpd.mirrors.softdev.nl/proftpd/
 ; Richard Pijnenburg <richard@softdev.nl>
-ftp3.nl		IN	A	62.212.92.77
+ftp3.nl		IN	A	82.150.134.174
 
 ; ftp://ftp.easynet.nl/mirror/proftp/
 ; Diederik <mirror@nl.easynet.net>
@@ -297,41 +245,21 @@ ftp4.nl		IN	A	195.86.128.57
 ; Christian Nikolaisen <christian@dataguard.no>
 ftp1.no		IN	A	212.62.224.2
 
-; ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/
-; Dag Stenstad <proftpd+baffle@truuz.com>
-ftp3.no		IN	A	195.139.52.131
-
 ; ftp://ftp.tomt.net/pub/proftpd/
 ; Andre Tomt <andre@tomt.net>
-ftp5.no		IN	A	193.201.220.90
+ftp5.no		IN	A	80.239.42.88
 
 ; ftp://ftp.icm.edu.pl/pub/unix/ftp/proftpd/
 ; Wojtek Sylwestrzak <W.Sylwestrzak@icm.edu.pl>
 ftp3.pl		IN	A	193.219.28.2
 
-; ftp://ftp.task.gda.pl/pub/proftpd/
-; Robert Milkowski <milek@task.gda.pl>
-ftp4.pl		IN	A	153.19.0.141
-
-; ftp://ftp.infomex.pl/mirror/ftp.proftpd.org/
-; Krzysztof Niescieronek <>
-ftp5.pl		IN	A	195.205.200.2
-
-; ftp://histeria.pl/proftpd/
-; Argail <argail@histeria.pl>
-ftp6.pl		IN	A	81.15.165.16
-
-; ftp://ftp.mysiar.net/pub/mirrors/
-; Mysiar <mysiar@mysiar.net>
-ftp7.pl		IN	A	81.186.233.2
+; ftp://ftp.man.olsztyn.pl/pub/linux/proftpd/
+; Bartek Raszczyk, MAN Olsztyn <bartek@man.olsztyn.pl>
+ftp8.pl		IN	A	213.184.16.3
 
 ; ftp://ftp.tpnet.pl/d1/proftpd/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 ftp8.pl		IN	A	194.204.158.22
-
-; ftp://ftp.man.olsztyn.pl/pub/linux/proftpd/
-; Bartek Raszczyk, MAN Olsztyn <bartek@man.olsztyn.pl>
-ftp8.pl		IN	A	213.184.16.3
 
 ; ftp://ftp.telepac.pt/pub/proftpd/
 ; Marco Ramos <mramos@tp.telepac.pt>
@@ -342,13 +270,9 @@ ftp1.pt		IN	A	194.65.100.43
 ; Carlos Filipe <filipe@zarco.org>
 ftp2.pt		IN	A	213.190.192.119
 
-; ftp://ftp.timisoara.roedu.net/mirrors/ftp.proftpd.org/
-; Alexandru Andrei <sasa@timisoara.roedu.net>
-ftp1.ro		IN	A	217.73.174.7
-
 ; ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.proftpd.org/
 ; SUBREDU Manuel <diablo@iasi.roedu.net>
-ftp2.ro		IN	A	192.129.4.100
+ftp2.ro		IN	A	192.129.4.120
 
 ; ftp://ftp.craiova.roedu.net/pub/mirrors/ftp.proftpd.org/
 ; Gabriel Toma-Tumbar <gtoma@craiova.roedu.net>
@@ -361,10 +285,6 @@ ftp1.ru		IN	A	195.19.235.116
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
 ftp1.se		IN	A	193.12.56.13
-
-; ftp://ftp.du.se/pub/mirrors/proftpd/
-; tol & dempa <ftpadmin@du.se>
-ftp2.se		IN	A	130.243.32.22
 
 ; ftp://mirror2.dataphone.se/pub/ProFTPD/
 ; Mirror Admin <mirror@dataphone.net>
@@ -398,10 +318,6 @@ ftp2.tw		IN	A	210.202.31.150
 ; Alexander Ryumshin <mizi@alkar.net>
 ftp1.ua		IN	A	195.248.190.23
 
-; ftp://ftp.linux.co.uk/mirrors/ftp.proftpd.org/
-; Mark Lowes <hamster@vom.tm>
-ftp1.uk		IN	A	195.200.4.15
-
 ; ftp://ftp.ccp14.ac.uk/ccp14/ftp-mirror/programming/proftpd/
 ; Lachlan Cranswick <lzc@dl.ac.uk>
 ftp2.uk		IN	A	193.61.32.162
@@ -422,10 +338,6 @@ ftp6.uk		IN	A	62.255.248.218
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	A	152.2.210.81
 
-; ftp://ftp.kracked.com/pub/proftpd/
-;  <micah@kracked.com>
-ftp3.us		IN	A	207.44.233.155
-
 ; ftp://ftp.infoteam.com/pub/proftpd/
 ; Kenn Martin <kmartin@infoteam.com>
 ftp4.us		IN	A	207.246.83.6
@@ -436,11 +348,7 @@ ftp5.us		IN	A	66.116.68.208
 
 ; ftp://ftp.twtelecom.net/pub/proftpd/
 ; Steve Kaczkowski <ftpadmin@twtelecom.net>
-ftp6.us		IN	A	207.250.4.2
-
-; ftp://www.linuxceptional.com/proftpd/
-; Phil Barnett <midnight@the-oasis.net>
-ftp7.us		IN	A	65.222.231.199
+ftp6.us		IN	A	216.136.102.130
 
 ; ftp://ftp.lug.udel.edu/pub/network/ftp/proftpd/
 ; Bryan <seitz@lug.udel.edu>
@@ -449,10 +357,6 @@ ftp9.us		IN	A	128.175.60.102
 ; ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/
 ; Gerald Combs <gerald@ethereal.com>
 ftp12.us		IN	A	65.208.228.223
-
-; ftp://mirrors.kernel.org/proftpd/
-; kernel.org mirror administrator <mirroradmin@kernel.org>
-ftp14.us		IN	A	204.152.189.120
 
 ; ftp://ftp.sourwood.net/pub/ProFTPD/
 ; Matt Mozur <ftpmaster@sourwood.net>
@@ -469,13 +373,12 @@ ftp.au		IN	A	203.16.234.20
 ftp.au		IN	A	203.16.234.19
 ftp.ba		IN	A	195.252.66.130
 ftp.be		IN	A	212.100.160.33
-ftp.be		IN	A	195.238.1.5
+ftp.be		IN	A	195.238.1.14
 ftp.bg		IN	A	212.50.21.40
-ftp.ca		IN	A	216.95.162.46
+ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cn		IN	A	61.152.210.194
 ftp.cz		IN	A	194.108.36.130
-ftp.de		IN	A	131.220.43.1
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	141.2.114.129
 ftp.de		IN	A	137.248.152.16
@@ -483,57 +386,40 @@ ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	143.93.152.20
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	141.24.190.77
-ftp.de		IN	A	195.247.131.34
-ftp.de		IN	A	213.113.29.201
 ftp.de		IN	A	131.246.236.201
 ftp.dk		IN	A	217.157.160.207
 ftp.es		IN	A	193.146.160.10
-ftp.fr		IN	A	62.39.106.16
-ftp.fr		IN	A	213.44.136.56
-ftp.fr		IN	A	213.228.0.141
-ftp.fr		IN	A	212.95.87.13
+ftp.fr		IN	A	194.158.99.22
+ftp.fr		IN	A	213.166.201.49
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	A	193.54.153.246
 ftp.fr		IN	A	212.43.248.244
-ftp.gr		IN	A	195.134.99.74
-ftp.hk		IN	A	203.129.67.116
-ftp.hk		IN	A	202.181.239.19
 ftp.hu		IN	A	195.228.252.133
 ftp.hu		IN	A	195.228.252.132
-ftp.hu		IN	A	212.75.128.75
 ftp.hu		IN	A	212.40.96.80
 ftp.id		IN	A	202.145.6.63
-ftp.it		IN	A	194.242.226.124
-ftp.it		IN	A	195.110.108.75
 ftp.jp		IN	A	203.174.65.13
 ftp.jp		IN	A	219.106.240.235
 ftp.jp		IN	A	210.138.109.182
 ftp.kr		IN	A	211.47.128.157
-ftp.lt		IN	A	213.226.169.169
 ftp.lu		IN	A	213.161.195.235
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	213.204.195.9
-ftp.nl		IN	A	62.212.92.77
+ftp.nl		IN	A	82.150.134.174
 ftp.nl		IN	A	195.86.128.57
 ftp.no		IN	A	212.62.224.2
-ftp.no		IN	A	195.139.52.131
-ftp.no		IN	A	193.201.220.90
+ftp.no		IN	A	80.239.42.88
 ftp.pl		IN	A	193.219.28.2
-ftp.pl		IN	A	153.19.0.141
-ftp.pl		IN	A	195.205.200.2
-ftp.pl		IN	A	81.15.165.16
-ftp.pl		IN	A	194.204.158.22
 ftp.pl		IN	A	213.184.16.3
+ftp.pl		IN	A	194.204.158.22
 ftp.pt		IN	A	194.65.100.42
 ftp.pt		IN	A	194.65.100.43
 ftp.pt		IN	A	213.190.192.119
-ftp.ro		IN	A	217.73.174.7
-ftp.ro		IN	A	192.129.4.100
+ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	193.226.37.6
 ftp.ru		IN	A	195.19.235.116
 ftp.se		IN	A	193.12.56.13
-ftp.se		IN	A	130.243.32.22
 ftp.se		IN	A	212.37.1.30
 ftp.sg		IN	A	202.79.178.226
 ftp.si		IN	A	193.95.210.16
@@ -541,18 +427,14 @@ ftp.sk		IN	A	195.46.80.5
 ftp.tr		IN	A	194.27.16.9
 ftp.tw		IN	A	210.202.31.150
 ftp.ua		IN	A	195.248.190.23
-ftp.uk		IN	A	195.200.4.15
 ftp.uk		IN	A	193.61.32.162
 ftp.uk		IN	A	195.22.134.136
 ftp.uk		IN	A	62.255.248.218
-ftp.us		IN	A	207.44.233.155
 ftp.us		IN	A	207.246.83.6
 ftp.us		IN	A	66.116.68.208
-ftp.us		IN	A	207.250.4.2
-ftp.us		IN	A	65.222.231.199
+ftp.us		IN	A	216.136.102.130
 ftp.us		IN	A	128.175.60.102
 ftp.us		IN	A	65.208.228.223
-ftp.us		IN	A	204.152.189.120
 ftp.us		IN	A	66.92.74.33
 ;;
 ;; Start of autogenerated www sites DNS
@@ -588,11 +470,11 @@ www2.bg		IN	A	194.12.255.250
 
 ; http://proftpd.asylog.net/
 ; Escario Julien <mirrors@asylog.net>
-www1.ch		IN	A	193.246.250.178
+www1.ch		IN	A	62.2.255.42
 
 ; http://proftpd.lemon4ssc.org/
 ; Liu Kang <liukange@netease.com>
-www4.cn		IN	A	218.107.145.8
+www4.cn		IN	A	219.239.98.8
 
 ; http://proftpd.uasw.edu/
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
@@ -608,19 +490,19 @@ www1.fr		IN	A	212.43.248.244
 
 ; http://proftpd.numericable.fr/
 ; NOC <noc@numericable.fr>
-www3.fr		IN	A	80.236.0.239
+www3.fr		IN	A	81.220.255.20
 
 ; http://proftpd.crihan.fr/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 www4.fr		IN	A	195.221.21.36
 
-; http://proftpd.worldakt.com/
-; CHAILLAN Nicolas <nicos@worldakt.com>
-www5.fr		IN	A	213.186.36.219
+; http://proftpd.fastorama.com/
+; MrJacK <mrjack@fastorama.com>
+www6.fr		IN	A	213.166.201.49
 
 ; http://proftpd.bylinux.net/
 ; pyjamas <pyjamas@bylinux.net>
-www1.hk		IN	A	202.181.239.19
+www1.hk		IN	A	202.64.181.18
 
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
@@ -640,7 +522,7 @@ www1.jp		IN	A	219.165.110.102
 
 ; http://proftpd.ogreland.lv/
 ; core <core@ogreland.lv>
-www1.lv		IN	A	195.244.128.24
+www1.lv		IN	A	159.148.92.140
 
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
@@ -652,7 +534,7 @@ www2.nl		IN	A	213.197.11.24
 
 ; http://proftpd.mirrors.softdev.nl/
 ; Richard Pijnenburg <richard@softdev.nl>
-www3.nl		IN	A	62.212.92.77
+www3.nl		IN	A	82.150.134.174
 
 ; http://proftpd.tpnet.pl/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
@@ -661,10 +543,6 @@ www4.pl		IN	A	194.204.158.22
 ; http://proftpd.zarco.org/
 ; Carlos Filipe <filipe@zarco.org>
 www2.pt		IN	A	213.190.192.119
-
-; http://proftpd.sonet.pt/
-; Jorge Andrade <jfa@mail.sonet.pt>
-www2.pt		IN	A	80.91.90.14
 
 ; http://lich.phys.spbu.ru/
 ; Dima Veselov <kab00m@lich.phys.spbu.ru>
@@ -708,15 +586,26 @@ www4.uk		IN	A	82.138.249.1
 
 ; http://proftpd.thedigitaldream.co.uk/
 ; Matthew Jones <matt@ecphosting.net>
-www5.uk		IN	A	81.97.225.82
+www5.uk		IN	A	82.7.64.144
 
 ; http://www.eerie.us/mirror/
 ; Eric Gragg <shamrock@eerie.us>
 www2.us		IN	A	216.90.96.125
 
+; http://proftpd.fasterline.net/
+; Martin S. <admin@sms13.de>
+www4.us		IN	A	66.98.178.27
+
 ; http://proftpd.not-your-box.com/
 ; Joshua <proftpd@not-your-box.com>
-www5.us		IN	A	66.98.181.12
+www5.us		IN	A	66.150.161.134
+www5.us		IN	A	69.25.27.170
+www5.us		IN	A	66.150.161.141
+www5.us		IN	A	66.150.161.140
+www5.us		IN	A	69.25.27.172
+www5.us		IN	A	66.150.161.133
+www5.us		IN	A	66.150.161.136
+www5.us		IN	A	69.25.27.173
 
 ; http://proftpd.ethereal.com/
 ; Gerald Combs <gerald@ethereal.com>
@@ -741,25 +630,24 @@ www.ba		IN	A	195.252.66.130
 www.be		IN	A	212.100.160.33
 www.bg		IN	A	212.50.21.33
 www.bg		IN	A	194.12.255.250
-www.ch		IN	A	193.246.250.178
-www.cn		IN	A	218.107.145.8
+www.ch		IN	A	62.2.255.42
+www.cn		IN	A	219.239.98.8
 www.de		IN	A	141.41.5.16
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
-www.fr		IN	A	80.236.0.239
+www.fr		IN	A	81.220.255.20
 www.fr		IN	A	195.221.21.36
-www.fr		IN	A	213.186.36.219
-www.hk		IN	A	202.181.239.19
+www.fr		IN	A	213.166.201.49
+www.hk		IN	A	202.64.181.18
 www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
 www.jp		IN	A	219.165.110.102
-www.lv		IN	A	195.244.128.24
+www.lv		IN	A	159.148.92.140
 www.nl		IN	A	80.84.224.16
 www.nl		IN	A	213.197.11.24
-www.nl		IN	A	62.212.92.77
+www.nl		IN	A	82.150.134.174
 www.pl		IN	A	194.204.158.22
 www.pt		IN	A	213.190.192.119
-www.pt		IN	A	80.91.90.14
 www.ru		IN	A	195.19.235.116
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.225
@@ -770,9 +658,16 @@ www.ua		IN	A	217.198.131.181
 www.uk		IN	A	195.200.3.70
 www.uk		IN	A	195.22.134.136
 www.uk		IN	A	82.138.249.1
-www.uk		IN	A	81.97.225.82
+www.uk		IN	A	82.7.64.144
 www.us		IN	A	216.90.96.125
-www.us		IN	A	66.98.181.12
+www.us		IN	A	66.150.161.134
+www.us		IN	A	69.25.27.170
+www.us		IN	A	66.150.161.141
+www.us		IN	A	66.150.161.140
+www.us		IN	A	69.25.27.172
+www.us		IN	A	66.150.161.133
+www.us		IN	A	66.150.161.136
+www.us		IN	A	69.25.27.173
 www.us		IN	A	65.208.228.223
 www.us		IN	A	65.86.136.194
 www.us		IN	A	66.92.74.33
