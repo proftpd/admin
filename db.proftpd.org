@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003032100      ; Serial
+                              2003032300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -45,8 +45,8 @@ rsync               IN  A     195.22.134.14
 ; German site: Stefan Onken <support@stonki.de>
 de                  IN CNAME  www.proftpd.de.
 
-; Spanish site: Tanke <tanke@escomposlinux.org>
-es                  IN CNAME  galpon.org.
+; Spanish site: Lucas Garcia <tanke@escomposlinux.org>
+es                  IN A      193.146.38.63
 
 ; Please do not edit above this line
 ; ***********************************************************************
