@@ -3,6 +3,15 @@ Here's just some ideas for features for the future.  (Yes, as I freely
 admit, I'm one of the worst perpetrators of feeping creaturism for
 proftpd.)
 
+mod_tls:
+  + allow TLSCipherSuites on a per-<Directory>/.ftpaccess basis, and thus
+    can be used to trigger renegotiations for tighter restrictions on
+    directory contents.
+
+  + add TLSAllow/TLSDeny (or somesuch) for <Limit> context, for limiting
+    certain FTP commands only for use by FTPS sessions that employ certain
+    cipher suites.
+
 Events API
   + Use an event-driven model for triggering registered callbacks.  These
     callbacks can be defined and registered by third-party modules.
