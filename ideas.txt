@@ -55,6 +55,10 @@ Events API
     events: the event name need only be added in the future, but the
     API need not change.
 
+FSIO, NetIO APIs
+ + both of these APIs need to support stackable layers, such that multiple
+   modules can supply FSIO and/or NetIO callbacks to handle data
+
 mod_conf_ldap
   + module for reading/constructing proftpd.conf information from LDAP
     (LDAP version of mod_conf_sql)
