@@ -129,6 +129,9 @@ mod_conf_ldap
   + The IANA has assigned the following Private Enterprise Number to
     The ProFTPD Project: 17852
 
+mod_sql_sqlite
+  + mod_sql backend for the SQLite DBMS
+
 mod_search
   + implements a SITE SEARCH command, for using nftw(3), globs and regexs
     for scanning a site for a given filename pattern
