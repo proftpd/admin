@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003101000      ; Serial
+                              2003101700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -120,10 +120,6 @@ ftp1.cz		IN	A	194.108.36.130
 ; Jirka Pech <mirrors@pech.cz>
 ftp2.cz		IN	A	213.168.161.134
 
-; ftp://leela.physik.uni-kl.de/linux/proftpd/
-; Christian Schumann <schumann@physik.uni-kl.de>
-ftp1.de		IN	A	131.246.236.201
-
 ; ftp://de.samba.org/proftpd.org/
 ; Noel Koethe <noel@koethe.net>
 ftp1.de		IN	A	131.220.43.1
@@ -146,7 +142,7 @@ ftp5.de		IN	A	193.175.24.42
 
 ; ftp://ftp.fh-koblenz.de/pub/ProFTPD/
 ; Michael Schmidt <mschmidt@fh-koblenz.de>
-ftp6.de		IN	A	143.93.144.24
+ftp6.de		IN	A	143.93.152.20
 
 ; ftp://ftp.uasw.edu/pub/network/proftpd/ftp/
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
@@ -160,9 +156,13 @@ ftp8.de		IN	A	141.24.190.77
 ; Andreas Mallek <mallek@empora.de>
 ftp9.de		IN	A	195.247.131.34
 
-; ftp://proftp.serveftp.org/proftp/
-; Flo Spiege <flospiegel@gmx.de>
-ftp10.de		IN	A	80.132.118.165
+; ftp://leela.physik.uni-kl.de/linux/proftpd/
+; Christian Schumann <schumann@physik.uni-kl.de>
+ftp11.de		IN	A	131.246.236.201
+
+; ftp://ftp.proforma-medienagentur.de/Mirrors/proftpd/
+; Alex Strauss <webmaster@proforma-medienagentur.de>
+ftp12.de		IN	A	62.146.51.6
 
 ; ftp://ftp.jaquet.dk/pub/proftp/
 ; Rasmus <rasmus@jaquet.dk>
@@ -171,6 +171,10 @@ ftp1.dk		IN	A	217.157.160.207
 ; ftp://sunsite.dk/mirrors/proftpd/
 ; Martin Dalum <mirror@sunsite.dk>
 ftp2.dk		IN	A	130.225.247.90
+
+; ftp://mirror.estweb.ee/proftpd/
+; Ivari Horm <admin@estweb.ee>
+ftp1.ee		IN	A	194.204.30.173
 
 ; ftp://ftp.ubu.es/pub/mirror/proftpd/
 ; Pedro R. Benito <pedro@ubu.es>
@@ -352,7 +356,7 @@ ftp3.se		IN	A	212.37.1.26
 
 ; ftp://ftp.linux.se/pub/mirrors/proftpd/
 ; Martin Friberg <martin@wasanet.com>
-ftp4.se		IN	A	62.13.43.67
+ftp4.se		IN	A	217.115.54.118
 
 ; ftp://ftp.oss.eznetsols.org/proftpd/
 ; Network Operations Center <noc@eznetsols.com>
@@ -406,9 +410,13 @@ ftp5.uk		IN	A	195.157.37.113
 ; Leigh Jepson <leigh@midnightsoftware.co.uk>
 ftp6.uk		IN	A	62.255.248.218
 
+; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
+; ibiblio <admin@ibiblio.org>
+ftp1.us		IN	A	152.2.210.81
+
 ; ftp://ftp.kracked.com/pub/proftpd/
 ;  <micah@kracked.com>
-ftp3.us		IN	A	66.250.218.26
+ftp3.us		IN	A	68.62.246.204
 
 ; ftp://ftp.infoteam.com/pub/proftpd/
 ; Kenn Martin <kmartin@infoteam.com>
@@ -440,7 +448,7 @@ ftp14.us		IN	A	204.152.189.120
 
 ; ftp://ftp.linuxbox1.net/ProFTPD/
 ; Tony <admin@linuxbox1.net>
-ftp23.us		IN	A	198.133.160.53
+ftp23.us		IN	A	198.133.160.60
 
 ; ftp://ftp.sourwood.net/pub/ProFTPD/
 ; Matt Mozur <ftpmaster@sourwood.net>
@@ -464,17 +472,16 @@ ftp.ca		IN	A	216.95.162.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cn		IN	A	61.152.210.194
 ftp.cz		IN	A	194.108.36.130
-ftp.de		IN	A	131.246.236.201
 ftp.de		IN	A	131.220.43.1
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	141.2.114.129
 ftp.de		IN	A	137.248.152.16
 ftp.de		IN	A	193.175.24.42
-ftp.de		IN	A	143.93.144.24
+ftp.de		IN	A	143.93.152.20
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	141.24.190.77
 ftp.de		IN	A	195.247.131.34
-ftp.de		IN	A	80.132.118.165
+ftp.de		IN	A	131.246.236.201
 ftp.dk		IN	A	217.157.160.207
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	62.39.106.16
@@ -523,7 +530,7 @@ ftp.ru		IN	A	195.19.235.116
 ftp.se		IN	A	193.13.79.175
 ftp.se		IN	A	130.243.32.22
 ftp.se		IN	A	212.37.1.26
-ftp.se		IN	A	62.13.43.67
+ftp.se		IN	A	217.115.54.118
 ftp.sg		IN	A	202.79.178.226
 ftp.si		IN	A	193.95.210.16
 ftp.sk		IN	A	195.46.80.5
@@ -535,7 +542,7 @@ ftp.uk		IN	A	195.200.4.15
 ftp.uk		IN	A	193.61.32.162
 ftp.uk		IN	A	195.22.134.136
 ftp.uk		IN	A	62.255.248.218
-ftp.us		IN	A	66.250.218.26
+ftp.us		IN	A	68.62.246.204
 ftp.us		IN	A	207.246.83.6
 ftp.us		IN	A	66.116.76.13
 ftp.us		IN	A	207.250.4.2
@@ -572,10 +579,6 @@ www1.bg		IN	A	212.50.21.33
 ; Alexander Velin <velin@bastun.net>
 www2.bg		IN	A	194.12.255.250
 
-; http://proftpd.activalink.net/
-; Ervin Sarkisov <>
-www1.ca		IN	A	63.111.27.24
-
 ; http://proftpd.asylog.net/
 ; Escario Julien <mirrors@asylog.net>
 www1.ch		IN	A	193.246.250.178
@@ -587,10 +590,6 @@ www4.cn		IN	A	218.107.145.8
 ; http://proftpd.uasw.edu/
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
 www1.de		IN	A	141.41.5.16
-
-; http://proftp.serveftp.org/
-; Flo Spiege <flospiegel@gmx.de>
-www3.de		IN	A	80.132.118.165
 
 ; http://www.proftpd.cw-services.net/
 ; Tim Korves <tim.korves@cw-services.net>
@@ -626,7 +625,7 @@ www3.hk		IN	A	210.0.192.158
 
 ; http://proftpd.cafesrv.com/
 ; Lam KW <mirror@cafesrv.com>
-www4.hk		IN	A	202.134.80.245
+www4.hk		IN	A	210.245.165.10
 
 ; http://proftpd.mirror.stop.hu/
 ;  telnet Co. mirror admin < mirror@download.stop.hu>
@@ -636,13 +635,17 @@ www1.hu		IN	A	212.75.128.75
 ; Asfihani <asfik@its-sby.edu>
 www1.id		IN	A	202.145.6.61
 
+; http://proftpd.nurulfikri.co.id/
+; Reza Iskandar Achmad <shiro@nurulfikri.co.id>
+www3.id		IN	A	202.59.161.81
+
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
 
-; http://proftpd.isr.ath.cx/
-; Murphy <murphy@isr.ath.cx/>
-www1.il		IN	A	62.90.197.58
+; http://proftpd.web-spread.com/
+; Fabio Massi <mirrors@web-spread.com>
+www2.it		IN	A	213.203.144.41
 
 ; http://proftpd.ayamura.org/
 ; Ayamura Kikuchi <ayamura@ayamura.org>
@@ -659,6 +662,10 @@ www1.my		IN	A	202.190.177.20
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
 www1.nl		IN	A	80.84.224.16
+
+; http://megaworld.concepts.nl/proftpd/
+; Dj MegaWorld / Marius van Witzenburg <info@djmegaworld.nl>
+www2.nl		IN	A	213.197.11.24
 
 ; http://proftpd.polbiznes.pl/
 ; Marian Witkowski <marian@polbiznes.pl>
@@ -716,6 +723,10 @@ www5.uk		IN	A	81.97.225.82
 ; Phil Barnett <midnight@the-oasis.net>
 www1.us		IN	A	65.222.231.206
 
+; http://www.eerie.us/mirror/
+; Eric Gragg <shamrock@eerie.us>
+www2.us		IN	A	216.90.96.125
+
 ; http://proftpd.ethereal.com/
 ; Gerald Combs <gerald@ethereal.com>
 www6.us		IN	A	65.208.228.223
@@ -739,11 +750,9 @@ www.ba		IN	A	195.252.66.130
 www.be		IN	A	212.100.160.33
 www.bg		IN	A	212.50.21.33
 www.bg		IN	A	194.12.255.250
-www.ca		IN	A	63.111.27.24
 www.ch		IN	A	193.246.250.178
 www.cn		IN	A	218.107.145.8
 www.de		IN	A	141.41.5.16
-www.de		IN	A	80.132.118.165
 www.de		IN	A	217.160.142.10
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.27.32.67
@@ -753,8 +762,8 @@ www.fr		IN	A	213.186.36.219
 www.hk		IN	A	202.181.239.19
 www.hu		IN	A	212.75.128.75
 www.id		IN	A	202.145.6.61
+www.id		IN	A	202.59.161.81
 www.ie		IN	A	193.120.14.243
-www.il		IN	A	62.90.197.58
 www.jp		IN	A	219.165.110.102
 www.lv		IN	A	80.81.32.231
 www.nl		IN	A	80.84.224.16
