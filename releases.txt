@@ -44,7 +44,7 @@ Release Checklist:
    b. upload files to core account, in the proper place under
       Proftpd/ftp.proftpd.org/.  Make sure to update MD5SUMS file in
       distrib/packages/RPMS.
-   c. then run: sitecopy -you proftpd-rsync-ftp.  This will propagate the
+   c. then run: sitecopy -u proftpd-rsync-ftp.  This will propagate the
       new files as necessary
 
 10. Announce on lists: -announce, -devel, -users
