@@ -27,6 +27,8 @@ aah:		aah@acm.org
 jwm:		jwm@horde.net
 # MacGyver
 macgyver:	macgyver@tos.net
+# Charles Seeger <seeger@cise.ufl.edu>
+seeger:		seeger@cise.ufl.edu
 #------------------------------------------------------------
 #
 # Core aliases
