@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2004081103      ; Serial
+                              2004092300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -100,13 +100,13 @@ www1.bg		IN	A	212.50.21.33
 ; Alexander Velin <velin@bastun.net>
 www2.bg		IN	A	194.12.255.250
 
-; http://proftpd.activalink.net/
-; Ervin Sarkisov <>
-www1.ca		IN	A	212.100.233.155
-
 ; http://proftpd.asylog.net/
 ; Escario Julien <mirrors@asylog.net>
 www1.ch		IN	A	62.2.255.42
+
+; http://proftpd.iseetimes.com/
+; lihaiquan <lihaiquan4iseetimes@hotmail.com>
+www1.cn		IN	A	211.142.52.235
 
 ; http://proftpd.lemon4ssc.org/
 ; Liu Kang <liukange@netease.com>
@@ -116,10 +116,6 @@ www4.cn		IN	A	219.239.98.8
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
 www1.de		IN	A	141.41.5.16
 
-; http://www.proftpd.cw-services.net/
-; Tim Korves <tim.korves@cw-services.net>
-www11.de		IN	A	80.190.251.105
-
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
 www1.dk		IN	A	217.157.160.207
@@ -127,10 +123,6 @@ www1.dk		IN	A	217.157.160.207
 ; http://proftpd.seasonfive.com/
 ; Yannick Lecaillez <mirrors@seasonfive.com>
 www1.fr		IN	A	212.43.248.244
-
-; http://proftpd.proxad.net/
-; Benoit Artuso <>
-www2.fr		IN	A	213.228.0.141
 
 ; http://proftpd.numericable.fr/
 ; NOC <noc@numericable.fr>
@@ -148,29 +140,13 @@ www6.fr		IN	A	213.166.201.49
 ; pyjamas <pyjamas@bylinux.net>
 www1.hk		IN	A	202.64.181.18
 
-; http://proftpd.hknetworks.com/
-; Stanley Au <mirror@hknetworks.com>
-www3.hk		IN	A	210.0.192.158
-
-; http://proftpd.cafesrv.com/
-; Lam KW <mirror@cafesrv.com>
-www4.hk		IN	A	210.245.165.10
-
 ; http://proftpd.cakraweb.com/
 ; Asfihani <asfik@its-sby.edu>
 www1.id		IN	A	202.145.6.61
 
-; http://proftpd.nurulfikri.co.id/
-; Reza Iskandar Achmad <shiro@nurulfikri.co.id>
-www3.id		IN	A	202.155.61.121
-
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
-
-; http://proftpd.isr.ath.cx/
-; Murphy <murphy@isr.ath.cx/>
-www1.il		IN	A	82.80.252.83
 
 ; http://proftpd.ogreland.lv/
 ; core <core@ogreland.lv>
@@ -303,22 +279,17 @@ www.ba		IN	A	217.23.202.130
 www.be		IN	A	212.100.160.33
 www.bg		IN	A	212.50.21.33
 www.bg		IN	A	194.12.255.250
-www.ca		IN	A	212.100.233.155
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.de		IN	A	141.41.5.16
-www.de		IN	A	80.190.251.105
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
-www.fr		IN	A	213.228.0.141
 www.fr		IN	A	81.220.255.20
 www.fr		IN	A	195.221.21.36
 www.fr		IN	A	213.166.201.49
 www.hk		IN	A	202.64.181.18
 www.id		IN	A	202.145.6.61
-www.id		IN	A	202.155.61.121
 www.ie		IN	A	193.120.14.243
-www.il		IN	A	82.80.252.83
 www.lv		IN	A	159.148.92.140
 www.nl		IN	A	80.84.224.16
 www.nl		IN	A	213.197.11.24
@@ -341,6 +312,7 @@ www.uk		IN	A	82.7.64.144
 www.us		IN	A	216.90.96.125
 www.us		IN	A	216.240.32.40
 www.us		IN	A	65.208.228.223
+www.us		IN	A	66.90.104.101
 www.us		IN	A	65.86.136.194
 www.us		IN	A	66.92.74.33
 
@@ -400,6 +372,10 @@ ftp1.ch		IN	A	212.101.4.244
 ; ftp://ftp.linuxforum.net/ftp.proftpd.org/
 ; David <david@linuxforum.net>
 ftp1.cn		IN	A	61.152.210.194
+
+; ftp://proftpd.iseetimes.com/proftpd.org/
+; lihaiquan <lihaiquan4iseetimes@hotmail.com>
+ftp2.cn		IN	A	211.142.52.235
 
 ; ftp://ftp.its.cz/MIRRORS/ftp.proftpd.org/
 ; Lumir <lm@its.cz>
