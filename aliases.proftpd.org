@@ -25,6 +25,7 @@ spamtrap:	spamtrap@korenwolf.net
 anonymous:	spamtrap
 #------------------------------------------------------------
 proftp-announce-requ:		spamtrap
+flood:				spamtrap
 ftpd-devel:			spamtrap
 nonymous:			spamtrap
 roftp-announce-admin:		spamtrap
@@ -43,7 +44,6 @@ root:				spamtrap
 # Users
 #
 #------------------------------------------------------------
-flood:		core
 jss:		core
 macgyver:	core
 seeger:		core
