@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003051604      ; Serial
+                              2003060800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -12,6 +12,8 @@
 
                     IN  NS    library.lspace.org.
                     IN  NS    shaguar.ptroc.rpa.net.
+                    IN  NS    boost.horde.net.
+                    IN  NS    ns1.cluenet.de.
                     IN  NS    haley.ptroc.rpa.net.
 
 ; mail handling
