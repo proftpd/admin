@@ -44,8 +44,8 @@ root:				spamtrap
 #
 #------------------------------------------------------------
 # Jesse S Sipprell
-flood:		jss@inflicted.net
-jss:		flood
+flood:		core@proftpd.org
+jss:		core@proftpd.org
 # TJ Saunders
 tj:		tj@castaglia.org
 # Daniel Roesen <dr@cluenet.de>
@@ -65,7 +65,7 @@ seeger:		seeger@cise.ufl.edu
 # Core aliases
 #
 #------------------------------------------------------------
-core:		flood,tj,dr,hamster,aah,jwm
+core:		tj,dr,hamster,aah,jwm
 security:	core
 bugs:		core
 #------------------------------------------------------------
