@@ -102,11 +102,11 @@ proftpd-devel-request:    proftp-devel-request@lists.sourceforge.net
 owner-proftpd-devel:      proftp-devel-admin@lists.sourceforge.net
 proftpd-devel-owner:      proftp-devel-admin@lists.sourceforge.net
 
-proftp-devel:             proftp-devel@lists.sourceforge.net
-proftp-devel-admin:       proftp-devel-admin@lists.sourceforge.net
-proftp-devel-request:     proftp-devel-request@lists.sourceforge.net
-owner-proftp-devel:       proftp-devel-admin@lists.sourceforge.net
-proftp-devel-owner:       proftp-devel-admin@lists.sourceforge.net
+proftp-devel:             proftpd-devel
+proftp-devel-admin:       proftpd-devel-admin
+proftp-devel-request:     proftpd-devel-request
+owner-proftp-devel:       proftpd-devel-admin
+proftp-devel-owner:       proftpd-devel-admin
 #------------------------------------------------------------
 # proftpd-mirrors
 proftpd-mirrors:          proftp-mirrors@lists.sourceforge.net

@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2002111900      ; Serial
+                              2002112800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -27,7 +27,7 @@ www                 IN  A     195.200.3.70
 ftp                 IN  A     216.10.40.219
 ;;bugs                IN  A     216.38.134.77
 bugs                IN  A     216.42.80.181
-rsync               IN  A     80.71.6.69
+rsync               IN  A     213.160.111.14
 
 ; Please do not edit above this line
 ; ***********************************************************************
