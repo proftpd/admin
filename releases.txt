@@ -1,6 +1,6 @@
 Release Checklist:
 
-1. Make sure the tree builds cleanly:
+1. Make sure a *fresh CVS tree* builds cleanly:
 
    + no warnings (other than mod_auth_pam) using --enable-devel
 
