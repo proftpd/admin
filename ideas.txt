@@ -45,12 +45,24 @@ Events API
 
       core.max-instances
       core.max-connect-rate
-      mod_auth.max-login-attempts
+
+    And signals:
+
+      core.signal.SEGV
+      core.signal.TERM
+      core.signal.USR1
+      core.signal.USR2
+
+    The advantage of registering event handlers for signal events, rather
+    than just registering your own signal handler, is that this way modules
+    can provide their own signal handler code without disrupting any core
+    handlers; a given signal can have multiple handlers.
 
     Or, in mod_auth's handling of the MaxClients et al directives:
 
       mod_auth.max-clients
       mod_auth.max-clients-per-user
+      mod_auth.max-login-attempts
 
     Such an API makes it quite easy to register callbacks for as-yet-undefined
     events: the event name need only be added in the future, but the
