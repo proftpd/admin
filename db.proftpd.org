@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2002120200      ; Serial
+                              2002120201      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -26,7 +26,8 @@
 
 www                 IN  A     195.200.3.70
 ftp                 IN  A     216.10.40.219
-bugs                IN  A     216.42.80.181
+bugs                IN  CNAME boost.horde.net.
+cvs                 IN  CNAME boost.horde.net.
 rsync               IN  A     213.160.111.14
 
 ; Please do not edit above this line
