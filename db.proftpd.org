@@ -41,6 +41,10 @@ cvs                 IN  CNAME boost.horde.net.
 ; Daniel Austin <daniel@g-mapps.com>
 rsync               IN  A     195.22.134.14
 
+; generic services/playground
+; -- robe@amd.co.at
+workshop            IN  A     81.223.238.142
+
 ; ***********************************************************************
 ; Language mirrors
 ; ***********************************************************************
