@@ -1,0 +1,114 @@
+#------------------------------------------------------------
+#
+# proftpd.org email alias file
+#
+#------------------------------------------------------------
+abuse:		flood
+postmaster:	flood
+hostmaster:	core
+webmaster:	core
+#------------------------------------------------------------
+#
+# Users
+#
+#------------------------------------------------------------
+# Jesse S Sipprell
+flood:		jss@inflicted.net
+jss:		flood
+# TJ Saunders
+tj:		tj@castaglia.org
+#
+dr:
+# Mark Lowes 
+hamster:	hamster@korenwolf.net
+# Andrew Houghton 
+aah:		aah@acm.org
+# John Morrissey 
+jwm:		jwm@horde.net
+#------------------------------------------------------------
+#
+# Core aliases
+#
+#------------------------------------------------------------
+core:		flood,tj,dr,hamster,aah,jwm
+security:	core
+#------------------------------------------------------------
+#
+# Lists
+#
+#------------------------------------------------------------
+# proftpd-users
+proftpd-users:            proftp-users@lists.sourceforge.net
+proftpd-users-admin:      proftp-users-admin@lists.sourceforge.net
+proftpd-users-request:    proftp-users-request@lists.sourceforge.net
+owner-proftpd-users:      proftp-users-admin@lists.sourceforge.net
+proftpd-users-owner:      proftp-users-admin@lists.sourceforge.net
+
+proftpd-user:            proftp-users@lists.sourceforge.net
+proftpd-user-admin:      proftp-users-admin@lists.sourceforge.net
+proftpd-user-request:    proftp-users-request@lists.sourceforge.net
+owner-proftpd-user:      proftp-users-admin@lists.sourceforge.net
+proftpd-user-owner:      proftp-users-admin@lists.sourceforge.net
+
+proftp-user:            proftp-users@lists.sourceforge.net
+proftp-user-admin:      proftp-users-admin@lists.sourceforge.net
+proftp-user-request:    proftp-users-request@lists.sourceforge.net
+owner-proftp-user:      proftp-users-admin@lists.sourceforge.net
+proftp-user-owner:      proftp-users-admin@lists.sourceforge.net
+#------------------------------------------------------------
+# proftpd-devel
+proftpd-devel:            proftp-devel@lists.sourceforge.net
+proftpd-devel-admin:      proftp-devel-admin@lists.sourceforge.net
+proftpd-devel-request:    proftp-devel-request@lists.sourceforge.net
+owner-proftpd-devel:      proftp-devel-admin@lists.sourceforge.net
+proftpd-devel-owner:      proftp-devel-admin@lists.sourceforge.net
+
+proftp-devel:             proftp-devel@lists.sourceforge.net
+proftp-devel-admin:       proftp-devel-admin@lists.sourceforge.net
+proftp-devel-request:     proftp-devel-request@lists.sourceforge.net
+owner-proftp-devel:       proftp-devel-admin@lists.sourceforge.net
+proftp-devel-owner:       proftp-devel-admin@lists.sourceforge.net
+#------------------------------------------------------------
+# proftpd-mirrors
+proftpd-mirrors:          proftp-mirrors@lists.sourceforge.net
+proftpd-mirrors:          proftp-mirrors@lists.sourceforge.net
+proftpd-mirrors-admin:    proftp-mirrors-admin@lists.sourceforge.net
+proftpd-mirrors-request:  proftp-mirrors-request@lists.sourceforge.net
+owner-proftpd-mirrors:    proftp-mirrors-admin@lists.sourceforge.net
+proftpd-mirrors-owner:    proftp-mirrors-admin@lists.sourceforge.net
+
+proftp-mirrors:           proftp-mirrors@lists.sourceforge.net
+proftp-mirrors-admin:     proftp-mirrors-admin@lists.sourceforge.net
+proftp-mirrors-request:   proftp-mirrors-request@lists.sourceforge.net
+owner-proftp-mirrors:     proftp-mirrors-admin@lists.sourceforge.net
+proftp-mirrors-owner:     proftp-mirrors-admin@lists.sourceforge.net
+#------------------------------------------------------------
+# proftpd-announce
+proftpd-announce:          proftp-announce@lists.sourceforge.net
+proftpd-announce:          proftp-announce@lists.sourceforge.net
+proftpd-announce-admin:    proftp-announce-admin@lists.sourceforge.net
+proftpd-announce-request:  proftp-announce-request@lists.sourceforge.net
+owner-proftpd-announce:    proftp-announce-admin@lists.sourceforge.net
+proftpd-announce-owner:    proftp-announce-admin@lists.sourceforge.net
+
+proftp-announce:           proftp-announce@lists.sourceforge.net
+proftp-announce-admin:     proftp-announce-admin@lists.sourceforge.net
+proftp-announce-request:   proftp-announce-request@lists.sourceforge.net
+owner-proftp-announce:     proftp-announce-admin@lists.sourceforge.net
+proftp-announce-owner:     proftp-announce-admin@lists.sourceforge.net
+#------------------------------------------------------------
+# proftpd-docs
+proftpd-docs:          proftp-docs@lists.sourceforge.net
+proftpd-docs:          proftp-docs@lists.sourceforge.net
+proftpd-docs-admin:    proftp-docs-admin@lists.sourceforge.net
+proftpd-docs-request:  proftp-docs-request@lists.sourceforge.net
+owner-proftpd-docs:    proftp-docs-admin@lists.sourceforge.net
+proftpd-docs-owner:    proftp-docs-admin@lists.sourceforge.net
+
+proftp-docs:           proftp-docs@lists.sourceforge.net
+proftp-docs-admin:     proftp-docs-admin@lists.sourceforge.net
+proftp-docs-request:   proftp-docs-request@lists.sourceforge.net
+owner-proftp-docs:     proftp-docs-admin@lists.sourceforge.net
+proftp-docs-owner:     proftp-docs-admin@lists.sourceforge.net
+
+
