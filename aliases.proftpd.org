@@ -64,7 +64,7 @@ robe:		robe@amd.co.at
 # Core aliases
 #
 #------------------------------------------------------------
-core:		tj,dr,hamster,aah,jwm,robe
+core:		tj,dr,hamster,jwm,robe
 security:	core
 bugs:		core
 #------------------------------------------------------------
