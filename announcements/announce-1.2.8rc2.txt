@@ -1,0 +1,70 @@
+Hello, ProFTPD community. The ProFTPD Project team is pleased to announce
+that the second release candidate for ProFTPD 1.2.8 is now available
+for public consumption.
+
+You can download 1.2.8rc2, including PGP signatures and MD5 sums, from any
+of the proftpd mirrors.  Mirrors are available via FTP as
+
+  ftp.<two_letter_iso_country_code>.proftpd.org
+
+(example: ftp.nl.proftpd.org).  Not all countries have mirrors; however
+you should select one that is geographically close to you.
+
+Alternatively, you can download proftpd from the main site:
+
+  ftp://ftp.proftpd.org/distrib/source
+
+RPMs, once available, will be placed here:
+
+  ftp://ftp.proftpd.org/distrib/packages/RPMS
+
+The 1.2.8rc2 release is mostly a bugfix release, with some additions:
+
+  - AuthOrder now works correctly
+
+  - Fixed LogFormat variables %L, %N, %f
+
+  - Fixed syslog logging on SGI
+
+  - tcpReceiveWindow and tcpSendWindow directives now work properly
+
+  - ftptop now supports a mode displaying transfer rates.  Use the 't'
+    key to toggle between display modes.
+
+  - "home on demand" feature finally added, using the CreateHome directive
+
+  - several bugs in mod_radius fixed
+
+Please read the included NEWS and ChangeLog files for the full details.
+The doc/Configuration.html file will document syntax for new directives
+(e.g.  AuthOrder, CreateHome, DebugLevel, ServerLog, TransferRate).
+
+The MD5 sums for the source tarballs are:
+
+  1bc99a01cf66aa818219f4c43fb11b4a  proftpd-1.2.8rc2.tar.bz2
+  ee3fa1dd22c75d7f039438d46029d57c  proftpd-1.2.8rc2.tar.gz
+
+The PGP signatures for the source tarballs are:
+
+  proftpd-1.2.8rc2.tar.bz2:
+
+    -----BEGIN PGP SIGNATURE-----
+    Version: PGP 6.5.8
+
+    iQA/AwUAPjgTP7eOiT+lEZdqEQJhKQCcCrYJgFQxl8f+MRjYX6+eByoSTXIAmgPz
+    4j/obyc/0H5GWATkJiXOMO1+
+    =rQt6
+    -----END PGP SIGNATURE-----
+
+  proftpd-1.2.8rc2.tar.gz:
+
+    -----BEGIN PGP SIGNATURE-----
+    Version: PGP 6.5.8
+
+    iQA/AwUAPjgTNreOiT+lEZdqEQLO2wCgnVWsKb/KUjjJaKAEbi2uOPh8mJQAn3o3
+    DBY8oqYiF3UM+3kCNQHVDD30
+    =99bM
+    -----END PGP SIGNATURE-----
+
+My PGP key has been used to sign the source tarballs as well as this
+announcement; it is available via MIT's public keyserver.
