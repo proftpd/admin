@@ -1,0 +1,121 @@
+
+This is to be a sort of project maintainer(s)' guide, a collection of notes,
+ideas, thoughts, experiences, etc to which we can all add.
+
+Infrastructure
+  Core Members
+    + Keep in touch with them regularly
+    + Keep an emergency contact list.  Sometimes a core member who
+      really understands a vital subsystem is on vacation when a crucial
+      bug in that subsystem is found. 
+
+  Email
+    + Sign project-wide announcements with the project PGP/GPG key
+
+  DNS
+    + Do NOT let this expire.  Trust me on this one.
+    + Do NOT lose the administrative contact address for the registration.
+      Trust me on this one.
+
+  Website
+
+  CVS
+    + The source code *is* the project, in many ways.  Manage it well
+      with a version control system.  Make backups of the software,
+      including the version data, regularly.  The history of the source
+      is incredibly valuable, too.
+
+  Bugzilla
+    + Provide a way for users to easily report bugs.  Make backups of
+      this database regularly, for like source history, bug reports are
+      incredibly valuable.
+
+Policy
+  Handling Bugs
+    + Priority of bugs when fixing:
+        Security-related Bugs
+          - Regardless if they're core or contrib code.  There are users
+            out there who use this, and security is a concern.
+        Segfaults
+          - These reflect badly on the quality of the project.  Ideally,
+            they will never happen.
+        Broken Features
+
+     + Core vs Contrib
+       In general, bugs in the core code, including the default modules,
+       should be fixed over bugs in the contrib modules (those that
+       must be explicitly enabled when compiling).  There will be exceptions
+       to this; it's mostly a matter of determining, when prioritizing your
+       time and efforts, the largest number of users affected by a given
+       bug.
+
+  Coding Style
+    + Pick one, and *be consistent*
+    + Comments: I like them.  Some people feel that code should only be
+      commented at some points where it cannot be clearly determined from
+      the code what is happening.  I prefer to overly comment my code.
+      Like most style issues, it's a personal preference, and not really
+      worth flaming anyone over.
+
+  Testing
+    + Have a test suite
+
+  New Core Members
+
+  Release Cycles
+    Branching/Merging
+    Feature Addition
+    Feature Deprecation
+
+  Donations
+ 
+Support
+  Mailing Lists
+
+  Documentation
+    FAQ
+    Howtos
+    Translations
+    User Guide
+    Developer Guide
+
+  IRC
+
+  Evangelism?
+
+The Human Side
+  Frustration
+    + You will hear far more ignorant or frustrated questions and complaints
+      and bug reports from users than you will hear thanks or supportive
+      comments.  After a long stretch of time of these, you can find
+      yourself really wondering why you are bothering to help, when it
+      seems like such a flood of things going wrong.  Try to remember that
+      for every bug-reporting or frustrated user, there are probably
+      a few users who are silently happen with the application.
+
+      And, if nothing else, the constant stream of questions and bug
+      reports shows that lots of people are using it, which is what you
+      want, right? =)
+
+  Mistakes
+    + They WILL happen.
+
+        "Murphy -- he's real, and he's out to get *you*!"
+
+    + Keep calm, and respond professionally.  Inward you may be worried
+      or seething, but in cases like this, the users of the project will
+      be looking to you as a haven in a storm.
+
+  Angry/Insulting Users
+    + Try to ignore these
+    + Do NOT respond in kind, as this exacerbates things.  Fume and rant
+      about people like this as much as you want -- just do it away from
+      the keyboard, and not online.
+
+  Helpful/Inquisitive Users
+    + Encourage and develop these
+    + These are the kind of users you want to keep in your community,
+      so provide extra information as necessary, keep them interested,
+      see if there is something they can work on that is project-related
+
+At the end of the day, just remember to have fun with what you are doing!
