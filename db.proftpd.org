@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2002083003      ; Serial
+                              2002083004      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -172,6 +172,10 @@ ftp5.fr		IN	A	195.221.21.36
 ; Vaggelis Georgatos <proftpd@anwire.org>
 ftp1.gr		IN	A	195.134.99.74
 
+; ftp://proftpd.bylinux.net/pub/mirror/proftpd/
+; pyjamas <pyjamas@bylinux.net>
+ftp2.hk		IN	A	203.194.160.134
+
 ; ftp://ftp.fsn.hu/pub/proftpd/
 ; Attila Nagy <bra@fsn.hu>
 ftp1.hu		IN	A	195.228.252.133
@@ -245,10 +249,6 @@ ftp1.no		IN	A	212.62.224.2
 ; ftp://download.enitel.no/pub/proftpd/
 ; Jorn-Morten Innselset <jmi@enitel.no>
 ftp2.no		IN	A	194.19.2.8
-
-; ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/
-; Dag Stenstad <proftpd+baffle@truuz.com>
-ftp3.no		IN	A	195.139.52.131
 
 ; ftp://ftp.tomt.net/pub/proftpd
 ; Andre Tomt <andre@tomt.net>
@@ -460,6 +460,7 @@ ftp.fr		IN	A	212.27.32.67
 ftp.fr		IN	A	212.95.87.13
 ftp.fr		IN	A	195.221.21.36
 ftp.gr		IN	A	195.134.99.74
+ftp.hk		IN	A	203.194.160.134
 ftp.hu		IN	A	195.228.252.133
 ftp.hu		IN	A	195.228.252.132
 ftp.hu		IN	A	212.75.128.75
@@ -479,7 +480,6 @@ ftp.nl		IN	A	212.83.87.139
 ftp.nl		IN	A	212.0.224.63
 ftp.no		IN	A	212.62.224.2
 ftp.no		IN	A	194.19.2.8
-ftp.no		IN	A	195.139.52.131
 ftp.no		IN	A	62.70.95.158
 ftp.pl		IN	A	195.205.200.46
 ftp.pl		IN	A	193.219.28.2
@@ -580,6 +580,10 @@ www5.fr		IN	A	212.43.196.186
 ; http://proftpd.mirrors.ndsoftwarenet.com/
 ; NDSoftware <mirrors@ndsoftwarenet.com>
 www6.fr		IN	A	213.91.4.3
+
+; http://proftpd.bylinux.net/
+; pyjamas <pyjamas@bylinux.net>
+www1.hk		IN	A	203.194.160.134
 
 ; http://proftpd.mirror.stop.hu/
 ;  telnet Co. mirror admin < mirror@download.stop.hu>
@@ -696,10 +700,12 @@ www.ch		IN	A	193.246.250.178
 www.cn		IN	A	211.99.42.121
 www.de		IN	A	141.41.5.16
 www.de		IN	A	80.132.124.38
+www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.27.32.67
 www.fr		IN	A	195.221.21.36
 www.fr		IN	A	212.43.196.186
 www.fr		IN	A	213.91.4.3
+www.hk		IN	A	203.194.160.134
 www.hu		IN	A	212.75.128.75
 www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243

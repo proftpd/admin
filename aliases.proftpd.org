@@ -62,6 +62,7 @@ bugs:		core
 proftpd-users:            proftp-user@lists.sourceforge.net
 proftpd-users-admin:      proftp-user-admin@lists.sourceforge.net
 proftpd-users-request:    proftp-user-request@lists.sourceforge.net
+proftpd-request:    proftp-user-request@lists.sourceforge.net
 owner-proftpd-users:      proftp-user-admin@lists.sourceforge.net
 proftpd-users-owner:      proftp-user-admin@lists.sourceforge.net
 
