@@ -43,12 +43,13 @@ root:				spamtrap
 # Users
 #
 #------------------------------------------------------------
-# Jesse S Sipprell
-flood:		core@proftpd.org
-jss:		core@proftpd.org
+flood:		core
+jss:		core
+macgyver:	core
+seeger:		core
 # TJ Saunders
 tj:		tj@castaglia.org
-# Daniel Roesen <dr@cluenet.de>
+# Daniel Roesen
 dr:		dr@cluenet.de
 # Mark Lowes 
 hamster:	hamster@korenwolf.net
@@ -56,16 +57,14 @@ hamster:	hamster@korenwolf.net
 aah:		aah@acm.org
 # John Morrissey 
 jwm:		jwm@horde.net
-# MacGyver
-macgyver:	macgyver@tos.net
-# Charles Seeger <seeger@cise.ufl.edu>
-seeger:		seeger@cise.ufl.edu
+# Michael Renner
+robe:		robe@amd.co.at
 #------------------------------------------------------------
 #
 # Core aliases
 #
 #------------------------------------------------------------
-core:		tj,dr,hamster,aah,jwm
+core:		tj,dr,hamster,aah,jwm,robe
 security:	core
 bugs:		core
 #------------------------------------------------------------
