@@ -18,7 +18,9 @@
 ;; mail.vom.org.uk -- hamster@korenwolf.net
                     IN  MX    10 mail.vom.org.uk.
 ;; library.lspace.org -- hamster@korenwolf.net or ops@lspace.org
-                    IN  MX    10 library.lspace.org.
+                    IN  MX    20 library.lspace.org.
+;; groundhog.korenwolf.net -- hamster@korenwolf.net
+                    IN  MX    10 groundhog.korenwolf.net.
 ;; mail1.cluenet.de -- dr@proftpd.org
                     IN  MX    10 mail1.cluenet.de.
 
