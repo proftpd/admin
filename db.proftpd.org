@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003081902      ; Serial
+                              2003082100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -75,6 +75,10 @@ ftp2.at		IN	A	192.35.244.50
 ; Jason Andrade <jason@planetmirror.com>
 ftp1.au		IN	A	203.16.234.20
 ftp1.au		IN	A	203.16.234.19
+
+; ftp://proftpd.urc.bl.ac.yu/
+; Dragan Simic <dsimic@urc.bl.ac.yu>
+ftp1.ba		IN	A	195.252.66.130
 
 ; ftp://ftp.easynet.be/proftpd/
 ; Bert Vermeulen <ftp@be.easynet.net>
@@ -450,6 +454,7 @@ ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
 ftp.au		IN	A	203.16.234.20
 ftp.au		IN	A	203.16.234.19
+ftp.ba		IN	A	195.252.66.130
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	A	195.238.1.6
 ftp.bg		IN	A	194.12.255.250
@@ -551,6 +556,10 @@ www2.at		IN	A	192.35.244.50
 www2.au		IN	A	203.16.234.20
 www2.au		IN	A	203.16.234.19
 
+; http://proftpd.urc.bl.ac.yu/
+; Dragan Simic <dsimic@urc.bl.ac.yu>
+www1.ba		IN	A	195.252.66.130
+
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
 www1.be		IN	A	212.100.160.33
@@ -633,7 +642,7 @@ www1.ie		IN	A	193.120.14.243
 
 ; http://proftpd.isr.ath.cx/
 ; Murphy <murphy@isr.ath.cx/>
-www1.il		IN	A	62.90.197.220
+www1.il		IN	A	62.90.197.58
 
 ; http://proftpd.ayamura.org/
 ; Ayamura Kikuchi <ayamura@ayamura.org>
@@ -691,10 +700,6 @@ www2.ua		IN	A	217.198.131.181
 ; Mark Lowes <hamster@vom.tm>
 www1.uk		IN	A	195.200.3.70
 
-; http://programming.ccp14.ac.uk/ftp-mirror/programming/proftpd/
-; Lachlan Cranswick <lzc@dl.ac.uk>
-www2.uk		IN	A	193.61.32.164
-
 ; http://proftpd.networkedsystems.co.uk/
 ; fxp0 <daniel@kewlio.net>
 www3.uk		IN	A	195.22.134.136
@@ -730,6 +735,7 @@ www21.us		IN	A	66.92.74.33
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.20
 www.au		IN	A	203.16.234.19
+www.ba		IN	A	195.252.66.130
 www.be		IN	A	212.100.160.33
 www.bg		IN	A	212.50.21.33
 www.bg		IN	A	194.12.255.250
@@ -748,7 +754,7 @@ www.hk		IN	A	202.181.239.19
 www.hu		IN	A	212.75.128.75
 www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
-www.il		IN	A	62.90.197.220
+www.il		IN	A	62.90.197.58
 www.jp		IN	A	219.165.110.102
 www.lv		IN	A	80.81.32.231
 www.nl		IN	A	80.84.224.16
@@ -762,7 +768,6 @@ www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
 www.uk		IN	A	195.200.3.70
-www.uk		IN	A	193.61.32.164
 www.uk		IN	A	195.22.134.136
 www.uk		IN	A	195.157.37.113
 www.uk		IN	A	81.97.225.82
