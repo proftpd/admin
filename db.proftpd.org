@@ -31,7 +31,8 @@ www                 IN  A     195.200.3.70
 ftp                 IN  A     213.229.10.109
 bugs                IN  CNAME boost.horde.net.
 cvs                 IN  CNAME boost.horde.net.
-rsync               IN  A     213.160.111.14
+; Daniel Austin <daniel@g-mapps.com>
+rsync               IN  A     195.22.134.14
 
 ; Please do not edit above this line
 ; ***********************************************************************
