@@ -9,7 +9,11 @@ Release Checklist:
 
 3. Update autoconf script (if necessary)
 
-4. Update ChangeLog
+4. Update ChangeLog and documentation
+   a. Run pdd/Userguide/directives/build_output.sh and let it crank away
+   b. Commit updated versions of by_name_source.sgml and
+      configuration_full.html (in pdd/Userguide/directives/output/)
+      as proftpd/docs/Configuration.{sgml,html}
 
 5. Tag CVS module for release.
   a. cvs rtag <tag> proftpd, e.g. R1_2_5RC3
