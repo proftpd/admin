@@ -2,15 +2,15 @@
 ; BIND zone file for proftpd.org
 ;
 ; $Id$
-@                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2004020200      ; Serial
+@                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
+                              2004031800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
                               86400           ; min ttl
                               )
 
-                    IN  NS    library.lspace.org.
+                    IN  NS    groundhog.korenwolf.net.
                     IN  NS    boost.horde.net.
                     IN  NS    ns1.cluenet.de.
 
