@@ -19,7 +19,6 @@ Release Checklist:
   b. remove CVS subdirs, .cvsignore files before tar'ing up.
      ./configure
      make dist
-     make distclean
 
 7. Sign/hash tarballs (.tar.{bz2,gz}.asc (PGP), .tar.{bz2,gz}.md5 (MD5))
   a. sign tarballs, e.g. pgp -sba
