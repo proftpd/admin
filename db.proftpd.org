@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2002102100      ; Serial
+                              2002111900      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -20,7 +20,7 @@
                     IN  MX    10 library.lspace.org.
 ;; New MX not live yet, do not enable until dr gives the all clear
 ;; mail1.cluenet.de. -- dr@proftpd.org
-;;                    IN  MX    10 mail1.cluenet.de.
+                    IN  MX    10 mail1.cluenet.de.
 ; default IP
                     IN  A     195.200.3.70
 www                 IN  A     195.200.3.70
