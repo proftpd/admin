@@ -14,6 +14,15 @@ abuse:		flood
 postmaster:	flood
 hostmaster:	core
 webmaster:	core
+archive:	proftpd@weasel.korenwolf.net
+#------------------------------------------------------------
+#
+# Spam trap addresses, anything in here is re-routed to a
+# trap because all it gets is spam
+#
+#------------------------------------------------------------
+spamtrap:	spambin@korenwolf.net
+anonymous:	spamtrap
 #------------------------------------------------------------
 #
 # Users
