@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2004010900      ; Serial
+                              2004012300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -11,10 +11,8 @@
                               )
 
                     IN  NS    library.lspace.org.
-                    IN  NS    shaguar.ptroc.rpa.net.
                     IN  NS    boost.horde.net.
                     IN  NS    ns1.cluenet.de.
-                    IN  NS    haley.ptroc.rpa.net.
 
 ; mail handling
 ;; mail.vom.org.uk -- hamster@korenwolf.net
