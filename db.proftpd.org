@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003111600      ; Serial
+                              2003111601      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -613,10 +613,6 @@ www4.cn		IN	A	218.107.145.8
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
 www1.de		IN	A	141.41.5.16
 
-; http://www.proftpd.cw-services.net/
-; Tim Korves <tim.korves@cw-services.net>
-www11.de		IN	A	217.160.142.10
-
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
 www1.dk		IN	A	217.157.160.207
@@ -624,10 +620,6 @@ www1.dk		IN	A	217.157.160.207
 ; http://proftpd.seasonfive.com/
 ; Yannick Lecaillez <mirrors@seasonfive.com>
 www1.fr		IN	A	212.43.248.244
-
-; http://proftpd.proxad.net/
-; Benoit Artuso <>
-www2.fr		IN	A	213.228.0.141
 
 ; http://proftpd.numericable.fr/
 ; NOC <noc@numericable.fr>
@@ -648,10 +640,6 @@ www1.hk		IN	A	202.181.239.19
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
 www3.hk		IN	A	210.0.192.158
-
-; http://proftpd.cafesrv.com/
-; Lam KW <mirror@cafesrv.com>
-www4.hk		IN	A	210.245.165.10
 
 ; http://proftpd.mirror.stop.hu/
 ;  telnet Co. mirror admin < mirror@download.stop.hu>
@@ -779,9 +767,7 @@ www.bg		IN	A	194.12.255.250
 www.ch		IN	A	193.246.250.178
 www.cn		IN	A	218.107.145.8
 www.de		IN	A	141.41.5.16
-www.de		IN	A	217.160.142.10
 www.dk		IN	A	217.157.160.207
-www.fr		IN	A	213.228.0.141
 www.fr		IN	A	80.236.0.239
 www.fr		IN	A	195.221.21.36
 www.fr		IN	A	213.186.36.219
