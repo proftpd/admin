@@ -122,7 +122,8 @@ The Human Side
       yourself really wondering why you are bothering to help, when it
       seems like such a flood of things going wrong.  Try to remember that
       for every bug-reporting or frustrated user, there are probably
-      a few users who are silently happen with the application.
+      a few users who are very happy with the application (just silent
+      about it).
 
       And, if nothing else, the constant stream of questions and bug
       reports shows that lots of people are using it, which is what you
