@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2002070700      ; Serial
+                              2002071000      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -14,20 +14,13 @@
                     IN  NS    shaguar.ptroc.rpa.net.
                     IN  NS    haley.ptroc.rpa.net.
 ; mail handling
-;                    IN  MX    10 collide.evcom.net.
                     IN  MX    10 mail.vom.org.uk.
-                    IN  MX    20 library.lspace.org.
+                    IN  MX    10 library.lspace.org.
 ; default IP
-;                    IN  A     216.10.40.219
-;www                 IN  A     216.10.40.219
-;
-; Moving www to ftech's servers
-;
                     IN  A     195.200.3.70
 www                 IN  A     195.200.3.70
 ftp                 IN  A     216.10.40.219
 bugs                IN  A     216.38.134.77
-;cvs                 IN  CNAME bastard.inflicted.net.
 rsync               IN  A     80.71.6.69
 
 ; Please do not edit above this line
