@@ -2,10 +2,14 @@ Release Checklist:
 
 1. Make sure the tree builds cleanly:
 
-     no warnings (other than mod_auth_pam) using --enable-devel
-     few warnings/failures when running it under valgrind
-     no warnings/failures when building on the main three platforms:
-       Linux, Solaris, FreeBSD
+   + no warnings (other than mod_auth_pam) using --enable-devel
+
+   + few warnings/failures when running it under valgrind
+
+   + no warnings/failures when building on the main three platforms:
+     Linux, Solaris, FreeBSD
+     
+   + all contrib modules compile
 
 2. Notify core in advance of pending release (24-48 hours)
 
