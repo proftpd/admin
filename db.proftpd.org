@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003111801      ; Serial
+                              2003112001      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -641,17 +641,9 @@ www1.hk		IN	A	202.181.239.19
 ; Stanley Au <mirror@hknetworks.com>
 www3.hk		IN	A	210.0.192.158
 
-; http://proftpd.mirror.stop.hu/
-;  telnet Co. mirror admin < mirror@download.stop.hu>
-www1.hu		IN	A	212.75.128.75
-
 ; http://proftpd.cakraweb.com/
 ; Asfihani <asfik@its-sby.edu>
 www1.id		IN	A	202.145.6.61
-
-; http://proftpd.nurulfikri.co.id/
-; Reza Iskandar Achmad <shiro@nurulfikri.co.id>
-www3.id		IN	A	202.59.161.81
 
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
@@ -665,10 +657,6 @@ www1.jp		IN	A	219.165.110.102
 ; core <core@ogreland.lv>
 www1.lv		IN	A	195.244.128.24
 
-; http://proftpd.MyBSD.org.my/
-; Ahmad Faisal <faisal@MyBSD.org.my>
-www1.my		IN	A	202.190.177.20
-
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
 www1.nl		IN	A	80.84.224.16
@@ -676,14 +664,6 @@ www1.nl		IN	A	80.84.224.16
 ; http://megaworld.concepts.nl/proftpd/
 ; Dj MegaWorld / Marius van Witzenburg <info@djmegaworld.nl>
 www2.nl		IN	A	213.197.11.24
-
-; http://proftpd.polbiznes.pl/
-; Marian Witkowski <marian@polbiznes.pl>
-www1.pl		IN	A	80.55.61.130
-
-; http://proftpd.mysiar.net/
-; Mysiar <mysiar@mysiar.net>
-www3.pl		IN	A	80.48.165.51
 
 ; http://proftpd.zarco.org/
 ; Carlos Filipe <filipe@zarco.org>
@@ -768,20 +748,17 @@ www.ch		IN	A	193.246.250.178
 www.cn		IN	A	218.107.145.8
 www.de		IN	A	141.41.5.16
 www.dk		IN	A	217.157.160.207
+www.fr		IN	A	212.43.248.244
 www.fr		IN	A	80.236.0.239
 www.fr		IN	A	195.221.21.36
 www.fr		IN	A	213.186.36.219
 www.hk		IN	A	202.181.239.19
-www.hu		IN	A	212.75.128.75
 www.id		IN	A	202.145.6.61
-www.id		IN	A	202.59.161.81
 www.ie		IN	A	193.120.14.243
 www.jp		IN	A	219.165.110.102
 www.lv		IN	A	195.244.128.24
 www.nl		IN	A	80.84.224.16
 www.nl		IN	A	213.197.11.24
-www.pl		IN	A	80.55.61.130
-www.pl		IN	A	80.48.165.51
 www.pt		IN	A	213.190.192.119
 www.pt		IN	A	213.58.153.153
 www.ro		IN	A	80.97.112.172
