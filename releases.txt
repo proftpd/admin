@@ -1,0 +1,40 @@
+Release Checklist:
+
+1. Notify core in advance of pending release (24-48 hours)
+
+2. Update NEWS
+
+3. Update include/version.h
+   Update contrib/dist/rpm/proftpd.spec
+
+3. Update autoconf script (if necessary)
+
+4. Update ChangeLog
+
+5. Tag CVS module for release.
+  a. cvs rtag <tag> proftpd, e.g. R1_2_5RC3
+
+6. Create tarball (.tar.gz, .tar.bz2)
+  a. cvs checkout -r <tag>
+  b. remove CVS subdirs, .cvsignore files before tar'ing up.
+     ./configure
+     make dist
+     make distclean
+
+7. Sign/hash tarballs (.tar.{bz2,gz}.asc (PGP), .tar.{bz2,gz}.md5 (MD5))
+  a. sign tarballs, e.g. pgp -sba
+  b. PGP: write email announcement to file, use pgp -sta <file> to
+     produce signed message
+  c. PGP: verify a test email of the announcement to self (pgp (no options))
+
+8. Update md5_pgp.epl file w/ new MD5 sum, PGP signatures.
+
+9. Upload tarball, MD5 signature, PGP signatures, RPMs, to ftp.proftpd.org
+
+10. Announce on lists: -announce, -devel, -users
+
+11. Update Bugzilla with new component version tag
+
+12. Post release to freshmeat, c.o.l.a
+
+13. Update include/version.h in CVS.
