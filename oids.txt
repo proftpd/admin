@@ -1,9 +1,20 @@
-ProFTPD base OID:	1.3.6.1.4.1.17852
+ProFTPD base OID:		1.3.6.1.4.1.17852
 
-Core arc:		1.3.6.1.4.1.17852.1
+Core arc:			1.3.6.1.4.1.17852.1
 
-Modules arc:		1.3.6.1.4.1.17852.2
-  mod_ldap		1.3.6.1.4.1.17852.2.1
+Modules arc:			1.3.6.1.4.1.17852.2
+  mod_ldap			1.3.6.1.4.1.17852.2.1
 
-  mod_quotab_ldap	1.3.6.1.4.1.17852.2.1.2
-   + ftpQuota		1.3.6.1.4.1.17852.2.1.2.1
+  mod_quotab_ldap		1.3.6.1.4.1.17852.2.1.2
+   + Attributes			1.3.6.1.4.1.17852.2.1.2.1
+   + Objects			1.3.6.1.4.1.17852.2.1.2.2
+
+  mod_conf_ldap			1.3.6.1.4.1.17852.2.1.3
+   + Attributes			1.3.6.1.4.1.17852.2.1.3.1 
+     o ProFTPDConfContains	1.3.6.1.4.1.17852.2.1.3.1.1
+     o ProFTPDConfContext	1.3.6.1.4.1.17852.2.1.3.1.2
+     o ProFTPDConfDirective 	1.3.6.1.4.1.17852.2.1.3.1.3
+     o ProFTPDConfId    	1.3.6.1.4.1.17852.2.1.3.1.4
+
+   + Objects			1.3.6.1.4.1.17852.2.1.3.2
+     o ProFTPDConf		1.3.6.1.4.1.17852.2.1.3.2.1
