@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2002121801      ; Serial
+                              2003011001      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
