@@ -26,7 +26,10 @@ Release Checklist:
      produce signed message
   c. PGP: verify a test email of the announcement to self (pgp (no options))
 
-8. Update md5_pgp.epl file w/ new MD5 sum, PGP signatures.
+8. Update the web site:
+   * Update md5_pgp.epl file w/ new MD5 sum, PGP signatures.
+   * Update include/globals.epl with new version number(s).
+   * Update index.epl to announce the new release.
 
 9. Upload tarball, MD5 signature, PGP signatures, RPMs, to ftp.proftpd.org.
    Make sure to update MD5SUMS file in /distrib/packages/RPMS
