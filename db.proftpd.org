@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003030600      ; Serial
+                              2003031900      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -33,6 +33,8 @@ bugs                IN  CNAME boost.horde.net.
 cvs                 IN  CNAME boost.horde.net.
 ; Daniel Austin <daniel@g-mapps.com>
 rsync               IN  A     195.22.134.14
+;; Spanish translation site
+es                  IN  A     193.146.38.63
 
 ; Please do not edit above this line
 ; ***********************************************************************
