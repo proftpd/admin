@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2004062200      ; Serial
+                              2004062800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -50,7 +50,7 @@ workshop            IN  A     81.223.238.142
 de                  IN CNAME  www.proftpd.de.
 
 ; Spanish site: Lucas Garcia <tanke@escomposlinux.org>
-es                  IN A      193.146.38.63
+es                  IN A      163.117.156.54
 
 ; Please do not edit above this line
 ; ***********************************************************************
