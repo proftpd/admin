@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003011700      ; Serial
+                              2003022100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -27,8 +27,8 @@
 www                 IN  A     195.200.3.70
 ;; Old evcom site
 ;;ftp                 IN  A     216.10.40.219
-;; Robe's site
-ftp                 IN  A     213.229.10.109
+;; Robe/inode.at site
+ftp                 IN  A     81.223.20.36
 bugs                IN  CNAME boost.horde.net.
 cvs                 IN  CNAME boost.horde.net.
 ; Daniel Austin <daniel@g-mapps.com>
