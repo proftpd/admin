@@ -1,4 +1,3 @@
-
 Here's just some ideas for features for the future.  (Yes, as I freely
 admit, I'm one of the worst perpetrators of feeping creaturism for
 proftpd.)
@@ -70,16 +69,6 @@ Stackable FSIO
  Hmmm...will it be by order of fs_t registration, or by scope of mount
  point?  Probably by mount point first, general (e.g. '/') to specific;
  in the case of matching mount points, then in the order of registration.
-
-mod_conf_ldap
-  + module for reading/constructing proftpd.conf information from LDAP
-    (LDAP version of mod_conf_sql)
-
-  + The IANA has assigned the following Private Enterprise Number to
-    The ProFTPD Project: 17852
-
-mod_sql_sqlite, mod_sql_sqlite3
-  + mod_sql backend for the SQLite DBMS
 
 mod_sql_sybase
   + mod_sql backend for Sybase
