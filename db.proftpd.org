@@ -39,7 +39,10 @@ es                  IN  A     193.146.38.63
 ; ***********************************************************************
 ; Language mirrors
 ; ***********************************************************************
-; Spanish site Tanke <tanke@escomposlinux.org>
+; German site: Stefan Onken <support@stonki.de>
+de                  IN CNAME  www.proftpd.de.
+
+; Spanish site: Tanke <tanke@escomposlinux.org>
 es                  IN CNAME  galpon.org.
 
 ; Please do not edit above this line
