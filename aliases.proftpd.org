@@ -3,10 +3,13 @@
 # proftpd.org email alias file
 #
 #------------------------------------------------------------
+# Warning the default alias gets shed loads of junk
 *:		hamster
+#------------------------------------------------------------
 #
+# Important aliases
 #
-#
+#------------------------------------------------------------
 abuse:		flood
 postmaster:	flood
 hostmaster:	core
@@ -40,6 +43,7 @@ seeger:		seeger@cise.ufl.edu
 #------------------------------------------------------------
 core:		flood,tj,dr,hamster,aah,jwm
 security:	core
+bugs:		core
 #------------------------------------------------------------
 #
 # Lists
