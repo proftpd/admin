@@ -113,6 +113,15 @@ Table API
   ProFTPD has already done it, and multiple times in multiple places.
   This API would factor all of that code into a single place. 
 
+  Also, having a Table API like this will make it much easier to implement
+  loadable modules/DSO functionality, for it would allow for removal of
+  the necessary symbols when a module is unloaded.  Right now, trying to
+  remove symbols from the stash for an entire module is painful, mostly
+  because the stash stores all config handlers in one area, all auth
+  handlers in another, and all command handlers in a module.  Have a separate
+  per-module index table, mapping module to handlers, would make the
+  removal process easier.  I think.
+
 mod_conf_ldap
   + module for reading/constructing proftpd.conf information from LDAP
     (LDAP version of mod_conf_sql)
