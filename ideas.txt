@@ -71,57 +71,6 @@ Stackable FSIO
  point?  Probably by mount point first, general (e.g. '/') to specific;
  in the case of matching mount points, then in the order of registration.
 
-Table API
-
-  There are multiple hash tables in proftpd: there's the "stash", which
-  holds pointers to the various config handlers, auth handlers, command
-  handlers, and HOOKs; the Bindings API uses one that hashes based on
-  IP address; mod_sql uses one for caching user lookups.
-
-  It would be better to provide a daemon-wide API, one similar to Apache's
-  Table API (except that Apache's tables are actually implemented as
-  arrays, not as hashes).
-
-  In addition to the above places in the code, these tables could be used
-  for holding LogFormat/Display variables, for the various *data fields
-  in structures that are used to pass opaque data (e.g. privdata_t).
-  They could also be used to store the strings that are currently used
-  in responses and log messages; by moving the storage/retrieval of these
-  strings to tables, we allow for customizable response messages, and for
-  internationalized/localized strings, on a per-vhost basis, in the
-  future.
-
-  The API would look something like:
-
-    int pr_table_add(pr_table_t *tab, const void *key, void *value);
-    int pr_table_add_dup(pr_table_t *tab, const void *key, void *value,
-      size_t valuesz);
-    pr_table_t *pr_table_alloc(pool *p, int flags);
-    int pr_table_count(pr_table_t *tab);
-    int pr_table_exists(pr_table_t *tab, const void *key);
-    void pr_table_free(pr_table_t *tab);
-    void *pr_table_get(pr_table_t *tab, cont void *key);
-    int pr_table_map(pr_table_t *tab, int cb(void *value, void *user_data),
-      void *user_data, int flags);
-    void *pr_table_next(pr_table_t *tab);
-    void *pr_table_remove(pr_table_t *tab, const void *key);
-    void pr_table_rewind(pr_table_t *tab);
-    int pr_table_set(pr_table_t *tab, const void *key, void *value);
-    int pr_table_ctl(pr_table_t *tab, int cmd, void *arg);
-
-  Sure, everyone out there ends up implementing their own hash tables.
-  ProFTPD has already done it, and multiple times in multiple places.
-  This API would factor all of that code into a single place. 
-
-  Also, having a Table API like this will make it much easier to implement
-  loadable modules/DSO functionality, for it would allow for removal of
-  the necessary symbols when a module is unloaded.  Right now, trying to
-  remove symbols from the stash for an entire module is painful, mostly
-  because the stash stores all config handlers in one area, all auth
-  handlers in another, and all command handlers in a module.  Have a separate
-  per-module index table, mapping module to handlers, would make the
-  removal process easier.  I think.
-
 mod_conf_ldap
   + module for reading/constructing proftpd.conf information from LDAP
     (LDAP version of mod_conf_sql)
@@ -129,8 +78,11 @@ mod_conf_ldap
   + The IANA has assigned the following Private Enterprise Number to
     The ProFTPD Project: 17852
 
-mod_sql_sqlite
+mod_sql_sqlite, mod_sql_sqlite3
   + mod_sql backend for the SQLite DBMS
+
+mod_sql_sybase
+  + mod_sql backend for Sybase
 
 mod_search
   + implements a SITE SEARCH command, for using nftw(3), globs and regexs
