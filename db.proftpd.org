@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   library.lspace.org.  core.proftpd.org. (
-                              2003031900      ; Serial
+                              2003032003      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -35,6 +35,12 @@ cvs                 IN  CNAME boost.horde.net.
 rsync               IN  A     195.22.134.14
 ;; Spanish translation site
 es                  IN  A     193.146.38.63
+
+; ***********************************************************************
+; Language mirrors
+; ***********************************************************************
+; Spanish site Tanke <tanke@escomposlinux.org>
+es                  IN CNAME  galpon.org.
 
 ; Please do not edit above this line
 ; ***********************************************************************
@@ -108,7 +114,7 @@ ftp2.cz		IN	A	213.168.161.134
 
 ; ftp://leela.physik.uni-kl.de/linux/proftpd/
 ; Christian Schumann <schumann@physik.uni-kl.de>
-ftp1.de		IN	A	131.246.237.183
+ftp1.de		IN	A	131.246.236.201
 
 ; ftp://de.samba.org/proftpd.org/
 ; Noel Koethe <noel@koethe.net>
@@ -148,11 +154,15 @@ ftp9.de		IN	A	195.247.131.34
 
 ; ftp://proftp.serveftp.org/proftp/
 ; Flo Spiege <flospiegel@gmx.de>
-ftp10.de		IN	A	217.81.216.108
+ftp10.de		IN	A	217.229.49.50
 
 ; ftp://ftp.jaquet.dk/pub/proftp/
 ; Rasmus <rasmus@jaquet.dk>
 ftp1.dk		IN	A	217.157.160.207
+
+; ftp://sunsite.dk/mirrors/proftpd/
+; Martin Dalum <mirror@sunsite.dk>
+ftp2.dk		IN	A	130.225.247.90
 
 ; ftp://ftp.ubu.es/pub/mirror/proftpd/
 ; Pedro R. Benito <pedro@ubu.es>
@@ -257,7 +267,7 @@ ftp1.nl		IN	A	195.129.111.8
 
 ; ftp://mirror.cybercomm.nl/
 ; Maurice Sienema <beheer@cybercomm.nl>
-ftp2.nl		IN	A	213.196.1.39
+ftp2.nl		IN	A	213.204.195.9
 
 ; ftp://ftp.easynet.nl/mirror/proftp/
 ; Diederik <mirror@nl.easynet.net>
@@ -312,13 +322,13 @@ ftp1.ro		IN	A	217.73.174.7
 ; Dima Veselov <kab00m@lich.phys.spbu.ru>
 ftp1.ru		IN	A	195.19.235.116
 
-; ftp://ftp.eagle.y.se/pub/proftpd/
-; Martin Ostlund <mo@bestlinux.se>
-ftp1.se		IN	A	193.13.79.175
-
 ; ftp://ftp.du.se/pub/mirrors/proftpd/
 ; tol & dempa <ftpadmin@du.se>
 ftp2.se		IN	A	130.243.32.22
+
+; ftp://mirror1.dataphone.se/pub/ProFTPD/
+; Mirror Admin <mirror@dataphone.net>
+ftp3.se		IN	A	212.37.1.26
 
 ; ftp://ftp.linux.se/pub/mirrors/proftpd/
 ; Martin Friberg <martin@wasanet.com>
@@ -332,13 +342,13 @@ ftp5.se		IN	A	213.113.114.149
 ; Network Operations Center <noc@eznetsols.com>
 ftp1.sg		IN	A	203.208.242.217
 
-; ftp://ftp.its.si/pub/mirror/ftp.proftpd.org/
-; Tomaz Kostrevc <tomcat@blackadder.its.si>
-ftp1.si		IN	A	193.95.210.16
-
 ; ftp://proftpd.homelinux.net/proftpd-mirror/
 ; Sasa <webmaster@konik.homelinux.net>
 ftp1.si		IN	A	194.249.40.218
+
+; ftp://ftp.its.si/pub/mirror/ftp.proftpd.org/
+; Tomaz Kostrevc <tomcat@blackadder.its.si>
+ftp1.si		IN	A	193.95.210.16
 
 ; ftp://spirit.bentel.sk/mirrors/Proftpd/
 ; lubos klokner <erkac@profinet.sk>
@@ -347,6 +357,10 @@ ftp1.sk		IN	A	195.46.80.5
 ; ftp://ftp.gazi.edu.tr/pub/proftpd/
 ; Devrim SERAL <ftpadmin@ftp.gazi.edu.tr>
 ftp1.tr		IN	A	194.27.16.9
+
+; ftp://proftpd.rapid-server.com/
+; Alp Altunel <alp@rapid-server.com>
+ftp2.tr		IN	A	212.174.160.117
 
 ; http://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/
 ; KTH <kth@ftp.isu.edu.tw>
@@ -359,6 +373,7 @@ ftp2.tw		IN	A	210.202.191.200
 ; ftp://ftp.cis.nctu.edu.tw/proftpd/
 ; Eric Chen <help@cis.nctu.edu.tw>
 ftp4.tw		IN	A	140.113.166.121
+ftp4.tw		IN	A	140.113.168.121
 
 ; ftp://ftp.tlk-l.net/pub/mirrors/ftp.proftpd.org/
 ; Alexander Ryumshin <mizi@alkar.net>
@@ -453,7 +468,7 @@ ftp.ca		IN	A	216.95.162.46
 ftp.ch		IN	A	212.101.0.146
 ftp.cn		IN	A	61.152.210.194
 ftp.cz		IN	A	194.108.36.130
-ftp.de		IN	A	131.246.237.183
+ftp.de		IN	A	131.246.236.201
 ftp.de		IN	A	131.220.43.1
 ftp.de		IN	A	134.108.34.10
 ftp.de		IN	A	141.2.114.129
@@ -463,7 +478,7 @@ ftp.de		IN	A	143.93.144.24
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	141.24.190.77
 ftp.de		IN	A	195.247.131.34
-ftp.de		IN	A	217.81.216.108
+ftp.de		IN	A	217.229.49.50
 ftp.dk		IN	A	217.157.160.207
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	62.39.106.16
@@ -493,7 +508,7 @@ ftp.kr		IN	A	211.47.128.157
 ftp.lt		IN	A	193.219.186.45
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.129.111.8
-ftp.nl		IN	A	213.196.1.39
+ftp.nl		IN	A	213.204.195.9
 ftp.nl		IN	A	195.86.128.57
 ftp.no		IN	A	212.62.224.2
 ftp.no		IN	A	194.19.2.8
@@ -505,17 +520,19 @@ ftp.pl		IN	A	195.205.200.2
 ftp.pl		IN	A	212.244.88.59
 ftp.ro		IN	A	217.73.174.7
 ftp.ru		IN	A	195.19.235.116
-ftp.se		IN	A	193.13.79.175
 ftp.se		IN	A	130.243.32.22
+ftp.se		IN	A	212.37.1.26
 ftp.se		IN	A	62.13.43.67
 ftp.se		IN	A	213.113.114.149
 ftp.sg		IN	A	203.208.242.217
-ftp.si		IN	A	193.95.210.16
 ftp.si		IN	A	194.249.40.218
+ftp.si		IN	A	193.95.210.16
 ftp.sk		IN	A	195.46.80.5
 ftp.tr		IN	A	194.27.16.9
+ftp.tr		IN	A	212.174.160.117
 ftp.tw		IN	A	210.202.191.200
 ftp.tw		IN	A	140.113.166.121
+ftp.tw		IN	A	140.113.168.121
 ftp.ua		IN	A	195.248.190.23
 ftp.uk		IN	A	195.200.4.15
 ftp.uk		IN	A	193.61.32.162
@@ -575,7 +592,7 @@ www1.de		IN	A	141.41.5.16
 
 ; http://proftp.serveftp.org/
 ; Flo Spiege <flospiegel@gmx.de>
-www3.de		IN	A	217.81.216.108
+www3.de		IN	A	217.229.49.50
 
 ; http://www.proftpd.cw-services.net/
 ; Tim Korves <tim.korves@cw-services.net>
@@ -669,9 +686,9 @@ www1.ru		IN	A	195.19.235.116
 ; Network Operations Center <noc@eznetsols.com>
 www1.sg		IN	A	203.208.242.218
 
-; http://proftpd.homelinux.net/
-; Sasa <webmaster@konik.homelinux.net>
-www1.si		IN	A	194.249.40.218
+; http://proftpd.rapid-server.com/
+; Alp Altunel <alp@rapid-server.com>
+www1.tr		IN	A	212.174.160.117
 
 ; http://proftpd.cna.isu.edu.tw/
 ; KTH <kth@ftp.isu.edu.tw>
@@ -739,10 +756,11 @@ www.au		IN	A	203.16.234.19
 www.be		IN	A	212.100.160.33
 www.bg		IN	A	212.50.21.33
 www.bg		IN	A	194.12.255.250
+www.ca		IN	A	63.111.27.24
 www.ch		IN	A	193.246.250.178
 www.cn		IN	A	218.246.96.8
 www.de		IN	A	141.41.5.16
-www.de		IN	A	217.81.216.108
+www.de		IN	A	217.229.49.50
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.27.32.67
 www.fr		IN	A	80.236.0.239
@@ -762,6 +780,7 @@ www.pl		IN	A	212.244.88.63
 www.pl		IN	A	80.48.165.50
 www.ru		IN	A	195.19.235.116
 www.sg		IN	A	203.208.242.218
+www.tr		IN	A	212.174.160.117
 www.tw		IN	A	140.127.177.17
 www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
