@@ -40,11 +40,12 @@ Release Checklist:
 
 9. Upload tarball, MD5 signature, PGP signatures, RPMs
    a. on core account (currently library.lspace.org, user proftpd),
-      run ~/.bin/proftpd-sync-ftp.sh.  This syncs the local mirror via rsync.
+      run "~/.bin/proftpd-sync-ftp.sh sync".  This syncs the local mirror 
+      via ftp.
    b. upload files to core account, in the proper place under
       Proftpd/ftp.proftpd.org/.  Make sure to update MD5SUMS file in
       distrib/packages/RPMS.
-   c. then run: sitecopy -u proftpd-rsync-ftp.  This will propagate the
+   c. then run: "~/.bin/proftpd-sync-ftp.sh update".  This will propagate the
       new files as necessary
 
 10. Announce on lists: -announce, -devel, -users
