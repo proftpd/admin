@@ -45,6 +45,7 @@ Events API
 
       core.max-instances
       core.max-connect-rate
+      mod_auth.max-login-attempts
 
     Or, in mod_auth's handling of the MaxClients et al directives:
 
