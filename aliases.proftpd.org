@@ -10,8 +10,8 @@
 # Important aliases
 #
 #------------------------------------------------------------
-abuse:		flood
-postmaster:	flood
+abuse:		core
+postmaster:	core
 hostmaster:	core
 webmaster:	core
 archive:	proftpd@weasel.korenwolf.net
@@ -21,8 +21,24 @@ archive:	proftpd@weasel.korenwolf.net
 # trap because all it gets is spam
 #
 #------------------------------------------------------------
-spamtrap:	spambin@korenwolf.net
+spamtrap:	spamtrap@korenwolf.net
 anonymous:	spamtrap
+#------------------------------------------------------------
+proftpd-annoumce:		spamtrap
+proftp-announce-requ:		spamtrap
+ftpd-devel:			spamtrap
+nonymous:			spamtrap
+roftp-announce-admin:		spamtrap
+roftp-announce:			spamtrap
+roftpd-annoumce:		spamtrap
+roftpd-announce-request:	spamtrap
+roftpd-devel-request:		spamtrap
+roftpd-users:			spamtrap
+roftpd:				spamtrap
+ugs:				spamtrap
+users:				spamtrap
+annoumce:			spamtrap
+root:				spamtrap
 #------------------------------------------------------------
 #
 # Users
