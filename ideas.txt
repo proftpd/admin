@@ -12,39 +12,6 @@ mod_tls:
     certain FTP commands only for use by FTPS sessions that employ certain
     cipher suites.
 
-Events API
-    Events could also be used to re-add support for asynchronous ABOR,
-    asynchronous STAT:
-
-      mod_xfer.xfer.abort
-      mod_xfer.xfer.stat
-
-    Asynchronous QUIT should also be supported, but under what category
-    would it fall?  core?  mod_core?  mod_xfer?
-
-    Other notable events in which modules might be interested could be:
-
-      core.max-instances
-      core.max-connect-rate
-
-    And signals:
-
-      core.signal.SEGV
-      core.signal.TERM
-      core.signal.USR1
-      core.signal.USR2
-
-    The advantage of registering event handlers for signal events, rather
-    than just registering your own signal handler, is that this way modules
-    can provide their own signal handler code without disrupting any core
-    handlers; a given signal can have multiple handlers.
-
-    Or, in mod_auth's handling of the MaxClients et al directives:
-
-      mod_auth.max-clients
-      mod_auth.max-clients-per-user
-      mod_auth.max-login-attempts
-
 Stackable FSIO
 
   pr_register_fs() needs a flags parameter, to register whether an fs_t is
