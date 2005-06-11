@@ -1,0 +1,9 @@
+ProFTPD Mirror Maintenance Scripts
+==================================
+
+This collection of scripts forms the basis for the autogeneration of
+the ftp*.*.proftpd.org and www*.*.proftpd.org zones and maintaining the
+lists of mirrors sites and maintainers.
+
+v1.0  2 Oct 2001 - hamster
+v2.0 11 Jun 2005 - John Morrissey <jwm@horde.net>
