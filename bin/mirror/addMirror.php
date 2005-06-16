@@ -102,8 +102,10 @@
 
 		if ($_REQUEST['type'] == 'ftp') {
 			$table = 'ftpmirrors';
+			$hostnameBase = 'ftp';
 		} elseif ($_REQUEST['type'] == 'web') {
 			$table = 'wwwmirrors';
+			$hostnameBase = 'www';
 		} else {
 			return PEAR::raiseError('Please select a mirror type.');
 		}
@@ -139,8 +141,8 @@
 
 		$info  = 'Type of Mirror: ' . $_REQUEST['type'] . "\n";
 		$info .= 'URLs: ' . $_REQUEST['url'] . ",\n" .
-		         '      www.' . $_REQUEST['countrycode'] . ".proftpd.org,\n" .
-		         "      www$sequence." . $_REQUEST['countrycode'] . ".proftpd.org\n";
+		         "      $hostnameBase." . $_REQUEST['countrycode'] . ".proftpd.org,\n" .
+		         "      $hostnameBase$sequence." . $_REQUEST['countrycode'] . ".proftpd.org\n";
 		$info .= 'Admin Name: ' . $_REQUEST['adminName'] . "\n";
 		$info .= 'Admin Email address: ' . $_REQUEST['adminEmail'] . "\n";
 		$info .= 'Physical Location: ' . $_REQUEST['location'] . "\n";
