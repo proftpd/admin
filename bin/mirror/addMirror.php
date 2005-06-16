@@ -162,8 +162,8 @@
 		mirror can be approved:</strong></p>
 
 		<ul>
-			<li>www.<?php echo $_REQUEST['countrycode'] ?>.proftpd.org</li>
-			<li>www<?php echo $sequence ?>.<?php echo $_REQUEST['countrycode'] ?>.proftpd.org</li>
+			<li><?php echo $hostnameBase ?>.<?php echo $_REQUEST['countrycode'] ?>.proftpd.org</li>
+			<li><?php echo $hostnameBase ?><?php echo $sequence ?>.<?php echo $_REQUEST['countrycode'] ?>.proftpd.org</li>
 		</ul>
 	<?php endif; ?>
 
