@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005062100      ; Serial
+                              2005062101      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
