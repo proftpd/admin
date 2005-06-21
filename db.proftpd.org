@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005061900      ; Serial
+                              2005062100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -179,6 +179,7 @@ www2.ro		IN	A	81.180.139.175
 
 ; http://www.ro.proftpd.org/
 ; Subredu Manuel (FTPAdmin) <ftpadmin@iasi.roedu.net>
+www3.ro		IN	A	81.180.139.175
 
 ; http://lich.phys.spbu.ru/
 ; Dima Veselov <kab00m@lich.phys.spbu.ru>
@@ -224,10 +225,6 @@ www5.uk		IN	A	82.7.64.144
 ; Martin S. <admin@sms13.de>
 www4.us		IN	A	67.18.215.34
 
-; http://proftpd.not-your-box.com/
-; Joshua <proftpd@not-your-box.com>
-www5.us		IN	A	64.225.154.135
-
 ; http://proftpd.ethereal.com/
 ; Gerald Combs <gerald@ethereal.com>
 www6.us		IN	A	65.208.228.223
@@ -243,12 +240,14 @@ www25.us		IN	A	66.79.180.110
 ; http://proftpd.signal42.com/
 ;  <mirrors@signal42.com>
 
+www.am		IN	A	195.250.72.187
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
 www.au		IN	A	203.16.234.90
 www.au		IN	A	203.16.234.91
 www.au		IN	A	203.80.162.206
+www.au		IN	A	218.214.209.25
 www.be		IN	A	212.100.160.33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
@@ -260,6 +259,7 @@ www.fr		IN	A	81.220.255.20
 www.fr		IN	A	195.221.21.36
 www.fr		IN	A	194.242.113.132
 www.hk		IN	A	202.64.181.18
+www.hk		IN	A	210.0.190.18
 www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
 www.it		IN	A	217.19.156.51
@@ -267,8 +267,10 @@ www.lv		IN	A	83.136.142.245
 www.nl		IN	A	80.84.224.16
 www.nl		IN	A	82.150.134.174
 www.nl		IN	A	82.165.27.105
+www.nl		IN	A	62.212.92.70
 www.pl		IN	A	80.50.248.77
 www.pt		IN	A	213.190.195.46
+www.ro		IN	A	81.180.139.175
 www.ro		IN	A	81.180.139.175
 www.ru		IN	A	195.19.235.116
 www.se		IN	A	212.37.1.30
@@ -280,7 +282,7 @@ www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
 www.uk		IN	A	82.138.249.1
 www.uk		IN	A	82.7.64.144
-www.us		IN	A	64.225.154.135
+www.us		IN	A	67.18.215.34
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
 www.us		IN	A	66.79.180.110
@@ -539,6 +541,10 @@ ftp2.tw		IN	A	210.202.31.150
 ; Alexander Ryumshin <mizi@alkar.net>
 ftp1.ua		IN	A	195.248.190.23
 
+; ftp://ftp.ccp14.ac.uk/ccp14/ftp-mirror/programming/proftpd/
+; Lachlan Cranswick <lzc@dl.ac.uk>
+ftp2.uk		IN	A	193.61.32.162
+
 ; ftp://proftpd.networkedsystems.co.uk/
 ; fxp0 <daniel@kewlio.net>
 ftp4.uk		IN	A	85.116.4.19
@@ -583,6 +589,7 @@ ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
 ftp.au		IN	A	203.16.234.85
 ftp.au		IN	A	203.16.234.86
+ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	A	195.238.1.4
 ftp.bg		IN	A	212.50.28.4
@@ -590,6 +597,7 @@ ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cn		IN	A	210.51.192.52
 ftp.cz		IN	A	194.108.36.130
+ftp.cz		IN	A	82.208.4.160
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	141.2.114.129
 ftp.de		IN	A	137.248.152.16
@@ -598,6 +606,7 @@ ftp.de		IN	A	143.93.152.20
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	141.24.190.77
 ftp.de		IN	A	131.246.236.201
+ftp.ee		IN	A	194.204.30.173
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
 ftp.fr		IN	A	194.242.113.132
@@ -618,6 +627,7 @@ ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	213.204.195.9
 ftp.nl		IN	A	82.150.134.174
 ftp.nl		IN	A	195.86.128.57
+ftp.nl		IN	A	62.212.92.70
 ftp.no		IN	A	212.62.224.2
 ftp.no		IN	A	80.239.42.88
 ftp.pl		IN	A	83.144.72.252
@@ -637,9 +647,12 @@ ftp.sg		IN	A	202.79.178.226
 ftp.si		IN	A	193.95.210.16
 ftp.sk		IN	A	195.46.80.5
 ftp.tr		IN	A	194.27.16.9
+ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
 ftp.ua		IN	A	195.248.190.23
+ftp.uk		IN	A	193.61.32.162
 ftp.uk		IN	A	85.116.4.19
+ftp.uk		IN	A	82.138.249.1
 ftp.uk		IN	A	62.255.248.218
 ftp.us		IN	A	207.246.83.6
 ftp.us		IN	A	66.116.68.208
