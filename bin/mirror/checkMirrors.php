@@ -33,20 +33,40 @@
 	 *                    automatically.
 	 * @return boolean Whether the mirror is accessible an up-to-date.
 	 */
-	function checkSite($url) {
-		$request = new HTTP_Request($url . '/MIRMON.PROBE');
-		$result = $request->sendRequest();
-		if (PEAR::isError($result)) {
-			return $result;
+	function checkSite($connectTo, $httpHost, $path) {
+		/* Timeout in seconds for socket operations. */
+		$SOCKET_TIMEOUT = 30;
+		/* Number of seconds after which a site is considered stale. */
+		$STALE_THRESHOLD = 8 * 24 * 60 * 60;
+
+		$fp = fsockopen($connectTo, 80, $errno, $errstr, $SOCKET_TIMEOUT);
+		if ($fp === false) {
+			return PEAR::raiseError("Couldn't open connection to $connectTo.");
 		}
 
-		if ($request->getResponseCode() >= 300 ||
-		    $request->getResponseCode() < 200)
-		{
+		$result = fputs($fp, "GET $path/MIRMON.PROBE HTTP/1.1\r\nHost: $httpHost\r\n\r\n");
+		if ($result === false) {
+			return PEAR::raiseError("Couldn't request $path/MIRMON.PROBE from $connectTo.");
+		}
+
+		/* Fast-forward past all the response headers to get to the content. */
+		do {
+			$line = fgets($fp);
+			if ($line === false) {
+				return PEAR::raiseError("Couldn't fetch contents of $path/MIRMON.PROBE from $connectHost.");
+			}
+		} while (!feof($fp) && $line != "\r\n");
+
+		$tstamp = trim(fgets($fp));
+		if ($tstamp === false) {
+			return PEAR::raiseError("Couldn't fetch contents of $path/MIRMON.PROBE from $connectTo.");
+		}
+
+		fclose($fp);
+
+		if ($tstamp + $STALE_THRESHOLD < time()) {
 			return false;
 		}
-
-		/* FIXME: check the timestamp to see if it's out-of-date. */
 		return true;
 	}
 
@@ -64,6 +84,7 @@ EOM;
 	require_once 'DB.php';
 	require_once 'HTTP/Request.php';
 	require_once 'Mail.php';
+	require_once 'Net/URL.php';
 
 	$args = Console_Getopt::getopt(Console_Getopt::readPHPArgv(),
 		't:', array('type='));
@@ -120,16 +141,17 @@ EOM;
 		}
 		$urlsToCheck = array(
 			$baseUrl . $matches[2] . $matches[3],
-			$baseUrl . $hostnameBase . $row['sequence'] . '.' . $row['iso'] . '.proftpd.org'
+			$baseUrl . $hostnameBase . $row['sequence'] . '.' . $row['iso'] . '.proftpd.org',
+			$urlsToCheck[] = $baseUrl . $hostnameBase . '.' . $row['iso'] . '.proftpd.org'
 		);
-		if ($row['round_robin'] == 'true') {
-//			$urlsToCheck[] = $baseUrl . $hostnameBase . '.' . $row['iso'] . '.proftpd.org';
-		}
 
-		foreach ($urlsToCheck as $hostname) {
-			$checkResult = checkSite($hostname);
+		foreach ($urlsToCheck as $url) {
+			$netUrl = new Net_URL($url);
+
+			$checkResult = checkSite($matches[2], $netUrl->host, $netUrl->path);
 			if (PEAR::isError($checkResult)) {
-				print "$hostname: " . $checkResult->getMessage() . "\n";
+				print $checkResult->getMessage() . "\n";
+				continue;
 			}
 
 			if ($checkResult !== true) {
@@ -148,7 +170,7 @@ EOM;
 				$body .= "\n";
 				$body .= "does not appear to be functioning properly.\n";
 				$body .= "\n";
-				$body .= "The details we have on record for your mirror are\n";
+				$body .= "The details we have on record for your mirror are:\n";
 				$body .= "\n";
 				$body .= "	Site:        " . $row['site'] . "\n";
 				$body .= "	Admin:       " . $row['admin'] . "\n";
@@ -176,7 +198,7 @@ $headers['To'] = 'jwm@horde.net';
 				if (PEAR::isError($mailResult)) {
 					die("Couldn't send message to " . $headers['To'] . ': ' . $mailResult->getMessage() . "\n");
 				}
-				print "$hostname is not functioning properly.\n";
+				print "$url is out of date.\n";
 				continue 2;
 			}
 		}
