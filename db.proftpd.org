@@ -108,6 +108,7 @@ www1.de		IN	A	141.41.5.16
 
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
+www1.dk		IN	A	217.157.160.207
 
 ; http://www.proftpd.seasonfive.com/
 ; Yannick Lecaillez <mirrors@seasonfive.com>
@@ -254,6 +255,7 @@ www.bg		IN	A	194.12.255.250
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.de		IN	A	141.41.5.16
+www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
 www.fr		IN	A	81.220.255.20
 www.fr		IN	A	195.221.21.36
@@ -373,6 +375,7 @@ ftp11.de		IN	A	131.246.236.201
 
 ; ftp://ftp.jaquet.dk/pub/proftp/
 ; Rasmus <rasmus@jaquet.dk>
+ftp1.dk		IN	A	217.157.160.207
 
 ; ftp://mirror.estweb.ee/proftpd/
 ; Ivari Horm <admin@estweb.ee>
@@ -559,6 +562,7 @@ ftp6.uk		IN	A	62.255.248.218
 
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
+ftp1.us		IN	A	152.2.210.80
 
 ; ftp://ftp.infoteam.com/pub/proftpd/
 ; Kenn Martin <kmartin@infoteam.com>
@@ -606,6 +610,7 @@ ftp.de		IN	A	143.93.152.20
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	141.24.190.77
 ftp.de		IN	A	131.246.236.201
+ftp.dk		IN	A	217.157.160.207
 ftp.ee		IN	A	194.204.30.173
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
@@ -654,6 +659,7 @@ ftp.uk		IN	A	193.61.32.162
 ftp.uk		IN	A	85.116.4.19
 ftp.uk		IN	A	82.138.249.1
 ftp.uk		IN	A	62.255.248.218
+ftp.us		IN	A	152.2.210.80
 ftp.us		IN	A	207.246.83.6
 ftp.us		IN	A	66.116.68.208
 ftp.us		IN	A	216.136.102.130
