@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005062101      ; Serial
+                              2005062300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -85,6 +85,7 @@ www4.au		IN	A	218.214.209.25
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
 www1.be		IN	A	212.100.160.33
+www1.be		IN	AAAA	2001:6f8:200:1::5:33
 
 ; http://proftpd.fixity.net/
 ; Krasimir Ganchev <admin@fixity.net>
@@ -121,6 +122,7 @@ www3.fr		IN	A	81.220.255.20
 ; http://proftpd.crihan.fr/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 www4.fr		IN	A	195.221.21.36
+www4.fr		IN	AAAA	2001:660:7401:211::36
 
 ; http://proftpd.fastorama.com/
 ; fastorama.com <mrjack@fastorama.com>
@@ -141,6 +143,7 @@ www1.id		IN	A	202.145.6.61
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
+www1.ie		IN	AAAA	2001:7c8:3:1::4
 
 ; http://proftpd.ditalinux.it/
 ; Roberto Leandrini <anaconda@ditalinux.it>
@@ -153,6 +156,7 @@ www1.lv		IN	A	83.136.142.245
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
 www1.nl		IN	A	80.84.224.16
+www1.nl		IN	AAAA	2001:828:101:1::4
 
 ; http://proftpd.mirrors.softdev.nl/
 ; Richard Pijnenburg <richard@softdev.nl>
@@ -191,16 +195,12 @@ www1.ru		IN	A	195.19.235.116
 www1.se		IN	A	212.37.1.30
 
 ; http://proftpd.oss.eznetsols.org/
-; Network Operations Center <noc@eznetsols.com>
+; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	A	202.79.178.225
 
 ; http://proftpd.cna.isu.edu.tw/
 ; KTH <kth@ftp.isu.edu.tw>
 www1.tw		IN	A	140.127.177.17
-
-; http://proftpd.chu.edu.tw/
-; PE2500 <ftpadm@ftp.chu.edu.tw>
-www2.tw		IN	A	140.126.1.54
 
 ; http://proftpd.dp.ua/
 ; Alexander Ryumshin <mizi@alkar.net>
@@ -213,6 +213,7 @@ www2.ua		IN	A	217.198.131.181
 ; http://proftpd.networkedsystems.co.uk/
 ; fxp0 <daniel@kewlio.net>
 www3.uk		IN	A	85.116.4.19
+www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
 ; http://proftpd.ulimit.org/
 ; Michael Pye <michael@ulimit.org>
@@ -250,6 +251,7 @@ www.au		IN	A	203.16.234.91
 www.au		IN	A	203.80.162.206
 www.au		IN	A	218.214.209.25
 www.be		IN	A	212.100.160.33
+www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
 www.ch		IN	A	62.2.255.42
@@ -259,14 +261,17 @@ www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
 www.fr		IN	A	81.220.255.20
 www.fr		IN	A	195.221.21.36
+www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	194.242.113.132
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
+www.ie		IN	AAAA	2001:7c8:3:1::4
 www.it		IN	A	217.19.156.51
 www.lv		IN	A	83.136.142.245
 www.nl		IN	A	80.84.224.16
+www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.150.134.174
 www.nl		IN	A	82.165.27.105
 www.nl		IN	A	62.212.92.70
@@ -278,10 +283,10 @@ www.ru		IN	A	195.19.235.116
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.225
 www.tw		IN	A	140.127.177.17
-www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
+www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 www.uk		IN	A	82.138.249.1
 www.uk		IN	A	82.7.64.144
 www.us		IN	A	67.18.215.34
@@ -312,6 +317,7 @@ ftp2.au		IN	A	203.80.162.206
 ; ftp://ftp.easynet.be/proftpd/
 ; Bert Vermeulen <ftp@be.easynet.net>
 ftp1.be		IN	A	212.100.160.33
+ftp1.be		IN	AAAA	2001:6f8:200:1::5:33
 
 ; ftp://ftp.proftpd.skynet.be/mirror/ftp.proftpd.org/
 ; Vincent Luyckx <ftp@skynet.be>
@@ -388,6 +394,7 @@ ftp2.es		IN	A	193.146.160.10
 ; ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/
 ; Carlos Inacio <>
 ftp2.fr		IN	A	194.158.99.22
+ftp2.fr		IN	AAAA	2001:860::7fff:202:b3ff:fe46:323e
 
 ; ftp://ftp.fastorama.com/mirrors/ftp.proftpd.org/
 ; MrJacK <mrjack@fastorama.com>
@@ -396,6 +403,7 @@ ftp4.fr		IN	A	194.242.113.132
 ; ftp://ftp.crihan.fr/mirrors/ftp.proftpd.org/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 ftp5.fr		IN	A	195.221.21.36
+ftp5.fr		IN	AAAA	2001:660:7401:211::36
 
 ; ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.proftpd.org/
 ; Archive Manager <archive@doc.cs.univ-paris8.fr>
@@ -421,6 +429,7 @@ ftp1.id		IN	A	202.145.6.63
 ; ftp://ftp.esat.net/mirrors/ftp.proftpd.org/
 ; Dave Burke <ftpadmin@esat.net>
 ftp0.ie		IN	A	193.120.14.241
+ftp0.ie		IN	AAAA	2001:7c8:3:1::4
 
 ; ftp://ftp.win.jp/pub/proftpd/
 ; Ayamura Kikuchi <ayamura@ayamura.org>
@@ -470,6 +479,7 @@ ftp5.no		IN	A	80.239.42.88
 ; ftp://fido.e-utp.net/mirror/proftpd.org/
 ; Marcin Gonek <drixter@e-utp.net>
 ftp1.pl		IN	A	83.144.72.252
+ftp1.pl		IN	AAAA	2001:6f8:93c::1
 
 ; ftp://ftp.icm.edu.pl/pub/unix/ftp/proftpd/
 ; Wojtek Sylwestrzak <W.Sylwestrzak@icm.edu.pl>
@@ -517,7 +527,7 @@ ftp1.se		IN	A	85.11.195.13
 ftp3.se		IN	A	212.37.1.30
 
 ; ftp://ftp.oss.eznetsols.org/proftpd/
-; Network Operations Center <noc@eznetsols.com>
+; Network Operations Center <mirror-admin@oss.eznetsols.org>
 ftp1.sg		IN	A	202.79.178.226
 
 ; ftp://ftp.its.si/pub/mirror/ftp.proftpd.org/
@@ -551,6 +561,7 @@ ftp2.uk		IN	A	193.61.32.162
 ; ftp://proftpd.networkedsystems.co.uk/
 ; fxp0 <daniel@kewlio.net>
 ftp4.uk		IN	A	85.116.4.19
+ftp4.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
 ; ftp://proftpd.ulimit.org/proftpd/
 ; Michael Pye <michael@ulimit.org>
@@ -595,6 +606,7 @@ ftp.au		IN	A	203.16.234.85
 ftp.au		IN	A	203.16.234.86
 ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
+ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.be		IN	A	195.238.1.4
 ftp.bg		IN	A	212.50.28.4
 ftp.ca		IN	A	66.241.141.46
@@ -614,8 +626,10 @@ ftp.dk		IN	A	217.157.160.207
 ftp.ee		IN	A	194.204.30.173
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
+ftp.fr		IN	AAAA	2001:860::7fff:202:b3ff:fe46:323e
 ftp.fr		IN	A	194.242.113.132
 ftp.fr		IN	A	195.221.21.36
+ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	193.54.153.246
 ftp.fr		IN	A	212.43.248.244
 ftp.hu		IN	A	195.228.252.132
@@ -623,6 +637,7 @@ ftp.hu		IN	A	195.228.252.133
 ftp.hu		IN	A	212.40.96.80
 ftp.id		IN	A	202.145.6.63
 ftp.ie		IN	A	193.120.14.241
+ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.jp		IN	A	219.106.240.235
 ftp.jp		IN	A	210.138.109.182
 ftp.kr		IN	A	211.47.128.157
@@ -636,6 +651,7 @@ ftp.nl		IN	A	62.212.92.70
 ftp.no		IN	A	212.62.224.2
 ftp.no		IN	A	80.239.42.88
 ftp.pl		IN	A	83.144.72.252
+ftp.pl		IN	AAAA	2001:6f8:93c::1
 ftp.pl		IN	A	193.219.28.2
 ftp.pl		IN	A	213.184.16.3
 ftp.pl		IN	A	80.50.248.77
@@ -657,6 +673,7 @@ ftp.tw		IN	A	210.202.31.150
 ftp.ua		IN	A	195.248.190.23
 ftp.uk		IN	A	193.61.32.162
 ftp.uk		IN	A	85.116.4.19
+ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ftp.uk		IN	A	82.138.249.1
 ftp.uk		IN	A	62.255.248.218
 ftp.us		IN	A	152.2.210.80
