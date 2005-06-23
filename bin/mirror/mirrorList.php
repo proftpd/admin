@@ -102,11 +102,9 @@ EOM;
 		$baseUrl = 'http://www';
 	}
 
-	$query  = 'SELECT country_iso ';
+	$query  = 'SELECT DISTINCT country_iso ';
 	$query .= "FROM $table ";
-	$query .= 'WHERE live = "true" AND ';
-	$query .= '      round_robin = "true" ';
-	$query .= 'GROUP BY country_iso ';
+	$query .= 'WHERE live = "true" ';
 	$query .= 'ORDER BY country_iso';
 
 	$result = $db->query($query);
@@ -124,7 +122,7 @@ EOM;
 
 <?php
 	$query  = 'SELECT site, admin, city, country_iso, countrycode.country, ';
-	$query .= '       sequence, round_robin ';
+	$query .= '       sequence ';
 	$query .= "FROM $table LEFT JOIN countrycode ON ";
 	$query .= "     $table.country_iso = countrycode.iso ";
 	$query .= 'WHERE live = "true"';

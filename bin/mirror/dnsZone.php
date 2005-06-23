@@ -42,7 +42,10 @@
 
 			switch ($record['type']) {
 			case 'A':
-				$addrs[] = $record['ip'];
+				$addrs[] = 'A:' . $record['ip'];
+				break;
+			case 'AAAA':
+				$addrs[] = 'AAAA:' . $record['ipv6'];
 				break;
 			case 'CNAME':
 				return findAddresses($record['target']);
@@ -82,10 +85,10 @@ EOM;
 
 	$fp = fopen($args[1][0], 'w');
 
-	foreach (array('www', 'ftp') as $type) {
-		$query  = 'SELECT site, admin, admin_email, iso, sequence, round_robin ';
-		$query .= "FROM ${type}mirrors LEFT JOIN countrycode ON ";
-		$query .= "     ${type}mirrors.country_iso = countrycode.iso ";
+	foreach (array('www', 'ftp') as $hostType) {
+		$query  = 'SELECT site, admin, admin_email, iso, sequence ';
+		$query .= "FROM ${hostType}mirrors LEFT JOIN countrycode ON ";
+		$query .= "     ${hostType}mirrors.country_iso = countrycode.iso ";
 		$query .= 'WHERE live = "true" ';
 		$query .= 'ORDER BY iso, sequence';
 
@@ -95,7 +98,7 @@ EOM;
 		}
 
 		$bar = new Console_ProgressBar(
-			"* $type %fraction% sites [%bar%] %percent%",
+			"* $hostType %fraction% sites [%bar%] %percent%",
 			'=>', '-', 80, $queryResult->numRows(),
 			array('ansi_terminal' => false)
 		);
@@ -114,13 +117,11 @@ EOM;
 				continue;
 			}
 
-			if ($row['round_robin'] == 'true') {
-				if (!isset($roundRobinSites[$row['iso']])) {
-					$roundRobinSites[$row['iso']] = array();
-				}
-				foreach ($addrs as $addr) {
-					$roundRobinSites[$row['iso']][] = $addr;
-				}
+			if (!isset($roundRobinSites[$row['iso']])) {
+				$roundRobinSites[$row['iso']] = array();
+			}
+			foreach ($addrs as $addr) {
+				$roundRobinSites[$row['iso']][] = $addr;
 			}
 
 			$result = fputs($fp, '; ' . $row['site'] . "\n");
@@ -133,7 +134,9 @@ EOM;
 				die("Couldn't write to " . $args[1][0] . ".\n");
 			}
 			foreach ($addrs as $addr) {
-				$result = fputs($fp, $type . $row['sequence'] . '.' . $row['iso'] . "		IN	A	$addr\n");
+				list($rrType, $ip) = explode(':', $addr, 2);
+
+				$result = fputs($fp, $hostType . $row['sequence'] . '.' . $row['iso'] . "		IN	$rrType	$ip\n");
 				if ($result === false) {
 					die("Couldn't write to " . $args[1][0] . ".\n");
 				}
@@ -146,7 +149,9 @@ EOM;
 
 		foreach ($roundRobinSites as $iso => $addrs) {
 			foreach ($addrs as $addr) {
-				$result = fputs($fp, "$type.$iso		IN	A	$addr\n");
+				list($rrType, $ip) = explode(':', $addr, 2);
+
+				$result = fputs($fp, "$hostType.$iso		IN	$rrType	$ip\n");
 				if ($result === false) {
 					die("Couldn't write to " . $args[1][0] . ".\n");
 				}

@@ -174,7 +174,7 @@
 <?php
 		$query  = "INSERT INTO $table (site, admin, admin_email, country_iso, ";
 		$query .= '                    city, other_details, updated, ';
-		$query .= '                    live, sequence, round_robin) ';
+		$query .= '                    live, sequence) ';
 		$query .= 'VALUES (' . $db->quote($_REQUEST['url']) . ', ';
 		$query .=              $db->quote($_REQUEST['adminName']) . ', ';
 		$query .=              $db->quote($_REQUEST['adminEmail']) . ', ';
@@ -182,7 +182,7 @@
 		$query .=              $db->quote($_REQUEST['location']) . ', ';
 		$query .=              $db->quote($_REQUEST['details']) . ', ';
 		$query .=              $db->quote($_REQUEST['updated']) . ', ';
-		$query .=              "true, $sequence, true)";
+		$query .=              "true, $sequence)";
 		$result = $db->query($query);
 		if (PEAR::isError($result)) {
 			return $result;
