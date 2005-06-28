@@ -68,9 +68,6 @@ EOM;
     <p>Please use the mirror that's closest to you. If you would like to
     volunteer to be a mirror site, please read the
 	<a href="/howtomirror.html">Mirroring HOWTO</A> page.</p>
-
-    <p align="center">The latest version of ProFTPD is
-    <strong><: print $proftpd_version :></strong>.</p>
 <?php elseif ($TYPE == 'www'): ?>
     <p>This is a list of active mirrors of this website; the home site is
 	<a href="http://www.proftpd.org/">www.proftpd.org</a>. If you wish to
@@ -114,7 +111,7 @@ EOM;
 ?>
 
 <?php while (($row = $result->fetchRow(DB_FETCHMODE_ASSOC))): ?>
-	<a href="http://www.<?php echo $row['country_iso'] ?>.proftpd.org/"><?php echo $row['country_iso'] ?></a>
+	<a href="<?php echo $baseUrl ?>.<?php echo $row['country_iso'] ?>.proftpd.org/"><?php echo $row['country_iso'] ?></a>
 <?php endwhile; ?>
 
 </div>
