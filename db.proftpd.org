@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005062300      ; Serial
+                              2005062800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -202,6 +202,10 @@ www1.sg		IN	A	202.79.178.225
 ; KTH <kth@ftp.isu.edu.tw>
 www1.tw		IN	A	140.127.177.17
 
+; http://proftpd.chu.edu.tw/
+; PE2500 <ftpadm@ftp.chu.edu.tw>
+www2.tw		IN	A	140.126.1.54
+
 ; http://proftpd.dp.ua/
 ; Alexander Ryumshin <mizi@alkar.net>
 www1.ua		IN	A	195.248.190.23
@@ -241,6 +245,10 @@ www25.us		IN	A	66.79.180.110
 
 ; http://proftpd.signal42.com/
 ;  <mirrors@signal42.com>
+
+; http://proftpd.mirror.wrpn.net/
+; Wesley Haines <kremit@wrpn.net>
+www27.us		IN	A	24.123.133.61
 
 www.am		IN	A	195.250.72.187
 www.at		IN	A	192.35.244.50
@@ -283,6 +291,7 @@ www.ru		IN	A	195.19.235.116
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.225
 www.tw		IN	A	140.127.177.17
+www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
@@ -293,6 +302,7 @@ www.us		IN	A	67.18.215.34
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
 www.us		IN	A	66.79.180.110
+www.us		IN	A	24.123.133.61
 ; ftp://proftpd.matenadaran.am/
 ; Vahan Yerkanian <vahan@matenadaran.am>
 ftp1.am		IN	A	195.250.72.187
@@ -310,7 +320,7 @@ ftp2.at		IN	A	192.35.244.50
 ftp1.au		IN	A	203.16.234.85
 ftp1.au		IN	A	203.16.234.86
 
-; ftp://proftpd.dknss.com/
+; ftp://proftpd.dknss.com/pub/proftpd/
 ; Darrin Khan <darrink@dknss.com>
 ftp2.au		IN	A	203.80.162.206
 
@@ -599,6 +609,10 @@ ftp12.us		IN	A	65.208.228.223
 ; Matt Mozur <ftpmaster@sourwood.net>
 ftp24.us		IN	A	66.92.74.33
 
+; ftp://mirror.wrpn.net/proftpd/
+; Wesley Haines <kremit@wrpn.net>
+ftp25.us		IN	A	24.123.133.61
+
 ftp.am		IN	A	195.250.72.187
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
@@ -683,3 +697,4 @@ ftp.us		IN	A	216.136.102.130
 ftp.us		IN	A	128.175.60.102
 ftp.us		IN	A	65.208.228.223
 ftp.us		IN	A	66.92.74.33
+ftp.us		IN	A	24.123.133.61
