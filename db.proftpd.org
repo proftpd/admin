@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005062800      ; Serial
+                              2005070500      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -95,7 +95,7 @@ www1.bg		IN	A	212.50.28.1
 ; Alexander Velin <velin@bastun.net>
 www2.bg		IN	A	194.12.255.250
 
-; http://proftpd.asylog.net/
+; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
 www1.ch		IN	A	62.2.255.42
 
@@ -151,7 +151,7 @@ www3.it		IN	A	217.19.156.51
 
 ; http://proftpd.ogreland.lv/
 ; core <core@ogreland.lv>
-www1.lv		IN	A	83.136.142.245
+www1.lv		IN	A	62.85.106.250
 
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
@@ -177,10 +177,6 @@ www4.pl		IN	A	80.50.248.77
 ; http://proftpd.zarco.org/
 ; Carlos Filipe <filipe@zarco.org>
 www2.pt		IN	A	213.190.195.46
-
-; http://proftpd.darcompany.net/
-; Doru Popa <doru@mail.darcompany.net>
-www2.ro		IN	A	81.180.139.175
 
 ; http://www.ro.proftpd.org/
 ; Subredu Manuel (FTPAdmin) <ftpadmin@iasi.roedu.net>
@@ -277,7 +273,7 @@ www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.it		IN	A	217.19.156.51
-www.lv		IN	A	83.136.142.245
+www.lv		IN	A	62.85.106.250
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.150.134.174
@@ -285,7 +281,6 @@ www.nl		IN	A	82.165.27.105
 www.nl		IN	A	62.212.92.70
 www.pl		IN	A	80.50.248.77
 www.pt		IN	A	213.190.195.46
-www.ro		IN	A	81.180.139.175
 www.ro		IN	A	81.180.139.175
 www.ru		IN	A	195.19.235.116
 www.se		IN	A	212.37.1.30
@@ -372,10 +367,6 @@ ftp4.de		IN	A	137.248.152.16
 ; ftp://ftp.franken.de/pub/Linux/proftpd/
 ; Harald Welte <laforge@coruscant.franken.de>
 ftp5.de		IN	A	193.175.24.42
-
-; ftp://ftp.fh-koblenz.de/pub/ProFTPD/
-; Michael Schmidt <mschmidt@fh-koblenz.de>
-ftp6.de		IN	A	143.93.152.20
 
 ; ftp://ftp.uasw.edu/pub/network/proftpd/ftp/
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
@@ -632,7 +623,6 @@ ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	141.2.114.129
 ftp.de		IN	A	137.248.152.16
 ftp.de		IN	A	193.175.24.42
-ftp.de		IN	A	143.93.152.20
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	141.24.190.77
 ftp.de		IN	A	131.246.236.201
