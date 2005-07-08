@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005070500      ; Serial
+                              2005070800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -178,6 +178,10 @@ www4.pl		IN	A	80.50.248.77
 ; Carlos Filipe <filipe@zarco.org>
 www2.pt		IN	A	213.190.195.46
 
+; http://proftpd.darcompany.net/
+; Doru Popa <doru@mail.darcompany.net>
+www2.ro		IN	A	81.180.139.175
+
 ; http://www.ro.proftpd.org/
 ; Subredu Manuel (FTPAdmin) <ftpadmin@iasi.roedu.net>
 www3.ro		IN	A	81.180.139.175
@@ -239,9 +243,6 @@ www21.us		IN	A	66.92.74.33
 ;  <mirrors@mirror99.com>
 www25.us		IN	A	66.79.180.110
 
-; http://proftpd.signal42.com/
-;  <mirrors@signal42.com>
-
 ; http://proftpd.mirror.wrpn.net/
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	A	24.123.133.61
@@ -281,6 +282,7 @@ www.nl		IN	A	82.165.27.105
 www.nl		IN	A	62.212.92.70
 www.pl		IN	A	80.50.248.77
 www.pt		IN	A	213.190.195.46
+www.ro		IN	A	81.180.139.175
 www.ro		IN	A	81.180.139.175
 www.ru		IN	A	195.19.235.116
 www.se		IN	A	212.37.1.30
@@ -324,14 +326,6 @@ ftp2.au		IN	A	203.80.162.206
 ftp1.be		IN	A	212.100.160.33
 ftp1.be		IN	AAAA	2001:6f8:200:1::5:33
 
-; ftp://ftp.proftpd.skynet.be/mirror/ftp.proftpd.org/
-; Vincent Luyckx <ftp@skynet.be>
-ftp2.be		IN	A	195.238.1.4
-
-; ftp://ftp.fixity.net/pub/proftpd/
-; Krasimir Ganchev <admin@fixity.net>
-ftp3.bg		IN	A	212.50.28.4
-
 ; ftp://ftp.samurai.com/pub/proftpd/
 ; Bryan Fullerton <bryanf@samurai.com>
 ftp1.ca		IN	A	66.241.141.46
@@ -348,17 +342,9 @@ ftp1.cn		IN	A	210.51.192.52
 ; Lumir <lm@its.cz>
 ftp1.cz		IN	A	194.108.36.130
 
-; ftp://pech.cz/MIRRORS/proftpd.org/ftp/
-; Jirka Pech <mirrors@pech.cz>
-ftp2.cz		IN	A	82.208.4.160
-
 ; ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/
 ; Adrian Reber <adrian@lisas.de>
 ftp2.de		IN	A	129.143.116.10
-
-; ftp://ftp.taubenschlag.uni-frankfurt.de/pub/mirror/ftp.proftpd.net/
-; Bjoern Krueger <root@mail.taubenschlag.uni-frankfurt.de>
-ftp3.de		IN	A	141.2.114.129
 
 ; ftp://ftp.chemie.uni-marburg.de/pub/unix/proftpd/
 ; Torsten Schneider <ftpadm@chemie.uni-marburg.de>
@@ -372,17 +358,8 @@ ftp5.de		IN	A	193.175.24.42
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
 ftp7.de		IN	A	141.41.5.16
 
-; ftp://ftp.tu-ilmenau.de/linux/proftpd/
-; Silvio Schloeffel <ftp@tu-ilmenau.de>
-ftp8.de		IN	A	141.24.190.77
-
-; ftp://leela.physik.uni-kl.de/linux/proftpd/
-; Christian Schumann <schumann@physik.uni-kl.de>
-ftp11.de		IN	A	131.246.236.201
-
 ; ftp://ftp.jaquet.dk/pub/proftp/
 ; Rasmus <rasmus@jaquet.dk>
-ftp1.dk		IN	A	217.157.160.207
 
 ; ftp://mirror.estweb.ee/proftpd/
 ; Ivari Horm <admin@estweb.ee>
@@ -423,7 +400,7 @@ ftp1.hu		IN	A	195.228.252.133
 ; Christian Hamar alias krix <krics@sd.externet.hu>
 ftp3.hu		IN	A	212.40.96.80
 
-; http://public.cakraweb.com/pub/proftpd/
+; ftp://public.cakraweb.com/pub/proftpd/
 ; Asfihani <asfik@its-sby.edu>
 ftp1.id		IN	A	202.145.6.63
 
@@ -432,23 +409,11 @@ ftp1.id		IN	A	202.145.6.63
 ftp0.ie		IN	A	193.120.14.241
 ftp0.ie		IN	AAAA	2001:7c8:3:1::4
 
-; ftp://ftp.win.jp/pub/proftpd/
-; Ayamura Kikuchi <ayamura@ayamura.org>
-ftp2.jp		IN	A	219.106.240.235
-
 ; ftp://proftpd.get7.biz/proftpd/
 ; Motohiro Sunouchi <moto@sunouchi.net>
 ftp3.jp		IN	A	210.138.109.182
 
-; ftp://linux.sarang.net/mirror/network/daemon/ftp/proftpd/
-;  <redhands@linux.sarang.net>
-ftp1.kr		IN	A	211.47.128.157
-
-; ftp://ftp.eurofmc.com/proftpd/
-; Francois MONNET <fmonnet@fmc-lu.net>
-ftp1.lu		IN	A	80.92.66.69
-
-; ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/
+; ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/
 ;  <mark@NL.UU.NET>
 ftp1.nl		IN	A	195.129.111.8
 ftp1.nl		IN	A	195.129.111.9
@@ -469,7 +434,7 @@ ftp4.nl		IN	A	195.86.128.57
 ; Marius van Witzenburg <info@weedpowered.com>
 ftp5.nl		IN	A	62.212.92.70
 
-; ftp://ftp.dataguard.no/pub/proftpd/
+; ftp://ftp.dataguard.no/ftp/pub/proftpd/
 ; Christian Nikolaisen <christian@dataguard.no>
 ftp1.no		IN	A	212.62.224.2
 
@@ -486,17 +451,9 @@ ftp1.pl		IN	AAAA	2001:6f8:93c::1
 ; Wojtek Sylwestrzak <W.Sylwestrzak@icm.edu.pl>
 ftp3.pl		IN	A	193.219.28.2
 
-; ftp://ftp.man.olsztyn.pl/pub/linux/proftpd/
-; Bartek Raszczyk, MAN Olsztyn <bartek@man.olsztyn.pl>
-ftp8.pl		IN	A	213.184.16.3
-
 ; ftp://ftp.tpnet.pl/d1/proftpd/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 ftp8.pl		IN	A	80.50.248.77
-
-; ftp://ni.fe.up.pt/pub/mirrors/proftpd/
-; vector <vectorpt@yahoo.com>
-ftp0.pt		IN	A	193.136.28.171
 
 ; ftp://ftp.telepac.pt/pub/proftpd/
 ; Marco Ramos <mramos@tp.telepac.pt>
@@ -527,23 +484,19 @@ ftp1.se		IN	A	85.11.195.13
 ; Mirror Admin <mirror@dataphone.net>
 ftp3.se		IN	A	212.37.1.30
 
+; ftp://ftp.se.linux.org/pub/network/proftpd/
+; Svenska Linuxföreningens driftgrupp <selinux-drift@se.linux.org>
+ftp4.se		IN	A	213.141.80.22
+
 ; ftp://ftp.oss.eznetsols.org/proftpd/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 ftp1.sg		IN	A	202.79.178.226
 
-; ftp://ftp.its.si/pub/mirror/ftp.proftpd.org/
-; Tomaz Kostrevc <tomcat@blackadder.its.si>
-ftp1.si		IN	A	193.95.210.16
-
-; ftp://spirit.bentel.sk/mirrors/Proftpd/
+; ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/
 ; lubos klokner <erkac@profinet.sk>
 ftp1.sk		IN	A	195.46.80.5
 
-; ftp://ftp.gazi.edu.tr/pub/proftpd/
-; Devrim SERAL <ftpadmin@ftp.gazi.edu.tr>
-ftp1.tr		IN	A	194.27.16.9
-
-; http://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/
+; ftp://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/
 ; KTH <kth@ftp.isu.edu.tw>
 ftp1.tw		IN	A	140.127.177.17
 
@@ -576,21 +529,9 @@ ftp6.uk		IN	A	62.255.248.218
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	A	152.2.210.80
 
-; ftp://ftp.infoteam.com/pub/proftpd/
-; Kenn Martin <kmartin@infoteam.com>
-ftp4.us		IN	A	207.246.83.6
-
 ; ftp://ftp.stikman.com/pub/proftpd/
 ; Jeff Grossman <jeff@stikman.com>
 ftp5.us		IN	A	66.116.68.208
-
-; ftp://ftp.twtelecom.net/pub/proftpd/
-; Steve Kaczkowski <ftpadmin@twtelecom.net>
-ftp6.us		IN	A	216.136.102.130
-
-; ftp://ftp.lug.udel.edu/pub/network/ftp/proftpd/
-; Bryan <seitz@lug.udel.edu>
-ftp9.us		IN	A	128.175.60.102
 
 ; ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/
 ; Gerald Combs <gerald@ethereal.com>
@@ -612,21 +553,14 @@ ftp.au		IN	A	203.16.234.86
 ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
-ftp.be		IN	A	195.238.1.4
-ftp.bg		IN	A	212.50.28.4
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cn		IN	A	210.51.192.52
 ftp.cz		IN	A	194.108.36.130
-ftp.cz		IN	A	82.208.4.160
 ftp.de		IN	A	129.143.116.10
-ftp.de		IN	A	141.2.114.129
 ftp.de		IN	A	137.248.152.16
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.5.16
-ftp.de		IN	A	141.24.190.77
-ftp.de		IN	A	131.246.236.201
-ftp.dk		IN	A	217.157.160.207
 ftp.ee		IN	A	194.204.30.173
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
@@ -642,10 +576,7 @@ ftp.hu		IN	A	212.40.96.80
 ftp.id		IN	A	202.145.6.63
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
-ftp.jp		IN	A	219.106.240.235
 ftp.jp		IN	A	210.138.109.182
-ftp.kr		IN	A	211.47.128.157
-ftp.lu		IN	A	80.92.66.69
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	213.204.195.9
@@ -657,9 +588,7 @@ ftp.no		IN	A	80.239.42.88
 ftp.pl		IN	A	83.144.72.252
 ftp.pl		IN	AAAA	2001:6f8:93c::1
 ftp.pl		IN	A	193.219.28.2
-ftp.pl		IN	A	213.184.16.3
 ftp.pl		IN	A	80.50.248.77
-ftp.pt		IN	A	193.136.28.171
 ftp.pt		IN	A	194.65.100.42
 ftp.pt		IN	A	194.65.100.43
 ftp.pt		IN	A	213.190.195.46
@@ -668,10 +597,9 @@ ftp.ro		IN	A	193.226.37.6
 ftp.ru		IN	A	195.19.235.116
 ftp.se		IN	A	85.11.195.13
 ftp.se		IN	A	212.37.1.30
+ftp.se		IN	A	213.141.80.22
 ftp.sg		IN	A	202.79.178.226
-ftp.si		IN	A	193.95.210.16
 ftp.sk		IN	A	195.46.80.5
-ftp.tr		IN	A	194.27.16.9
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
 ftp.ua		IN	A	195.248.190.23
@@ -681,10 +609,7 @@ ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ftp.uk		IN	A	82.138.249.1
 ftp.uk		IN	A	62.255.248.218
 ftp.us		IN	A	152.2.210.80
-ftp.us		IN	A	207.246.83.6
 ftp.us		IN	A	66.116.68.208
-ftp.us		IN	A	216.136.102.130
-ftp.us		IN	A	128.175.60.102
 ftp.us		IN	A	65.208.228.223
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	24.123.133.61
