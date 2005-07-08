@@ -182,7 +182,7 @@
 		$query .=              $db->quote($_REQUEST['location']) . ', ';
 		$query .=              $db->quote($_REQUEST['details']) . ', ';
 		$query .=              $db->quote($_REQUEST['updated']) . ', ';
-		$query .=              "true, $sequence)";
+		$query .=              "'true', $sequence)";
 		$result = $db->query($query);
 		if (PEAR::isError($result)) {
 			return $result;
