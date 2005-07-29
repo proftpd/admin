@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005071300      ; Serial
+                              2005072900      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -128,6 +128,10 @@ www4.fr		IN	AAAA	2001:660:7401:211::36
 ; fastorama.com <mrjack@fastorama.com>
 www6.fr		IN	A	194.242.113.132
 
+; http://proftpd.psinformatique.net
+; Pascal <pascal@psinformatique.net>
+www7.fr		IN	A	84.55.136.21
+
 ; http://proftpd.bylinux.net/
 ; pyjamas <pyjamas@bylinux.net>
 www1.hk		IN	A	202.64.181.18
@@ -148,10 +152,6 @@ www1.ie		IN	AAAA	2001:7c8:3:1::4
 ; http://proftpd.ditalinux.it/
 ; Roberto Leandrini <anaconda@ditalinux.it>
 www3.it		IN	A	217.19.156.51
-
-; http://proftpd.ogreland.lv/
-; core <core@ogreland.lv>
-www1.lv		IN	A	62.85.106.250
 
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
@@ -189,10 +189,6 @@ www1.se		IN	A	212.37.1.30
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	A	202.79.178.225
-
-; http://proftpd.cna.isu.edu.tw/
-; KTH <kth@ftp.isu.edu.tw>
-www1.tw		IN	A	140.127.177.17
 
 ; http://proftpd.chu.edu.tw/
 ; PE2500 <ftpadm@ftp.chu.edu.tw>
@@ -252,13 +248,13 @@ www.fr		IN	A	81.220.255.20
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	194.242.113.132
+www.fr		IN	A	84.55.136.21
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.it		IN	A	217.19.156.51
-www.lv		IN	A	62.85.106.250
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.150.134.174
@@ -269,7 +265,6 @@ www.pt		IN	A	213.190.195.46
 www.ro		IN	A	81.180.139.175
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.225
-www.tw		IN	A	140.127.177.17
 www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
@@ -334,6 +329,10 @@ ftp5.de		IN	A	193.175.24.42
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
 ftp7.de		IN	A	141.41.5.16
 
+; ftp://ftp.fu-berlin.de/unix/ftp/proftpd/
+; Holger Weiss <ftp@FU-Berlin.DE>
+ftp13.de		IN	A	130.133.3.130
+
 ; ftp://ftp.jaquet.dk/pub/proftp/
 ; Rasmus <rasmus@jaquet.dk>
 
@@ -374,7 +373,7 @@ ftp1.hu		IN	A	195.228.252.133
 
 ; ftp://ftp.linuxforum.hu/mirrors/ftp.proftpd.org/
 ; Christian Hamar alias krix <krics@sd.externet.hu>
-ftp3.hu		IN	A	212.40.96.80
+ftp3.hu		IN	A	85.90.162.50
 
 ; ftp://public.cakraweb.com/pub/proftpd/
 ; Asfihani <asfik@its-sby.edu>
@@ -480,10 +479,6 @@ ftp3.tw		IN	A	140.112.2.5
 ; Alexander Ryumshin <mizi@alkar.net>
 ftp1.ua		IN	A	195.248.190.23
 
-; ftp://ftp.ccp14.ac.uk/ccp14/ftp-mirror/programming/proftpd/
-; Lachlan Cranswick <lzc@dl.ac.uk>
-ftp2.uk		IN	A	193.61.32.162
-
 ; ftp://proftpd.networkedsystems.co.uk/
 ; fxp0 <daniel@kewlio.net>
 ftp4.uk		IN	A	85.116.4.19
@@ -500,6 +495,10 @@ ftp6.uk		IN	A	62.255.248.218
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	A	152.2.210.80
+
+; ftp://ftp.stikman.com/pub/proftpd/
+; Jeff Grossman <jeff@stikman.com>
+ftp5.us		IN	A	66.116.68.208
 
 ; ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/
 ; Gerald Combs <gerald@ethereal.com>
@@ -528,6 +527,7 @@ ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	137.248.152.16
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.5.16
+ftp.de		IN	A	130.133.3.130
 ftp.ee		IN	A	194.204.30.173
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
@@ -539,7 +539,7 @@ ftp.fr		IN	A	193.54.153.246
 ftp.fr		IN	A	212.43.248.244
 ftp.hu		IN	A	195.228.252.132
 ftp.hu		IN	A	195.228.252.133
-ftp.hu		IN	A	212.40.96.80
+ftp.hu		IN	A	85.90.162.50
 ftp.id		IN	A	202.145.6.63
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
@@ -569,12 +569,12 @@ ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
 ftp.tw		IN	A	140.112.2.5
 ftp.ua		IN	A	195.248.190.23
-ftp.uk		IN	A	193.61.32.162
 ftp.uk		IN	A	85.116.4.19
 ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ftp.uk		IN	A	82.138.249.1
 ftp.uk		IN	A	62.255.248.218
 ftp.us		IN	A	152.2.210.80
+ftp.us		IN	A	66.116.68.208
 ftp.us		IN	A	65.208.228.223
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	24.123.133.61
