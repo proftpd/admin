@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005072900      ; Serial
+                              2005080700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -188,7 +188,8 @@ www1.se		IN	A	212.37.1.30
 
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
-www1.sg		IN	A	202.79.178.225
+www1.sg		IN	A	202.79.178.73
+www1.sg		IN	A	202.79.178.74
 
 ; http://proftpd.chu.edu.tw/
 ; PE2500 <ftpadm@ftp.chu.edu.tw>
@@ -264,7 +265,8 @@ www.pl		IN	A	80.50.248.77
 www.pt		IN	A	213.190.195.46
 www.ro		IN	A	81.180.139.175
 www.se		IN	A	212.37.1.30
-www.sg		IN	A	202.79.178.225
+www.sg		IN	A	202.79.178.73
+www.sg		IN	A	202.79.178.74
 www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
@@ -457,7 +459,8 @@ ftp4.se		IN	A	213.141.80.22
 
 ; ftp://ftp.oss.eznetsols.org/proftpd/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
-ftp1.sg		IN	A	202.79.178.226
+ftp1.sg		IN	A	202.79.178.75
+ftp1.sg		IN	A	202.79.178.76
 
 ; ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/
 ; lubos klokner <erkac@profinet.sk>
@@ -563,7 +566,8 @@ ftp.ru		IN	A	195.19.235.116
 ftp.se		IN	A	85.11.195.13
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
-ftp.sg		IN	A	202.79.178.226
+ftp.sg		IN	A	202.79.178.75
+ftp.sg		IN	A	202.79.178.76
 ftp.sk		IN	A	195.46.80.5
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
