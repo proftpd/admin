@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005080700      ; Serial
+                              2005080900      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -62,6 +62,10 @@ es                  IN A      163.117.156.54
 ; http://proftpd.matenadaran.am/
 ; Vahan Yerkanian <vahan@matenadaran.am>
 www1.am		IN	A	195.250.72.187
+
+; http://proftpd.adcserver.com.ar/
+; Juan Mateo Cassiet <contacto@jmcassiet.com.ar>
+www1.ar		IN	A	200.58.112.182
 
 ; http://proftpd.gds.tuwien.ac.at/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
@@ -229,6 +233,7 @@ www21.us		IN	A	66.92.74.33
 www27.us		IN	A	24.123.133.61
 
 www.am		IN	A	195.250.72.187
+www.ar		IN	A	200.58.112.182
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
@@ -318,10 +323,6 @@ ftp1.cz		IN	A	194.108.36.130
 ; ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/
 ; Adrian Reber <adrian@lisas.de>
 ftp2.de		IN	A	129.143.116.10
-
-; ftp://ftp.chemie.uni-marburg.de/pub/unix/proftpd/
-; Torsten Schneider <ftpadm@chemie.uni-marburg.de>
-ftp4.de		IN	A	137.248.152.16
 
 ; ftp://ftp.franken.de/pub/Linux/proftpd/
 ; Harald Welte <laforge@coruscant.franken.de>
@@ -453,10 +454,6 @@ ftp1.se		IN	A	85.11.195.13
 ; Mirror Admin <mirror@dataphone.net>
 ftp3.se		IN	A	212.37.1.30
 
-; ftp://ftp.se.linux.org/pub/network/proftpd/
-; Svenska Linuxföreningens driftgrupp <selinux-drift@se.linux.org>
-ftp4.se		IN	A	213.141.80.22
-
 ; ftp://ftp.oss.eznetsols.org/proftpd/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 ftp1.sg		IN	A	202.79.178.75
@@ -527,7 +524,6 @@ ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cz		IN	A	194.108.36.130
 ftp.de		IN	A	129.143.116.10
-ftp.de		IN	A	137.248.152.16
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	130.133.3.130
@@ -565,7 +561,6 @@ ftp.ro		IN	A	193.226.37.6
 ftp.ru		IN	A	195.19.235.116
 ftp.se		IN	A	85.11.195.13
 ftp.se		IN	A	212.37.1.30
-ftp.se		IN	A	213.141.80.22
 ftp.sg		IN	A	202.79.178.75
 ftp.sg		IN	A	202.79.178.76
 ftp.sk		IN	A	195.46.80.5
