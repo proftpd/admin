@@ -67,7 +67,7 @@ EOM;
 <?php if ($TYPE == 'ftp'): ?>
     <p>Please use the mirror that's closest to you. If you would like to
     volunteer to be a mirror site, please read the
-	<a href="/howtomirror.html">Mirroring HOWTO</A> page.</p>
+	<a href="/howtomirror.html">Mirroring HOWTO</a> page.</p>
 <?php elseif ($TYPE == 'www'): ?>
     <p>This is a list of active mirrors of this website; the home site is
 	<a href="http://www.proftpd.org/">www.proftpd.org</a>. If you wish to
@@ -83,7 +83,7 @@ EOM;
     closest geographic mirror to conserve bandwidth.</p>
 <?php endif; ?>
 
-<div align="center">
+<div style="text-align: center;">
 
 <?php
 	$db = &DB::connect('mysql://SQL-USER:SQL-PASSWORD@localhost/proftpd');

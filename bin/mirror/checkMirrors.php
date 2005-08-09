@@ -18,13 +18,7 @@
 	 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
 	 */
 
-	/* FIXME: needs to handle:
-	 *   - checking of www.isocode.proftpd.org properly (need to contact
-	 *     that specific host and request www.isocode; currently we're
-	 *     connecting to www.isocode, which could be any mirror for that
-	 *     country).
-	 *   - checking FTP sites. Currently only HTTP is supported.
-	 */
+	/* FIXME: add an argument to specify a LIKE clause for site? */
 
 	/**
 	 * Check for an up-to-date mirror URL.
@@ -33,29 +27,44 @@
 	 *                    automatically.
 	 * @return boolean Whether the mirror is accessible an up-to-date.
 	 */
-	function checkSite($connectTo, $httpHost, $path) {
+	function checkSite($netUrl, $connectTo = null) {
 		/* Timeout in seconds for socket operations. */
-		$SOCKET_TIMEOUT = 30;
+		$SOCKET_TIMEOUT = 90;
 		/* Number of seconds after which a site is considered stale. */
 		$STALE_THRESHOLD = 8 * 24 * 60 * 60;
 
-		$fp = fsockopen($connectTo, 80, $errno, $errstr, $SOCKET_TIMEOUT);
-		if ($fp === false) {
-			return PEAR::raiseError("Couldn't open connection to $connectTo.");
-		}
+		/* To test round-robin hostnames, we need to connect to a specific
+		 * node to test and send a Host: header with the round-robin
+		 * hostname to make sure the node handles it. I couldn't find a good
+		 * way to do this any other way, so we'll send the HTTP commands/
+		 * headers ourselves.
+		 */
+		if ($netUrl->protocol == 'http') {
+			$toHost = (!empty($connectTo) ? $connectTo : $netUrl->host);
 
-		$result = fputs($fp, "GET $path/MIRMON.PROBE HTTP/1.1\r\nHost: $httpHost\r\n\r\n");
-		if ($result === false) {
-			return PEAR::raiseError("Couldn't request $path/MIRMON.PROBE from $connectTo.");
-		}
-
-		/* Fast-forward past all the response headers to get to the content. */
-		do {
-			$line = fgets($fp);
-			if ($line === false) {
-				return PEAR::raiseError("Couldn't fetch contents of $path/MIRMON.PROBE from $connectHost.");
+			$fp = @fsockopen($toHost, $netUrl->port, $errno, $errstr, $SOCKET_TIMEOUT);
+			if ($fp === false) {
+				return PEAR::raiseError("Couldn't open connection to $toHost: ($errno) $errstr.");
 			}
-		} while (!feof($fp) && $line != "\r\n");
+
+			$result = fputs($fp, "GET $netUrl->path/MIRMON.PROBE HTTP/1.1\r\nHost: $netUrl->host\r\n\r\n");
+			if ($result === false) {
+				return PEAR::raiseError("Couldn't request $netUrl->path/MIRMON.PROBE from $toHost.");
+			}
+
+			/* Fast-forward past all the response headers to get to the content. */
+			do {
+				$line = fgets($fp);
+				if ($line === false) {
+					return PEAR::raiseError("Couldn't fetch contents of $netUrl->path/MIRMON.PROBE from $toHost.");
+				}
+			} while (!feof($fp) && $line != "\r\n");
+		} else {
+			$fp = fopen($netUrl->getURL() . '/MIRMON.PROBE', 'r');
+			if ($fp === false) {
+				return PEAR::raiseError("Couldn't retrieve " . $netUrl->getURL() . '/MIRMON.PROBE');
+			}
+		}
 
 		$tstamp = trim(fgets($fp));
 		if ($tstamp === false) {
@@ -136,19 +145,23 @@ EOM;
 	}
 
 	while (($row = $result->fetchRow(DB_FETCHMODE_ASSOC))) {
-		if (!preg_match('#^(ftp|http)://([^/]+)($|/.*)#', $row['site'], $matches)) {
-			die("Couldn't match URL '" . $row['site'] . "'\n");
+		$siteUrl = new Net_URL($row['site']);
+		$urlsToCheck = array($siteUrl);
+
+		if ($siteUrl->protocol == 'http') {
+			$sequenceUrl = new Net_URL($row['site']);
+			$sequenceUrl->host = $hostnameBase . $row['sequence'] . '.' . $row['iso'] . '.proftpd.org';
+			$sequenceUrl->path = '/';
+			$urlsToCheck[] = $sequenceUrl;
+
+			$roundRobinUrl = new Net_URL($row['site']);
+			$roundRobinUrl->host = $hostnameBase . '.' . $row['iso'] . '.proftpd.org';
+			$roundRobinUrl->path = '/';
+			$urlsToCheck[] = $roundRobinUrl;
 		}
-		$urlsToCheck = array(
-			$baseUrl . $matches[2] . $matches[3],
-			$baseUrl . $hostnameBase . $row['sequence'] . '.' . $row['iso'] . '.proftpd.org',
-			$urlsToCheck[] = $baseUrl . $hostnameBase . '.' . $row['iso'] . '.proftpd.org'
-		);
 
 		foreach ($urlsToCheck as $url) {
-			$netUrl = new Net_URL($url);
-
-			$checkResult = checkSite($matches[2], $netUrl->host, $netUrl->path);
+			$checkResult = checkSite($url, ($TYPE == 'http' ? $urlsToCheck[0]->host : null));
 			if (PEAR::isError($checkResult)) {
 				print $checkResult->getMessage() . "\n";
 				continue;
@@ -198,7 +211,7 @@ $headers['To'] = 'jwm@horde.net';
 				if (PEAR::isError($mailResult)) {
 					die("Couldn't send message to " . $headers['To'] . ': ' . $mailResult->getMessage() . "\n");
 				}
-				print "$url is out of date.\n";
+				print $url->getURL() . " is out of date.\n";
 				continue 2;
 			}
 		}
