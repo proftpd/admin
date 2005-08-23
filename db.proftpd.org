@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005080900      ; Serial
+                              2005082300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -91,6 +91,10 @@ www4.au		IN	A	218.214.209.25
 www1.be		IN	A	212.100.160.33
 www1.be		IN	AAAA	2001:6f8:200:1::5:33
 
+; http://proftpd.easyhost.be/
+; EasyHost <sales@easyhost.be>
+www2.be		IN	A	195.95.2.204
+
 ; http://proftpd.fixity.net/
 ; Krasimir Ganchev <admin@fixity.net>
 www1.bg		IN	A	212.50.28.1
@@ -118,10 +122,6 @@ www1.dk		IN	A	217.157.160.207
 ; http://www.proftpd.seasonfive.com/
 ; Yannick Lecaillez <mirrors@seasonfive.com>
 www1.fr		IN	A	212.43.248.244
-
-; http://proftpd.numericable.fr/
-; NOC <noc@numericable.fr>
-www3.fr		IN	A	81.220.255.20
 
 ; http://proftpd.crihan.fr/
 ; Alain Bidaud <crihan-tech@crihan.fr>
@@ -156,6 +156,10 @@ www1.ie		IN	AAAA	2001:7c8:3:1::4
 ; http://proftpd.ditalinux.it/
 ; Roberto Leandrini <anaconda@ditalinux.it>
 www3.it		IN	A	217.19.156.51
+
+; http://www.proftpd.topnet.it/
+; Antonio Prado <aprado@topnet.it>
+www4.it		IN	A	82.143.3.5
 
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
@@ -243,6 +247,7 @@ www.au		IN	A	203.80.162.206
 www.au		IN	A	218.214.209.25
 www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
+www.be		IN	A	195.95.2.204
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
 www.ch		IN	A	62.2.255.42
@@ -250,7 +255,6 @@ www.cn		IN	A	219.239.98.8
 www.de		IN	A	141.41.5.16
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
-www.fr		IN	A	81.220.255.20
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	194.242.113.132
@@ -261,6 +265,7 @@ www.id		IN	A	202.145.6.61
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.it		IN	A	217.19.156.51
+www.it		IN	A	82.143.3.5
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.150.134.174
@@ -307,6 +312,10 @@ ftp2.au		IN	A	203.80.162.206
 ; Bert Vermeulen <ftp@be.easynet.net>
 ftp1.be		IN	A	212.100.160.33
 ftp1.be		IN	AAAA	2001:6f8:200:1::5:33
+
+; ftp://proftpd.easyhost.be/
+; EasyHost <sales@easyhost.be>
+ftp3.be		IN	A	195.95.2.204
 
 ; ftp://ftp.samurai.com/pub/proftpd/
 ; Bryan Fullerton <bryanf@samurai.com>
@@ -386,6 +395,10 @@ ftp1.id		IN	A	202.145.6.63
 ; Dave Burke <ftpadmin@esat.net>
 ftp0.ie		IN	A	193.120.14.241
 ftp0.ie		IN	AAAA	2001:7c8:3:1::4
+
+; ftp://www.proftpd.topnet.it/
+; Antonio Prado <aprado@topnet.it>
+ftp3.it		IN	A	82.143.3.5
 
 ; ftp://proftpd.get7.biz/proftpd/
 ; Motohiro Sunouchi <moto@sunouchi.net>
@@ -520,6 +533,7 @@ ftp.au		IN	A	203.16.234.86
 ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
+ftp.be		IN	A	195.95.2.204
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cz		IN	A	194.108.36.130
@@ -542,6 +556,7 @@ ftp.hu		IN	A	85.90.162.50
 ftp.id		IN	A	202.145.6.63
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
+ftp.it		IN	A	82.143.3.5
 ftp.jp		IN	A	210.138.109.182
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
