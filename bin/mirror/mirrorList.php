@@ -77,7 +77,7 @@ EOM;
     <p>In addition to the direct links further down this page, a number of
     the web mirror sites have been configured to accept connections to
     www.&lt;countrycode&gt;.proftpd.org. These can be accessed by visiting
-    http://www.&lt;isocode&gt;.proftpd.org/.
+    http://www.&lt;isocode&gt;.proftpd.org/.</p>
 
     <p>The countries which have mirrors are listed below. Please use your
     closest geographic mirror to conserve bandwidth.</p>
@@ -137,14 +137,14 @@ EOM;
 		<a href="<?php echo $row['site'] ?>"><?php echo $row['site'] ?></a>
 		<br />
 
-		Location: <?php echo $row['country'] ?>
+		Location: <?php echo htmlentities($row['country']) ?>
 		<?php if (!empty($row['city'])): ?>
-			(<?php echo $row['city'] ?>)
+			(<?php echo htmlentities($row['city']) ?>)
 		<?php endif; ?>
 		<br />
 
 		<?php if (!empty($row['admin'])): ?>
-			Maintained by: <?php echo $row['admin'] ?><br />
+			Maintained by: <?php echo htmlentities($row['admin']) ?><br />
 		<?php endif; ?>
 	</p>
 <?php endwhile; ?>
