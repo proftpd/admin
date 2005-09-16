@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005090600      ; Serial
+                              2005091600      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -144,10 +144,18 @@ www3.hk		IN	A	210.0.190.18
 ; Asfihani <asfik@its-sby.edu>
 www1.id		IN	A	202.145.6.61
 
+; http://proftpd.ugm.ac.id
+; Taufik Suryawan Edyna <taufik@gamatechno.com>
+www2.id		IN	A	222.124.24.8
+
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
 www1.ie		IN	AAAA	2001:7c8:3:1::4
+
+; http://proftpd.spd.co.il/
+; Avi hirsh <admin@spd.co.il>
+www1.il		IN	A	212.199.125.80
 
 ; http://proftpd.ditalinux.it/
 ; Roberto Leandrini <anaconda@ditalinux.it>
@@ -170,9 +178,9 @@ www3.nl		IN	A	82.150.134.174
 ; Paul Engelen <paul@qwezz.nl>
 www4.nl		IN	A	82.165.27.105
 
-; http://proftpd.weedpowered.com/
-; Marius van Witzenburg <info@weedpowered.com>
-www5.nl		IN	A	62.212.92.70
+; http://proftpd.mirror.surfnow.nl/
+; E. van Harten <evert@evertjenetworks.nl>
+www7.nl		IN	A	81.4.69.133
 
 ; http://80.84.226.226/
 ; E. van Harten <evert@evertjenetworks.nl>
@@ -196,8 +204,7 @@ www1.se		IN	A	212.37.1.30
 
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
-www1.sg		IN	A	202.79.178.73
-www1.sg		IN	A	202.79.178.74
+www1.sg		IN	A	202.79.178.97
 
 ; http://proftpd.chu.edu.tw/
 ; PE2500 <ftpadm@ftp.chu.edu.tw>
@@ -261,21 +268,22 @@ www.fr		IN	A	84.55.136.21
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.id		IN	A	202.145.6.61
+www.id		IN	A	222.124.24.8
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
+www.il		IN	A	212.199.125.80
 www.it		IN	A	217.19.156.51
 www.it		IN	A	82.143.3.5
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.150.134.174
 www.nl		IN	A	82.165.27.105
-www.nl		IN	A	62.212.92.70
+www.nl		IN	A	81.4.69.133
 www.pl		IN	A	80.50.248.77
 www.pt		IN	A	213.190.195.46
 www.ro		IN	A	81.180.139.175
 www.se		IN	A	212.37.1.30
-www.sg		IN	A	202.79.178.73
-www.sg		IN	A	202.79.178.74
+www.sg		IN	A	202.79.178.97
 www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
@@ -387,6 +395,10 @@ ftp3.hu		IN	A	85.90.162.50
 ; Asfihani <asfik@its-sby.edu>
 ftp1.id		IN	A	202.145.6.63
 
+; ftp://info.ugm.ac.id/proftpd/
+; Taufik Suryawan Edyna <taufik@gamatechno.com>
+ftp2.id		IN	A	222.124.24.8
+
 ; ftp://ftp.esat.net/mirrors/ftp.proftpd.org/
 ; Dave Burke <ftpadmin@esat.net>
 ftp0.ie		IN	A	193.120.14.241
@@ -412,10 +424,6 @@ ftp3.nl		IN	A	82.150.134.174
 ; ftp://ftp.easynet.nl/mirror/proftp/
 ; Diederik <mirror@nl.easynet.net>
 ftp4.nl		IN	A	195.86.128.57
-
-; ftp://proftpd.weedpowered.com/
-; Marius van Witzenburg <info@weedpowered.com>
-ftp5.nl		IN	A	62.212.92.70
 
 ; ftp://ftp.tomt.net/pub/proftpd/
 ; Andre Tomt <andre@tomt.net>
@@ -469,8 +477,7 @@ ftp4.se		IN	A	213.141.80.22
 
 ; ftp://ftp.oss.eznetsols.org/proftpd/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
-ftp1.sg		IN	A	202.79.178.75
-ftp1.sg		IN	A	202.79.178.76
+ftp1.sg		IN	A	202.79.178.98
 
 ; ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/
 ; lubos klokner <erkac@profinet.sk>
@@ -554,6 +561,7 @@ ftp.hu		IN	A	195.228.252.132
 ftp.hu		IN	A	195.228.252.133
 ftp.hu		IN	A	85.90.162.50
 ftp.id		IN	A	202.145.6.63
+ftp.id		IN	A	222.124.24.8
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
@@ -562,7 +570,6 @@ ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	82.150.134.174
 ftp.nl		IN	A	195.86.128.57
-ftp.nl		IN	A	62.212.92.70
 ftp.no		IN	A	80.239.42.88
 ftp.pl		IN	A	83.144.70.202
 ftp.pl		IN	AAAA	2001:6f8:93c::1
@@ -577,8 +584,7 @@ ftp.ru		IN	A	195.19.235.116
 ftp.se		IN	A	85.11.195.13
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
-ftp.sg		IN	A	202.79.178.75
-ftp.sg		IN	A	202.79.178.76
+ftp.sg		IN	A	202.79.178.98
 ftp.sk		IN	A	195.46.80.5
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
