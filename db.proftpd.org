@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005091600      ; Serial
+                              2005092200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -178,13 +178,13 @@ www3.nl		IN	A	82.150.134.174
 ; Paul Engelen <paul@qwezz.nl>
 www4.nl		IN	A	82.165.27.105
 
+; http://proftpd.weedpowered.com/
+; Marius van Witzenburg <info@weedpowered.com>
+www5.nl		IN	A	62.212.92.70
+
 ; http://proftpd.mirror.surfnow.nl/
 ; E. van Harten <evert@evertjenetworks.nl>
 www7.nl		IN	A	81.4.69.133
-
-; http://80.84.226.226/
-; E. van Harten <evert@evertjenetworks.nl>
-www7.nl		IN	A	80.84.226.226
 
 ; http://proftpd.tpnet.pl/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
@@ -205,6 +205,10 @@ www1.se		IN	A	212.37.1.30
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	A	202.79.178.97
+
+; http://proftpd.internetsepeti.com/
+; Ugur GUNCER <admin@internetsepeti.com>
+www1.tr		IN	A	212.12.131.34
 
 ; http://proftpd.chu.edu.tw/
 ; PE2500 <ftpadm@ftp.chu.edu.tw>
@@ -278,12 +282,14 @@ www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.150.134.174
 www.nl		IN	A	82.165.27.105
+www.nl		IN	A	62.212.92.70
 www.nl		IN	A	81.4.69.133
 www.pl		IN	A	80.50.248.77
 www.pt		IN	A	213.190.195.46
 www.ro		IN	A	81.180.139.175
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
+www.tr		IN	A	212.12.131.34
 www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
@@ -408,6 +414,9 @@ ftp0.ie		IN	AAAA	2001:7c8:3:1::4
 ; Antonio Prado <aprado@topnet.it>
 ftp3.it		IN	A	82.143.3.5
 
+; ftp://82.106.9.62/proftpd/
+; psycheye <psycheye2@yahoo.it>
+
 ; ftp://proftpd.get7.biz/proftpd/
 ; Motohiro Sunouchi <moto@sunouchi.net>
 ftp3.jp		IN	A	210.138.109.182
@@ -424,6 +433,10 @@ ftp3.nl		IN	A	82.150.134.174
 ; ftp://ftp.easynet.nl/mirror/proftp/
 ; Diederik <mirror@nl.easynet.net>
 ftp4.nl		IN	A	195.86.128.57
+
+; ftp://proftpd.weedpowered.com/
+; Marius van Witzenburg <info@weedpowered.com>
+ftp5.nl		IN	A	62.212.92.70
 
 ; ftp://ftp.tomt.net/pub/proftpd/
 ; Andre Tomt <andre@tomt.net>
@@ -570,6 +583,7 @@ ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	82.150.134.174
 ftp.nl		IN	A	195.86.128.57
+ftp.nl		IN	A	62.212.92.70
 ftp.no		IN	A	80.239.42.88
 ftp.pl		IN	A	83.144.70.202
 ftp.pl		IN	AAAA	2001:6f8:93c::1
