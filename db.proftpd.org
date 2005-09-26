@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005092200      ; Serial
+                              2005092600      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -98,6 +98,10 @@ www1.bg		IN	A	212.50.28.1
 ; http://proftpd.zadnik.org/
 ; Alexander Velin <velin@bastun.net>
 www2.bg		IN	A	194.12.255.250
+
+; http://proftpd.ehdbrasil.net
+; Diego Silva <diego@ehdbrasil.net>
+www2.br		IN	A	201.21.86.93
 
 ; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
@@ -260,6 +264,7 @@ www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
+www.br		IN	A	201.21.86.93
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.de		IN	A	141.41.5.16
