@@ -77,8 +77,13 @@ mod_search
   + implements a SITE SEARCH command, for using nftw(3), globs and regexs
     for scanning a site for a given filename pattern
 
+mod_svn
+  + implements source code control for files uploaded/downloaded from
+    server using Subversion
+
 mod_vscan
   + scan for viruses on incoming and outgoing files
+    (Note: there is a mod_clamav that is a step in this direction)
 
 mod_magic
   + use libmagic for identifying a given file type (a la file(1))
@@ -92,5 +97,11 @@ mod_snmp
 
 mod_slp/mod_zeroconf
   + see www.openslp.org, www.zeroconf.org
+
+mod_perl
+
+mod_python
+
+mod_php
 
 EBCDIC support
