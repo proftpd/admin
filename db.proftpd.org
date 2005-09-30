@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005092600      ; Serial
+                              2005093000      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -101,7 +101,7 @@ www2.bg		IN	A	194.12.255.250
 
 ; http://proftpd.ehdbrasil.net
 ; Diego Silva <diego@ehdbrasil.net>
-www2.br		IN	A	201.21.86.93
+www2.br		IN	A	201.21.84.127
 
 ; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
@@ -174,10 +174,6 @@ www4.it		IN	A	82.143.3.5
 www1.nl		IN	A	80.84.224.16
 www1.nl		IN	AAAA	2001:828:101:1::4
 
-; http://proftpd.mirrors.softdev.nl/
-; Richard Pijnenburg <richard@softdev.nl>
-www3.nl		IN	A	82.150.134.174
-
 ; http://proftpd.qwezz.nl
 ; Paul Engelen <paul@qwezz.nl>
 www4.nl		IN	A	82.165.27.105
@@ -209,6 +205,10 @@ www1.se		IN	A	212.37.1.30
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	A	202.79.178.97
+
+; http://proftpd.x86.sk/
+; Jakub Cerveny <br@x86.sk>
+www1.sk		IN	A	147.175.168.26
 
 ; http://proftpd.internetsepeti.com/
 ; Ugur GUNCER <admin@internetsepeti.com>
@@ -264,7 +264,7 @@ www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
-www.br		IN	A	201.21.86.93
+www.br		IN	A	201.21.84.127
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.de		IN	A	141.41.5.16
@@ -285,7 +285,6 @@ www.it		IN	A	217.19.156.51
 www.it		IN	A	82.143.3.5
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
-www.nl		IN	A	82.150.134.174
 www.nl		IN	A	82.165.27.105
 www.nl		IN	A	62.212.92.70
 www.nl		IN	A	81.4.69.133
@@ -294,6 +293,7 @@ www.pt		IN	A	213.190.195.46
 www.ro		IN	A	81.180.139.175
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
+www.sk		IN	A	147.175.168.26
 www.tr		IN	A	212.12.131.34
 www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
@@ -419,9 +419,6 @@ ftp0.ie		IN	AAAA	2001:7c8:3:1::4
 ; Antonio Prado <aprado@topnet.it>
 ftp3.it		IN	A	82.143.3.5
 
-; ftp://82.106.9.62/proftpd/
-; psycheye <psycheye2@yahoo.it>
-
 ; ftp://proftpd.get7.biz/proftpd/
 ; Motohiro Sunouchi <moto@sunouchi.net>
 ftp3.jp		IN	A	210.138.109.182
@@ -430,10 +427,6 @@ ftp3.jp		IN	A	210.138.109.182
 ;  <mark@NL.UU.NET>
 ftp1.nl		IN	A	195.129.111.8
 ftp1.nl		IN	A	195.129.111.9
-
-; ftp://proftpd.mirrors.softdev.nl/proftpd/
-; Richard Pijnenburg <richard@softdev.nl>
-ftp3.nl		IN	A	82.150.134.174
 
 ; ftp://ftp.easynet.nl/mirror/proftp/
 ; Diederik <mirror@nl.easynet.net>
@@ -473,14 +466,6 @@ ftp2.pt		IN	A	213.190.195.46
 ; SUBREDU Manuel <diablo@iasi.roedu.net>
 ftp2.ro		IN	A	192.129.4.120
 
-; ftp://ftp.craiova.roedu.net/pub/mirrors/ftp.proftpd.org/
-; Gabriel Toma-Tumbar <gtoma@craiova.roedu.net>
-ftp3.ro		IN	A	193.226.37.6
-
-; ftp://lich.phys.spbu.ru/mirrors/proftpd.org/
-; Dima Veselov <kab00m@lich.phys.spbu.ru>
-ftp1.ru		IN	A	195.19.235.116
-
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
 ftp1.se		IN	A	85.11.195.13
@@ -500,6 +485,10 @@ ftp1.sg		IN	A	202.79.178.98
 ; ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/
 ; lubos klokner <erkac@profinet.sk>
 ftp1.sk		IN	A	195.46.80.5
+
+; ftp://proftpd.x86.sk/
+; Jakub Cerveny <br@x86.sk>
+ftp2.sk		IN	A	147.175.168.26
 
 ; ftp://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/
 ; KTH <kth@ftp.isu.edu.tw>
@@ -586,7 +575,6 @@ ftp.it		IN	A	82.143.3.5
 ftp.jp		IN	A	210.138.109.182
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
-ftp.nl		IN	A	82.150.134.174
 ftp.nl		IN	A	195.86.128.57
 ftp.nl		IN	A	62.212.92.70
 ftp.no		IN	A	80.239.42.88
@@ -598,13 +586,12 @@ ftp.pt		IN	A	194.65.100.42
 ftp.pt		IN	A	194.65.100.43
 ftp.pt		IN	A	213.190.195.46
 ftp.ro		IN	A	192.129.4.120
-ftp.ro		IN	A	193.226.37.6
-ftp.ru		IN	A	195.19.235.116
 ftp.se		IN	A	85.11.195.13
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
 ftp.sg		IN	A	202.79.178.98
 ftp.sk		IN	A	195.46.80.5
+ftp.sk		IN	A	147.175.168.26
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
 ftp.tw		IN	A	140.112.2.5
