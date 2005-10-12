@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005100400      ; Serial
+                              2005101200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -101,7 +101,7 @@ www2.bg		IN	A	194.12.255.250
 
 ; http://proftpd.ehdbrasil.net
 ; Diego Silva <diego@ehdbrasil.net>
-www2.br		IN	A	201.21.96.141
+www2.br		IN	A	201.21.105.193
 
 ; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
@@ -214,10 +214,6 @@ www1.sk		IN	A	147.175.168.26
 ; Ugur GUNCER <admin@internetsepeti.com>
 www1.tr		IN	A	212.12.131.34
 
-; http://proftpd.chu.edu.tw/
-; PE2500 <ftpadm@ftp.chu.edu.tw>
-www2.tw		IN	A	140.126.1.54
-
 ; http://proftpd.dp.ua/
 ; Alexander Ryumshin <mizi@alkar.net>
 www1.ua		IN	A	195.248.190.23
@@ -264,7 +260,7 @@ www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
-www.br		IN	A	201.21.96.141
+www.br		IN	A	201.21.105.193
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.de		IN	A	141.41.5.16
@@ -295,7 +291,6 @@ www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
 www.tr		IN	A	212.12.131.34
-www.tw		IN	A	140.126.1.54
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
