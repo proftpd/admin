@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005101200      ; Serial
+                              2005101700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -66,6 +66,10 @@ www1.am		IN	A	195.250.72.187
 ; http://proftpd.adcserver.com.ar/
 ; Juan Mateo Cassiet <contacto@jmcassiet.com.ar>
 www1.ar		IN	A	200.58.112.182
+
+; http://proftpd.localhost.net.ar
+; Nicolas Sigal <mirrors@localhost.net.ar>
+www2.ar		IN	A	200.43.193.199
 
 ; http://proftpd.gds.tuwien.ac.at/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
@@ -247,8 +251,13 @@ www21.us		IN	A	66.92.74.33
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	A	24.123.133.61
 
+; http://proftpd.hoxt.com
+; Son Nguyen <son@hoxt.com>
+www28.us		IN	A	206.51.225.20
+
 www.am		IN	A	195.250.72.187
 www.ar		IN	A	200.58.112.182
+www.ar		IN	A	200.43.193.199
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
@@ -300,6 +309,7 @@ www.us		IN	A	67.18.215.34
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
 www.us		IN	A	24.123.133.61
+www.us		IN	A	206.51.225.20
 ; ftp://proftpd.matenadaran.am/
 ; Vahan Yerkanian <vahan@matenadaran.am>
 ftp1.am		IN	A	195.250.72.187
