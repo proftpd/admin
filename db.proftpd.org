@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005101700      ; Serial
+                              2005102800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -115,6 +115,10 @@ www1.ch		IN	A	62.2.255.42
 ; Liu Kang <liukange@netease.com>
 www4.cn		IN	A	219.239.98.8
 
+; http://proftpd.ni.cz/
+; Michal Jursa <michal@ni.cz>
+www1.cz		IN	A	82.113.48.3
+
 ; http://proftpd.uasw.edu/
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
 www1.de		IN	A	141.41.5.16
@@ -190,6 +194,9 @@ www5.nl		IN	A	62.212.92.70
 ; E. van Harten <evert@evertjenetworks.nl>
 www7.nl		IN	A	81.4.69.133
 
+; http://proftpd.jlnetworks.co.uk/
+; James Louthan <administrator@jldns.co.uk>
+
 ; http://proftpd.tpnet.pl/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 www4.pl		IN	A	80.50.248.77
@@ -216,7 +223,12 @@ www1.sk		IN	A	147.175.168.26
 
 ; http://proftpd.internetsepeti.com/
 ; Ugur GUNCER <admin@internetsepeti.com>
-www1.tr		IN	A	212.12.131.34
+www1.tr		IN	A	212.12.131.116
+
+; http://proftpd.ulak.net.tr/
+; Onur BEKTAS <ftpadm@ulak.net.tr>
+www2.tr		IN	A	193.140.100.10
+www2.tr		IN	AAAA	2001:a98:11::2
 
 ; http://proftpd.dp.ua/
 ; Alexander Ryumshin <mizi@alkar.net>
@@ -255,6 +267,10 @@ www27.us		IN	A	24.123.133.61
 ; Son Nguyen <son@hoxt.com>
 www28.us		IN	A	206.51.225.20
 
+; http://proftpd.linuxshop.us/
+; Scott Braynard <scott@hostingzero.com>
+www29.us		IN	A	65.98.78.163
+
 www.am		IN	A	195.250.72.187
 www.ar		IN	A	200.58.112.182
 www.ar		IN	A	200.43.193.199
@@ -272,6 +288,7 @@ www.bg		IN	A	194.12.255.250
 www.br		IN	A	201.21.105.193
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
+www.cz		IN	A	82.113.48.3
 www.de		IN	A	141.41.5.16
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
@@ -299,7 +316,9 @@ www.ro		IN	A	81.180.139.175
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
-www.tr		IN	A	212.12.131.34
+www.tr		IN	A	212.12.131.116
+www.tr		IN	A	193.140.100.10
+www.tr		IN	AAAA	2001:a98:11::2
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
@@ -310,6 +329,7 @@ www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
 www.us		IN	A	24.123.133.61
 www.us		IN	A	206.51.225.20
+www.us		IN	A	65.98.78.163
 ; ftp://proftpd.matenadaran.am/
 ; Vahan Yerkanian <vahan@matenadaran.am>
 ftp1.am		IN	A	195.250.72.187
@@ -471,10 +491,6 @@ ftp2.pt		IN	A	213.190.195.46
 ; SUBREDU Manuel <diablo@iasi.roedu.net>
 ftp2.ro		IN	A	192.129.4.120
 
-; ftp://ftp.eagle.y.se/pub/proftpd/
-; Martin Ostlund <mo@bestlinux.se>
-ftp1.se		IN	A	85.11.195.13
-
 ; ftp://mirror2.dataphone.se/pub/ProFTPD/
 ; Mirror Admin <mirror@dataphone.net>
 ftp3.se		IN	A	212.37.1.30
@@ -494,6 +510,10 @@ ftp1.sk		IN	A	195.46.80.5
 ; ftp://proftpd.x86.sk/pub/proftpd/
 ; Jakub Cerveny <br@x86.sk>
 ftp2.sk		IN	A	147.175.168.26
+
+; ftp://ftp.ulak.net.tr/proftpd
+; Onur BEKTAS <ftpadm@ulak.net.tr>
+ftp2.tr		IN	A	193.140.100.10
 
 ; ftp://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/
 ; KTH <kth@ftp.isu.edu.tw>
@@ -591,12 +611,12 @@ ftp.pt		IN	A	194.65.100.42
 ftp.pt		IN	A	194.65.100.43
 ftp.pt		IN	A	213.190.195.46
 ftp.ro		IN	A	192.129.4.120
-ftp.se		IN	A	85.11.195.13
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
 ftp.sg		IN	A	202.79.178.98
 ftp.sk		IN	A	195.46.80.5
 ftp.sk		IN	A	147.175.168.26
+ftp.tr		IN	A	193.140.100.10
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
 ftp.tw		IN	A	140.112.2.5
