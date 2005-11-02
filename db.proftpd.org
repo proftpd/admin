@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005102800      ; Serial
+                              2005110200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -66,10 +66,6 @@ www1.am		IN	A	195.250.72.187
 ; http://proftpd.adcserver.com.ar/
 ; Juan Mateo Cassiet <contacto@jmcassiet.com.ar>
 www1.ar		IN	A	200.58.112.182
-
-; http://proftpd.localhost.net.ar
-; Nicolas Sigal <mirrors@localhost.net.ar>
-www2.ar		IN	A	200.43.193.199
 
 ; http://proftpd.gds.tuwien.ac.at/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
@@ -153,7 +149,7 @@ www1.hk		IN	A	202.64.181.18
 www3.hk		IN	A	210.0.190.18
 
 ; http://proftpd.cakraweb.com/
-; Asfihani <asfik@its-sby.edu>
+; Jeffry Antonius <jeffry@cakraweb.com>
 www1.id		IN	A	202.145.6.61
 
 ; http://proftpd.ugm.ac.id
@@ -196,6 +192,11 @@ www7.nl		IN	A	81.4.69.133
 
 ; http://proftpd.jlnetworks.co.uk/
 ; James Louthan <administrator@jldns.co.uk>
+www8.nl		IN	A	83.149.72.210
+
+; http://proftpd.mirror.jt.org/
+; Jeremiah Tieman <mirrors@jt.org>
+www9.nl		IN	A	85.17.1.60
 
 ; http://proftpd.tpnet.pl/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
@@ -204,10 +205,6 @@ www4.pl		IN	A	80.50.248.77
 ; http://proftpd.zarco.org/
 ; Carlos Filipe <filipe@zarco.org>
 www2.pt		IN	A	213.190.195.46
-
-; http://www.ro.proftpd.org/
-; Subredu Manuel (FTPAdmin) <ftpadmin@iasi.roedu.net>
-www3.ro		IN	A	81.180.139.175
 
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
@@ -259,10 +256,6 @@ www6.us		IN	A	65.208.228.223
 ; Matt Mozur <matt.mozur@sourwood.net>
 www21.us		IN	A	66.92.74.33
 
-; http://proftpd.mirror.wrpn.net/
-; Wesley Haines <kremit@wrpn.net>
-www27.us		IN	A	24.123.133.61
-
 ; http://proftpd.hoxt.com
 ; Son Nguyen <son@hoxt.com>
 www28.us		IN	A	206.51.225.20
@@ -273,7 +266,6 @@ www29.us		IN	A	65.98.78.163
 
 www.am		IN	A	195.250.72.187
 www.ar		IN	A	200.58.112.182
-www.ar		IN	A	200.43.193.199
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
@@ -310,9 +302,10 @@ www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.165.27.105
 www.nl		IN	A	62.212.92.70
 www.nl		IN	A	81.4.69.133
+www.nl		IN	A	83.149.72.210
+www.nl		IN	A	85.17.1.60
 www.pl		IN	A	80.50.248.77
 www.pt		IN	A	213.190.195.46
-www.ro		IN	A	81.180.139.175
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -327,7 +320,6 @@ www.uk		IN	A	82.138.249.1
 www.us		IN	A	67.18.215.34
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
-www.us		IN	A	24.123.133.61
 www.us		IN	A	206.51.225.20
 www.us		IN	A	65.98.78.163
 ; ftp://proftpd.matenadaran.am/
@@ -390,7 +382,7 @@ ftp1.dk		IN	A	217.157.160.207
 
 ; ftp://mirror.estweb.ee/proftpd/
 ; Ivari Horm <admin@estweb.ee>
-ftp1.ee		IN	A	194.204.30.173
+ftp1.ee		IN	A	193.40.252.230
 
 ; ftp://ftp.ubu.es/pub/mirror/proftpd/
 ; Pedro R. Benito <pedro@ubu.es>
@@ -491,6 +483,10 @@ ftp2.pt		IN	A	213.190.195.46
 ; SUBREDU Manuel <diablo@iasi.roedu.net>
 ftp2.ro		IN	A	192.129.4.120
 
+; ftp://ftp.eagle.y.se/pub/proftpd/
+; Martin Ostlund <mo@bestlinux.se>
+ftp1.se		IN	A	85.11.195.13
+
 ; ftp://mirror2.dataphone.se/pub/ProFTPD/
 ; Mirror Admin <mirror@dataphone.net>
 ftp3.se		IN	A	212.37.1.30
@@ -560,10 +556,6 @@ ftp12.us		IN	A	65.208.228.223
 ; Matt Mozur <ftpmaster@sourwood.net>
 ftp24.us		IN	A	66.92.74.33
 
-; ftp://mirror.wrpn.net/proftpd/
-; Wesley Haines <kremit@wrpn.net>
-ftp25.us		IN	A	24.123.133.61
-
 ftp.am		IN	A	195.250.72.187
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
@@ -580,7 +572,7 @@ ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	130.133.3.130
 ftp.dk		IN	A	217.157.160.207
-ftp.ee		IN	A	194.204.30.173
+ftp.ee		IN	A	193.40.252.230
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
 ftp.fr		IN	AAAA	2001:860::7fff:202:b3ff:fe46:323e
@@ -611,6 +603,7 @@ ftp.pt		IN	A	194.65.100.42
 ftp.pt		IN	A	194.65.100.43
 ftp.pt		IN	A	213.190.195.46
 ftp.ro		IN	A	192.129.4.120
+ftp.se		IN	A	85.11.195.13
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
 ftp.sg		IN	A	202.79.178.98
@@ -629,4 +622,3 @@ ftp.us		IN	A	152.2.210.80
 ftp.us		IN	A	66.116.68.208
 ftp.us		IN	A	65.208.228.223
 ftp.us		IN	A	66.92.74.33
-ftp.us		IN	A	24.123.133.61
