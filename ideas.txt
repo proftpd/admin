@@ -93,15 +93,32 @@ mod_auth_ntlm
 
 mod_snmp
   + expose an interface for SNMP monitoring of the server status
-  + generate traps based on certain events?  Requires Events API (see above)
+  + generate traps based on certain events?
 
-mod_slp/mod_zeroconf
+mod_slp/mod_zeroconf/mod_bonjour
   + see www.openslp.org, www.zeroconf.org
 
-mod_perl
+Language Bindings:
 
-mod_python
+  + mod_perl
+  + mod_python
+  + mod_php
 
-mod_php
+mod_quotatab
+  + shared quota limits, a.k.a quota profiles
+
+    This would help solve the question of default quotas, and allow the
+    same limit quota to be easily applied to multiple entities, each
+    of which would have its own individual tally.
+
+  + directory size limits
+
+    This would address the question of "How can I set a limit on the
+    size of /path/to/dir?".  In effect, it requires implementing tree-based
+    quotas, quotas based on location rather than ownership.  Much
+    complexity in how location-based tallies would interact with
+    ownership-based tallies.
+
+prxs
 
 EBCDIC support
