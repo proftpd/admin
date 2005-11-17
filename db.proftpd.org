@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005110200      ; Serial
+                              2005111700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -59,13 +59,13 @@ es                  IN A      163.117.156.54
 ; Use the ProFTPD Mirror Maintenance system to update.
 ; ***********************************************************************
 
-; http://proftpd.matenadaran.am/
-; Vahan Yerkanian <vahan@matenadaran.am>
-www1.am		IN	A	195.250.72.187
-
 ; http://proftpd.adcserver.com.ar/
 ; Juan Mateo Cassiet <contacto@jmcassiet.com.ar>
 www1.ar		IN	A	200.58.112.182
+
+; http://proftpd.localhost.net.ar
+; Nicolas Sigal <mirrors@localhost.net.ar>
+www2.ar		IN	A	200.43.193.199
 
 ; http://proftpd.gds.tuwien.ac.at/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
@@ -139,6 +139,10 @@ www6.fr		IN	A	194.242.113.132
 ; http://proftpd.psinformatique.net
 ; Pascal <pascal@psinformatique.net>
 www7.fr		IN	A	84.55.136.21
+
+; http://proftpd.techteam.gr
+; Techteam.gr <webmaster@techteam.gr>
+www1.gr		IN	A	70.85.220.66
 
 ; http://proftpd.bylinux.net/
 ; pyjamas <pyjamas@bylinux.net>
@@ -264,8 +268,20 @@ www28.us		IN	A	206.51.225.20
 ; Scott Braynard <scott@hostingzero.com>
 www29.us		IN	A	65.98.78.163
 
-www.am		IN	A	195.250.72.187
+; http://proftpd.favicon.info/
+; Ionel Roiban <apache.servers@gmail.com>
+www30.us		IN	A	217.160.250.20
+
+; http://proftpd.mirrorgeek.com/
+; Dmitriy <master@mirrorgeek.com>
+www31.us		IN	A	70.86.75.98
+
+; http://proftpd.annetco.com
+; Ninh Nguyen Viet <vietninh@annetco.com>
+www1.vn		IN	A	210.245.22.70
+
 www.ar		IN	A	200.58.112.182
+www.ar		IN	A	200.43.193.199
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
@@ -288,6 +304,7 @@ www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	194.242.113.132
 www.fr		IN	A	84.55.136.21
+www.gr		IN	A	70.85.220.66
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.id		IN	A	202.145.6.61
@@ -322,10 +339,9 @@ www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
 www.us		IN	A	206.51.225.20
 www.us		IN	A	65.98.78.163
-; ftp://proftpd.matenadaran.am/
-; Vahan Yerkanian <vahan@matenadaran.am>
-ftp1.am		IN	A	195.250.72.187
-
+www.us		IN	A	217.160.250.20
+www.us		IN	A	70.86.75.98
+www.vn		IN	A	210.245.22.70
 ; ftp://ftp.servus.at/ProFTPD/
 ; Didi Baer <didi@servus.at>
 ftp1.at		IN	A	193.170.194.26
@@ -556,7 +572,6 @@ ftp12.us		IN	A	65.208.228.223
 ; Matt Mozur <ftpmaster@sourwood.net>
 ftp24.us		IN	A	66.92.74.33
 
-ftp.am		IN	A	195.250.72.187
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
 ftp.au		IN	A	203.16.234.85
