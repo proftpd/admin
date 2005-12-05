@@ -28,8 +28,6 @@
                     IN  A     217.154.246.86
 www                 IN  A     217.154.246.86
 
-mistral.proftpd.org	IN	A	217.154.246.86
-
 ; Main FTP site
 ; Hosted by Robe -- robe@amd.co.at
 ftp                 IN  A     81.223.20.36
