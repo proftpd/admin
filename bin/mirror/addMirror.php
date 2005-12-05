@@ -178,7 +178,7 @@
 		$query .= 'VALUES (' . $db->quote($_REQUEST['url']) . ', ';
 		$query .=              $db->quote($_REQUEST['adminName']) . ', ';
 		$query .=              $db->quote($_REQUEST['adminEmail']) . ', ';
-		$query .=              $db->quote($_REQUEST['countrycode']) . ', ';
+		$query .=              strtolower($db->quote($_REQUEST['countrycode'])) . ', ';
 		$query .=              $db->quote($_REQUEST['location']) . ', ';
 		$query .=              $db->quote($_REQUEST['details']) . ', ';
 		$query .=              $db->quote($_REQUEST['updated']) . ', ';
