@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005112500      ; Serial
+                              2005120500      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -14,13 +14,14 @@
                     IN  NS    boost.horde.net.
                     IN  NS    ns1.cluenet.de.
 
-; mail handling
-;; mail.vom.org.uk -- hamster@korenwolf.net
+; hamster@korenwolf.net
                     IN  MX    10 mail.vom.org.uk.
-;; groundhog.korenwolf.net -- hamster@korenwolf.net
+; hamster@korenwolf.net
                     IN  MX    10 groundhog.korenwolf.net.
-;; mail1.cluenet.de -- dr@proftpd.org
+; dr@proftpd.org
 ;                    IN  MX    10 mail1.cluenet.de.
+; jwm@horde.net
+                    IN  MX    10 boost.horde.net.
 
 ; Main web site
 ; Hosted at Frontier Internet -- hamster@korenwolf.net
