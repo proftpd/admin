@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005120500      ; Serial
+                              2005120700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -98,10 +98,6 @@ www1.bg		IN	A	212.50.28.1
 ; Alexander Velin <velin@bastun.net>
 www2.bg		IN	A	194.12.255.250
 
-; http://proftpd.ehdbrasil.net
-; Diego Silva <diego@ehdbrasil.net>
-www2.br		IN	A	201.21.83.129
-
 ; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
 www1.ch		IN	A	62.2.255.42
@@ -113,6 +109,10 @@ www4.cn		IN	A	219.239.98.8
 ; http://proftpd.ni.cz/
 ; Michal Jursa <michal@ni.cz>
 www1.cz		IN	A	82.113.48.3
+
+; http://proftpd.uasw.edu/
+; Thorsten Ludewig <T.Ludewig@UASW.EDU>
+www1.de		IN	A	141.41.5.16
 
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
@@ -151,10 +151,6 @@ www3.hk		IN	A	210.0.190.18
 ; Jeffry Antonius <jeffry@cakraweb.com>
 www1.id		IN	A	202.145.6.61
 
-; http://proftpd.ugm.ac.id
-; Taufik Suryawan Edyna <taufik@gamatechno.com>
-www2.id		IN	A	222.124.24.8
-
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
@@ -181,10 +177,6 @@ www1.nl		IN	AAAA	2001:828:101:1::4
 ; Paul Engelen <paul@qwezz.nl>
 www4.nl		IN	A	82.165.27.105
 
-; http://proftpd.mirror.surfnow.nl/
-; E. van Harten <evert@evertjenetworks.nl>
-www7.nl		IN	A	81.4.69.133
-
 ; http://proftpd.jlnetworks.co.uk/
 ; James Louthan <administrator@jldns.co.uk>
 www8.nl		IN	A	83.149.72.210
@@ -196,10 +188,6 @@ www9.nl		IN	A	85.17.1.60
 ; http://proftpd.tpnet.pl/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 www4.pl		IN	A	80.50.248.77
-
-; http://proftpd.zarco.org/
-; Carlos Filipe <filipe@zarco.org>
-www2.pt		IN	A	213.190.195.46
 
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
@@ -259,14 +247,6 @@ www27.us		IN	A	24.123.133.61
 ; Son Nguyen <son@hoxt.com>
 www28.us		IN	A	206.51.225.20
 
-; http://proftpd.linuxshop.us/
-; Scott Braynard <scott@hostingzero.com>
-www29.us		IN	A	65.98.78.163
-
-; http://proftpd.favicon.info/
-; Ionel Roiban <apache.servers@gmail.com>
-www30.us		IN	A	217.160.250.20
-
 ; http://proftpd.mirrorgeek.com/
 ; Dmitriy <master@mirrorgeek.com>
 www31.us		IN	A	70.86.75.98
@@ -292,10 +272,10 @@ www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
-www.br		IN	A	201.21.83.129
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
+www.de		IN	A	141.41.5.16
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
 www.fr		IN	A	195.221.21.36
@@ -306,7 +286,6 @@ www.gr		IN	A	70.85.220.66
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.id		IN	A	202.145.6.61
-www.id		IN	A	222.124.24.8
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.il		IN	A	212.199.125.80
@@ -315,11 +294,9 @@ www.it		IN	A	82.143.3.5
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.165.27.105
-www.nl		IN	A	81.4.69.133
 www.nl		IN	A	83.149.72.210
 www.nl		IN	A	85.17.1.60
 www.pl		IN	A	80.50.248.77
-www.pt		IN	A	213.190.195.46
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -336,8 +313,6 @@ www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
 www.us		IN	A	24.123.133.61
 www.us		IN	A	206.51.225.20
-www.us		IN	A	65.98.78.163
-www.us		IN	A	217.160.250.20
 www.us		IN	A	70.86.75.98
 www.us		IN	A	71.32.15.195
 www.vn		IN	A	210.245.22.70
@@ -387,6 +362,10 @@ ftp2.de		IN	A	129.143.116.10
 ; Harald Welte <laforge@coruscant.franken.de>
 ftp5.de		IN	A	193.175.24.42
 
+; ftp://ftp.uasw.edu/pub/network/proftpd/ftp/
+; Thorsten Ludewig <T.Ludewig@UASW.EDU>
+ftp7.de		IN	A	141.41.5.16
+
 ; ftp://ftp.fu-berlin.de/unix/ftp/proftpd/
 ; Holger Weiss <ftp@FU-Berlin.DE>
 ftp13.de		IN	A	130.133.3.130
@@ -429,14 +408,6 @@ ftp7.fr		IN	A	212.43.248.244
 ; Attila Nagy <bra@fsn.hu>
 ftp1.hu		IN	A	195.228.252.132
 ftp1.hu		IN	A	195.228.252.133
-
-; ftp://public.cakraweb.com/pub/proftpd/
-; Asfihani <asfik@its-sby.edu>
-ftp1.id		IN	A	202.145.6.63
-
-; ftp://info.ugm.ac.id/proftpd/
-; Taufik Suryawan Edyna <taufik@gamatechno.com>
-ftp2.id		IN	A	222.124.24.8
 
 ; ftp://ftp.esat.net/mirrors/ftp.proftpd.org/
 ; Dave Burke <ftpadmin@esat.net>
@@ -481,10 +452,6 @@ ftp8.pl		IN	A	80.50.248.77
 ; Marco Ramos <mramos@tp.telepac.pt>
 ftp1.pt		IN	A	194.65.100.42
 ftp1.pt		IN	A	194.65.100.43
-
-; ftp://ftp2.zarco.org/pub/proftpd/
-; Carlos Filipe <filipe@zarco.org>
-ftp2.pt		IN	A	213.190.195.46
 
 ; ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.proftpd.org/
 ; SUBREDU Manuel <diablo@iasi.roedu.net>
@@ -584,6 +551,7 @@ ftp.ch		IN	A	212.101.4.244
 ftp.cz		IN	A	194.108.36.130
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
+ftp.de		IN	A	141.41.5.16
 ftp.de		IN	A	130.133.3.130
 ftp.dk		IN	A	217.157.160.207
 ftp.ee		IN	A	193.40.252.230
@@ -597,8 +565,6 @@ ftp.fr		IN	A	193.54.153.246
 ftp.fr		IN	A	212.43.248.244
 ftp.hu		IN	A	195.228.252.132
 ftp.hu		IN	A	195.228.252.133
-ftp.id		IN	A	202.145.6.63
-ftp.id		IN	A	222.124.24.8
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
@@ -613,7 +579,6 @@ ftp.pl		IN	A	193.219.28.2
 ftp.pl		IN	A	80.50.248.77
 ftp.pt		IN	A	194.65.100.42
 ftp.pt		IN	A	194.65.100.43
-ftp.pt		IN	A	213.190.195.46
 ftp.ro		IN	A	192.129.4.120
 ftp.se		IN	A	85.11.195.13
 ftp.se		IN	A	212.37.1.30
