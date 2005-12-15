@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005120701      ; Serial
+                              2005121500      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -98,6 +98,10 @@ www1.bg		IN	A	212.50.28.1
 ; Alexander Velin <velin@bastun.net>
 www2.bg		IN	A	194.12.255.250
 
+; http://proftpd.cbox.biz
+; Alexander Dulgerov <ad@cbox.biz>
+www3.bg		IN	A	87.118.140.10
+
 ; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
 www1.ch		IN	A	62.2.255.42
@@ -147,9 +151,9 @@ www1.hk		IN	A	202.64.181.18
 ; Stanley Au <mirror@hknetworks.com>
 www3.hk		IN	A	210.0.190.18
 
-; http://proftpd.cakraweb.com/
-; Jeffry Antonius <jeffry@cakraweb.com>
-www1.id		IN	A	202.145.6.61
+; http://proftpd.ugm.ac.id
+; Taufik Suryawan Edyna <taufik@gamatechno.com>
+www2.id		IN	A	222.124.24.8
 
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
@@ -168,6 +172,10 @@ www3.it		IN	A	217.19.156.51
 ; Antonio Prado <aprado@topnet.it>
 www4.it		IN	A	82.143.3.5
 
+; http://proftpd.insecure.lv
+; Krish <krish@insecure.lv>
+www2.lv		IN	A	195.13.158.131
+
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
 www1.nl		IN	A	80.84.224.16
@@ -179,7 +187,6 @@ www4.nl		IN	A	82.165.27.105
 
 ; http://proftpd.jlnetworks.co.uk/
 ; James Louthan <administrator@jldns.co.uk>
-www8.nl		IN	A	83.149.72.210
 
 ; http://proftpd.mirror.jt.org/
 ; Jeremiah Tieman <mirrors@jt.org>
@@ -272,6 +279,7 @@ www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
+www.bg		IN	A	87.118.140.10
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
@@ -285,16 +293,16 @@ www.fr		IN	A	84.55.136.21
 www.gr		IN	A	70.85.220.66
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
-www.id		IN	A	202.145.6.61
+www.id		IN	A	222.124.24.8
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.il		IN	A	212.199.125.80
 www.it		IN	A	217.19.156.51
 www.it		IN	A	82.143.3.5
+www.lv		IN	A	195.13.158.131
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.165.27.105
-www.nl		IN	A	83.149.72.210
 www.nl		IN	A	85.17.1.60
 www.pl		IN	A	80.50.248.77
 www.se		IN	A	212.37.1.30
@@ -409,6 +417,10 @@ ftp7.fr		IN	A	212.43.248.244
 ftp1.hu		IN	A	195.228.252.132
 ftp1.hu		IN	A	195.228.252.133
 
+; ftp://info.ugm.ac.id/proftpd/
+; Taufik Suryawan Edyna <taufik@gamatechno.com>
+ftp2.id		IN	A	222.124.24.8
+
 ; ftp://ftp.esat.net/mirrors/ftp.proftpd.org/
 ; Dave Burke <ftpadmin@esat.net>
 ftp0.ie		IN	A	193.120.14.241
@@ -421,6 +433,13 @@ ftp3.it		IN	A	82.143.3.5
 ; ftp://proftpd.get7.biz/proftpd/
 ; Motohiro Sunouchi <moto@sunouchi.net>
 ftp3.jp		IN	A	210.138.109.182
+
+; ftp://ftp.serro-c.com
+; Sergej <serro-company@rambler.ru>
+
+; ftp://insecure.lv/mirrors/proftpd/
+; Krish <krish@insecure.lv>
+ftp1.lv		IN	A	195.13.158.131
 
 ; ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/
 ;  <mark@NL.UU.NET>
@@ -459,7 +478,7 @@ ftp2.ro		IN	A	192.129.4.120
 
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
-ftp1.se		IN	A	85.11.195.13
+ftp1.se		IN	A	85.11.195.10
 
 ; ftp://mirror2.dataphone.se/pub/ProFTPD/
 ; Mirror Admin <mirror@dataphone.net>
@@ -565,10 +584,12 @@ ftp.fr		IN	A	193.54.153.246
 ftp.fr		IN	A	212.43.248.244
 ftp.hu		IN	A	195.228.252.132
 ftp.hu		IN	A	195.228.252.133
+ftp.id		IN	A	222.124.24.8
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
 ftp.jp		IN	A	210.138.109.182
+ftp.lv		IN	A	195.13.158.131
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.86.128.57
@@ -580,7 +601,7 @@ ftp.pl		IN	A	80.50.248.77
 ftp.pt		IN	A	194.65.100.42
 ftp.pt		IN	A	194.65.100.43
 ftp.ro		IN	A	192.129.4.120
-ftp.se		IN	A	85.11.195.13
+ftp.se		IN	A	85.11.195.10
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
 ftp.sg		IN	A	202.79.178.98
