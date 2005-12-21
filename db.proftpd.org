@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005121500      ; Serial
+                              2005122100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -139,10 +139,6 @@ www6.fr		IN	A	194.242.113.132
 ; Pascal <pascal@psinformatique.net>
 www7.fr		IN	A	84.55.136.21
 
-; http://proftpd.techteam.gr
-; Techteam.gr <webmaster@techteam.gr>
-www1.gr		IN	A	70.85.220.66
-
 ; http://proftpd.bylinux.net/
 ; pyjamas <pyjamas@bylinux.net>
 www1.hk		IN	A	202.64.181.18
@@ -150,6 +146,10 @@ www1.hk		IN	A	202.64.181.18
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
 www3.hk		IN	A	210.0.190.18
+
+; http://proftpd.cakraweb.com/
+; Jeffry Antonius <jeffry@cakraweb.com>
+www1.id		IN	A	202.145.6.61
 
 ; http://proftpd.ugm.ac.id
 ; Taufik Suryawan Edyna <taufik@gamatechno.com>
@@ -185,9 +185,6 @@ www1.nl		IN	AAAA	2001:828:101:1::4
 ; Paul Engelen <paul@qwezz.nl>
 www4.nl		IN	A	82.165.27.105
 
-; http://proftpd.jlnetworks.co.uk/
-; James Louthan <administrator@jldns.co.uk>
-
 ; http://proftpd.mirror.jt.org/
 ; Jeremiah Tieman <mirrors@jt.org>
 www9.nl		IN	A	85.17.1.60
@@ -195,6 +192,10 @@ www9.nl		IN	A	85.17.1.60
 ; http://proftpd.tpnet.pl/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 www4.pl		IN	A	80.50.248.77
+
+; http://proftpd.zoel.ro
+; Mihai Marinas <net-admin@zoel.ro>
+www4.ro		IN	A	81.180.138.21
 
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
@@ -233,6 +234,10 @@ www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ; http://proftpd.ulimit.org/
 ; Michael Pye <michael@ulimit.org>
 www4.uk		IN	A	82.138.249.1
+
+; http://downloads.debianhelp.co.uk/
+; Sridhar Gogineni <goginenisridhar@gmail.com>
+www6.uk		IN	A	68.178.211.2
 
 ; http://proftpd.fasterline.net/
 ; Martin S. <admin@sms13.de>
@@ -290,9 +295,9 @@ www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	194.242.113.132
 www.fr		IN	A	84.55.136.21
-www.gr		IN	A	70.85.220.66
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
+www.id		IN	A	202.145.6.61
 www.id		IN	A	222.124.24.8
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
@@ -305,6 +310,7 @@ www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	82.165.27.105
 www.nl		IN	A	85.17.1.60
 www.pl		IN	A	80.50.248.77
+www.ro		IN	A	81.180.138.21
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -316,6 +322,7 @@ www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
 www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 www.uk		IN	A	82.138.249.1
+www.uk		IN	A	68.178.211.2
 www.us		IN	A	67.18.215.34
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
@@ -349,6 +356,10 @@ ftp2.au		IN	A	203.80.162.206
 ; Bert Vermeulen <ftp@be.easynet.net>
 ftp1.be		IN	A	212.100.160.33
 ftp1.be		IN	AAAA	2001:6f8:200:1::5:33
+
+; ftp://ftp.proftpd.cbox.biz/proftpd/
+; Alexander Dulgerov <ad@cbox.biz>
+ftp4.bg		IN	A	87.118.140.10
 
 ; ftp://ftp.samurai.com/pub/proftpd/
 ; Bryan Fullerton <bryanf@samurai.com>
@@ -434,9 +445,6 @@ ftp3.it		IN	A	82.143.3.5
 ; Motohiro Sunouchi <moto@sunouchi.net>
 ftp3.jp		IN	A	210.138.109.182
 
-; ftp://ftp.serro-c.com
-; Sergej <serro-company@rambler.ru>
-
 ; ftp://insecure.lv/mirrors/proftpd/
 ; Krish <krish@insecure.lv>
 ftp1.lv		IN	A	195.13.158.131
@@ -475,6 +483,10 @@ ftp1.pt		IN	A	194.65.100.43
 ; ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.proftpd.org/
 ; SUBREDU Manuel <diablo@iasi.roedu.net>
 ftp2.ro		IN	A	192.129.4.120
+
+; ftp://proftpd.zoel.ro/Linux/mirrors/proftpd.org/
+; Mihai Marinas <net-admin@zoel.ro>
+ftp3.ro		IN	A	81.180.138.21
 
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
@@ -565,6 +577,7 @@ ftp.au		IN	A	203.16.234.86
 ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
+ftp.bg		IN	A	87.118.140.10
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cz		IN	A	194.108.36.130
@@ -601,6 +614,7 @@ ftp.pl		IN	A	80.50.248.77
 ftp.pt		IN	A	194.65.100.42
 ftp.pt		IN	A	194.65.100.43
 ftp.ro		IN	A	192.129.4.120
+ftp.ro		IN	A	81.180.138.21
 ftp.se		IN	A	85.11.195.10
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
