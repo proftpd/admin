@@ -3,7 +3,7 @@
 ;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005122100      ; Serial
+                              2005122800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -146,10 +146,6 @@ www1.hk		IN	A	202.64.181.18
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
 www3.hk		IN	A	210.0.190.18
-
-; http://proftpd.cakraweb.com/
-; Jeffry Antonius <jeffry@cakraweb.com>
-www1.id		IN	A	202.145.6.61
 
 ; http://proftpd.ugm.ac.id
 ; Taufik Suryawan Edyna <taufik@gamatechno.com>
@@ -297,7 +293,6 @@ www.fr		IN	A	194.242.113.132
 www.fr		IN	A	84.55.136.21
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
-www.id		IN	A	202.145.6.61
 www.id		IN	A	222.124.24.8
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
@@ -426,7 +421,6 @@ ftp7.fr		IN	A	212.43.248.244
 ; ftp://ftp.fsn.hu/pub/proftpd/
 ; Attila Nagy <bra@fsn.hu>
 ftp1.hu		IN	A	195.228.252.132
-ftp1.hu		IN	A	195.228.252.133
 
 ; ftp://info.ugm.ac.id/proftpd/
 ; Taufik Suryawan Edyna <taufik@gamatechno.com>
@@ -474,11 +468,6 @@ ftp3.pl		IN	A	193.219.28.2
 ; ftp://ftp.tpnet.pl/d1/proftpd/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 ftp8.pl		IN	A	80.50.248.77
-
-; ftp://ftp.telepac.pt/pub/proftpd/
-; Marco Ramos <mramos@tp.telepac.pt>
-ftp1.pt		IN	A	194.65.100.42
-ftp1.pt		IN	A	194.65.100.43
 
 ; ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.proftpd.org/
 ; SUBREDU Manuel <diablo@iasi.roedu.net>
@@ -549,10 +538,6 @@ ftp6.uk		IN	A	62.255.248.218
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	A	152.2.210.80
 
-; ftp://ftp.stikman.com/pub/proftpd/
-; Jeff Grossman <jeff@stikman.com>
-ftp5.us		IN	A	66.116.68.208
-
 ; ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/
 ; Gerald Combs <gerald@ethereal.com>
 ftp12.us		IN	A	65.208.228.223
@@ -596,7 +581,6 @@ ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	193.54.153.246
 ftp.fr		IN	A	212.43.248.244
 ftp.hu		IN	A	195.228.252.132
-ftp.hu		IN	A	195.228.252.133
 ftp.id		IN	A	222.124.24.8
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
@@ -611,8 +595,6 @@ ftp.pl		IN	A	83.144.70.202
 ftp.pl		IN	AAAA	2001:6f8:93c::1
 ftp.pl		IN	A	193.219.28.2
 ftp.pl		IN	A	80.50.248.77
-ftp.pt		IN	A	194.65.100.42
-ftp.pt		IN	A	194.65.100.43
 ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	81.180.138.21
 ftp.se		IN	A	85.11.195.10
@@ -631,7 +613,6 @@ ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ftp.uk		IN	A	82.138.249.1
 ftp.uk		IN	A	62.255.248.218
 ftp.us		IN	A	152.2.210.80
-ftp.us		IN	A	66.116.68.208
 ftp.us		IN	A	65.208.228.223
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	24.123.133.61
