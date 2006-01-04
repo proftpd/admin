@@ -1,9 +1,6 @@
-;
-; BIND zone file for proftpd.org
-;
 ; $Id$
 @                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2005122800      ; Serial
+                              2006010400      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -14,34 +11,29 @@
                     IN  NS    boost.horde.net.
                     IN  NS    ns1.cluenet.de.
 
-; hamster@korenwolf.net
-                    IN  MX    10 mail.vom.org.uk.
-; hamster@korenwolf.net
-                    IN  MX    10 groundhog.korenwolf.net.
-; dr@proftpd.org
-;                    IN  MX    10 mail1.cluenet.de.
 ; jwm@horde.net
                     IN  MX    5 boost.horde.net.
+; dr@proftpd.org
+;                    IN  MX    10 mail1.cluenet.de.
+; hamster@korenwolf.net
+                    IN  MX    10 mail.vom.org.uk.
+                    IN  MX    10 groundhog.korenwolf.net.
 
-; Main web site
-; Hosted at Frontier Internet -- hamster@korenwolf.net
-                    IN  A     217.154.246.86
-www                 IN  A     217.154.246.86
+; Daniel Roesen <dr@cluenet.de>
+                    IN  A     195.20.121.11
+                    IN  AAAA  2001:5001:103:2101::27
+www                 IN  A     195.20.121.11
+www                 IN  AAAA  2001:5001:103:2101::27
 
-; Main FTP site
-; Hosted by Robe -- robe@amd.co.at
+; Michael Renner <robe@amd.co.at>
 ftp                 IN  A     81.223.20.36
+rsync               IN  A     81.223.20.36
+forums              IN  A     81.223.20.37
 
-; bugs, cvs, and mirror servers, John Morrissey <jwm@horde.net>
+; John Morrissey <jwm@horde.net>
 bugs                IN  CNAME boost.horde.net.
 cvs                 IN  CNAME boost.horde.net.
 mirrors             IN  CNAME boost.horde.net.
-
-; Michael Renner <robe@amd.co.at>
-rsync               IN  A     81.223.20.36
-
-; User forums
-forums              IN  A     81.223.20.37
 
 ; ***********************************************************************
 ; Language mirrors
