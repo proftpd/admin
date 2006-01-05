@@ -28,7 +28,7 @@ www                 IN  AAAA  2001:5001:103:2101::27
 ; Michael Renner <robe@amd.co.at>
 ftp                 IN  A     81.223.20.36
 rsync               IN  A     81.223.20.36
-forums              IN  A     81.223.20.37
+forums              IN  A     81.223.20.36
 
 ; John Morrissey <jwm@horde.net>
 bugs                IN  CNAME boost.horde.net.
