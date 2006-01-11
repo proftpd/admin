@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006011101      ; Serial
+                              2006011102      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -15,9 +15,6 @@
                     IN  MX    5 boost.horde.net.
 ; dr@proftpd.org
 ;                    IN  MX    10 mail1.cluenet.de.
-; hamster@korenwolf.net
-                    IN  MX    10 mail.vom.org.uk.
-                    IN  MX    10 groundhog.korenwolf.net.
 
 ; Daniel Roesen <dr@cluenet.de>
                     IN  A     195.20.121.11
