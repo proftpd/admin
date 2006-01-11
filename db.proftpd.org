@@ -1,15 +1,15 @@
 ; $Id$
-@                   IN  SOA   groundhog.korenwolf.net.  core.proftpd.org. (
-                              2006010500      ; Serial
+@                   IN  SOA   boost.horde.net. core.proftpd.org. (
+                              2006011100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
                               86400           ; min ttl
                               )
 
-                    IN  NS    groundhog.korenwolf.net.
                     IN  NS    boost.horde.net.
                     IN  NS    ns1.cluenet.de.
+                    IN  NS    ns2.cluenet.de.
 
 ; jwm@horde.net
                     IN  MX    5 boost.horde.net.
