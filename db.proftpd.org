@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006011102      ; Serial
+                              2006011200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -47,10 +47,6 @@ es                  IN A      163.117.156.54
 ; Use the ProFTPD Mirror Maintenance system to update.
 ; ***********************************************************************
 
-; http://proftpd.adcserver.com.ar/
-; Juan Mateo Cassiet <contacto@jmcassiet.com.ar>
-www1.ar		IN	A	200.58.112.182
-
 ; http://proftpd.localhost.net.ar
 ; Nicolas Sigal <mirrors@localhost.net.ar>
 www2.ar		IN	A	200.43.193.199
@@ -91,6 +87,10 @@ www2.bg		IN	A	194.12.255.250
 ; Alexander Dulgerov <ad@cbox.biz>
 www3.bg		IN	A	87.118.140.10
 
+; http://proftpd.giga.com.br
+; Juliano Primavesi <juliano.p@gmail.com>
+www3.br		IN	A	200.157.179.22
+
 ; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
 www1.ch		IN	A	62.2.255.42
@@ -127,6 +127,10 @@ www6.fr		IN	A	194.242.113.132
 ; http://proftpd.psinformatique.net
 ; Pascal <pascal@psinformatique.net>
 www7.fr		IN	A	84.55.136.21
+
+; http://proftpd.worldakt.com
+; CHAILLAN Nicolas <nicos@php.net>
+www9.fr		IN	A	194.246.101.61
 
 ; http://proftpd.bylinux.net/
 ; pyjamas <pyjamas@bylinux.net>
@@ -168,7 +172,7 @@ www1.nl		IN	AAAA	2001:828:101:1::4
 
 ; http://proftpd.qwezz.nl
 ; Paul Engelen <paul@qwezz.nl>
-www4.nl		IN	A	82.165.27.105
+www4.nl		IN	A	80.126.240.57
 
 ; http://proftpd.mirror.jt.org/
 ; Jeremiah Tieman <mirrors@jt.org>
@@ -220,10 +224,6 @@ www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ; Michael Pye <michael@ulimit.org>
 www4.uk		IN	A	82.138.249.1
 
-; http://downloads.debianhelp.co.uk/
-; Sridhar Gogineni <goginenisridhar@gmail.com>
-www6.uk		IN	A	68.178.211.2
-
 ; http://proftpd.fasterline.net/
 ; Martin S. <admin@sms13.de>
 www4.us		IN	A	67.18.215.34
@@ -256,7 +256,6 @@ www32.us		IN	A	71.32.15.195
 ; Ninh Nguyen Viet <vietninh@annetco.com>
 www1.vn		IN	A	210.245.22.70
 
-www.ar		IN	A	200.58.112.182
 www.ar		IN	A	200.43.193.199
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
@@ -270,6 +269,7 @@ www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
 www.bg		IN	A	87.118.140.10
+www.br		IN	A	200.157.179.22
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
@@ -280,6 +280,7 @@ www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	194.242.113.132
 www.fr		IN	A	84.55.136.21
+www.fr		IN	A	194.246.101.61
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.id		IN	A	222.124.24.8
@@ -291,7 +292,7 @@ www.it		IN	A	82.143.3.5
 www.lv		IN	A	195.13.158.131
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
-www.nl		IN	A	82.165.27.105
+www.nl		IN	A	80.126.240.57
 www.nl		IN	A	85.17.1.60
 www.pl		IN	A	80.50.248.77
 www.ro		IN	A	81.180.138.21
@@ -306,7 +307,6 @@ www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
 www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 www.uk		IN	A	82.138.249.1
-www.uk		IN	A	68.178.211.2
 www.us		IN	A	67.18.215.34
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
