@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006011200      ; Serial
+                              2006011800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -50,6 +50,10 @@ es                  IN A      163.117.156.54
 ; http://proftpd.localhost.net.ar
 ; Nicolas Sigal <mirrors@localhost.net.ar>
 www2.ar		IN	A	200.43.193.199
+
+; http://proftpd.bairesweb.com/
+; Pablo Arturi <parturi@bairesweb.com>
+www3.ar		IN	A	200.59.45.3
 
 ; http://proftpd.gds.tuwien.ac.at/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
@@ -170,10 +174,6 @@ www2.lv		IN	A	195.13.158.131
 www1.nl		IN	A	80.84.224.16
 www1.nl		IN	AAAA	2001:828:101:1::4
 
-; http://proftpd.qwezz.nl
-; Paul Engelen <paul@qwezz.nl>
-www4.nl		IN	A	80.126.240.57
-
 ; http://proftpd.mirror.jt.org/
 ; Jeremiah Tieman <mirrors@jt.org>
 www9.nl		IN	A	85.17.1.60
@@ -185,6 +185,10 @@ www4.pl		IN	A	80.50.248.77
 ; http://proftpd.zoel.ro
 ; Mihai Marinas <net-admin@zoel.ro>
 www4.ro		IN	A	81.180.138.21
+
+; http://proftpd.mivosoft.ro
+; Cristian Miu <cristian.miu@mivosoft.ro>
+www5.ro		IN	A	84.247.67.149
 
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
@@ -257,6 +261,7 @@ www32.us		IN	A	71.32.15.195
 www1.vn		IN	A	210.245.22.70
 
 www.ar		IN	A	200.43.193.199
+www.ar		IN	A	200.59.45.3
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
@@ -292,10 +297,10 @@ www.it		IN	A	82.143.3.5
 www.lv		IN	A	195.13.158.131
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
-www.nl		IN	A	80.126.240.57
 www.nl		IN	A	85.17.1.60
 www.pl		IN	A	80.50.248.77
 www.ro		IN	A	81.180.138.21
+www.ro		IN	A	84.247.67.149
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -318,6 +323,10 @@ www.vn		IN	A	210.245.22.70
 ; ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd
 ; Nicolas Sigal <mirrors@localhost.net.ar>
 ftp1.ar		IN	A	200.43.193.199
+
+; ftp://proftpd.bairesweb.com/pub/proftpd/
+; Pablo Arturi <parturi@bairesweb.com>
+ftp2.ar		IN	A	200.59.45.3
 
 ; ftp://ftp.servus.at/ProFTPD/
 ; Didi Baer <didi@servus.at>
@@ -466,6 +475,10 @@ ftp2.ro		IN	A	192.129.4.120
 ; Mihai Marinas <net-admin@zoel.ro>
 ftp3.ro		IN	A	81.180.138.21
 
+; ftp://ftp.linux.ro/ftp.proftpd.org/
+; Radu Brebu <radu.brebu@rdsnet.ro>
+ftp4.ro		IN	A	193.231.236.58
+
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
 ftp1.se		IN	A	85.11.195.10
@@ -544,6 +557,7 @@ ftp25.us		IN	A	24.123.133.61
 ftp28.us		IN	A	71.32.15.195
 
 ftp.ar		IN	A	200.43.193.199
+ftp.ar		IN	A	200.59.45.3
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
 ftp.au		IN	A	203.16.234.85
@@ -575,7 +589,6 @@ ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
 ftp.jp		IN	A	210.138.109.182
-ftp.lv		IN	A	195.13.158.131
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.86.128.57
@@ -586,6 +599,7 @@ ftp.pl		IN	A	193.219.28.2
 ftp.pl		IN	A	80.50.248.77
 ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	81.180.138.21
+ftp.ro		IN	A	193.231.236.58
 ftp.se		IN	A	85.11.195.10
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
