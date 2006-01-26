@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006012500      ; Serial
+                              2006012600      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -169,10 +169,6 @@ www3.it		IN	A	217.19.156.51
 ; Antonio Prado <aprado@topnet.it>
 www4.it		IN	A	82.143.3.5
 
-; http://proftpd.insecure.lv
-; Krish <krish@insecure.lv>
-www2.lv		IN	A	83.223.141.96
-
 ; http://proftpd.linux.edu.lv/
 ; Leo Truksans <leot@linux.edu.lv>
 www3.lv		IN	A	195.13.158.141
@@ -295,7 +291,6 @@ www.ie		IN	AAAA	2001:7c8:3:1::4
 www.il		IN	A	212.199.125.80
 www.it		IN	A	217.19.156.51
 www.it		IN	A	82.143.3.5
-www.lv		IN	A	83.223.141.96
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
@@ -436,10 +431,6 @@ ftp3.it		IN	A	82.143.3.5
 ; ftp://proftpd.get7.biz/proftpd/
 ; Motohiro Sunouchi <moto@sunouchi.net>
 ftp3.jp		IN	A	210.138.109.182
-
-; ftp://insecure.lv/mirrors/proftpd/
-; Krish <krish@insecure.lv>
-ftp1.lv		IN	A	83.223.141.96
 
 ; ftp://ftp.linux.edu.lv/mirrors/ftp.proftpd.org/
 ; Leo Truksans <leot@linux.edu.lv>
@@ -593,7 +584,6 @@ ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
 ftp.jp		IN	A	210.138.109.182
-ftp.lv		IN	A	83.223.141.96
 ftp.lv		IN	A	195.13.158.141
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
