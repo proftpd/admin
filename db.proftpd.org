@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006012600      ; Serial
+                              2006020800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -115,6 +115,10 @@ www1.cz		IN	A	82.113.48.3
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
 www1.de		IN	A	141.41.5.16
 
+; http://proftpd.linux-mirror.org
+; Michael Mettmann <michael1@bnw-natur.com>
+www13.de		IN	A	80.237.211.23
+
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
 www1.dk		IN	A	217.157.160.207
@@ -134,7 +138,7 @@ www6.fr		IN	A	194.242.113.132
 
 ; http://proftpd.psinformatique.net
 ; Pascal <pascal@psinformatique.net>
-www7.fr		IN	A	84.55.136.21
+www7.fr		IN	A	82.127.90.12
 
 ; http://proftpd.worldakt.com
 ; CHAILLAN Nicolas <nicos@php.net>
@@ -156,6 +160,10 @@ www2.id		IN	A	222.124.24.8
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
 www1.ie		IN	AAAA	2001:7c8:3:1::4
+
+; http://proftpd.oss-mirror.org
+; Ralf Uhlemann <admin@realhost.de>
+www2.ie		IN	A	82.195.155.78
 
 ; http://proftpd.spd.co.il/
 ; Avi hirsh <admin@spd.co.il>
@@ -224,6 +232,10 @@ www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ; Michael Pye <michael@ulimit.org>
 www4.uk		IN	A	82.138.249.1
 
+; http://proftpd.power-core.net
+; Joe <joe@power-core.net>
+www7.uk		IN	A	194.30.190.4
+
 ; http://proftpd.fasterline.net/
 ; Martin S. <admin@sms13.de>
 www4.us		IN	A	67.18.215.34
@@ -276,18 +288,20 @@ www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
 www.de		IN	A	141.41.5.16
+www.de		IN	A	80.237.211.23
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	194.242.113.132
-www.fr		IN	A	84.55.136.21
+www.fr		IN	A	82.127.90.12
 www.fr		IN	A	194.246.101.61
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.id		IN	A	222.124.24.8
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
+www.ie		IN	A	82.195.155.78
 www.il		IN	A	212.199.125.80
 www.it		IN	A	217.19.156.51
 www.it		IN	A	82.143.3.5
@@ -307,6 +321,7 @@ www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
 www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 www.uk		IN	A	82.138.249.1
+www.uk		IN	A	194.30.190.4
 www.us		IN	A	67.18.215.34
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
@@ -474,6 +489,10 @@ ftp3.ro		IN	A	81.180.138.21
 ; Radu Brebu <radu.brebu@rdsnet.ro>
 ftp4.ro		IN	A	193.231.236.58
 
+; ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/
+; Cristian Miu <cristian.miu@mivosoft.ro>
+ftp5.ro		IN	A	84.247.67.149
+
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
 ftp1.se		IN	A	85.11.195.10
@@ -530,6 +549,10 @@ ftp5.uk		IN	A	82.138.249.1
 ; ftp://ftp.midnightsoftware.co.uk/mirrors/ftp.proftpd.org/
 ; Leigh Jepson <leigh@midnightsoftware.co.uk>
 ftp6.uk		IN	A	62.255.248.218
+
+; ftp://ftp.power-core.net/pub/ftp.proftpd.org
+; Joe <joe@power-core.net>
+ftp7.uk		IN	A	194.30.190.4
 
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
@@ -596,6 +619,7 @@ ftp.pl		IN	A	80.50.248.77
 ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	81.180.138.21
 ftp.ro		IN	A	193.231.236.58
+ftp.ro		IN	A	84.247.67.149
 ftp.se		IN	A	85.11.195.10
 ftp.se		IN	A	212.37.1.30
 ftp.se		IN	A	213.141.80.22
@@ -611,6 +635,7 @@ ftp.uk		IN	A	85.116.4.19
 ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ftp.uk		IN	A	82.138.249.1
 ftp.uk		IN	A	62.255.248.218
+ftp.uk		IN	A	194.30.190.4
 ftp.us		IN	A	152.2.210.80
 ftp.us		IN	A	65.208.228.223
 ftp.us		IN	A	66.92.74.33
