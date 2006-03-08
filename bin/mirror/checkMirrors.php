@@ -161,7 +161,7 @@ EOM;
 		}
 
 		foreach ($urlsToCheck as $url) {
-			$checkResult = checkSite($url, ($TYPE == 'http' ? $urlsToCheck[0]->host : null));
+			$checkResult = checkSite($url, ($TYPE == 'www' ? $urlsToCheck[0]->host : null));
 			if (PEAR::isError($checkResult)) {
 				print $checkResult->getMessage() . "\n";
 				continue;
