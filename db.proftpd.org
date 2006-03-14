@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006020800      ; Serial
+                              2006031400      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -93,7 +93,7 @@ www3.bg		IN	A	87.118.140.10
 
 ; http://proftpd.giga.com.br
 ; Juliano Primavesi <juliano.p@gmail.com>
-www3.br		IN	A	200.157.179.22
+www3.br		IN	A	200.203.45.22
 
 ; http://proftpd.oi.com.br/
 ; Oi Internet <wanderson.gonzalez@oi.com.br>
@@ -140,10 +140,6 @@ www6.fr		IN	A	194.242.113.132
 ; Pascal <pascal@psinformatique.net>
 www7.fr		IN	A	82.127.90.12
 
-; http://proftpd.worldakt.com
-; CHAILLAN Nicolas <nicos@php.net>
-www9.fr		IN	A	194.246.101.61
-
 ; http://proftpd.bylinux.net/
 ; pyjamas <pyjamas@bylinux.net>
 www1.hk		IN	A	202.64.181.18
@@ -168,10 +164,6 @@ www2.ie		IN	A	82.195.155.78
 ; http://proftpd.spd.co.il/
 ; Avi hirsh <admin@spd.co.il>
 www1.il		IN	A	212.199.125.80
-
-; http://proftpd.ditalinux.it/
-; Roberto Leandrini <anaconda@ditalinux.it>
-www3.it		IN	A	217.19.156.51
 
 ; http://www.proftpd.topnet.it/
 ; Antonio Prado <aprado@topnet.it>
@@ -228,14 +220,6 @@ www2.ua		IN	A	217.198.131.181
 www3.uk		IN	A	85.116.4.19
 www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
-; http://proftpd.ulimit.org/
-; Michael Pye <michael@ulimit.org>
-www4.uk		IN	A	82.138.249.1
-
-; http://proftpd.power-core.net
-; Joe <joe@power-core.net>
-www7.uk		IN	A	194.30.190.4
-
 ; http://proftpd.fasterline.net/
 ; Martin S. <admin@sms13.de>
 www4.us		IN	A	67.18.215.34
@@ -255,6 +239,10 @@ www27.us		IN	A	24.123.133.61
 ; http://proftpd.hoxt.com
 ; Son Nguyen <son@hoxt.com>
 www28.us		IN	A	206.51.225.20
+
+; http://proftpd.mirrors.24-7-solutions.net/
+; Sergey Melnik <mirror@24-7-solutions.net>
+www30.us		IN	A	69.31.115.210
 
 ; http://proftpd.mirrorgeek.com/
 ; Dmitriy <master@mirrorgeek.com>
@@ -282,7 +270,7 @@ www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
 www.bg		IN	A	87.118.140.10
-www.br		IN	A	200.157.179.22
+www.br		IN	A	200.203.45.22
 www.br		IN	A	200.222.115.76
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
@@ -295,7 +283,6 @@ www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	194.242.113.132
 www.fr		IN	A	82.127.90.12
-www.fr		IN	A	194.246.101.61
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.id		IN	A	222.124.24.8
@@ -303,7 +290,6 @@ www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.ie		IN	A	82.195.155.78
 www.il		IN	A	212.199.125.80
-www.it		IN	A	217.19.156.51
 www.it		IN	A	82.143.3.5
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
@@ -320,13 +306,12 @@ www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
 www.uk		IN	A	85.116.4.19
 www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
-www.uk		IN	A	82.138.249.1
-www.uk		IN	A	194.30.190.4
 www.us		IN	A	67.18.215.34
 www.us		IN	A	65.208.228.223
 www.us		IN	A	66.92.74.33
 www.us		IN	A	24.123.133.61
 www.us		IN	A	206.51.225.20
+www.us		IN	A	69.31.115.210
 www.us		IN	A	70.86.75.98
 www.us		IN	A	71.32.15.195
 www.vn		IN	A	210.245.22.70
@@ -447,6 +432,10 @@ ftp3.it		IN	A	82.143.3.5
 ; Motohiro Sunouchi <moto@sunouchi.net>
 ftp3.jp		IN	A	210.138.109.182
 
+; ftp://ftp.yz.yamagata-u.ac.jp/pub/network/proftpd/
+; Tomohiro Ito <www-admin@ftp.yz.yamagata-u.ac.jp>
+ftp4.jp		IN	A	133.24.255.161
+
 ; ftp://ftp.linux.edu.lv/mirrors/ftp.proftpd.org/
 ; Leo Truksans <leot@linux.edu.lv>
 ftp2.lv		IN	A	195.13.158.141
@@ -466,7 +455,7 @@ ftp5.no		IN	A	80.239.42.88
 
 ; ftp://fido.e-utp.net/mirror/proftpd.org/
 ; Marcin Gonek <drixter@e-utp.net>
-ftp1.pl		IN	A	83.144.70.202
+ftp1.pl		IN	A	82.210.157.205
 ftp1.pl		IN	AAAA	2001:6f8:93c::1
 
 ; ftp://ftp.icm.edu.pl/pub/unix/ftp/proftpd/
@@ -535,24 +524,15 @@ ftp3.tw		IN	A	140.112.2.5
 
 ; ftp://ftp.tlk-l.net/pub/mirrors/ftp.proftpd.org/
 ; Alexander Ryumshin <mizi@alkar.net>
-ftp1.ua		IN	A	195.248.190.23
+ftp1.ua		IN	A	213.133.165.98
 
 ; ftp://proftpd.networkedsystems.co.uk/
 ; fxp0 <daniel@kewlio.net>
 ftp4.uk		IN	A	85.116.4.19
 ftp4.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
-; ftp://proftpd.ulimit.org/proftpd/
-; Michael Pye <michael@ulimit.org>
-ftp5.uk		IN	A	82.138.249.1
-
 ; ftp://ftp.midnightsoftware.co.uk/mirrors/ftp.proftpd.org/
 ; Leigh Jepson <leigh@midnightsoftware.co.uk>
-ftp6.uk		IN	A	62.255.248.218
-
-; ftp://ftp.power-core.net/pub/ftp.proftpd.org
-; Joe <joe@power-core.net>
-ftp7.uk		IN	A	194.30.190.4
 
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
@@ -573,6 +553,10 @@ ftp25.us		IN	A	24.123.133.61
 ; ftp://proftpd.mirrors.borgnet.us/
 ; Scott Grayban <root@borgnet.us>
 ftp28.us		IN	A	71.32.15.195
+
+; ftp://mirrors.24-7-solutions.net/pub/proftpd/
+; Sergey Melnik <mirror@24-7-solutions.net>
+ftp30.us		IN	A	69.31.115.210
 
 ftp.ar		IN	A	200.43.193.199
 ftp.ar		IN	A	200.59.45.3
@@ -607,12 +591,13 @@ ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
 ftp.jp		IN	A	210.138.109.182
+ftp.jp		IN	A	133.24.255.161
 ftp.lv		IN	A	195.13.158.141
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.86.128.57
 ftp.no		IN	A	80.239.42.88
-ftp.pl		IN	A	83.144.70.202
+ftp.pl		IN	A	82.210.157.205
 ftp.pl		IN	AAAA	2001:6f8:93c::1
 ftp.pl		IN	A	193.219.28.2
 ftp.pl		IN	A	80.50.248.77
@@ -630,14 +615,12 @@ ftp.tr		IN	A	193.140.100.10
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
 ftp.tw		IN	A	140.112.2.5
-ftp.ua		IN	A	195.248.190.23
+ftp.ua		IN	A	213.133.165.98
 ftp.uk		IN	A	85.116.4.19
 ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
-ftp.uk		IN	A	82.138.249.1
-ftp.uk		IN	A	62.255.248.218
-ftp.uk		IN	A	194.30.190.4
 ftp.us		IN	A	152.2.210.80
 ftp.us		IN	A	65.208.228.223
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	24.123.133.61
 ftp.us		IN	A	71.32.15.195
+ftp.us		IN	A	69.31.115.210
