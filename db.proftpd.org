@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006031400      ; Serial
+                              2006040500      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -47,7 +47,11 @@ es                  IN A      163.117.156.54
 ; Use the ProFTPD Mirror Maintenance system to update.
 ; ***********************************************************************
 
-; http://proftpd.localhost.net.ar
+; http://proftpd.debian.am/
+; Vardan Gevorgyan <proftpd@debian.am>
+www1.am		IN	A	195.250.91.19
+
+; http://proftpd.localhost.net.ar/
 ; Nicolas Sigal <mirrors@localhost.net.ar>
 www2.ar		IN	A	200.43.193.199
 
@@ -70,7 +74,7 @@ www2.au		IN	A	203.16.234.91
 ; Darrin Khan <darrink@dknss.com>
 www3.au		IN	A	203.80.162.206
 
-; http://proftpd.iridiumhosting.com
+; http://proftpd.iridiumhosting.com/
 ; Adam Neat <adamneat@anoti.com>
 www4.au		IN	A	218.214.209.25
 
@@ -87,11 +91,11 @@ www1.bg		IN	A	212.50.28.1
 ; Alexander Velin <velin@bastun.net>
 www2.bg		IN	A	194.12.255.250
 
-; http://proftpd.cbox.biz
+; http://proftpd.cbox.biz/
 ; Alexander Dulgerov <ad@cbox.biz>
 www3.bg		IN	A	87.118.140.10
 
-; http://proftpd.giga.com.br
+; http://proftpd.giga.com.br/
 ; Juliano Primavesi <juliano.p@gmail.com>
 www3.br		IN	A	200.203.45.22
 
@@ -111,11 +115,15 @@ www4.cn		IN	A	219.239.98.8
 ; Michal Jursa <michal@ni.cz>
 www1.cz		IN	A	82.113.48.3
 
+; http://proftpd.kn.vutbr.cz/
+; Zdenek Bill <mirror@kn.vutbr.cz>
+www2.cz		IN	A	147.229.190.133
+
 ; http://proftpd.uasw.edu/
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
 www1.de		IN	A	141.41.5.16
 
-; http://proftpd.linux-mirror.org
+; http://proftpd.linux-mirror.org/
 ; Michael Mettmann <michael1@bnw-natur.com>
 www13.de		IN	A	80.237.211.23
 
@@ -134,9 +142,9 @@ www4.fr		IN	AAAA	2001:660:7401:211::36
 
 ; http://proftpd.fastorama.com/
 ; fastorama.com <mrjack@fastorama.com>
-www6.fr		IN	A	194.242.113.132
+www6.fr		IN	A	80.248.215.3
 
-; http://proftpd.psinformatique.net
+; http://proftpd.psinformatique.net/
 ; Pascal <pascal@psinformatique.net>
 www7.fr		IN	A	82.127.90.12
 
@@ -148,16 +156,12 @@ www1.hk		IN	A	202.64.181.18
 ; Stanley Au <mirror@hknetworks.com>
 www3.hk		IN	A	210.0.190.18
 
-; http://proftpd.ugm.ac.id
-; Taufik Suryawan Edyna <taufik@gamatechno.com>
-www2.id		IN	A	222.124.24.8
-
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
 www1.ie		IN	AAAA	2001:7c8:3:1::4
 
-; http://proftpd.oss-mirror.org
+; http://proftpd.oss-mirror.org/
 ; Ralf Uhlemann <admin@realhost.de>
 www2.ie		IN	A	82.195.155.78
 
@@ -182,7 +186,7 @@ www1.nl		IN	AAAA	2001:828:101:1::4
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 www4.pl		IN	A	80.50.248.77
 
-; http://proftpd.zoel.ro
+; http://proftpd.zoel.ro/
 ; Mihai Marinas <net-admin@zoel.ro>
 www4.ro		IN	A	81.180.138.21
 
@@ -197,6 +201,10 @@ www1.sg		IN	A	202.79.178.97
 ; http://proftpd.x86.sk/
 ; Jakub Cerveny <br@x86.sk>
 www1.sk		IN	A	147.175.168.26
+
+; http://proftpd.nasieti.sk
+; Filip Hlavenka <filip.hlavenka@nasieti.sk>
+www2.sk		IN	A	217.73.17.22
 
 ; http://proftpd.internetsepeti.com/
 ; Ugur GUNCER <admin@internetsepeti.com>
@@ -236,7 +244,7 @@ www21.us		IN	A	66.92.74.33
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	A	24.123.133.61
 
-; http://proftpd.hoxt.com
+; http://proftpd.hoxt.com/
 ; Son Nguyen <son@hoxt.com>
 www28.us		IN	A	206.51.225.20
 
@@ -252,10 +260,11 @@ www31.us		IN	A	70.86.75.98
 ; Scott Grayban <root@borgnet.us>
 www32.us		IN	A	71.32.15.195
 
-; http://proftpd.annetco.com
+; http://proftpd.annetco.com/
 ; Ninh Nguyen Viet <vietninh@annetco.com>
 www1.vn		IN	A	210.245.22.70
 
+www.am		IN	A	195.250.91.19
 www.ar		IN	A	200.43.193.199
 www.ar		IN	A	200.59.45.3
 www.at		IN	A	192.35.244.50
@@ -275,17 +284,17 @@ www.br		IN	A	200.222.115.76
 www.ch		IN	A	62.2.255.42
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
+www.cz		IN	A	147.229.190.133
 www.de		IN	A	141.41.5.16
 www.de		IN	A	80.237.211.23
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
-www.fr		IN	A	194.242.113.132
+www.fr		IN	A	80.248.215.3
 www.fr		IN	A	82.127.90.12
 www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
-www.id		IN	A	222.124.24.8
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.ie		IN	A	82.195.155.78
@@ -299,6 +308,7 @@ www.ro		IN	A	81.180.138.21
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
+www.sk		IN	A	217.73.17.22
 www.tr		IN	A	212.12.131.116
 www.tr		IN	A	193.140.100.10
 www.tr		IN	AAAA	2001:a98:11::2
@@ -315,6 +325,10 @@ www.us		IN	A	69.31.115.210
 www.us		IN	A	70.86.75.98
 www.us		IN	A	71.32.15.195
 www.vn		IN	A	210.245.22.70
+; ftp://ftp.debian.am/pub/proftpd
+; Vardan Gevorgyan <proftpd@debian.am>
+ftp2.am		IN	A	195.250.91.19
+
 ; ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd
 ; Nicolas Sigal <mirrors@localhost.net.ar>
 ftp1.ar		IN	A	200.43.193.199
@@ -361,6 +375,10 @@ ftp1.ch		IN	A	212.101.4.244
 ; Lumir <lm@its.cz>
 ftp1.cz		IN	A	194.108.36.130
 
+; ftp://proftpd.kn.vutbr.cz/pub/ftp.proftpd.org/
+; Zdenek Bill <mirror@kn.vutbr.cz>
+ftp3.cz		IN	A	147.229.190.133
+
 ; ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/
 ; Adrian Reber <adrian@lisas.de>
 ftp2.de		IN	A	129.143.116.10
@@ -396,7 +414,7 @@ ftp2.fr		IN	AAAA	2001:860::7fff:202:b3ff:fe46:323e
 
 ; ftp://ftp.fastorama.com/mirrors/ftp.proftpd.org/
 ; MrJacK <mrjack@fastorama.com>
-ftp4.fr		IN	A	194.242.113.132
+ftp4.fr		IN	A	80.248.215.3
 
 ; ftp://ftp.crihan.fr/mirrors/ftp.proftpd.org/
 ; Alain Bidaud <crihan-tech@crihan.fr>
@@ -531,9 +549,6 @@ ftp1.ua		IN	A	213.133.165.98
 ftp4.uk		IN	A	85.116.4.19
 ftp4.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
-; ftp://ftp.midnightsoftware.co.uk/mirrors/ftp.proftpd.org/
-; Leigh Jepson <leigh@midnightsoftware.co.uk>
-
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	A	152.2.210.80
@@ -558,6 +573,11 @@ ftp28.us		IN	A	71.32.15.195
 ; Sergey Melnik <mirror@24-7-solutions.net>
 ftp30.us		IN	A	69.31.115.210
 
+; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
+; FTP Admin <ftpadmin@is.co.za>
+ftp1.za		IN	A	196.4.160.12
+
+ftp.am		IN	A	195.250.91.19
 ftp.ar		IN	A	200.43.193.199
 ftp.ar		IN	A	200.59.45.3
 ftp.at		IN	A	193.170.194.26
@@ -571,6 +591,7 @@ ftp.bg		IN	A	87.118.140.10
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cz		IN	A	194.108.36.130
+ftp.cz		IN	A	147.229.190.133
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.5.16
@@ -580,7 +601,7 @@ ftp.ee		IN	A	193.40.252.230
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
 ftp.fr		IN	AAAA	2001:860::7fff:202:b3ff:fe46:323e
-ftp.fr		IN	A	194.242.113.132
+ftp.fr		IN	A	80.248.215.3
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	193.54.153.246
@@ -624,3 +645,4 @@ ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	24.123.133.61
 ftp.us		IN	A	71.32.15.195
 ftp.us		IN	A	69.31.115.210
+ftp.za		IN	A	196.4.160.12
