@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006040500      ; Serial
+                              2006041000      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -167,7 +167,7 @@ www2.ie		IN	A	82.195.155.78
 
 ; http://proftpd.spd.co.il/
 ; Avi hirsh <admin@spd.co.il>
-www1.il		IN	A	212.199.125.80
+www1.il		IN	A	212.199.163.169
 
 ; http://www.proftpd.topnet.it/
 ; Antonio Prado <aprado@topnet.it>
@@ -205,6 +205,10 @@ www1.sk		IN	A	147.175.168.26
 ; http://proftpd.nasieti.sk
 ; Filip Hlavenka <filip.hlavenka@nasieti.sk>
 www2.sk		IN	A	217.73.17.22
+
+; http://proftpd.unknown.sk/
+; stab <stab@unknown.sk>
+www3.sk		IN	A	195.168.3.218
 
 ; http://proftpd.internetsepeti.com/
 ; Ugur GUNCER <admin@internetsepeti.com>
@@ -298,7 +302,7 @@ www.hk		IN	A	210.0.190.18
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.ie		IN	A	82.195.155.78
-www.il		IN	A	212.199.125.80
+www.il		IN	A	212.199.163.169
 www.it		IN	A	82.143.3.5
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
@@ -309,6 +313,7 @@ www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
 www.sk		IN	A	217.73.17.22
+www.sk		IN	A	195.168.3.218
 www.tr		IN	A	212.12.131.116
 www.tr		IN	A	193.140.100.10
 www.tr		IN	AAAA	2001:a98:11::2
