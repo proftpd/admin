@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006051800      ; Serial
+                              2006052400      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -105,7 +105,7 @@ www4.br		IN	A	200.222.115.76
 
 ; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
-www1.ch		IN	A	62.2.255.42
+www1.ch		IN	A	87.98.201.102
 
 ; http://proftpd.lemon4ssc.org/
 ; Liu Kang <liukange@netease.com>
@@ -127,6 +127,10 @@ www1.de		IN	A	141.41.5.16
 ; Michael Mettmann <michael1@bnw-natur.com>
 www13.de		IN	A	80.237.211.23
 
+; http://proftpd.bemirror.org
+; Hans Braeunlein <hans@bemirror.org>
+www14.de		IN	A	80.190.227.212
+
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
 www1.dk		IN	A	217.157.160.207
@@ -147,10 +151,6 @@ www6.fr		IN	A	80.248.215.3
 ; http://proftpd.psinformatique.net/
 ; Pascal <pascal@psinformatique.net>
 www7.fr		IN	A	82.127.90.12
-
-; http://proftpd.bylinux.net/
-; pyjamas <pyjamas@bylinux.net>
-www1.hk		IN	A	202.64.181.18
 
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
@@ -188,7 +188,7 @@ www1.nl		IN	AAAA	2001:828:101:1::4
 
 ; http://proftpd.tuxor.nl/
 ; Dirk Kalkman <root@tuxor.nl>
-www10.nl		IN	A	85.92.128.7
+www10.nl		IN	A	85.92.128.25
 
 ; http://proftpd.tpnet.pl/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
@@ -285,19 +285,19 @@ www.bg		IN	A	194.12.255.250
 www.bg		IN	A	87.118.140.10
 www.br		IN	A	200.203.45.22
 www.br		IN	A	200.222.115.76
-www.ch		IN	A	62.2.255.42
+www.ch		IN	A	87.98.201.102
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
 www.cz		IN	A	147.229.190.133
 www.de		IN	A	141.41.5.16
 www.de		IN	A	80.237.211.23
+www.de		IN	A	80.190.227.212
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	80.248.215.3
 www.fr		IN	A	82.127.90.12
-www.hk		IN	A	202.64.181.18
 www.hk		IN	A	210.0.190.18
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
@@ -308,7 +308,7 @@ www.li		IN	A	217.173.238.33
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
-www.nl		IN	A	85.92.128.7
+www.nl		IN	A	85.92.128.25
 www.pl		IN	A	80.50.248.77
 www.ro		IN	A	81.180.138.21
 www.se		IN	A	212.37.1.30
