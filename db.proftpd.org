@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006052400      ; Serial
+                              2006053100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -121,7 +121,7 @@ www2.cz		IN	A	147.229.190.133
 
 ; http://proftpd.uasw.edu/
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
-www1.de		IN	A	141.41.5.16
+www1.de		IN	A	141.41.8.209
 
 ; http://proftpd.linux-mirror.org/
 ; Michael Mettmann <michael1@bnw-natur.com>
@@ -129,7 +129,9 @@ www13.de		IN	A	80.237.211.23
 
 ; http://proftpd.bemirror.org
 ; Hans Braeunlein <hans@bemirror.org>
-www14.de		IN	A	80.190.227.212
+
+; http://proftpd.namesdir.com
+; Mihai Leonte <hostmaster@procopter.com>
 
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
@@ -190,6 +192,10 @@ www1.nl		IN	AAAA	2001:828:101:1::4
 ; Dirk Kalkman <root@tuxor.nl>
 www10.nl		IN	A	85.92.128.25
 
+; http://proftpd.osmirror.nl/
+; Jur Rademakers <mirrors@osmirror.nl>
+www11.nl		IN	A	83.149.81.153
+
 ; http://proftpd.tpnet.pl/
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 www4.pl		IN	A	80.50.248.77
@@ -230,11 +236,6 @@ www1.ua		IN	A	195.248.190.23
 ; http://proftpd.dnepr.net/
 ; Andrey Lakhno <land@dnepr.net>
 www2.ua		IN	A	217.198.131.181
-
-; http://proftpd.networkedsystems.co.uk/
-; fxp0 <daniel@kewlio.net>
-www3.uk		IN	A	85.116.4.19
-www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
 ; http://proftpd.fasterline.net/
 ; Martin S. <admin@sms13.de>
@@ -289,9 +290,8 @@ www.ch		IN	A	87.98.201.102
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
 www.cz		IN	A	147.229.190.133
-www.de		IN	A	141.41.5.16
+www.de		IN	A	141.41.8.209
 www.de		IN	A	80.237.211.23
-www.de		IN	A	80.190.227.212
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	212.43.248.244
 www.fr		IN	A	195.221.21.36
@@ -309,6 +309,7 @@ www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	85.92.128.25
+www.nl		IN	A	83.149.81.153
 www.pl		IN	A	80.50.248.77
 www.ro		IN	A	81.180.138.21
 www.se		IN	A	212.37.1.30
@@ -320,8 +321,6 @@ www.tr		IN	A	193.140.100.10
 www.tr		IN	AAAA	2001:a98:11::2
 www.ua		IN	A	195.248.190.23
 www.ua		IN	A	217.198.131.181
-www.uk		IN	A	85.116.4.19
-www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 www.us		IN	A	67.18.215.34
 www.us		IN	A	66.92.74.33
 www.us		IN	A	24.123.133.61
@@ -394,7 +393,7 @@ ftp5.de		IN	A	193.175.24.42
 
 ; ftp://ftp.uasw.edu/pub/network/proftpd/ftp/
 ; Thorsten Ludewig <T.Ludewig@UASW.EDU>
-ftp7.de		IN	A	141.41.5.16
+ftp7.de		IN	A	141.41.8.209
 
 ; ftp://ftp.fu-berlin.de/unix/ftp/proftpd/
 ; Holger Weiss <ftp@FU-Berlin.DE>
@@ -403,10 +402,6 @@ ftp13.de		IN	A	130.133.3.130
 ; ftp://ftp.jaquet.dk/pub/proftp/
 ; Rasmus <rasmus@jaquet.dk>
 ftp1.dk		IN	A	217.157.160.207
-
-; ftp://mirror.estweb.ee/proftpd/
-; Ivari Horm <admin@estweb.ee>
-ftp1.ee		IN	A	193.40.252.230
 
 ; ftp://ftp.ubu.es/pub/mirror/proftpd/
 ; Pedro R. Benito <pedro@ubu.es>
@@ -472,6 +467,10 @@ ftp4.nl		IN	A	195.86.128.57
 ; Network Operations Center <noc@webazilla.com>
 ftp7.nl		IN	A	194.187.97.221
 
+; ftp://proftpdftp.osmirror.nl/pub/proftpd/ftp/
+; Jur Rademakers <mirrors@osmirror.nl>
+ftp9.nl		IN	A	83.149.81.153
+
 ; ftp://ftp.tomt.net/pub/proftpd/
 ; Andre Tomt <andre@tomt.net>
 ftp5.no		IN	A	80.239.42.88
@@ -517,10 +516,6 @@ ftp1.se		IN	A	85.11.195.10
 ; Mirror Admin <mirror@dataphone.net>
 ftp3.se		IN	A	212.37.1.30
 
-; ftp://ftp.se.linux.org/pub/network/proftpd/
-; Svenska Linuxföreningens driftgrupp <selinux-drift@se.linux.org>
-ftp4.se		IN	A	213.141.80.22
-
 ; ftp://ftp.oss.eznetsols.org/proftpd/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 ftp1.sg		IN	A	202.79.178.98
@@ -552,11 +547,6 @@ ftp3.tw		IN	A	140.112.2.5
 ; ftp://ftp.tlk-l.net/pub/mirrors/ftp.proftpd.org/
 ; Alexander Ryumshin <mizi@alkar.net>
 ftp1.ua		IN	A	213.133.165.98
-
-; ftp://proftpd.networkedsystems.co.uk/
-; fxp0 <daniel@kewlio.net>
-ftp4.uk		IN	A	85.116.4.19
-ftp4.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
@@ -599,10 +589,9 @@ ftp.cz		IN	A	194.108.36.130
 ftp.cz		IN	A	147.229.190.133
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
-ftp.de		IN	A	141.41.5.16
+ftp.de		IN	A	141.41.8.209
 ftp.de		IN	A	130.133.3.130
 ftp.dk		IN	A	217.157.160.207
-ftp.ee		IN	A	193.40.252.230
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
 ftp.fr		IN	AAAA	2001:860::7fff:202:b3ff:fe46:323e
@@ -622,6 +611,7 @@ ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.86.128.57
 ftp.nl		IN	A	194.187.97.221
+ftp.nl		IN	A	83.149.81.153
 ftp.no		IN	A	80.239.42.88
 ftp.pl		IN	A	82.210.157.205
 ftp.pl		IN	AAAA	2001:6f8:93c::1
@@ -634,7 +624,6 @@ ftp.ro		IN	A	84.247.67.149
 ftp.ro		IN	A	194.102.255.6
 ftp.se		IN	A	85.11.195.10
 ftp.se		IN	A	212.37.1.30
-ftp.se		IN	A	213.141.80.22
 ftp.sg		IN	A	202.79.178.98
 ftp.sk		IN	A	195.46.80.5
 ftp.sk		IN	A	147.175.168.26
@@ -643,8 +632,6 @@ ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	210.202.31.150
 ftp.tw		IN	A	140.112.2.5
 ftp.ua		IN	A	213.133.165.98
-ftp.uk		IN	A	85.116.4.19
-ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ftp.us		IN	A	152.2.210.80
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	24.123.133.61
