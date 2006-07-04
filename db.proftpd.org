@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006062000      ; Serial
+                              2006070400      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -107,6 +107,10 @@ www4.br		IN	A	200.222.115.76
 ; Escario Julien <mirrors@asylog.net>
 www1.ch		IN	A	87.98.201.102
 
+; http://proftpd.freeby.pctools.cl
+; Felipe Tornvall N. <ftn@pctools.cl>
+www1.cl		IN	A	190.54.24.106
+
 ; http://proftpd.lemon4ssc.org/
 ; Liu Kang <liukange@netease.com>
 www4.cn		IN	A	219.239.98.8
@@ -208,6 +212,10 @@ www4.pl		IN	A	80.50.248.77
 ; Mihai Marinas <net-admin@zoel.ro>
 www4.ro		IN	A	81.180.138.21
 
+; http://proftpd.mivosoft.ro/
+; Cristian Miu <cristian.miu@mivosoft.ro>
+www5.ro		IN	A	84.247.67.149
+
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
 www1.se		IN	A	212.37.1.30
@@ -261,7 +269,6 @@ www31.us		IN	A	70.86.75.98
 ; http://proftpd.mirrors.borgnet.us/
 ; Scott Grayban <root@borgnet.us>
 www32.us		IN	A	71.32.15.195
-www32.us		IN	AAAA	2a01:b0:10d9::7
 
 ; http://proftpd.internet-servers.info/
 ; Ionel Roiban <ionel.roiban@securityconsultant.biz>
@@ -285,6 +292,7 @@ www.bg		IN	A	87.118.140.10
 www.br		IN	A	200.203.45.22
 www.br		IN	A	200.222.115.76
 www.ch		IN	A	87.98.201.102
+www.cl		IN	A	190.54.24.106
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
 www.cz		IN	A	147.229.190.133
@@ -311,6 +319,7 @@ www.nl		IN	A	85.92.128.25
 www.nl		IN	A	83.149.81.153
 www.pl		IN	A	80.50.248.77
 www.ro		IN	A	81.180.138.21
+www.ro		IN	A	84.247.67.149
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -326,7 +335,6 @@ www.us		IN	A	206.51.225.20
 www.us		IN	A	69.31.115.210
 www.us		IN	A	70.86.75.98
 www.us		IN	A	71.32.15.195
-www.us		IN	AAAA	2a01:b0:10d9::7
 www.us		IN	A	217.160.250.20
 ; ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd
 ; Nicolas Sigal <mirrors@localhost.net.ar>
@@ -454,6 +462,10 @@ ftp1.nl		IN	A	195.129.111.9
 ; Diederik <mirror@nl.easynet.net>
 ftp4.nl		IN	A	195.86.128.57
 
+; ftp://mirror.tuxor.nl/pub/proftpd/
+; Dirk Kalkman <root@tuxor.nl>
+ftp6.nl		IN	A	85.92.128.25
+
 ; ftp://proftpd.mirrors.webazilla.nl/
 ; Network Operations Center <noc@webazilla.com>
 ftp7.nl		IN	A	194.187.97.221
@@ -564,7 +576,6 @@ ftp25.us		IN	A	70.60.35.37
 ; ftp://proftpd.mirrors.borgnet.us/
 ; Scott Grayban <root@borgnet.us>
 ftp28.us		IN	A	71.32.15.195
-ftp28.us		IN	AAAA	2a01:b0:10d9::7
 
 ; ftp://mirrors.24-7-solutions.net/pub/proftpd/
 ; Sergey Melnik <mirror@24-7-solutions.net>
@@ -640,6 +651,5 @@ ftp.us		IN	A	152.2.210.80
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	71.32.15.195
-ftp.us		IN	AAAA	2a01:b0:10d9::7
 ftp.us		IN	A	69.31.115.210
 ftp.za		IN	A	196.4.160.12
