@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006072100      ; Serial
+                              2006080200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -61,7 +61,7 @@ www3.ar		IN	A	200.59.45.3
 
 ; http://proftpd.wnpower.com/
 ; Federico Alvarez <hostmaster@wnpower.com>
-www4.ar		IN	A	200.32.10.19
+www4.ar		IN	A	200.32.10.20
 
 ; http://proftpd.gds.tuwien.ac.at/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
@@ -77,10 +77,6 @@ www2.au		IN	A	203.16.234.91
 ; http://proftpd.dknss.com/
 ; Darrin Khan <darrink@dknss.com>
 www3.au		IN	A	203.80.162.206
-
-; http://proftpd.iridiumhosting.com/
-; Adam Neat <adamneat@anoti.com>
-www4.au		IN	A	218.214.209.25
 
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
@@ -127,10 +123,6 @@ www1.cz		IN	A	82.113.48.3
 ; Zdenek Bill <mirror@kn.vutbr.cz>
 www2.cz		IN	A	147.229.190.133
 
-; http://proftpd.uasw.edu/
-; Thorsten Ludewig <T.Ludewig@UASW.EDU>
-www1.de		IN	A	141.41.9.9
-
 ; http://proftpd.linux-mirror.org/
 ; Michael Mettmann <michael1@bnw-natur.com>
 www13.de		IN	A	80.237.211.23
@@ -153,10 +145,6 @@ www17.de		IN	A	89.110.148.72
 ; Rasmus Andersen <rasmus@jaquet.dk>
 www1.dk		IN	A	217.157.160.207
 
-; http://www.proftpd.seasonfive.com/
-; Yannick Lecaillez <mirrors@seasonfive.com>
-www1.fr		IN	A	212.43.248.244
-
 ; http://proftpd.crihan.fr/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 www4.fr		IN	A	195.221.21.36
@@ -170,6 +158,10 @@ www6.fr		IN	A	80.248.215.3
 ; Pascal <pascal@psinformatique.net>
 www7.fr		IN	A	82.127.90.12
 
+; http://proftpd.mirror.tyneo.net/
+; Samuel Kauffmann <skauffmann@tyneo.net>
+www10.fr		IN	A	88.191.18.200
+
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
 www3.hk		IN	A	210.0.190.18
@@ -182,14 +174,6 @@ www2.hu		IN	A	195.56.147.6
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	A	193.120.14.243
 www1.ie		IN	AAAA	2001:7c8:3:1::4
-
-; http://proftpd.oss-mirror.org/
-; Ralf Uhlemann <admin@realhost.de>
-www2.ie		IN	A	82.195.151.224
-
-; http://proftpd.spd.co.il/
-; Avi hirsh <admin@spd.co.il>
-www1.il		IN	A	212.199.163.169
 
 ; http://www.proftpd.topnet.it/
 ; Antonio Prado <aprado@topnet.it>
@@ -223,10 +207,6 @@ www4.pl		IN	A	80.50.248.77
 ; http://proftpd.zoel.ro/
 ; Mihai Marinas <net-admin@zoel.ro>
 www4.ro		IN	A	81.180.138.21
-
-; http://proftpd.mivosoft.ro/
-; Cristian Miu <cristian.miu@mivosoft.ro>
-www5.ro		IN	A	84.247.67.149
 
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
@@ -285,14 +265,13 @@ www33.us		IN	A	217.160.250.20
 www.am		IN	A	195.250.77.48
 www.ar		IN	A	200.43.193.199
 www.ar		IN	A	200.59.45.3
-www.ar		IN	A	200.32.10.19
+www.ar		IN	A	200.32.10.20
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
 www.au		IN	A	203.16.234.90
 www.au		IN	A	203.16.234.91
 www.au		IN	A	203.80.162.206
-www.au		IN	A	218.214.209.25
 www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
@@ -305,22 +284,19 @@ www.cl		IN	A	190.54.24.106
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
 www.cz		IN	A	147.229.190.133
-www.de		IN	A	141.41.9.9
 www.de		IN	A	80.237.211.23
 www.de		IN	A	217.160.169.94
 www.de		IN	A	89.110.148.72
 www.dk		IN	A	217.157.160.207
-www.fr		IN	A	212.43.248.244
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	80.248.215.3
 www.fr		IN	A	82.127.90.12
+www.fr		IN	A	88.191.18.200
 www.hk		IN	A	210.0.190.18
 www.hu		IN	A	195.56.147.6
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
-www.ie		IN	A	82.195.151.224
-www.il		IN	A	212.199.163.169
 www.it		IN	A	82.143.3.5
 www.li		IN	A	217.173.238.33
 www.lv		IN	A	195.13.158.141
@@ -330,7 +306,6 @@ www.nl		IN	A	85.92.128.25
 www.nl		IN	A	83.149.81.153
 www.pl		IN	A	80.50.248.77
 www.ro		IN	A	81.180.138.21
-www.ro		IN	A	84.247.67.149
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -392,6 +367,10 @@ ftp1.ca		IN	A	66.241.141.46
 ; Erich Hohermuth <hostmaster@solnet.ch>
 ftp1.ch		IN	A	212.101.4.244
 
+; ftp://mirrors.pctools.cl/proftpd
+; Felipe Tornvall N. <mirror@linux.pctools.cl>
+ftp3.cl		IN	A	190.54.24.106
+
 ; ftp://ftp.its.cz/MIRRORS/ftp.proftpd.org/
 ; Lumir <lm@its.cz>
 ftp1.cz		IN	A	194.108.36.130
@@ -441,6 +420,10 @@ ftp5.fr		IN	AAAA	2001:660:7401:211::36
 ; ftp://ftp.seasonfive.com/mirrors/ftp.proftpd.org/
 ; Yannick Lecaillez <mirrors@seasonfive.com>
 ftp7.fr		IN	A	212.43.248.244
+
+; http://proftpd.mirror.tyneo.net/pub
+; Samuel Kauffmann <skauffmann@tyneo.net>
+ftp9.fr		IN	A	88.191.18.200
 
 ; ftp://ftp.fsn.hu/pub/proftpd/
 ; Attila Nagy <bra@fsn.hu>
@@ -612,6 +595,7 @@ ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.bg		IN	A	87.118.140.10
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
+ftp.cl		IN	A	190.54.24.106
 ftp.cz		IN	A	194.108.36.130
 ftp.cz		IN	A	147.229.190.133
 ftp.de		IN	A	129.143.116.10
@@ -626,6 +610,7 @@ ftp.fr		IN	A	80.248.215.3
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	212.43.248.244
+ftp.fr		IN	A	88.191.18.200
 ftp.hu		IN	A	195.228.252.133
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
