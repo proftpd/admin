@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006080200      ; Serial
+                              2006083100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -105,7 +105,7 @@ www4.br		IN	A	200.222.115.76
 
 ; http://proftpd.azylog.net/
 ; Escario Julien <mirrors@asylog.net>
-www1.ch		IN	A	87.98.201.102
+www1.ch		IN	A	195.200.217.2
 
 ; http://proftpd.freeby.pctools.cl
 ; Felipe Tornvall N. <ftn@pctools.cl>
@@ -162,6 +162,10 @@ www7.fr		IN	A	82.127.90.12
 ; Samuel Kauffmann <skauffmann@tyneo.net>
 www10.fr		IN	A	88.191.18.200
 
+; http://proftpd.multidist.com
+; MULTIDIST SARL <webmaster@multidist.com>
+www11.fr		IN	A	88.191.14.172
+
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
 www3.hk		IN	A	210.0.190.18
@@ -204,9 +208,13 @@ www11.nl		IN	A	83.149.81.153
 ; Ireneusz Weglewski <irekw@zt.piotrkow.tpsa.pl>
 www4.pl		IN	A	80.50.248.77
 
-; http://proftpd.zoel.ro/
-; Mihai Marinas <net-admin@zoel.ro>
-www4.ro		IN	A	81.180.138.21
+; http://proftpd.geosdreams.info/
+; Piotr Chumicki <piotrc@gmail.com>
+www5.pl		IN	A	213.184.17.240
+
+; http://proftpd.hostingromania.ro/
+; Mihai Marinas <net-admin@hostingromania.ro>
+www4.ro		IN	A	195.170.171.5
 
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
@@ -233,10 +241,18 @@ www2.tr		IN	AAAA	2001:a98:11::2
 ; Andrey Lakhno <land@dnepr.net>
 www2.ua		IN	A	217.198.131.181
 
+; http://proftpd.privat-online.net
+; Sergii Bolotin <sergii@bolotin.dp.ua>
+www3.ua		IN	A	217.117.74.70
+
 ; http://proftpd.networkedsystems.co.uk/
 ; Daniel Austin <daniel@kewlio.net>
 www3.uk		IN	A	85.116.4.19
 www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
+
+; http://proftpd.rewt.org.uk
+; Joe Holden (Opera Telecom Limited) <joe.holden@operatelecom.com>
+www10.uk		IN	A	85.118.152.109
 
 ; http://proftpd.sourwood.net/
 ; Matt Mozur <matt.mozur@sourwood.net>
@@ -279,7 +295,7 @@ www.bg		IN	A	194.12.255.250
 www.bg		IN	A	87.118.140.10
 www.br		IN	A	200.157.179.22
 www.br		IN	A	200.222.115.76
-www.ch		IN	A	87.98.201.102
+www.ch		IN	A	195.200.217.2
 www.cl		IN	A	190.54.24.106
 www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
@@ -293,6 +309,7 @@ www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	80.248.215.3
 www.fr		IN	A	82.127.90.12
 www.fr		IN	A	88.191.18.200
+www.fr		IN	A	88.191.14.172
 www.hk		IN	A	210.0.190.18
 www.hu		IN	A	195.56.147.6
 www.ie		IN	A	193.120.14.243
@@ -305,7 +322,8 @@ www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	85.92.128.25
 www.nl		IN	A	83.149.81.153
 www.pl		IN	A	80.50.248.77
-www.ro		IN	A	81.180.138.21
+www.pl		IN	A	213.184.17.240
+www.ro		IN	A	195.170.171.5
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -313,8 +331,10 @@ www.sk		IN	A	217.73.17.22
 www.tr		IN	A	193.140.100.10
 www.tr		IN	AAAA	2001:a98:11::2
 www.ua		IN	A	217.198.131.181
+www.ua		IN	A	217.117.74.70
 www.uk		IN	A	85.116.4.19
 www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
+www.uk		IN	A	85.118.152.109
 www.us		IN	A	66.92.74.33
 www.us		IN	A	70.60.35.37
 www.us		IN	A	69.31.115.210
@@ -358,6 +378,10 @@ ftp1.be		IN	AAAA	2001:6f8:200:1::5:33
 ; ftp://ftp.proftpd.cbox.biz/proftpd/
 ; Alexander Dulgerov <ad@cbox.biz>
 ftp4.bg		IN	A	87.118.140.10
+
+; ftp://proftpd.oi.com.br/
+; Oi Internet <wanderson.gonzalez@oi.com.br>
+ftp1.br		IN	A	200.222.115.76
 
 ; ftp://ftp.samurai.com/pub/proftpd/
 ; Bryan Fullerton <bryanf@samurai.com>
@@ -421,7 +445,7 @@ ftp5.fr		IN	AAAA	2001:660:7401:211::36
 ; Yannick Lecaillez <mirrors@seasonfive.com>
 ftp7.fr		IN	A	212.43.248.244
 
-; http://proftpd.mirror.tyneo.net/pub
+; ftp://proftpd.mirror.tyneo.net/pub/proftpd/
 ; Samuel Kauffmann <skauffmann@tyneo.net>
 ftp9.fr		IN	A	88.191.18.200
 
@@ -497,13 +521,9 @@ ftp9.pl		IN	AAAA	2001:618:400:b863::1
 ; SUBREDU Manuel <diablo@iasi.roedu.net>
 ftp2.ro		IN	A	192.129.4.120
 
-; ftp://proftpd.zoel.ro/Linux/mirrors/proftpd.org/
-; Mihai Marinas <net-admin@zoel.ro>
-ftp3.ro		IN	A	81.180.138.21
-
-; ftp://ftp.linux.ro/ftp.proftpd.org/
-; Radu Brebu <radu.brebu@rdsnet.ro>
-ftp4.ro		IN	A	193.231.236.58
+; ftp://ftp.hostingromania.ro/Linux/mirrors/proftpd.org
+; Mihai Marinas <net-admin@hostingromania.ro>
+ftp3.ro		IN	A	195.170.171.3
 
 ; ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/
 ; Cristian Miu <cristian.miu@mivosoft.ro>
@@ -558,6 +578,10 @@ ftp1.ua		IN	A	213.133.165.98
 ftp4.uk		IN	A	85.116.4.19
 ftp4.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
+; ftp://ftp.operatelecom.com/pub/ftp.proftpd.org/
+; Joe Holden (Opera Telecom Limited) <joe.holden@operatelecom.com>
+ftp8.uk		IN	A	85.118.152.106
+
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	A	152.2.210.80
@@ -593,6 +617,7 @@ ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.bg		IN	A	87.118.140.10
+ftp.br		IN	A	200.222.115.76
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cl		IN	A	190.54.24.106
@@ -632,8 +657,7 @@ ftp.pl		IN	A	80.50.248.77
 ftp.pl		IN	A	82.139.21.82
 ftp.pl		IN	AAAA	2001:618:400:b863::1
 ftp.ro		IN	A	192.129.4.120
-ftp.ro		IN	A	81.180.138.21
-ftp.ro		IN	A	193.231.236.58
+ftp.ro		IN	A	195.170.171.3
 ftp.ro		IN	A	84.247.67.149
 ftp.ro		IN	A	194.102.255.6
 ftp.se		IN	A	85.11.195.10
@@ -648,6 +672,7 @@ ftp.tw		IN	A	140.112.2.5
 ftp.ua		IN	A	213.133.165.98
 ftp.uk		IN	A	85.116.4.19
 ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
+ftp.uk		IN	A	85.118.152.106
 ftp.us		IN	A	152.2.210.80
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	70.60.35.37
