@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006091400      ; Serial
+                              2006092600      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -210,7 +210,7 @@ www4.pl		IN	A	80.50.248.77
 
 ; http://proftpd.geosdreams.info/
 ; Piotr Chumicki <piotrc@gmail.com>
-www5.pl		IN	A	70.87.127.104
+www5.pl		IN	A	213.184.17.240
 
 ; http://proftpd.hostingromania.ro/
 ; Mihai Marinas <net-admin@hostingromania.ro>
@@ -218,7 +218,7 @@ www4.ro		IN	A	195.170.171.5
 
 ; http://proftpd.ran.ro/
 ; Alin Claudiu <nebunik@yahoo.com>
-www6.ro		IN	A	86.104.244.2
+www6.ro		IN	A	86.104.247.130
 
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
@@ -322,9 +322,9 @@ www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	85.92.128.25
 www.nl		IN	A	83.149.81.153
 www.pl		IN	A	80.50.248.77
-www.pl		IN	A	70.87.127.104
+www.pl		IN	A	213.184.17.240
 www.ro		IN	A	195.170.171.5
-www.ro		IN	A	86.104.244.2
+www.ro		IN	A	86.104.247.130
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -538,7 +538,7 @@ ftp6.ro		IN	A	194.102.255.6
 
 ; ftp://ftp.ran.ro/pub/mirrors/ftp.proftpd.org/
 ; Alin Claudiu <nebunik@yahoo.com>
-ftp7.ro		IN	A	81.181.95.194
+ftp7.ro		IN	A	86.104.247.130
 
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
@@ -595,7 +595,7 @@ ftp9.uk		IN	A	194.80.135.25
 
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
-ftp1.us		IN	A	152.2.210.80
+ftp1.us		IN	A	152.46.7.80
 
 ; ftp://ftp.sourwood.net/pub/ProFTPD/
 ; Matt Mozur <ftpmaster@sourwood.net>
@@ -671,7 +671,7 @@ ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	195.170.171.3
 ftp.ro		IN	A	84.234.107.102
 ftp.ro		IN	A	194.102.255.6
-ftp.ro		IN	A	81.181.95.194
+ftp.ro		IN	A	86.104.247.130
 ftp.se		IN	A	85.11.195.10
 ftp.se		IN	A	212.37.1.30
 ftp.sg		IN	A	202.79.178.98
@@ -686,7 +686,7 @@ ftp.uk		IN	A	85.116.4.19
 ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ftp.uk		IN	A	85.118.152.106
 ftp.uk		IN	A	194.80.135.25
-ftp.us		IN	A	152.2.210.80
+ftp.us		IN	A	152.46.7.80
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	71.32.15.195
