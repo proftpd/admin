@@ -1,58 +1,60 @@
 #!/usr/local/bin/php -q
 <?php
-	/* ProFTPD Mirror Network Maintenance System
-	 * Copyright (c) 2005, John Morrissey <jwm@horde.net>
-	 *
-	 * This program is free software; you can redistribute it and/or modify
-	 * it under the terms of the GNU General Public License as published by
-	 * the Free Software Foundation; either version 2 of the License, or
-	 * (at your option) any later version.
-	 *
-	 * This program is distributed in the hope that it will be useful,
-	 * but WITHOUT ANY WARRANTY; without even the implied warranty of
-	 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	 * GNU General Public License for more details.
-	 *
-	 * You should have received a copy of the GNU General Public License
-	 * along with this program; if not, write to the Free Software
-	 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
-	 */
 
-	function usage() {
-		// FIXME
-		$basename = basename('mirrorList.php');
-		print <<<EOM
+/* ProFTPD Mirror Network Maintenance System
+ * Copyright (c) 2005, John Morrissey <jwm@horde.net>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+ */
+
+function usage() {
+	// FIXME
+	$basename = basename('mirrorList.php');
+	print <<<EOM
 Usage: $basename [option]...
     -t|--type (ftp|www)  Type of mirror list to generate
 
 EOM;
-	}
+}
 
-	require_once 'Console/Getopt.php';
-	require_once 'DB.php';
+require_once 'Console/Getopt.php';
+require_once 'DB.php';
 
-	$args = Console_Getopt::getopt(Console_Getopt::readPHPArgv(),
-		't:', array('type='));
-	foreach ($args[0] as $arg) {
-		switch ($arg[0]) {
-		case 't':
-		case '--type':
-			if ($arg[1] != 'ftp' && $arg[1] != 'www') {
-				usage();
-				exit;
-			}
-			$TYPE = $arg[1];
-			break;
-		default:
+$args = Console_Getopt::getopt(Console_Getopt::readPHPArgv(),
+	't:', array('type='));
+foreach ($args[0] as $arg) {
+	switch ($arg[0]) {
+	case 't':
+	case '--type':
+		if ($arg[1] != 'ftp' && $arg[1] != 'www') {
 			usage();
 			exit;
 		}
-	}
-
-	if (empty($TYPE)) {
+		$TYPE = $arg[1];
+		break;
+	default:
 		usage();
 		exit;
 	}
+}
+
+if (empty($TYPE)) {
+	usage();
+	exit;
+}
+
 ?>
 
 <: $html_title = "Downloading and mirror sites" :>//
