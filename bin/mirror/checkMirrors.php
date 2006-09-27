@@ -18,7 +18,12 @@
 	 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
 	 */
 
-	/* FIXME: add an argument to specify a LIKE clause for site? */
+
+	/* Timeout in seconds for socket operations. */
+	$SOCKET_TIMEOUT = 90;
+	/* Number of seconds after which a site is considered stale. */
+	$STALE_THRESHOLD = 2 * 24 * 60 * 60;
+
 
 	/**
 	 * Check for an up-to-date mirror URL.
@@ -28,11 +33,6 @@
 	 * @return boolean Whether the mirror is accessible an up-to-date.
 	 */
 	function checkSite($netUrl, $connectTo = null) {
-		/* Timeout in seconds for socket operations. */
-		$SOCKET_TIMEOUT = 90;
-		/* Number of seconds after which a site is considered stale. */
-		$STALE_THRESHOLD = 8 * 24 * 60 * 60;
-
 		/* To test round-robin hostnames, we need to connect to a specific
 		 * node to test and send a Host: header with the round-robin
 		 * hostname to make sure the node handles it. I couldn't find a good
@@ -42,7 +42,7 @@
 		if ($netUrl->protocol == 'http') {
 			$toHost = (!empty($connectTo) ? $connectTo : $netUrl->host);
 
-			$fp = @fsockopen($toHost, $netUrl->port, $errno, $errstr, $SOCKET_TIMEOUT);
+			$fp = @fsockopen($toHost, $netUrl->port, $errno, $errstr, $GLOBALS['SOCKET_TIMEOUT']);
 			if ($fp === false) {
 				return PEAR::raiseError("Couldn't open connection to $toHost: ($errno) $errstr.");
 			}
@@ -73,7 +73,14 @@
 
 		fclose($fp);
 
-		if ($tstamp + $STALE_THRESHOLD < time()) {
+		if (strspn($tstamp, "0123456789") != strlen($tstamp)) {
+			return PEAR::raiseError("Got bad timestamp from $netUrl->host" . ((isset($toHost) && $toHost != $netUrl->host) ? " ($toHost)" : null) . ": $tstamp\n");
+		}
+
+		if ($GLOBALS['VERBOSE']) {
+			print "Got '$tstamp' (" . date('Y-m-d H:i:s', $tstamp) . ") for $netUrl->host" . ((isset($toHost) && $toHost != $netUrl->host) ? " ($toHost)" : null) . "\n";
+		}
+		if ($tstamp + $GLOBALS['STALE_THRESHOLD'] < time()) {
 			return false;
 		}
 		return true;
@@ -81,10 +88,13 @@
 
 	function usage() {
 		// FIXME
-		$basename = basename('checkMirrors.php');
+		$basename = basename($GLOBALS['argv'][0]);
 		print <<<EOM
 Usage: $basename [option]...
-    -t|--type (ftp|www)  Type of mirrors to check
+    -t, --type (ftp|www)  Type of mirrors to check
+    -v, --verbose         Emit status output for each mirror, regardless of
+                          whether it's up to date
+    -m, --mirror=URL      Check whether mirrors matching URL are up to date
 
 EOM;
 	}
@@ -95,27 +105,45 @@ EOM;
 	require_once 'Mail.php';
 	require_once 'Net/URL.php';
 
+	$VERBOSE = false;
+
 	$args = Console_Getopt::getopt(Console_Getopt::readPHPArgv(),
-		't:', array('type='));
+		'm:t:v', array('mirror=', 'type=', 'verbose'));
+	if (PEAR::isError($args)) {
+		print $args->getMessage() . "\n";
+		usage();
+		exit(1);
+	}
 	foreach ($args[0] as $arg) {
 		switch ($arg[0]) {
 		case 't':
 		case '--type':
 			if ($arg[1] != 'ftp' && $arg[1] != 'www') {
 				usage();
-				exit;
+				exit(1);
 			}
 			$TYPE = $arg[1];
 			break;
+
+		case 'v':
+		case '--verbose':
+			$VERBOSE = true;
+			break;
+			
+		case 'm':
+		case '--mirror':
+			$MATCH_SUBSET = $arg[1];
+			break;
+			
 		default:
 			usage();
-			exit;
+			exit(1);
 		}
 	}
 
 	if (empty($TYPE)) {
 		usage();
-		exit;
+		exit(1);
 	}
 
 	$db = &DB::connect('mysql://SQL-USER:SQL-PASSWORD@localhost/proftpd');
@@ -137,6 +165,9 @@ EOM;
 	$query .= "FROM $table LEFT JOIN countrycode ON ";
 	$query .= "     $table.country_iso = countrycode.iso ";
 	$query .= "WHERE live = 'true' ";
+	if (isset($MATCH_SUBSET)) {
+		$query .= "AND site LIKE '%$MATCH_SUBSET%' ";
+	}
 	$query .= 'ORDER BY iso, sequence';
 
 	$result = $db->query($query);
@@ -161,13 +192,13 @@ EOM;
 		}
 
 		foreach ($urlsToCheck as $url) {
-			$checkResult = checkSite($url, ($TYPE == 'www' ? $urlsToCheck[0]->host : null));
-			if (PEAR::isError($checkResult)) {
-				print $checkResult->getMessage() . "\n";
-				continue;
-			}
+			$checkResult = checkSite($url,
+				($TYPE == 'www' ? $urlsToCheck[0]->host : null));
+			if ($checkResult !== true || PEAR::isError($checkResult)) {
+				if (PEAR::isError($checkResult)) {
+					print $checkResult->getMessage() . "\n";
+				}
 
-			if ($checkResult !== true) {
 				$headers = array(
 					'To' => $row['admin'] . '<' . $row['admin_email'] . '>, ' .
 					        'core@proftpd.org',
@@ -211,11 +242,10 @@ $headers['To'] = 'jwm@horde.net';
 				if (PEAR::isError($mailResult)) {
 					die("Couldn't send message to " . $headers['To'] . ': ' . $mailResult->getMessage() . "\n");
 				}
-				print $url->getURL() . " is out of date.\n";
+				print $url->getURL() .
+					' (' . ($TYPE == 'www' ? $urlsToCheck[0]->host : null) . ') ' .
+					"is out of date.\n";
 				continue 2;
 			}
 		}
 	}
-?>
-
-Done.
