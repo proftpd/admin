@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006092600      ; Serial
+                              2006100900      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -97,7 +97,7 @@ www3.bg		IN	A	87.118.140.10
 
 ; http://proftpd.giga.com.br/
 ; Juliano Primavesi <juliano.p@gmail.com>
-www3.br		IN	A	200.157.179.22
+www3.br		IN	A	200.157.179.23
 
 ; http://proftpd.oi.com.br/
 ; Oi Internet <wanderson.gonzalez@oi.com.br>
@@ -106,10 +106,6 @@ www4.br		IN	A	200.222.115.76
 ; http://proftpd.freeby.pctools.cl
 ; Felipe Tornvall N. <ftn@pctools.cl>
 www1.cl		IN	A	190.54.24.104
-
-; http://proftpd.lemon4ssc.org/
-; Liu Kang <liukange@netease.com>
-www4.cn		IN	A	219.239.98.8
 
 ; http://proftpd.ni.cz/
 ; Michal Jursa <michal@ni.cz>
@@ -131,11 +127,15 @@ www13.de		IN	A	80.237.211.23
 
 ; http://proftp.oslevel.de
 ; Mirko Hahn <mirror@oslevel.de>
-www16.de		IN	A	217.160.169.94
+www16.de		IN	A	84.19.189.52
 
 ; http://proftpd.heilpraktiker-empfehlung.de
 ; Tim Muthmann <tim.muthmann@zdg-gmbh.de>
 www17.de		IN	A	89.110.148.72
+
+; http://proftpd.mirror.nullstelle.de/
+; Ryo Kato <mirror@mail.nullstelle.de>
+www19.de		IN	A	85.14.216.64
 
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
@@ -183,6 +183,10 @@ www1.ie		IN	AAAA	2001:7c8:3:1::4
 ; Antonio Prado <aprado@topnet.it>
 www4.it		IN	A	82.143.3.5
 
+; http://proftpd.sakuretsu.net/
+; Katsuji Ishikawa <ktj@sakuretsu.net>
+www1.jp		IN	A	59.106.25.59
+
 ; http://proftpd.lie-comtel.li/
 ; Roland Guthauser <roland.guthauser@lkw.li>
 www1.li		IN	A	217.173.238.33
@@ -215,10 +219,6 @@ www5.pl		IN	A	213.184.17.240
 ; http://proftpd.hostingromania.ro/
 ; Mihai Marinas <net-admin@hostingromania.ro>
 www4.ro		IN	A	195.170.171.5
-
-; http://proftpd.ran.ro/
-; Alin Claudiu <nebunik@yahoo.com>
-www6.ro		IN	A	86.104.247.130
 
 ; http://proftpd.mirror2.dataphone.se/
 ; Patrik Forsberg <patrik.forsberg@dataphone.net>
@@ -278,6 +278,10 @@ www32.us		IN	A	71.32.15.195
 ; Ionel Roiban <ionel.roiban@securityconsultant.biz>
 www33.us		IN	A	217.160.250.20
 
+; http://proftpd.etf.bg.ac.yu
+; Marko Uskokovic <mirroradmin@etf.bg.ac.yu>
+www1.yu		IN	A	147.91.8.33
+
 www.am		IN	A	195.250.77.48
 www.ar		IN	A	200.43.193.199
 www.ar		IN	A	200.59.45.3
@@ -293,15 +297,15 @@ www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
 www.bg		IN	A	87.118.140.10
-www.br		IN	A	200.157.179.22
+www.br		IN	A	200.157.179.23
 www.br		IN	A	200.222.115.76
 www.cl		IN	A	190.54.24.104
-www.cn		IN	A	219.239.98.8
 www.cz		IN	A	82.113.48.3
 www.cz		IN	A	147.229.190.133
 www.de		IN	A	80.237.211.23
-www.de		IN	A	217.160.169.94
+www.de		IN	A	84.19.189.52
 www.de		IN	A	89.110.148.72
+www.de		IN	A	85.14.216.64
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
@@ -315,6 +319,7 @@ www.hu		IN	A	195.56.147.6
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.it		IN	A	82.143.3.5
+www.jp		IN	A	59.106.25.59
 www.li		IN	A	217.173.238.33
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
@@ -324,7 +329,6 @@ www.nl		IN	A	83.149.81.153
 www.pl		IN	A	80.50.248.77
 www.pl		IN	A	213.184.17.240
 www.ro		IN	A	195.170.171.5
-www.ro		IN	A	86.104.247.130
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.sk		IN	A	147.175.168.26
@@ -341,6 +345,7 @@ www.us		IN	A	69.31.115.210
 www.us		IN	A	70.86.75.98
 www.us		IN	A	71.32.15.195
 www.us		IN	A	217.160.250.20
+www.yu		IN	A	147.91.8.33
 ; ftp://nas.arminco.com/pub/mirrors/proftpd/
 ; Vahan Yerkanian <vahan@arminco.com>
 ftp3.am		IN	A	195.250.77.48
@@ -374,6 +379,10 @@ ftp2.au		IN	A	203.80.162.206
 ; Bert Vermeulen <ftp@be.easynet.net>
 ftp1.be		IN	A	212.100.160.33
 ftp1.be		IN	AAAA	2001:6f8:200:1::5:33
+
+; ftp://mirrors.powersource.cx/pub/proftpd
+; Tom Laermans <noc@powersource.cx>
+ftp3.be		IN	A	195.160.166.144
 
 ; ftp://ftp.proftpd.cbox.biz/proftpd/
 ; Alexander Dulgerov <ad@cbox.biz>
@@ -418,6 +427,10 @@ ftp7.de		IN	A	141.41.9.9
 ; ftp://ftp.fu-berlin.de/unix/ftp/proftpd/
 ; Holger Weiss <ftp@FU-Berlin.DE>
 ftp13.de		IN	A	130.133.3.130
+
+; ftp://ftp.nullstelle.de/proftpd.org/
+; Ryo Kato <mirror@mail.nullstelle.de>
+ftp15.de		IN	A	85.14.216.64
 
 ; ftp://ftp.jaquet.dk/pub/proftp/
 ; Rasmus <rasmus@jaquet.dk>
@@ -502,11 +515,6 @@ ftp9.nl		IN	A	83.149.81.153
 ; Andre Tomt <andre@tomt.net>
 ftp5.no		IN	A	80.239.42.88
 
-; ftp://fido.e-utp.net/mirror/proftpd.org/
-; Marcin Gonek <drixter@e-utp.net>
-ftp1.pl		IN	A	82.210.157.205
-ftp1.pl		IN	AAAA	2001:6f8:93c:a::a
-
 ; ftp://ftp.icm.edu.pl/pub/unix/ftp/proftpd/
 ; Wojtek Sylwestrzak <W.Sylwestrzak@icm.edu.pl>
 ftp3.pl		IN	A	193.219.28.2
@@ -528,10 +536,6 @@ ftp2.ro		IN	A	192.129.4.120
 ; Mihai Marinas <net-admin@hostingromania.ro>
 ftp3.ro		IN	A	195.170.171.3
 
-; ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/
-; Cristian Miu <cristian.miu@mivosoft.ro>
-ftp5.ro		IN	A	84.234.107.102
-
 ; ftp://ftp.kappa.ro/pub/mirrors/ftp.proftpd.org/
 ; FTP Admin <ftpadm@kappa.ro>
 ftp6.ro		IN	A	194.102.255.6
@@ -542,7 +546,7 @@ ftp7.ro		IN	A	86.104.247.130
 
 ; ftp://ftp.eagle.y.se/pub/proftpd/
 ; Martin Ostlund <mo@bestlinux.se>
-ftp1.se		IN	A	85.11.195.10
+ftp1.se		IN	A	85.11.194.93
 
 ; ftp://mirror2.dataphone.se/pub/ProFTPD/
 ; Mirror Admin <mirror@dataphone.net>
@@ -613,6 +617,14 @@ ftp28.us		IN	A	71.32.15.195
 ; Sergey Melnik <mirror@24-7-solutions.net>
 ftp30.us		IN	A	69.31.115.210
 
+; ftp://proftpd.mirrors.tds.net/pub/ProFTPD
+; Shane Brath <mirrors@tds.net>
+ftp35.us		IN	A	216.165.129.134
+
+; ftp://mirror.etf.bg.ac.yu/proftpd/
+; Marko Uskokovic <mirroradmin@etf.bg.ac.yu>
+ftp1.yu		IN	A	147.91.8.58
+
 ; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
 ; FTP Admin <ftpadmin@is.co.za>
 ftp1.za		IN	A	196.4.160.12
@@ -627,6 +639,7 @@ ftp.au		IN	A	203.16.234.86
 ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
+ftp.be		IN	A	195.160.166.144
 ftp.bg		IN	A	87.118.140.10
 ftp.br		IN	A	200.222.115.76
 ftp.ca		IN	A	66.241.141.46
@@ -638,6 +651,7 @@ ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.9.9
 ftp.de		IN	A	130.133.3.130
+ftp.de		IN	A	85.14.216.64
 ftp.dk		IN	A	217.157.160.207
 ftp.es		IN	A	193.146.160.10
 ftp.fr		IN	A	194.158.99.22
@@ -661,18 +675,15 @@ ftp.nl		IN	A	85.92.128.25
 ftp.nl		IN	A	194.187.97.221
 ftp.nl		IN	A	83.149.81.153
 ftp.no		IN	A	80.239.42.88
-ftp.pl		IN	A	82.210.157.205
-ftp.pl		IN	AAAA	2001:6f8:93c:a::a
 ftp.pl		IN	A	193.219.28.2
 ftp.pl		IN	A	80.50.248.77
 ftp.pl		IN	A	82.139.21.82
 ftp.pl		IN	AAAA	2001:618:400:b863::1
 ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	195.170.171.3
-ftp.ro		IN	A	84.234.107.102
 ftp.ro		IN	A	194.102.255.6
 ftp.ro		IN	A	86.104.247.130
-ftp.se		IN	A	85.11.195.10
+ftp.se		IN	A	85.11.194.93
 ftp.se		IN	A	212.37.1.30
 ftp.sg		IN	A	202.79.178.98
 ftp.sk		IN	A	195.46.80.5
@@ -691,4 +702,6 @@ ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	71.32.15.195
 ftp.us		IN	A	69.31.115.210
+ftp.us		IN	A	216.165.129.134
+ftp.yu		IN	A	147.91.8.58
 ftp.za		IN	A	196.4.160.12
