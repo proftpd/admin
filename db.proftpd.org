@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006100900      ; Serial
+                              2006101200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -137,6 +137,10 @@ www17.de		IN	A	89.110.148.72
 ; Ryo Kato <mirror@mail.nullstelle.de>
 www19.de		IN	A	85.14.216.64
 
+; http://proftpd.online-mirror.de/
+; Michael Weber <m.weber@olserv.de>
+www20.de		IN	A	87.230.8.208
+
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
 www1.dk		IN	A	217.157.160.207
@@ -254,6 +258,10 @@ www3.ua		IN	A	217.117.74.70
 www3.uk		IN	A	85.116.4.19
 www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
+; http://proftpd.oregon.me.uk/
+; Bruce Martin <bruce.martin@oregon.me.uk>
+www12.uk		IN	A	62.128.202.175
+
 ; http://proftpd.sourwood.net/
 ; Matt Mozur <matt.mozur@sourwood.net>
 www21.us		IN	A	66.92.74.33
@@ -306,6 +314,7 @@ www.de		IN	A	80.237.211.23
 www.de		IN	A	84.19.189.52
 www.de		IN	A	89.110.148.72
 www.de		IN	A	85.14.216.64
+www.de		IN	A	87.230.8.208
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
@@ -339,6 +348,7 @@ www.ua		IN	A	217.198.131.181
 www.ua		IN	A	217.117.74.70
 www.uk		IN	A	85.116.4.19
 www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
+www.uk		IN	A	62.128.202.175
 www.us		IN	A	66.92.74.33
 www.us		IN	A	70.60.35.37
 www.us		IN	A	69.31.115.210
@@ -464,6 +474,11 @@ ftp9.fr		IN	A	88.191.18.200
 
 ; ftp://fragtime.net/mirrors/proftpd/
 ; KmiKze <wilfried.humbert@gmail.com>
+
+; ftp://mirrors.ircam.fr/pub/proftpd
+; Arnaud Gomes <mirrormaster@ircam.fr>
+ftp12.fr		IN	A	129.102.1.25
+ftp12.fr		IN	AAAA	2001:660:3004:4000::25:80
 
 ; ftp://ftp.fsn.hu/pub/proftpd/
 ; Attila Nagy <bra@fsn.hu>
@@ -661,6 +676,8 @@ ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	212.43.248.244
 ftp.fr		IN	A	88.191.18.200
+ftp.fr		IN	A	129.102.1.25
+ftp.fr		IN	AAAA	2001:660:3004:4000::25:80
 ftp.hu		IN	A	195.228.252.133
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
