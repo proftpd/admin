@@ -16,7 +16,7 @@ Release Checklist:
 3. Update NEWS
 
 4. Update include/version.h
-   Update proftpd.spec
+   Update contrib/dist/rpm/proftpd.spec
 
 5. Update autoconf script (if necessary)
 
