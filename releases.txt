@@ -16,7 +16,7 @@ Release Checklist:
 3. Update NEWS
 
 4. Update include/version.h
-   Update contrib/dist/rpm/proftpd.spec
+   Update proftpd.spec
 
 5. Update autoconf script (if necessary)
 
@@ -50,14 +50,10 @@ Release Checklist:
    * add docs/NEWS-versionnum
 
 11. Upload tarball, MD5 signature, PGP signatures, RPMs
-   a. On core account (currently groundhog.korenwolf.net, user proftpd),
-      run "~/.bin/sync-ftp.sh pull".  This syncs the local mirror 
-      via ftp.
-   b. Upload files to core account, in the proper place under
-      ~proftppd/ftp.proftpd.org/.  Make sure to update MD5SUMS file in
-      distrib/packages/RPMS.
-   c. Then run: "~/.bin/sync-ftp.sh push".  This will propagate the
-      new files as necessary
+   a. Upload files to core account (currently boost.horde.net, user proftpd),
+      in the proper place under ~proftppd/ftp.proftpd.org/.  Make sure to
+      update MD5SUMS file in distrib/packages/RPMS.
+   c. Run "~/.bin/update-all.sh" to propagate the new files as necessary.
 
 12. Announce on lists: -announce, -devel, -users
 
