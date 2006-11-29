@@ -123,6 +123,7 @@
 <?php endif; ?>
 
 <?php
+		/* FIXME: check for first *unused* sequence number */
 		$query  = "SELECT * from $table ";
 		$query .= 'WHERE country_iso = ' . $db->quote($_REQUEST['countrycode']);
 		$query .= 'ORDER BY sequence DESC ';
