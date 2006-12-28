@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006122000      ; Serial
+                              2006128000      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -66,7 +66,6 @@ www2.at		IN	A	192.35.244.50
 
 ; http://proftpd.planetmirror.com/
 ; Jason Andrade <jason@planetmirror.com>
-www2.au		IN	A	203.16.234.19
 www2.au		IN	A	203.16.234.20
 www2.au		IN	A	203.16.234.90
 www2.au		IN	A	203.16.234.91
@@ -162,6 +161,10 @@ www12.fr		IN	A	88.191.14.69
 ; http://proftpd.miroir-francais.fr/
 ; Kurt LeClerc <kurt@miroir-francais.fr>
 www13.fr		IN	A	195.140.143.234
+
+; http://proftpd.hknetworks.com/
+; Stanley Au <mirror@hknetworks.com>
+www3.hk		IN	A	210.0.190.18
 
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
@@ -287,7 +290,6 @@ www.am		IN	A	195.250.77.48
 www.ar		IN	A	200.43.193.199
 www.ar		IN	A	200.59.45.3
 www.at		IN	A	192.35.244.50
-www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
 www.au		IN	A	203.16.234.90
 www.au		IN	A	203.16.234.91
@@ -314,6 +316,7 @@ www.fr		IN	A	88.191.18.200
 www.fr		IN	A	88.191.14.172
 www.fr		IN	A	88.191.14.69
 www.fr		IN	A	195.140.143.234
+www.hk		IN	A	210.0.190.18
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.il		IN	A	84.94.232.128
@@ -481,7 +484,7 @@ ftp3.it		IN	A	82.143.3.5
 
 ; ftp://proftpd.get7.biz/proftpd/
 ; Motohiro Sunouchi <moto@sunouchi.net>
-ftp3.jp		IN	A	210.138.109.182
+ftp3.jp		IN	A	219.94.145.73
 
 ; ftp://ftp.linux.edu.lv/mirrors/ftp.proftpd.org/
 ; Leo Truksans <leot@linux.edu.lv>
@@ -502,7 +505,7 @@ ftp6.nl		IN	A	85.92.128.25
 
 ; ftp://proftpd.mirrors.webazilla.nl/
 ; Network Operations Center <noc@webazilla.com>
-ftp7.nl		IN	A	194.187.97.221
+ftp7.nl		IN	A	88.85.64.160
 
 ; ftp://proftpdftp.osmirror.nl/pub/proftpd/ftp/
 ; Jur Rademakers <mirrors@osmirror.nl>
@@ -594,13 +597,13 @@ ftp30.us		IN	A	69.31.115.210
 ; Shane Brath <mirrors@tds.net>
 ftp35.us		IN	A	216.165.129.134
 
-; ftp://demon.jmwpromotions.net/mirrors/proftpd
+; ftp://zinc.jmwpromotions.net/mirrors/proftpd/
 ; james paul woods <jim@cakehosting.net>
-ftp36.us		IN	A	65.169.23.25
+ftp36.us		IN	A	208.99.198.218
 
 ; ftp://mirror.etf.bg.ac.yu/proftpd/
 ; Marko Uskokovic <mirroradmin@etf.bg.ac.yu>
-ftp1.yu		IN	A	147.91.8.58
+ftp1.yu		IN	A	147.91.8.38
 
 ; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
 ; FTP Admin <ftpadmin@is.co.za>
@@ -642,13 +645,13 @@ ftp.hu		IN	A	195.228.252.133
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
-ftp.jp		IN	A	210.138.109.182
+ftp.jp		IN	A	219.94.145.73
 ftp.lv		IN	A	195.13.158.141
 ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.86.128.57
 ftp.nl		IN	A	85.92.128.25
-ftp.nl		IN	A	194.187.97.221
+ftp.nl		IN	A	88.85.64.160
 ftp.nl		IN	A	83.149.81.153
 ftp.no		IN	A	80.239.42.88
 ftp.pl		IN	A	193.219.28.2
@@ -673,6 +676,6 @@ ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	71.32.15.195
 ftp.us		IN	A	69.31.115.210
 ftp.us		IN	A	216.165.129.134
-ftp.us		IN	A	65.169.23.25
-ftp.yu		IN	A	147.91.8.58
+ftp.us		IN	A	208.99.198.218
+ftp.yu		IN	A	147.91.8.38
 ftp.za		IN	A	196.4.160.12
