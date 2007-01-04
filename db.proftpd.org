@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2006128000      ; Serial
+                              2007010400      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -112,10 +112,6 @@ www13.de		IN	A	80.237.211.23
 ; http://proftp.oslevel.de
 ; Mirko Hahn <mirror@oslevel.de>
 www16.de		IN	A	84.19.189.52
-
-; http://proftpd.heilpraktiker-empfehlung.de
-; Tim Muthmann <tim.muthmann@zdg-gmbh.de>
-www17.de		IN	A	89.110.148.72
 
 ; http://proftpd.mirror.nullstelle.de/
 ; Ryo Kato <mirror@mail.nullstelle.de>
@@ -282,10 +278,6 @@ www32.us		IN	A	71.32.15.195
 ; Ionel Roiban <ionel.roiban@securityconsultant.biz>
 www33.us		IN	A	217.160.250.20
 
-; http://proftpd.etf.bg.ac.yu
-; Marko Uskokovic <mirroradmin@etf.bg.ac.yu>
-www1.yu		IN	A	147.91.8.33
-
 www.am		IN	A	195.250.77.48
 www.ar		IN	A	200.43.193.199
 www.ar		IN	A	200.59.45.3
@@ -303,7 +295,6 @@ www.br		IN	A	200.222.115.76
 www.cz		IN	A	147.229.190.133
 www.de		IN	A	80.237.211.23
 www.de		IN	A	84.19.189.52
-www.de		IN	A	89.110.148.72
 www.de		IN	A	85.14.216.64
 www.de		IN	A	87.230.8.208
 www.de		IN	A	62.112.140.173
@@ -349,7 +340,6 @@ www.us		IN	A	69.31.115.210
 www.us		IN	A	70.86.75.98
 www.us		IN	A	71.32.15.195
 www.us		IN	A	217.160.250.20
-www.yu		IN	A	147.91.8.33
 ; ftp://nas.arminco.com/pub/mirrors/proftpd/
 ; Vahan Yerkanian <vahan@arminco.com>
 ftp3.am		IN	A	195.250.77.48
@@ -597,14 +587,6 @@ ftp30.us		IN	A	69.31.115.210
 ; Shane Brath <mirrors@tds.net>
 ftp35.us		IN	A	216.165.129.134
 
-; ftp://zinc.jmwpromotions.net/mirrors/proftpd/
-; james paul woods <jim@cakehosting.net>
-ftp36.us		IN	A	208.99.198.218
-
-; ftp://mirror.etf.bg.ac.yu/proftpd/
-; Marko Uskokovic <mirroradmin@etf.bg.ac.yu>
-ftp1.yu		IN	A	147.91.8.38
-
 ; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
 ; FTP Admin <ftpadmin@is.co.za>
 ftp1.za		IN	A	196.4.160.12
@@ -676,6 +658,4 @@ ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	71.32.15.195
 ftp.us		IN	A	69.31.115.210
 ftp.us		IN	A	216.165.129.134
-ftp.us		IN	A	208.99.198.218
-ftp.yu		IN	A	147.91.8.38
 ftp.za		IN	A	196.4.160.12
