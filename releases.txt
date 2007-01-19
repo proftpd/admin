@@ -17,6 +17,10 @@ Release Checklist:
 
 4. Update include/version.h
    Update contrib/dist/rpm/proftpd.spec
+   Update locale/files.txt
+     Run command commented in locale/Makefile.in.  (Ideally this should
+     be a target that we run, i.e. 'make locale-sources' from the
+     top-level directory.)
 
 5. Update autoconf script (if necessary)
 
