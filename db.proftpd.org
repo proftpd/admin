@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007013000      ; Serial
+                              2007031300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -71,6 +71,10 @@ www2.au		IN	A	203.16.234.20
 www2.au		IN	A	203.16.234.90
 www2.au		IN	A	203.16.234.91
 
+; http://proftpd.dknss.com/
+; Darrin Khan <darrink@dknss.com>
+www3.au		IN	A	203.80.162.206
+
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
 www1.be		IN	A	212.100.160.33
@@ -105,6 +109,7 @@ www13.de		IN	A	80.237.211.23
 
 ; http://proftpd.namesdir.com
 ; Mihai Leonte <hostmaster@procopter.com>
+www15.de		IN	A	82.211.57.120
 
 ; http://proftp.oslevel.de
 ; Mirko Hahn <mirror@oslevel.de>
@@ -117,10 +122,6 @@ www19.de		IN	A	85.14.216.64
 ; http://proftpd.online-mirror.de/
 ; Michael Weber <m.weber@olserv.de>
 www20.de		IN	A	87.230.8.208
-
-; http://proftpd.ckoepp.de/
-; Christian Koepp <christian.koepp@stud.uni-karlsruhe.de>
-www21.de		IN	A	62.112.140.173
 
 ; http://proftpd.jaquet.dk/
 ; Rasmus Andersen <rasmus@jaquet.dk>
@@ -185,17 +186,13 @@ www3.lv		IN	A	195.13.158.141
 www1.nl		IN	A	80.84.224.16
 www1.nl		IN	AAAA	2001:828:101:1::4
 
-; http://proftpd.tuxor.nl/
-; Dirk Kalkman <root@tuxor.nl>
+; http://proftpd.tuxor-solutions.nl/
+; Dirk Kalkman <root@tuxor-solutions.nl>
 www10.nl		IN	A	85.92.128.169
 
 ; http://proftpd.osmirror.nl/
 ; Jur Rademakers <mirrors@osmirror.nl>
 www11.nl		IN	A	83.149.81.153
-
-; http://proftpd.mirror.hostfuss.com/
-; Frederik Timmerman <mirror@hostfuss.com>
-www12.nl		IN	A	88.85.76.7
 
 ; http://proftpd.geosdreams.info/
 ; Piotr Chumicki <piotrc@gmail.com>
@@ -217,10 +214,6 @@ www1.sg		IN	A	202.79.178.97
 ; Miha Novak <miha@paknet.org>
 www2.si		IN	A	212.18.63.168
 
-; http://proftpd.x86.sk/
-; Jakub Cerveny <br@x86.sk>
-www1.sk		IN	A	147.175.167.201
-
 ; http://proftpd.nasieti.sk
 ; Filip Hlavenka <filip.hlavenka@nasieti.sk>
 www2.sk		IN	A	217.73.17.22
@@ -237,11 +230,6 @@ www2.ua		IN	A	217.198.131.181
 ; http://proftpd.privat-online.net
 ; Sergii Bolotin <sergii@bolotin.dp.ua>
 www3.ua		IN	A	217.117.74.70
-
-; http://proftpd.networkedsystems.co.uk/
-; Daniel Austin <daniel@kewlio.net>
-www3.uk		IN	A	85.116.4.19
-www3.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
 ; http://proftpd.sourwood.net/
 ; Matt Mozur <matt.mozur@sourwood.net>
@@ -275,6 +263,7 @@ www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
 www.au		IN	A	203.16.234.90
 www.au		IN	A	203.16.234.91
+www.au		IN	A	203.80.162.206
 www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
@@ -283,10 +272,10 @@ www.bg		IN	A	87.118.140.10
 www.br		IN	A	200.222.115.76
 www.cz		IN	A	147.229.190.133
 www.de		IN	A	80.237.211.23
+www.de		IN	A	82.211.57.120
 www.de		IN	A	84.19.189.52
 www.de		IN	A	85.14.216.64
 www.de		IN	A	87.230.8.208
-www.de		IN	A	62.112.140.173
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
@@ -307,20 +296,16 @@ www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	85.92.128.169
 www.nl		IN	A	83.149.81.153
-www.nl		IN	A	88.85.76.7
 www.pl		IN	A	213.184.17.240
 www.ro		IN	A	195.170.171.5
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.si		IN	A	212.18.63.168
-www.sk		IN	A	147.175.167.201
 www.sk		IN	A	217.73.17.22
 www.tr		IN	A	193.140.100.10
 www.tr		IN	AAAA	2001:a98:11::10
 www.ua		IN	A	217.198.131.181
 www.ua		IN	A	217.117.74.70
-www.uk		IN	A	85.116.4.19
-www.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 www.us		IN	A	66.92.74.33
 www.us		IN	A	70.60.35.37
 www.us		IN	A	69.31.115.210
@@ -473,8 +458,8 @@ ftp1.nl		IN	A	195.129.111.9
 ; Diederik <mirror@nl.easynet.net>
 ftp4.nl		IN	A	195.86.128.57
 
-; ftp://mirror.tuxor.nl/pub/proftpd/
-; Dirk Kalkman <root@tuxor.nl>
+; ftp://mirror.tuxor-solutions.nl/pub/proftpd/
+; Dirk Kalkman <root@tuxor-solutions.nl>
 ftp6.nl		IN	A	85.92.128.169
 
 ; ftp://proftpd.mirrors.webazilla.nl/
@@ -518,10 +503,6 @@ ftp6.ro		IN	A	194.102.255.6
 ; Mirror Admin <mirror@dataphone.net>
 ftp3.se		IN	A	212.37.1.30
 
-; ftp://ftp.oss.eznetsols.org/proftpd/
-; Network Operations Center <mirror-admin@oss.eznetsols.org>
-ftp1.sg		IN	A	202.79.178.98
-
 ; ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/
 ; lubos klokner <erkac@profinet.sk>
 ftp1.sk		IN	A	195.46.80.5
@@ -537,11 +518,6 @@ ftp1.tw		IN	A	140.127.177.17
 ; ftp://ftp.ntu.edu.tw/proftpd/
 ; FTP Admin <master@ftp.ntu.edu.tw>
 ftp3.tw		IN	A	140.112.2.5
-
-; ftp://proftpd.networkedsystems.co.uk/
-; Daniel Austin <daniel@kewlio.net>
-ftp4.uk		IN	A	85.116.4.19
-ftp4.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
@@ -624,13 +600,10 @@ ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	195.170.171.3
 ftp.ro		IN	A	194.102.255.6
 ftp.se		IN	A	212.37.1.30
-ftp.sg		IN	A	202.79.178.98
 ftp.sk		IN	A	195.46.80.5
 ftp.tr		IN	A	193.140.100.10
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	140.112.2.5
-ftp.uk		IN	A	85.116.4.19
-ftp.uk		IN	AAAA	2001:4bd0:d10:c:202:b3ff:fe4d:240d
 ftp.us		IN	A	152.46.7.80
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	70.60.35.37
