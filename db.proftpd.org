@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007052200      ; Serial
+                              2007052400      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -94,7 +94,7 @@ www3.bg		IN	A	87.118.140.10
 
 ; http://proftpd.oi.com.br/
 ; Oi Internet <wanderson.gonzalez@oi.com.br>
-www4.br		IN	A	200.222.115.76
+www4.br		IN	A	200.222.115.162
 
 ; http://proftpd.kn.vutbr.cz/
 ; Zdenek Bill <mirror@kn.vutbr.cz>
@@ -338,7 +338,7 @@ ftp4.bg		IN	A	87.118.140.10
 
 ; ftp://proftpd.oi.com.br/
 ; Oi Internet <wanderson.gonzalez@oi.com.br>
-ftp1.br		IN	A	200.222.115.76
+ftp1.br		IN	A	200.222.115.162
 
 ; ftp://ftp.samurai.com/pub/proftpd/
 ; Bryan Fullerton <bryanf@samurai.com>
