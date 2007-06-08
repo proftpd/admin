@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007052400      ; Serial
+                              2007060700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -115,10 +115,6 @@ www15.de		IN	A	82.211.57.120
 ; Mirko Hahn <mirror@oslevel.de>
 www16.de		IN	A	84.19.189.52
 
-; http://proftpd.mirror.nullstelle.de/
-; Ryo Kato <mirror@mail.nullstelle.de>
-www19.de		IN	A	85.14.216.64
-
 ; http://proftpd.online-mirror.de/
 ; Michael Weber <m.weber@olserv.de>
 www20.de		IN	A	87.230.8.208
@@ -130,7 +126,6 @@ www1.dk		IN	A	217.157.160.207
 ; http://proftpd.crihan.fr/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 www4.fr		IN	A	195.221.21.36
-www4.fr		IN	AAAA	2001:660:7401:211::36
 
 ; http://proftpd.fastorama.com/
 ; fastorama.com <mrjack@fastorama.com>
@@ -240,6 +235,10 @@ www32.us		IN	AAAA	2001:470:1f01:232::7
 ; Ionel Roiban <ionel.roiban@securityconsultant.biz>
 www33.us		IN	A	217.160.250.20
 
+; http://proftpd.mirror.facebook.com/
+; Lucas Nealan <lnealan@facebook.com>
+www36.us		IN	A	69.63.177.230
+
 www.am		IN	A	195.250.77.48
 www.ar		IN	A	200.43.193.199
 www.ar		IN	A	200.59.45.3
@@ -254,16 +253,14 @@ www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	212.50.28.1
 www.bg		IN	A	194.12.255.250
 www.bg		IN	A	87.118.140.10
-www.br		IN	A	200.222.115.76
+www.br		IN	A	200.222.115.162
 www.cz		IN	A	147.229.190.133
 www.de		IN	A	80.237.211.23
 www.de		IN	A	82.211.57.120
 www.de		IN	A	84.19.189.52
-www.de		IN	A	85.14.216.64
 www.de		IN	A	87.230.8.208
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	195.221.21.36
-www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	80.248.215.3
 www.fr		IN	A	88.191.14.172
 www.fr		IN	A	195.140.143.234
@@ -294,6 +291,7 @@ www.us		IN	A	69.31.115.210
 www.us		IN	A	71.32.15.195
 www.us		IN	AAAA	2001:470:1f01:232::7
 www.us		IN	A	217.160.250.20
+www.us		IN	A	69.63.177.230
 ; ftp://nas.arminco.com/pub/mirrors/proftpd/
 ; Vahan Yerkanian <vahan@arminco.com>
 ftp3.am		IN	A	195.250.77.48
@@ -372,10 +370,6 @@ ftp7.de		IN	A	141.41.9.9
 ; Holger Weiss <ftp@FU-Berlin.DE>
 ftp13.de		IN	A	130.133.3.130
 
-; ftp://ftp.nullstelle.de/proftpd.org/
-; Ryo Kato <mirror@mail.nullstelle.de>
-ftp15.de		IN	A	85.14.216.64
-
 ; ftp://proftpd.ckoepp.de/
 ; Christian Koepp <christian.koepp@stud.uni-karlsruhe.de>
 ftp16.de		IN	A	62.112.140.173
@@ -391,7 +385,6 @@ ftp4.fr		IN	A	80.248.215.3
 ; ftp://ftp.crihan.fr/mirrors/ftp.proftpd.org/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 ftp5.fr		IN	A	195.221.21.36
-ftp5.fr		IN	AAAA	2001:660:7401:211::36
 
 ; ftp://ftp.seasonfive.com/mirrors/ftp.proftpd.org/
 ; Yannick Lecaillez <mirrors@seasonfive.com>
@@ -514,6 +507,10 @@ ftp30.us		IN	A	69.31.115.210
 ; Shane Brath <mirrors@tds.net>
 ftp35.us		IN	A	216.165.129.134
 
+; ftp://proftpd.mirror.facebook.com/
+; Lucas Nealan <lnealan@facebook.com>
+ftp37.us		IN	A	69.63.177.230
+
 ; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
 ; FTP Admin <ftpadmin@is.co.za>
 ftp1.za		IN	A	196.4.160.12
@@ -530,7 +527,7 @@ ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.be		IN	A	195.160.166.144
 ftp.bg		IN	A	87.118.140.10
-ftp.br		IN	A	200.222.115.76
+ftp.br		IN	A	200.222.115.162
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cz		IN	A	194.108.36.130
@@ -539,12 +536,10 @@ ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.9.9
 ftp.de		IN	A	130.133.3.130
-ftp.de		IN	A	85.14.216.64
 ftp.de		IN	A	62.112.140.173
 ftp.dk		IN	A	217.157.160.207
 ftp.fr		IN	A	80.248.215.3
 ftp.fr		IN	A	195.221.21.36
-ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	212.43.248.244
 ftp.fr		IN	A	129.102.1.25
 ftp.fr		IN	AAAA	2001:660:3004:4000::25:80
@@ -579,4 +574,5 @@ ftp.us		IN	A	71.32.15.195
 ftp.us		IN	AAAA	2001:470:1f01:232::7
 ftp.us		IN	A	69.31.115.210
 ftp.us		IN	A	216.165.129.134
+ftp.us		IN	A	69.63.177.230
 ftp.za		IN	A	196.4.160.12
