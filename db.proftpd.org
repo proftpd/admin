@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007073100      ; Serial
+                              2007073101      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -24,10 +24,10 @@ www                 IN  A     195.20.121.11
 www                 IN  AAAA  2001:5001:103:2101::27
 
 ; Stefan Onken <support@stonki.de>
-rsync               IN  CNAME rsync.proftpd.de
+rsync               IN  CNAME rsync.proftpd.de.
+ftp                 IN  CNAME rsync.proftpd.de.
 
 ; Michael Renner <robe@amd.co.at>
-ftp                 IN  A     81.223.20.36
 forums              IN  A     81.223.20.36
 
 ; John Morrissey <jwm@horde.net>
