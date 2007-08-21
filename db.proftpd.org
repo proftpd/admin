@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007080200      ; Serial
+                              2007082100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -60,7 +60,7 @@ www2.ar		IN	A	200.43.193.199
 
 ; http://proftpd.bairesweb.com/
 ; Pablo Arturi <parturi@bairesweb.com>
-www3.ar		IN	A	200.59.45.3
+www3.ar		IN	A	190.2.55.3
 
 ; http://proftpd.gds.tuwien.ac.at/
 ; Rudi (Rudolf Ladner) <gd@tuwien.ac.at>
@@ -128,6 +128,7 @@ www1.dk		IN	A	217.157.160.207
 ; http://proftpd.crihan.fr/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 www4.fr		IN	A	195.221.21.36
+www4.fr		IN	AAAA	2001:660:7401:211::36
 
 ; http://proftpd.fastorama.com/
 ; fastorama.com <mrjack@fastorama.com>
@@ -183,10 +184,6 @@ www10.nl		IN	A	85.92.128.169
 ; Jur Rademakers <mirrors@osmirror.nl>
 www11.nl		IN	A	83.149.81.153
 
-; http://proftpd.mirror.hostfuss.com/
-; Frederik Timmerman <mirror@hostfuss.com>
-www12.nl		IN	A	88.85.76.7
-
 ; http://proftpd.hostingromania.ro/
 ; Mihai Marinas <net-admin@hostingromania.ro>
 www4.ro		IN	A	195.170.171.5
@@ -199,7 +196,7 @@ www1.se		IN	A	212.37.1.30
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	A	202.79.178.97
 
-; http://proftpd.paknet.org
+; http://mirrors.paknet.org/proftpd/
 ; Miha Novak <miha@paknet.org>
 www2.si		IN	A	91.185.198.150
 
@@ -224,10 +221,6 @@ www21.us		IN	A	66.92.74.33
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	A	70.60.35.37
 
-; http://proftpd.mirrors.24-7-solutions.net/
-; Sergey Melnik <mirror@24-7-solutions.net>
-www30.us		IN	A	69.31.115.210
-
 ; http://proftpd.mirrors.borgnet.us/
 ; Scott Grayban <root@borgnet.us>
 www32.us		IN	A	71.32.15.195
@@ -243,7 +236,7 @@ www36.us		IN	A	69.63.177.230
 
 www.am		IN	A	195.250.77.48
 www.ar		IN	A	200.43.193.199
-www.ar		IN	A	200.59.45.3
+www.ar		IN	A	190.2.55.3
 www.at		IN	A	192.35.244.50
 www.au		IN	A	203.16.234.19
 www.au		IN	A	203.16.234.20
@@ -263,6 +256,7 @@ www.de		IN	A	84.19.189.52
 www.de		IN	A	87.230.8.208
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	195.221.21.36
+www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	80.248.215.3
 www.fr		IN	A	88.191.14.172
 www.fr		IN	A	195.140.143.234
@@ -278,7 +272,6 @@ www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	85.92.128.169
 www.nl		IN	A	83.149.81.153
-www.nl		IN	A	88.85.76.7
 www.ro		IN	A	195.170.171.5
 www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
@@ -289,7 +282,6 @@ www.ua		IN	A	217.198.131.181
 www.ua		IN	A	217.117.74.70
 www.us		IN	A	66.92.74.33
 www.us		IN	A	70.60.35.37
-www.us		IN	A	69.31.115.210
 www.us		IN	A	71.32.15.195
 www.us		IN	AAAA	2001:470:1f01:232::7
 www.us		IN	A	217.160.250.20
@@ -304,7 +296,7 @@ ftp1.ar		IN	A	200.43.193.199
 
 ; ftp://proftpd.bairesweb.com/pub/proftpd/
 ; Pablo Arturi <parturi@bairesweb.com>
-ftp2.ar		IN	A	200.59.45.3
+ftp2.ar		IN	A	190.2.55.3
 
 ; ftp://ftp.servus.at/ProFTPD/
 ; Didi Baer <didi@servus.at>
@@ -387,6 +379,7 @@ ftp4.fr		IN	A	80.248.215.3
 ; ftp://ftp.crihan.fr/mirrors/ftp.proftpd.org/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 ftp5.fr		IN	A	195.221.21.36
+ftp5.fr		IN	AAAA	2001:660:7401:211::36
 
 ; ftp://ftp.seasonfive.com/mirrors/ftp.proftpd.org/
 ; Yannick Lecaillez <mirrors@seasonfive.com>
@@ -400,10 +393,6 @@ ftp12.fr		IN	AAAA	2001:660:3004:4000::25:80
 ; ftp://miroir-francais.fr/pub/proftpd/ftp/
 ; Kurt LeClerc <kurt@miroir-francais.fr>
 ftp13.fr		IN	A	195.140.143.234
-
-; ftp://ftp.fsn.hu/pub/proftpd/
-; Attila Nagy <bra@fsn.hu>
-ftp1.hu		IN	A	195.228.252.133
 
 ; ftp://ftp.esat.net/mirrors/ftp.proftpd.org/
 ; Dave Burke <ftpadmin@esat.net>
@@ -464,10 +453,6 @@ ftp2.ro		IN	A	192.129.4.120
 ; Mihai Marinas <net-admin@hostingromania.ro>
 ftp3.ro		IN	A	195.170.171.3
 
-; ftp://ftp.kappa.ro/pub/mirrors/ftp.proftpd.org/
-; FTP Admin <ftpadm@kappa.ro>
-ftp6.ro		IN	A	194.102.255.6
-
 ; ftp://mirror2.dataphone.se/pub/ProFTPD/
 ; Mirror Admin <mirror@dataphone.net>
 ftp3.se		IN	A	212.37.1.30
@@ -505,10 +490,6 @@ ftp25.us		IN	A	70.60.35.37
 ftp28.us		IN	A	71.32.15.195
 ftp28.us		IN	AAAA	2001:470:1f01:232::7
 
-; ftp://mirrors.24-7-solutions.net/pub/proftpd/
-; Sergey Melnik <mirror@24-7-solutions.net>
-ftp30.us		IN	A	69.31.115.210
-
 ; ftp://proftpd.mirrors.tds.net/pub/ProFTPD
 ; Shane Brath <mirrors@tds.net>
 ftp35.us		IN	A	216.165.129.134
@@ -523,7 +504,7 @@ ftp1.za		IN	A	196.4.160.12
 
 ftp.am		IN	A	195.250.77.48
 ftp.ar		IN	A	200.43.193.199
-ftp.ar		IN	A	200.59.45.3
+ftp.ar		IN	A	190.2.55.3
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
 ftp.au		IN	A	203.16.234.85
@@ -546,11 +527,11 @@ ftp.de		IN	A	62.112.140.173
 ftp.dk		IN	A	217.157.160.207
 ftp.fr		IN	A	80.248.215.3
 ftp.fr		IN	A	195.221.21.36
+ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	212.43.248.244
 ftp.fr		IN	A	129.102.1.25
 ftp.fr		IN	AAAA	2001:660:3004:4000::25:80
 ftp.fr		IN	A	195.140.143.234
-ftp.hu		IN	A	195.228.252.133
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
@@ -568,7 +549,6 @@ ftp.pl		IN	A	82.139.21.82
 ftp.pl		IN	AAAA	2001:618:400:b863::8
 ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	195.170.171.3
-ftp.ro		IN	A	194.102.255.6
 ftp.se		IN	A	212.37.1.30
 ftp.sk		IN	A	195.46.80.5
 ftp.tr		IN	A	193.140.100.10
@@ -579,7 +559,6 @@ ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	71.32.15.195
 ftp.us		IN	AAAA	2001:470:1f01:232::7
-ftp.us		IN	A	69.31.115.210
 ftp.us		IN	A	216.165.129.134
 ftp.us		IN	A	69.63.177.230
 ftp.za		IN	A	196.4.160.12
