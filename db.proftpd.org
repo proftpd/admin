@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007082100      ; Serial
+                              2007103000      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -84,7 +84,7 @@ www1.be		IN	AAAA	2001:6f8:200:1::5:33
 
 ; http://proftpd.fixity.net/
 ; Krasimir Ganchev <admin@fixity.net>
-www1.bg		IN	A	212.50.28.1
+www1.bg		IN	A	91.195.24.10
 
 ; http://proftpd.zadnik.org/
 ; Alexander Velin <velin@bastun.net>
@@ -101,10 +101,6 @@ www4.br		IN	A	200.222.115.162
 ; http://proftpd.kn.vutbr.cz/
 ; Zdenek Bill <mirror@kn.vutbr.cz>
 www2.cz		IN	A	147.229.190.133
-
-; http://proftpd.linux-mirror.org/
-; Michael Mettmann <michael1@bnw-natur.com>
-www13.de		IN	A	80.237.211.23
 
 ; http://proftpd.bemirror.org
 ; Hans Braeunlein <hans@bemirror.org>
@@ -188,10 +184,6 @@ www11.nl		IN	A	83.149.81.153
 ; Mihai Marinas <net-admin@hostingromania.ro>
 www4.ro		IN	A	195.170.171.5
 
-; http://proftpd.mirror2.dataphone.se/
-; Patrik Forsberg <patrik.forsberg@dataphone.net>
-www1.se		IN	A	212.37.1.30
-
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	A	202.79.178.97
@@ -202,7 +194,6 @@ www2.si		IN	A	91.185.198.150
 
 ; http://proftpd.ulak.net.tr/
 ; Onur BEKTAS <ftpadm@ulak.net.tr>
-www2.tr		IN	A	193.140.100.10
 www2.tr		IN	AAAA	2001:a98:11::10
 
 ; http://proftpd.dnepr.net/
@@ -245,12 +236,11 @@ www.au		IN	A	203.16.234.91
 www.au		IN	A	203.80.162.206
 www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
-www.bg		IN	A	212.50.28.1
+www.bg		IN	A	91.195.24.10
 www.bg		IN	A	194.12.255.250
 www.bg		IN	A	87.118.140.10
 www.br		IN	A	200.222.115.162
 www.cz		IN	A	147.229.190.133
-www.de		IN	A	80.237.211.23
 www.de		IN	A	82.211.57.120
 www.de		IN	A	84.19.189.52
 www.de		IN	A	87.230.8.208
@@ -273,10 +263,8 @@ www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	85.92.128.169
 www.nl		IN	A	83.149.81.153
 www.ro		IN	A	195.170.171.5
-www.se		IN	A	212.37.1.30
 www.sg		IN	A	202.79.178.97
 www.si		IN	A	91.185.198.150
-www.tr		IN	A	193.140.100.10
 www.tr		IN	AAAA	2001:a98:11::10
 www.ua		IN	A	217.198.131.181
 www.ua		IN	A	217.117.74.70
@@ -364,10 +352,6 @@ ftp7.de		IN	A	141.41.9.9
 ; Holger Weiss <ftp@FU-Berlin.DE>
 ftp13.de		IN	A	130.133.3.130
 
-; ftp://proftpd.ckoepp.de/
-; Christian Koepp <christian.koepp@stud.uni-karlsruhe.de>
-ftp16.de		IN	A	62.112.140.173
-
 ; ftp://ftp.jaquet.dk/pub/proftp/
 ; Rasmus <rasmus@jaquet.dk>
 ftp1.dk		IN	A	217.157.160.207
@@ -380,10 +364,6 @@ ftp4.fr		IN	A	80.248.215.3
 ; Alain Bidaud <crihan-tech@crihan.fr>
 ftp5.fr		IN	A	195.221.21.36
 ftp5.fr		IN	AAAA	2001:660:7401:211::36
-
-; ftp://ftp.seasonfive.com/mirrors/ftp.proftpd.org/
-; Yannick Lecaillez <mirrors@seasonfive.com>
-ftp7.fr		IN	A	212.43.248.244
 
 ; ftp://mirrors.ircam.fr/pub/proftpd
 ; Arnaud Gomes <mirrormaster@ircam.fr>
@@ -413,7 +393,6 @@ ftp2.lv		IN	A	195.13.158.141
 
 ; ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/
 ;  <mark@NL.UU.NET>
-ftp1.nl		IN	A	195.129.111.8
 ftp1.nl		IN	A	195.129.111.9
 
 ; ftp://ftp.easynet.nl/mirror/proftp/
@@ -453,10 +432,6 @@ ftp2.ro		IN	A	192.129.4.120
 ; Mihai Marinas <net-admin@hostingromania.ro>
 ftp3.ro		IN	A	195.170.171.3
 
-; ftp://mirror2.dataphone.se/pub/ProFTPD/
-; Mirror Admin <mirror@dataphone.net>
-ftp3.se		IN	A	212.37.1.30
-
 ; ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/
 ; lubos klokner <erkac@profinet.sk>
 ftp1.sk		IN	A	195.46.80.5
@@ -467,6 +442,7 @@ ftp2.tr		IN	A	193.140.100.10
 
 ; ftp://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/
 ; KTH <kth@ftp.isu.edu.tw>
+ftp1.tw		IN	A	140.127.177.15
 ftp1.tw		IN	A	140.127.177.17
 
 ; ftp://ftp.ntu.edu.tw/proftpd/
@@ -523,12 +499,10 @@ ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.9.9
 ftp.de		IN	A	130.133.3.130
-ftp.de		IN	A	62.112.140.173
 ftp.dk		IN	A	217.157.160.207
 ftp.fr		IN	A	80.248.215.3
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
-ftp.fr		IN	A	212.43.248.244
 ftp.fr		IN	A	129.102.1.25
 ftp.fr		IN	AAAA	2001:660:3004:4000::25:80
 ftp.fr		IN	A	195.140.143.234
@@ -537,7 +511,6 @@ ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
 ftp.jp		IN	A	219.94.145.73
 ftp.lv		IN	A	195.13.158.141
-ftp.nl		IN	A	195.129.111.8
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.86.128.57
 ftp.nl		IN	A	85.92.128.169
@@ -549,9 +522,9 @@ ftp.pl		IN	A	82.139.21.82
 ftp.pl		IN	AAAA	2001:618:400:b863::8
 ftp.ro		IN	A	192.129.4.120
 ftp.ro		IN	A	195.170.171.3
-ftp.se		IN	A	212.37.1.30
 ftp.sk		IN	A	195.46.80.5
 ftp.tr		IN	A	193.140.100.10
+ftp.tw		IN	A	140.127.177.15
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	140.112.2.5
 ftp.us		IN	A	152.46.7.80
