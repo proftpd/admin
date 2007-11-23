@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007110101      ; Serial
+                              2007112300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -84,10 +84,6 @@ www1.be		IN	AAAA	2001:6f8:200:1::5:33
 ; Krasimir Ganchev <admin@fixity.net>
 www1.bg		IN	A	91.195.24.10
 
-; http://proftpd.zadnik.org/
-; Alexander Velin <velin@bastun.net>
-www2.bg		IN	A	194.12.255.250
-
 ; http://proftpd.cbox.biz/
 ; Alexander Dulgerov <ad@cbox.biz>
 www3.bg		IN	A	87.118.140.10
@@ -170,13 +166,9 @@ www3.lv		IN	A	195.13.158.141
 www1.nl		IN	A	80.84.224.16
 www1.nl		IN	AAAA	2001:828:101:1::4
 
-; http://proftpd.tuxor-solutions.nl/
-; Dirk Kalkman <root@tuxor-solutions.nl>
-www10.nl		IN	A	85.92.128.169
-
 ; http://proftpd.osmirror.nl/
 ; Jur Rademakers <mirrors@osmirror.nl>
-www11.nl		IN	A	83.149.81.153
+www11.nl		IN	A	85.12.47.162
 
 ; http://proftpd.hostingromania.ro/
 ; Mihai Marinas <net-admin@hostingromania.ro>
@@ -192,6 +184,7 @@ www2.si		IN	A	91.185.198.150
 
 ; http://proftpd.ulak.net.tr/
 ; Onur BEKTAS <ftpadm@ulak.net.tr>
+www2.tr		IN	A	193.140.100.10
 www2.tr		IN	AAAA	2001:a98:11::10
 
 ; http://proftpd.dnepr.net/
@@ -235,7 +228,6 @@ www.au		IN	A	203.80.162.206
 www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	91.195.24.10
-www.bg		IN	A	194.12.255.250
 www.bg		IN	A	87.118.140.10
 www.br		IN	A	200.222.115.162
 www.cz		IN	A	147.229.190.133
@@ -258,11 +250,11 @@ www.li		IN	A	217.173.238.33
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
-www.nl		IN	A	85.92.128.169
-www.nl		IN	A	83.149.81.153
+www.nl		IN	A	85.12.47.162
 www.ro		IN	A	195.170.171.5
 www.sg		IN	A	202.79.178.97
 www.si		IN	A	91.185.198.150
+www.tr		IN	A	193.140.100.10
 www.tr		IN	AAAA	2001:a98:11::10
 www.ua		IN	A	217.198.131.181
 www.ua		IN	A	217.117.74.70
@@ -397,17 +389,13 @@ ftp1.nl		IN	A	195.129.111.9
 ; Diederik <mirror@nl.easynet.net>
 ftp4.nl		IN	A	195.86.128.57
 
-; ftp://mirror.tuxor-solutions.nl/pub/proftpd/
-; Dirk Kalkman <root@tuxor-solutions.nl>
-ftp6.nl		IN	A	85.92.128.169
-
 ; ftp://proftpd.mirrors.webazilla.nl/
 ; Network Operations Center <noc@webazilla.com>
 ftp7.nl		IN	A	88.85.64.160
 
 ; ftp://proftpdftp.osmirror.nl/pub/proftpd/ftp/
 ; Jur Rademakers <mirrors@osmirror.nl>
-ftp9.nl		IN	A	83.149.81.153
+ftp9.nl		IN	A	85.12.47.162
 
 ; ftp://mirror.hostfuss.com/proftpd/
 ; Frederik Timmerman <mirror@hostfuss.com>
@@ -511,9 +499,8 @@ ftp.jp		IN	A	219.94.145.73
 ftp.lv		IN	A	195.13.158.141
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	195.86.128.57
-ftp.nl		IN	A	85.92.128.169
 ftp.nl		IN	A	88.85.64.160
-ftp.nl		IN	A	83.149.81.153
+ftp.nl		IN	A	85.12.47.162
 ftp.nl		IN	A	88.85.76.7
 ftp.no		IN	A	80.239.42.166
 ftp.pl		IN	A	82.139.21.82
