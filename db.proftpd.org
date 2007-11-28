@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007112300      ; Serial
+                              2007112700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
