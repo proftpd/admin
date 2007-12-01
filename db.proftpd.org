@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007112700      ; Serial
+                              2007120100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -149,10 +149,6 @@ www2.il		IN	A	84.94.232.128
 ; Antonio Prado <aprado@topnet.it>
 www4.it		IN	A	82.143.3.5
 
-; http://proftpd.sakuretsu.net/
-; Katsuji Ishikawa <ktj@sakuretsu.net>
-www1.jp		IN	A	59.106.25.59
-
 ; http://proftpd.lie-comtel.li/
 ; Roland Guthauser <roland.guthauser@lkw.li>
 www1.li		IN	A	217.173.238.33
@@ -245,7 +241,6 @@ www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
 www.il		IN	A	84.94.232.128
 www.it		IN	A	82.143.3.5
-www.jp		IN	A	59.106.25.59
 www.li		IN	A	217.173.238.33
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
