@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2007120100      ; Serial
+                              2008010100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -96,9 +96,6 @@ www4.br		IN	A	200.222.115.162
 ; Zdenek Bill <mirror@kn.vutbr.cz>
 www2.cz		IN	A	147.229.190.133
 
-; http://proftpd.bemirror.org
-; Hans Braeunlein <hans@bemirror.org>
-
 ; http://proftpd.namesdir.com
 ; Mihai Leonte <hostmaster@procopter.com>
 www15.de		IN	A	82.211.57.120
@@ -119,10 +116,6 @@ www1.dk		IN	A	217.157.160.207
 ; Alain Bidaud <crihan-tech@crihan.fr>
 www4.fr		IN	A	195.221.21.36
 www4.fr		IN	AAAA	2001:660:7401:211::36
-
-; http://proftpd.fastorama.com/
-; fastorama.com <mrjack@fastorama.com>
-www6.fr		IN	A	80.248.215.3
 
 ; http://proftpd.multidist.com
 ; MULTIDIST SARL <webmaster@multidist.com>
@@ -233,7 +226,6 @@ www.de		IN	A	87.230.8.208
 www.dk		IN	A	217.157.160.207
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
-www.fr		IN	A	80.248.215.3
 www.fr		IN	A	88.191.14.172
 www.fr		IN	A	195.140.143.234
 www.hk		IN	A	210.0.190.18
@@ -301,10 +293,6 @@ ftp3.be		IN	A	195.160.166.144
 ; Alexander Dulgerov <ad@cbox.biz>
 ftp4.bg		IN	A	87.118.140.10
 
-; ftp://proftpd.oi.com.br/
-; Oi Internet <wanderson.gonzalez@oi.com.br>
-ftp1.br		IN	A	200.222.115.162
-
 ; ftp://ftp.samurai.com/pub/proftpd/
 ; Bryan Fullerton <bryanf@samurai.com>
 ftp1.ca		IN	A	66.241.141.46
@@ -341,10 +329,6 @@ ftp13.de		IN	A	130.133.3.130
 ; Rasmus <rasmus@jaquet.dk>
 ftp1.dk		IN	A	217.157.160.207
 
-; ftp://ftp.fastorama.com/mirrors/ftp.proftpd.org/
-; MrJacK <mrjack@fastorama.com>
-ftp4.fr		IN	A	80.248.215.3
-
 ; ftp://ftp.crihan.fr/mirrors/ftp.proftpd.org/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 ftp5.fr		IN	A	195.221.21.36
@@ -379,10 +363,6 @@ ftp2.lv		IN	A	195.13.158.141
 ; ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/
 ;  <mark@NL.UU.NET>
 ftp1.nl		IN	A	195.129.111.9
-
-; ftp://ftp.easynet.nl/mirror/proftp/
-; Diederik <mirror@nl.easynet.net>
-ftp4.nl		IN	A	195.86.128.57
 
 ; ftp://proftpd.mirrors.webazilla.nl/
 ; Network Operations Center <noc@webazilla.com>
@@ -471,7 +451,6 @@ ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.be		IN	A	195.160.166.144
 ftp.bg		IN	A	87.118.140.10
-ftp.br		IN	A	200.222.115.162
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
 ftp.cz		IN	A	194.108.36.130
@@ -481,7 +460,6 @@ ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.9.9
 ftp.de		IN	A	130.133.3.130
 ftp.dk		IN	A	217.157.160.207
-ftp.fr		IN	A	80.248.215.3
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	129.102.1.25
@@ -493,7 +471,6 @@ ftp.it		IN	A	82.143.3.5
 ftp.jp		IN	A	219.94.145.73
 ftp.lv		IN	A	195.13.158.141
 ftp.nl		IN	A	195.129.111.9
-ftp.nl		IN	A	195.86.128.57
 ftp.nl		IN	A	88.85.64.160
 ftp.nl		IN	A	85.12.47.162
 ftp.nl		IN	A	88.85.76.7
