@@ -18,8 +18,8 @@
 ;                    IN  MX    10 mail1.cluenet.de.
 
 ; Daniel Roesen <dr@cluenet.de>
-                    IN  A     195.20.121.11
-www                 IN  A     195.20.121.11
+           5M       IN  A     195.20.121.11
+www        5M       IN  A     195.20.121.11
 
 ; Stefan Onken <support@stonki.de>
 rsync               IN  CNAME rsync.proftpd.de.
