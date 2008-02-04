@@ -1,6 +1,6 @@
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2008020201      ; Serial
+                              2008020401      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -18,8 +18,10 @@
 ;                    IN  MX    10 mail1.cluenet.de.
 
 ; Daniel Roesen <dr@cluenet.de>
-           5M       IN  A     195.20.121.11
-www        5M       IN  A     195.20.121.11
+           5M       IN  A     195.20.121.96
+			AAAA	2001:1440:201:101::1
+www        5M       IN  A     195.20.121.96
+			AAAA	2001:1440:201:101::1
 
 ; Stefan Onken <support@stonki.de>
 rsync               IN  CNAME rsync.proftpd.de.
