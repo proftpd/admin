@@ -1,3 +1,4 @@
+$TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
                               2008020401      ; Serial
@@ -7,34 +8,32 @@
                               86400           ; min ttl
                               )
 
-                    IN  NS    boost.horde.net.
-                    IN  NS    ns1.cluenet.de.
-                    IN  NS    ns2.cluenet.de.
+			NS	boost.horde.net.
+			NS	ns1.cluenet.de.
+			NS	ns2.cluenet.de.
 
 ; jwm@horde.net
-;                    IN  MX    5 boost.horde.net.
-                    IN  MX    20 mx.frontiernet.net.
-; dr@proftpd.org
-;                    IN  MX    10 mail1.cluenet.de.
+;			MX 5	boost.horde.net.
+			MX 20	mx.frontiernet.net.
 
 ; Daniel Roesen <dr@cluenet.de>
-           5M       IN  A     195.20.121.96
+			A	195.20.121.96
 			AAAA	2001:1440:201:101::1
-www        5M       IN  A     195.20.121.96
+www			A	195.20.121.96
 			AAAA	2001:1440:201:101::1
 
 ; Stefan Onken <support@stonki.de>
-rsync               IN  CNAME rsync.proftpd.de.
-ftp                 IN  CNAME rsync.proftpd.de.
+rsync			CNAME	rsync.proftpd.de.
+ftp			CNAME	rsync.proftpd.de.
 
 ; Michael Renner <robe@amd.co.at>
 ; hosted by Inqnet GmbH <tech@inqnet.at>
-forums              IN  A     77.244.241.189
+forums			A	77.244.241.189
 
 ; John Morrissey <jwm@horde.net>
-bugs                IN  CNAME boost.horde.net.
-cvs                 IN  CNAME boost.horde.net.
-mirrors             IN  CNAME boost.horde.net.
+bugs			CNAME	boost.horde.net.
+cvs			CNAME	boost.horde.net.
+mirrors			CNAME	boost.horde.net.
 
 ; ***********************************************************************
 ; Language mirrors
