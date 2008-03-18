@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2008020401      ; Serial
+                              2008031800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -92,15 +92,11 @@ www3.bg		IN	A	87.118.140.10
 
 ; http://proftpd.oi.com.br/
 ; Oi Internet <wanderson.gonzalez@oi.com.br>
-www4.br		IN	A	200.222.115.162
+www4.br		IN	A	200.222.115.42
 
 ; http://proftpd.kn.vutbr.cz/
 ; Zdenek Bill <mirror@kn.vutbr.cz>
 www2.cz		IN	A	147.229.190.133
-
-; http://proftpd.namesdir.com
-; Mihai Leonte <hostmaster@procopter.com>
-www15.de		IN	A	82.211.57.120
 
 ; http://proftp.oslevel.de
 ; Mirko Hahn <mirror@oslevel.de>
@@ -109,10 +105,6 @@ www16.de		IN	A	84.19.189.52
 ; http://proftpd.online-mirror.de/
 ; Michael Weber <m.weber@olserv.de>
 www20.de		IN	A	87.230.8.208
-
-; http://proftpd.jaquet.dk/
-; Rasmus Andersen <rasmus@jaquet.dk>
-www1.dk		IN	A	217.157.160.207
 
 ; http://proftpd.crihan.fr/
 ; Alain Bidaud <crihan-tech@crihan.fr>
@@ -125,7 +117,7 @@ www11.fr		IN	A	88.191.14.172
 
 ; http://proftpd.miroir-francais.fr/
 ; Kurt LeClerc <kurt@miroir-francais.fr>
-www13.fr		IN	A	195.140.143.234
+www13.fr		IN	A	85.12.47.162
 
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
@@ -161,10 +153,6 @@ www1.nl		IN	AAAA	2001:828:101:1::4
 ; Jur Rademakers <mirrors@osmirror.nl>
 www11.nl		IN	A	85.12.47.162
 
-; http://proftpd.hostingromania.ro/
-; Mihai Marinas <net-admin@hostingromania.ro>
-www4.ro		IN	A	195.170.171.5
-
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	A	202.79.178.97
@@ -175,16 +163,11 @@ www2.si		IN	A	91.185.198.150
 
 ; http://proftpd.ulak.net.tr/
 ; Onur BEKTAS <ftpadm@ulak.net.tr>
-www2.tr		IN	A	193.140.100.10
 www2.tr		IN	AAAA	2001:a98:11::10
 
 ; http://proftpd.dnepr.net/
 ; Andrey Lakhno <land@dnepr.net>
 www2.ua		IN	A	217.198.131.181
-
-; http://proftpd.privat-online.net
-; Sergii Bolotin <sergii@bolotin.dp.ua>
-www3.ua		IN	A	217.117.74.70
 
 ; http://proftpd.sourwood.net/
 ; Matt Mozur <matt.mozur@sourwood.net>
@@ -193,11 +176,6 @@ www21.us		IN	A	66.92.74.33
 ; http://proftpd.mirror.wrpn.net/
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	A	70.60.35.37
-
-; http://proftpd.mirrors.borgnet.us/
-; Scott Grayban <root@borgnet.us>
-www32.us		IN	A	71.32.15.195
-www32.us		IN	AAAA	2001:470:1f01:232::7
 
 ; http://proftpd.internet-servers.info/
 ; Ionel Roiban <ionel.roiban@securityconsultant.biz>
@@ -220,16 +198,14 @@ www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
 www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
-www.br		IN	A	200.222.115.162
+www.br		IN	A	200.222.115.42
 www.cz		IN	A	147.229.190.133
-www.de		IN	A	82.211.57.120
 www.de		IN	A	84.19.189.52
 www.de		IN	A	87.230.8.208
-www.dk		IN	A	217.157.160.207
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
 www.fr		IN	A	88.191.14.172
-www.fr		IN	A	195.140.143.234
+www.fr		IN	A	85.12.47.162
 www.hk		IN	A	210.0.190.18
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
@@ -240,17 +216,12 @@ www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	85.12.47.162
-www.ro		IN	A	195.170.171.5
 www.sg		IN	A	202.79.178.97
 www.si		IN	A	91.185.198.150
-www.tr		IN	A	193.140.100.10
 www.tr		IN	AAAA	2001:a98:11::10
 www.ua		IN	A	217.198.131.181
-www.ua		IN	A	217.117.74.70
 www.us		IN	A	66.92.74.33
 www.us		IN	A	70.60.35.37
-www.us		IN	A	71.32.15.195
-www.us		IN	AAAA	2001:470:1f01:232::7
 www.us		IN	A	217.160.250.20
 www.us		IN	A	69.63.177.230
 ; ftp://nas.arminco.com/pub/mirrors/proftpd/
@@ -327,10 +298,6 @@ ftp7.de		IN	A	141.41.9.9
 ; Holger Weiss <ftp@FU-Berlin.DE>
 ftp13.de		IN	A	130.133.3.130
 
-; ftp://ftp.jaquet.dk/pub/proftp/
-; Rasmus <rasmus@jaquet.dk>
-ftp1.dk		IN	A	217.157.160.207
-
 ; ftp://ftp.crihan.fr/mirrors/ftp.proftpd.org/
 ; Alain Bidaud <crihan-tech@crihan.fr>
 ftp5.fr		IN	A	195.221.21.36
@@ -385,19 +352,6 @@ ftp5.no		IN	A	80.239.42.166
 ; ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.proftpd.org/
 ; Piotr Maluty <admin@piotrkosoft.netinet.net>
 ftp9.pl		IN	A	82.139.21.82
-ftp9.pl		IN	AAAA	2001:618:400:b863::8
-
-; ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.proftpd.org/
-; SUBREDU Manuel <diablo@iasi.roedu.net>
-ftp2.ro		IN	A	192.129.4.120
-
-; ftp://ftp.hostingromania.ro/Linux/mirrors/proftpd.org
-; Mihai Marinas <net-admin@hostingromania.ro>
-ftp3.ro		IN	A	195.170.171.3
-
-; ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/
-; lubos klokner <erkac@profinet.sk>
-ftp1.sk		IN	A	195.46.80.5
 
 ; ftp://ftp.ulak.net.tr/proftpd
 ; Onur BEKTAS <ftpadm@ulak.net.tr>
@@ -423,11 +377,6 @@ ftp24.us		IN	A	66.92.74.33
 ; ftp://mirror.wrpn.net/proftpd/
 ; Wesley Haines <kremit@wrpn.net>
 ftp25.us		IN	A	70.60.35.37
-
-; ftp://proftpd.mirrors.borgnet.us/
-; Scott Grayban <root@borgnet.us>
-ftp28.us		IN	A	71.32.15.195
-ftp28.us		IN	AAAA	2001:470:1f01:232::7
 
 ; ftp://proftpd.mirrors.tds.net/pub/ProFTPD
 ; Shane Brath <mirrors@tds.net>
@@ -466,7 +415,6 @@ ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	129.102.1.25
 ftp.fr		IN	AAAA	2001:660:3004:4000::25:80
-ftp.fr		IN	A	195.140.143.234
 ftp.ie		IN	A	193.120.14.241
 ftp.ie		IN	AAAA	2001:7c8:3:1::4
 ftp.it		IN	A	82.143.3.5
@@ -478,10 +426,6 @@ ftp.nl		IN	A	85.12.47.162
 ftp.nl		IN	A	88.85.76.7
 ftp.no		IN	A	80.239.42.166
 ftp.pl		IN	A	82.139.21.82
-ftp.pl		IN	AAAA	2001:618:400:b863::8
-ftp.ro		IN	A	192.129.4.120
-ftp.ro		IN	A	195.170.171.3
-ftp.sk		IN	A	195.46.80.5
 ftp.tr		IN	A	193.140.100.10
 ftp.tw		IN	A	140.127.177.15
 ftp.tw		IN	A	140.127.177.17
@@ -489,8 +433,6 @@ ftp.tw		IN	A	140.112.2.5
 ftp.us		IN	A	152.46.7.80
 ftp.us		IN	A	66.92.74.33
 ftp.us		IN	A	70.60.35.37
-ftp.us		IN	A	71.32.15.195
-ftp.us		IN	AAAA	2001:470:1f01:232::7
 ftp.us		IN	A	216.165.129.134
 ftp.us		IN	A	69.63.177.230
 ftp.za		IN	A	196.4.160.12
