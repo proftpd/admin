@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2008031800      ; Serial
+                              2008040100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -65,13 +65,6 @@ www3.ar		IN	A	190.2.55.3
 ; http://proftpd.gds.tuwien.ac.at/
 ; Rudi (Rudolf Ladner) <gd@tuwien.ac.at>
 www2.at		IN	A	192.35.244.50
-
-; http://proftpd.planetmirror.com/
-; Jason Andrade <jason@planetmirror.com>
-www2.au		IN	A	203.16.234.19
-www2.au		IN	A	203.16.234.20
-www2.au		IN	A	203.16.234.90
-www2.au		IN	A	203.16.234.91
 
 ; http://proftpd.dknss.com/
 ; Darrin Khan <darrink@dknss.com>
@@ -161,10 +154,6 @@ www1.sg		IN	A	202.79.178.97
 ; Miha Novak <miha@paknet.org>
 www2.si		IN	A	91.185.198.150
 
-; http://proftpd.ulak.net.tr/
-; Onur BEKTAS <ftpadm@ulak.net.tr>
-www2.tr		IN	AAAA	2001:a98:11::10
-
 ; http://proftpd.dnepr.net/
 ; Andrey Lakhno <land@dnepr.net>
 www2.ua		IN	A	217.198.131.181
@@ -177,10 +166,6 @@ www21.us		IN	A	66.92.74.33
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	A	70.60.35.37
 
-; http://proftpd.internet-servers.info/
-; Ionel Roiban <ionel.roiban@securityconsultant.biz>
-www33.us		IN	A	217.160.250.20
-
 ; http://proftpd.mirror.facebook.com/
 ; Lucas Nealan <lnealan@facebook.com>
 www36.us		IN	A	69.63.177.230
@@ -189,10 +174,6 @@ www.am		IN	A	195.250.77.48
 www.ar		IN	A	200.43.193.199
 www.ar		IN	A	190.2.55.3
 www.at		IN	A	192.35.244.50
-www.au		IN	A	203.16.234.19
-www.au		IN	A	203.16.234.20
-www.au		IN	A	203.16.234.90
-www.au		IN	A	203.16.234.91
 www.au		IN	A	203.80.162.206
 www.be		IN	A	212.100.160.33
 www.be		IN	AAAA	2001:6f8:200:1::5:33
@@ -218,11 +199,9 @@ www.nl		IN	AAAA	2001:828:101:1::4
 www.nl		IN	A	85.12.47.162
 www.sg		IN	A	202.79.178.97
 www.si		IN	A	91.185.198.150
-www.tr		IN	AAAA	2001:a98:11::10
 www.ua		IN	A	217.198.131.181
 www.us		IN	A	66.92.74.33
 www.us		IN	A	70.60.35.37
-www.us		IN	A	217.160.250.20
 www.us		IN	A	69.63.177.230
 ; ftp://nas.arminco.com/pub/mirrors/proftpd/
 ; Vahan Yerkanian <vahan@arminco.com>
@@ -243,11 +222,6 @@ ftp1.at		IN	A	193.170.194.26
 ; ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
 ftp2.at		IN	A	192.35.244.50
-
-; ftp://ftp.planetmirror.com/pub/proftpd/
-; Jason Andrade <jason@planetmirror.com>
-ftp1.au		IN	A	203.16.234.85
-ftp1.au		IN	A	203.16.234.86
 
 ; ftp://proftpd.dknss.com/pub/proftpd/
 ; Darrin Khan <darrink@dknss.com>
@@ -395,8 +369,6 @@ ftp.ar		IN	A	200.43.193.199
 ftp.ar		IN	A	190.2.55.3
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
-ftp.au		IN	A	203.16.234.85
-ftp.au		IN	A	203.16.234.86
 ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
@@ -410,7 +382,7 @@ ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.9.9
 ftp.de		IN	A	130.133.3.130
-ftp.dk		IN	A	217.157.160.207
+ftp.fr		IN	A	195.140.143.234
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	129.102.1.25
