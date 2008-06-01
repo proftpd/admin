@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2008040100      ; Serial
+                              2008060100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -93,7 +93,7 @@ www2.cz		IN	A	147.229.190.133
 
 ; http://proftp.oslevel.de
 ; Mirko Hahn <mirror@oslevel.de>
-www16.de		IN	A	84.19.189.52
+www16.de		IN	A	84.19.188.205
 
 ; http://proftpd.online-mirror.de/
 ; Michael Weber <m.weber@olserv.de>
@@ -181,7 +181,7 @@ www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
 www.br		IN	A	200.222.115.42
 www.cz		IN	A	147.229.190.133
-www.de		IN	A	84.19.189.52
+www.de		IN	A	84.19.188.205
 www.de		IN	A	87.230.8.208
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
@@ -328,7 +328,7 @@ ftp5.no		IN	A	80.239.42.166
 ftp9.pl		IN	A	82.139.21.82
 
 ; ftp://ftp.ulak.net.tr/proftpd
-; Onur BEKTAS <ftpadm@ulak.net.tr>
+; Onur BEKTAS <admins@ulakbim.gov.tr>
 ftp2.tr		IN	A	193.140.100.10
 
 ; ftp://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/
