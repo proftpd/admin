@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2008071000      ; Serial
+                              2008072500      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -257,7 +257,7 @@ ftp1.ch		IN	A	212.101.4.244
 ; Lumir <lm@its.cz>
 ftp1.cz		IN	A	194.108.36.130
 
-; ftp://proftpd.kn.vutbr.cz/pub/ftp.proftpd.org/
+; ftp://proftpd.kn.vutbr.cz/pub/proftpd
 ; Zdenek Bill <mirror@kn.vutbr.cz>
 ftp3.cz		IN	A	147.229.190.133
 
