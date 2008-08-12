@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2008072500      ; Serial
+                              2008081200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -106,11 +106,7 @@ www4.fr		IN	AAAA	2001:660:7401:211::36
 
 ; http://proftpd.multidist.com
 ; MULTIDIST SARL <webmaster@multidist.com>
-www11.fr		IN	A	88.191.14.172
-
-; http://proftpd.miroir-francais.fr/
-; Kurt LeClerc <kurt@miroir-francais.fr>
-www13.fr		IN	A	85.12.47.162
+www11.fr		IN	A	91.121.156.145
 
 ; http://proftpd.hknetworks.com/
 ; Stanley Au <mirror@hknetworks.com>
@@ -145,10 +141,6 @@ www3.lv		IN	A	195.13.158.141
 ; Peter Batenburg <peter@proserve.nl>
 www1.nl		IN	A	80.84.224.16
 www1.nl		IN	AAAA	2001:828:101:1::4
-
-; http://proftpd.osmirror.nl/
-; Jur Rademakers <mirrors@osmirror.nl>
-www11.nl		IN	A	85.12.47.162
 
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
@@ -189,8 +181,7 @@ www.de		IN	A	84.19.188.205
 www.de		IN	A	87.230.8.208
 www.fr		IN	A	195.221.21.36
 www.fr		IN	AAAA	2001:660:7401:211::36
-www.fr		IN	A	88.191.14.172
-www.fr		IN	A	85.12.47.162
+www.fr		IN	A	91.121.156.145
 www.hk		IN	A	210.0.190.18
 www.ie		IN	A	193.120.14.243
 www.ie		IN	AAAA	2001:7c8:3:1::4
@@ -201,7 +192,6 @@ www.li		IN	A	217.173.238.33
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
-www.nl		IN	A	85.12.47.162
 www.sg		IN	A	202.79.178.97
 www.si		IN	A	91.185.198.150
 www.ua		IN	A	217.198.131.181
@@ -287,10 +277,6 @@ ftp5.fr		IN	AAAA	2001:660:7401:211::36
 ftp12.fr		IN	A	129.102.1.25
 ftp12.fr		IN	AAAA	2001:660:3004:4000::25:80
 
-; ftp://miroir-francais.fr/pub/proftpd/ftp/
-; Kurt LeClerc <kurt@miroir-francais.fr>
-ftp13.fr		IN	A	195.140.143.234
-
 ; ftp://ftp.esat.net/mirrors/ftp.proftpd.org/
 ; Dave Burke <ftpadmin@esat.net>
 ftp0.ie		IN	A	193.120.14.241
@@ -315,10 +301,6 @@ ftp1.nl		IN	A	195.129.111.9
 ; ftp://proftpd.mirrors.webazilla.nl/
 ; Network Operations Center <noc@webazilla.com>
 ftp7.nl		IN	A	88.85.64.160
-
-; ftp://proftpdftp.osmirror.nl/pub/proftpd/ftp/
-; Jur Rademakers <mirrors@osmirror.nl>
-ftp9.nl		IN	A	85.12.47.162
 
 ; ftp://mirror.hostfuss.com/proftpd/
 ; Frederik Timmerman <mirror@hostfuss.com>
@@ -387,7 +369,6 @@ ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	141.41.9.9
 ftp.de		IN	A	130.133.3.130
-ftp.fr		IN	A	195.140.143.234
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	129.102.1.25
@@ -399,7 +380,6 @@ ftp.jp		IN	A	219.94.145.73
 ftp.lv		IN	A	195.13.158.141
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	88.85.64.160
-ftp.nl		IN	A	85.12.47.162
 ftp.nl		IN	A	88.85.76.7
 ftp.no		IN	A	80.239.42.166
 ftp.pl		IN	A	82.139.21.82
