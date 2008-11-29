@@ -90,13 +90,13 @@ foreach (array('www', 'ftp') as $hostType) {
 		print '; ' . $row['admin'] . ' ' .
 			'<' . $row['admin_email'] . '>' . "\n";
 		print $hostType . $row['sequence'] . '.' . $row['iso'] .
-			"		IN	CNAME	$host\n\n";
+			"		IN	CNAME	$host.\n\n";
 	}
 
 	foreach ($roundRobinHosts as $iso => $hosts) {
 		if (count($hosts) == 1) {
 			print "$hostType.$iso		IN	CNAME	" .
-				$hosts[0] . "\n";
+				$hosts[0] . ".\n";
 			continue;
 		}
 
