@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2008102000      ; Serial
+                              2008112800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -135,7 +135,7 @@ www1.nl		IN	AAAA	2001:828:101:1::4
 
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
-www1.sg		IN	A	202.79.178.97
+www1.sg		IN	A	202.79.181.124
 
 ; http://mirrors.paknet.org/proftpd/
 ; Miha Novak <miha@paknet.org>
@@ -180,7 +180,7 @@ www.li		IN	A	217.173.238.33
 www.lv		IN	A	195.13.158.141
 www.nl		IN	A	80.84.224.16
 www.nl		IN	AAAA	2001:828:101:1::4
-www.sg		IN	A	202.79.178.97
+www.sg		IN	A	202.79.181.124
 www.si		IN	A	91.185.198.150
 www.ua		IN	A	217.198.131.181
 www.us		IN	A	66.92.74.33
@@ -202,6 +202,10 @@ ftp1.at		IN	A	193.170.194.26
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
 ftp2.at		IN	A	192.35.244.50
 
+; ftp://proftpd.dknss.com/pub/proftpd/
+; Darrin Khan <darrink@dknss.com>
+ftp2.au		IN	A	203.80.162.206
+
 ; ftp://ftp.easynet.be/proftpd/
 ; Bert Vermeulen <ftp@be.easynet.net>
 ftp1.be		IN	A	212.100.160.33
@@ -222,10 +226,6 @@ ftp1.ca		IN	A	66.241.141.46
 ; ftp://ftp.solnet.ch/mirror/proftpd.org/
 ; Erich Hohermuth <hostmaster@solnet.ch>
 ftp1.ch		IN	A	212.101.4.244
-
-; ftp://ftp.its.cz/MIRRORS/ftp.proftpd.org/
-; Lumir <lm@its.cz>
-ftp1.cz		IN	A	194.108.36.130
 
 ; ftp://proftpd.kn.vutbr.cz/pub/proftpd
 ; Zdenek Bill <mirror@kn.vutbr.cz>
@@ -336,13 +336,13 @@ ftp.ar		IN	A	200.43.192.20
 ftp.ar		IN	A	190.2.55.3
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
+ftp.au		IN	A	203.80.162.206
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.be		IN	A	195.160.166.144
 ftp.bg		IN	A	87.118.140.10
 ftp.ca		IN	A	66.241.141.46
 ftp.ch		IN	A	212.101.4.244
-ftp.cz		IN	A	194.108.36.130
 ftp.cz		IN	A	147.229.190.133
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
