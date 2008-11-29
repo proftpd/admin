@@ -1,8 +1,8 @@
-#!/usr/local/bin/php -q
+#!/usr/bin/php -q
 <?php
 
 /* ProFTPD Mirror Network Maintenance System
- * Copyright (c) 2005, John Morrissey <jwm@horde.net>
+ * Copyright (c) 2005, 2006, 2008, John Morrissey <jwm@horde.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,6 +19,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  */
 
+require_once 'DB.php';
+
 /**
  * Resolve all IP addresses for a given hostname, following any CNAMEs
  * encountered.
@@ -34,13 +36,6 @@ function findAddresses($hostname) {
 
 	$addrs = array();
 	foreach ($records as $record) {
-		/* ??? One of our mirrors (ftp.icm.edu.pl) has a record without
-		 * a type?
-		 */
-		if (!isset($record['type'])) {
-			continue;
-		}
-
 		switch ($record['type']) {
 		case 'A':
 			$addrs[] = 'A:' . $record['ip'];
@@ -59,32 +54,11 @@ function findAddresses($hostname) {
 	return $addrs;
 }
 
-function usage() {
-	// FIXME
-	$basename = basename('dnsZone.php');
-	print <<<EOM
-Usage: $basename output-file
-
-EOM;
-}
-
-require_once 'Console/Getopt.php';
-require_once 'Console/ProgressBar.php';
-require_once 'DB.php';
-
-$args = Console_Getopt::getopt(Console_Getopt::readPHPArgv(),
-	'', array());
-if (empty($args[1][0])) {
-	usage();
-	exit;
-}
-
 $db = &DB::connect('mysql://SQL-USER:SQL-PASSWORD@localhost/proftpd');
 if (PEAR::isError($db)) {
-	die("Couldn't contact database server: " . $db->getMessage() . "\n");
+	print "Couldn't contact database server: " . $db->getMessage() . "\n";
+	exit(1);
 }
-
-$fp = fopen($args[1][0], 'w');
 
 foreach (array('www', 'ftp') as $hostType) {
 	$query  = 'SELECT site, admin, admin_email, iso, sequence ';
@@ -95,69 +69,48 @@ foreach (array('www', 'ftp') as $hostType) {
 
 	$queryResult = $db->query($query);
 	if (PEAR::isError($queryResult)) {
-		die("Couldn't query database server: " . $queryResult->getMessage() . "\n");
+		print "Couldn't query database server: " . $queryResult->getMessage() . "\n";
+		exit(1);
 	}
 
-	$bar = new Console_ProgressBar(
-		"* $hostType %fraction% sites [%bar%] %percent%",
-		'=>', '-', 74, $queryResult->numRows(),
-		array('ansi_terminal' => false)
-	);
-	$siteNum = 0;
-	$roundRobinSites = array();
+	$roundRobinHosts = array();
 	while (($row = $queryResult->fetchRow(DB_FETCHMODE_ASSOC))) {
-		$bar->update(++$siteNum);
-
 		if (!preg_match('#^(ftp|http)://([^/]+)($|/)#', $row['site'], $matches)) {
-			die("Couldn't match URL '" . $row['site'] . "'\n");
+			print "Couldn't match URL '" . $row['site'] . "'\n";
+			exit(1);
 		}
 		$host = $matches[2];
 
-		$addrs = findAddresses($host);
-		if (PEAR::isError($addrs)) {
+		if (!isset($roundRobinHosts[$row['iso']])) {
+			$roundRobinHosts[$row['iso']] = array();
+		}
+		$roundRobinHosts[$row['iso']][] = $host;
+
+		print '; ' . $row['site'] . "\n";
+		print '; ' . $row['admin'] . ' ' .
+			'<' . $row['admin_email'] . '>' . "\n";
+		print $hostType . $row['sequence'] . '.' . $row['iso'] .
+			"		IN	CNAME	$host\n\n";
+	}
+
+	foreach ($roundRobinHosts as $iso => $hosts) {
+		if (count($hosts) == 1) {
+			print "$hostType.$iso		IN	CNAME	" .
+				$hosts[0] . "\n";
 			continue;
 		}
 
-		if (!isset($roundRobinSites[$row['iso']])) {
-			$roundRobinSites[$row['iso']] = array();
-		}
-		foreach ($addrs as $addr) {
-			$roundRobinSites[$row['iso']][] = $addr;
-		}
-
-		$result = fputs($fp, '; ' . $row['site'] . "\n");
-		if ($result === false) {
-			die("Couldn't write to " . $args[1][0] . ".\n");
-		}
-		$result = fputs($fp, '; ' . $row['admin'] . ' ' .
-		                '<' . $row['admin_email'] . '>' . "\n");
-		if ($result === false) {
-			die("Couldn't write to " . $args[1][0] . ".\n");
-		}
-		foreach ($addrs as $addr) {
-			list($rrType, $ip) = explode(':', $addr, 2);
-
-			$result = fputs($fp, $hostType . $row['sequence'] . '.' . $row['iso'] . "		IN	$rrType	$ip\n");
-			if ($result === false) {
-				die("Couldn't write to " . $args[1][0] . ".\n");
+		foreach ($hosts as $host) {
+			$addrs = findAddresses($host);
+			if (PEAR::isError($addrs)) {
+				continue;
 			}
-		}
-		$result = fputs($fp, "\n");
-		if ($result === false) {
-			die("Couldn't write to " . $args[1][0] . ".\n");
-		}
-	}
-
-	foreach ($roundRobinSites as $iso => $addrs) {
-		foreach ($addrs as $addr) {
-			list($rrType, $ip) = explode(':', $addr, 2);
-
-			$result = fputs($fp, "$hostType.$iso		IN	$rrType	$ip\n");
-			if ($result === false) {
-				die("Couldn't write to " . $args[1][0] . ".\n");
+			foreach ($addrs as $addr) {
+				list($type, $ip) = explode(':', $addr, 2);
+				print "$hostType.$iso		IN	$type	$ip\n";
 			}
 		}
 	}
+
+	print "\n";
 }
-
-fclose($fp);
