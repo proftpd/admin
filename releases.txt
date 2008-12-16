@@ -1,36 +1,32 @@
 Release Checklist:
 
-1. Make sure a *fresh CVS tree* builds cleanly:
+0. Run 'make check', make sure tests pass
 
-   + no warnings (other than mod_auth_pam) using --enable-devel
+  + no warnings (use --enable-devel) when compiling
+  + no warnings/failures when building on the four main platforms:
+      Linux, Solaris, FreeBSD, Mac OSX
+  + all contrib modules compile
 
-   + few warnings/failures when running it under valgrind
+1. Notify core in advance of pending release (24-48 hours)
 
-   + no warnings/failures when building on the main three platforms:
-     Linux, Solaris, FreeBSD
-     
-   + all contrib modules compile
+2. Update NEWS, RELEASE_NOTES
 
-2. Notify core in advance of pending release (24-48 hours)
-
-3. Update NEWS
-
-4. Update include/version.h
+3. Update include/version.h
    Update contrib/dist/rpm/proftpd.spec
+   Update Configuration.html
    Update locale/files.txt
-     Run command commented in locale/Makefile.in.  (Ideally this should
-     be a target that we run, i.e. 'make locale-sources' from the
-     top-level directory.)
 
-5. Update autoconf script (if necessary)
+4. Update autoconf script (if necessary)
 
-6. Update ChangeLog and documentation
-   a. Run pdd/Userguide/directives/build_output.sh and let it crank away
-   b. Commit updated versions of by_name_source.sgml and
-      configuration_full.html (in pdd/Userguide/directives/output/)
-      as proftpd/docs/Configuration.{sgml,html}
-   c. Run pdd/FAQ/build_proftpd_faq and let it crank away
-   d. Commit updated versions of faq_full.html as proftpd/docs/faq.html
+5. Update ChangeLog
+
+6. Update documentation
+  a. Run pdd/Userguide/directives/build_output.sh and let it crank away
+  b. Commit updated versions of by_name_source.sgml and
+     configuration_full.html (in pdd/Userguide/directives/output/)
+     as proftpd/docs/Configuration.{sgml,html}
+  c. Run pdd/FAQ/build_proftpd_faq and let it crank away
+  d. Commit updated versions of faq_full.html as proftpd/docs/faq.html
 
 7. Tag CVS module for release.
   a. cvs rtag <tag> proftpd, e.g. R1_2_5RC3
@@ -47,19 +43,13 @@ Release Checklist:
      produce signed message
   c. PGP: verify a test email of the announcement to self (pgp (no options))
 
-10. Update the web site:
-   * Update md5_pgp.epl file w/ new MD5 sum, PGP signatures.
-   * Update include/globals.epl with new version number(s).
-   * Update index.epl to announce the new release.
-   * add docs/NEWS-versionnum
+10. Update md5_pgp.epl file w/ new MD5 sum, PGP signatures.
+   Update include/header.epl with new version, index.epl with announcement.
+   Copy NEWS, RELEASE_NOTES files into docs/ directory.
 
-11. Upload tarball, MD5 signature, PGP signatures, RPMs
-   a. Upload files to core account (currently boost.horde.net, user proftpd),
-      in the proper place under ~proftppd/ftp.proftpd.org/.  Make sure to
-      update MD5SUMS file in distrib/packages/RPMS.
-   c. Run "~/.bin/update-all.sh" to propagate the new files as necessary.
+11. Upload tarball, MD5 signature, PGP signatures, RPMs, to ftp.proftpd.org
 
-12. Announce on lists: -announce, -devel, -users
+12. Announce on lists: announce, devel, users
 
 13. Update Bugzilla with new component version tag
 
