@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2008112900      ; Serial
+                              2009011300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -142,16 +142,12 @@ www2.si		IN	CNAME	mirrors.paknet.org.
 ; Andrey Lakhno <land@dnepr.net>
 www2.ua		IN	CNAME	proftpd.dnepr.net.
 
-; http://proftpd.sourwood.net/
-; Matt Mozur <matt.mozur@sourwood.net>
-www21.us		IN	CNAME	proftpd.sourwood.net.
-
 ; http://proftpd.mirror.wrpn.net/
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
 
 ; http://proftpd.mirror.facebook.com/
-; Lucas Nealan <lnealan@facebook.com>
+; Lucas Nealan <mirror-external@lists.facebook.com>
 www36.us		IN	CNAME	proftpd.mirror.facebook.com.
 
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
@@ -177,7 +173,6 @@ www.nl		IN	CNAME	proftpd.proserve.nl.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
 www.si		IN	CNAME	mirrors.paknet.org.
 www.ua		IN	CNAME	proftpd.dnepr.net.
-www.us		IN	A	66.92.74.33
 www.us		IN	A	70.60.35.37
 www.us		IN	A	69.63.177.230
 
@@ -313,10 +308,6 @@ ftp25.us		IN	CNAME	mirror.wrpn.net.
 ; Shane Brath <mirrors@tds.net>
 ftp35.us		IN	CNAME	proftpd.mirrors.tds.net.
 
-; ftp://mirror.facebook.com/proftpd/ftp
-; Lucas Nealan <lnealan@facebook.com>
-ftp37.us		IN	CNAME	mirror.facebook.com.
-
 ; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
 ; FTP Admin <ftpadmin@is.co.za>
 ftp1.za		IN	CNAME	ftp.is.co.za.
@@ -355,9 +346,8 @@ ftp.tw		IN	A	140.127.177.15
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	140.112.2.5
 ftp.us		IN	A	152.46.7.80
-ftp.us		IN	A	66.92.74.33
+ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
-ftp.us		IN	A	69.63.177.230
 ftp.za		IN	CNAME	ftp.is.co.za.
 
