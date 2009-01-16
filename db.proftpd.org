@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009011300      ; Serial
+                              2009011500      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -142,6 +142,10 @@ www2.si		IN	CNAME	mirrors.paknet.org.
 ; Andrey Lakhno <land@dnepr.net>
 www2.ua		IN	CNAME	proftpd.dnepr.net.
 
+; http://proftpd.sourwood.net/
+; Matt Mozur <matt.mozur@sourwood.net>
+www21.us		IN	CNAME	proftpd.sourwood.net.
+
 ; http://proftpd.mirror.wrpn.net/
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
@@ -173,6 +177,7 @@ www.nl		IN	CNAME	proftpd.proserve.nl.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
 www.si		IN	CNAME	mirrors.paknet.org.
 www.ua		IN	CNAME	proftpd.dnepr.net.
+www.us		IN	A	98.118.52.9
 www.us		IN	A	70.60.35.37
 www.us		IN	A	69.63.177.230
 
@@ -345,7 +350,6 @@ ftp.tr		IN	CNAME	ftp.ulak.net.tr.
 ftp.tw		IN	A	140.127.177.15
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	140.112.2.5
-ftp.us		IN	A	152.46.7.80
 ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
