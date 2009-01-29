@@ -111,8 +111,8 @@
 		}
 
 		$query  = 'SELECT * FROM countrycode ';
-		$query .= 'WHERE iso = ' . $db->quote($_REQUEST['countrycode']);
-		$result = $db->query($query);
+		$query .= ' WHERE iso = ?';
+		$result = $db->query($query, array($_REQUEST['countrycode']));
 		if (PEAR::isError($result)) {
 			return $result;
 		}
@@ -123,22 +123,25 @@
 <?php endif; ?>
 
 <?php
-		/* FIXME: check for first *unused* sequence number */
-		$query  = "SELECT * from $table ";
-		$query .= 'WHERE country_iso = ' . $db->quote($_REQUEST['countrycode']);
-		$query .= 'ORDER BY sequence DESC ';
-		$query .= 'LIMIT 1';
-		$result = $db->query($query);
+		$query  = "  SELECT sequence from $table ";
+		$query .= '   WHERE country_iso = ? ';
+		$query .= 'ORDER BY sequence ASC';
+		$result = $db->query($query, array($_REQUEST['countrycode']));
 		if (PEAR::isError($result)) {
 			return $result;
 		}
 
-		if ($result->numRows() != 0) {
-			$row = $result->fetchRow(DB_FETCHMODE_ASSOC);
-			$sequence = $row['sequence'] + 1;
-		} else {
-			$sequence = 1;
+		/* Find the first unused sequence number, filling in the
+		 * sequence numbers vacated by removed mirror sites.
+		 */
+		$sequence = 0;
+		while ($row = $result->fetchRow(DB_FETCHMODE_ASSOC)) {
+			if ($row['sequence'] - $sequence > 1) {
+				break;
+			}
+			$sequence = $row['sequence'];
 		}
+		++$sequence;
 
 		$info  = 'Type of Mirror: ' . $_REQUEST['type'] . "\n";
 		$info .= 'URLs: ' . $_REQUEST['url'] . ",\n" .
@@ -176,15 +179,13 @@
 		$query  = "INSERT INTO $table (site, admin, admin_email, country_iso, ";
 		$query .= '                    city, other_details, updated, ';
 		$query .= '                    live, sequence) ';
-		$query .= 'VALUES (' . $db->quote($_REQUEST['url']) . ', ';
-		$query .=              $db->quote($_REQUEST['adminName']) . ', ';
-		$query .=              $db->quote($_REQUEST['adminEmail']) . ', ';
-		$query .=              strtolower($db->quote($_REQUEST['countrycode'])) . ', ';
-		$query .=              $db->quote($_REQUEST['location']) . ', ';
-		$query .=              $db->quote($_REQUEST['details']) . ', ';
-		$query .=              $db->quote($_REQUEST['updated']) . ', ';
-		$query .=              "'true', $sequence)";
-		$result = $db->query($query);
+		$query .= 'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
+		$result = $db->query($query, array(
+			$_REQUEST['url'], $_REQUEST['adminName'],
+			$_REQUEST['adminEmail'], strtolower($_REQUEST['countrycode']),
+			$_REQUEST['location'], $_REQUEST['details'],
+			$_REQUEST['updated'], 'true', $sequence
+		));
 		if (PEAR::isError($result)) {
 			return $result;
 		}
