@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009012900      ; Serial
+                              2009013100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -53,6 +53,10 @@ es                  IN A      163.117.156.54
 ; http://proftpd.mirrors.arminco.com/
 ; Vahan Yerkanian <vahan@arminco.com>
 www2.am		IN	CNAME	proftpd.mirrors.arminco.com.
+
+; http://proftpd.patan.com.ar
+; John Knoll <jknoll@patan.com.ar>
+www1.ar		IN	CNAME	proftpd.patan.com.ar.
 
 ; http://proftpd.localhost.net.ar/
 ; Nicolas Sigal <mirrors@localhost.net.ar>
@@ -138,9 +142,17 @@ www1.sg		IN	CNAME	proftpd.oss.eznetsols.org.
 ; Miha Novak <miha@paknet.org>
 www2.si		IN	CNAME	mirrors.paknet.org.
 
+; http://proftpd.cs.pu.edu.tw
+; Hsun-Chang Chang <hsunchang@gmail.com>
+www1.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
+
 ; http://proftpd.dnepr.net/
 ; Andrey Lakhno <land@dnepr.net>
 www2.ua		IN	CNAME	proftpd.dnepr.net.
+
+; http://proftpd.maytech.net/
+; Mike Futerko <mike@maytech.net>
+www1.uk		IN	CNAME	proftpd.maytech.net.
 
 ; http://proftpd.sourwood.net/
 ; Matt Mozur <matt.mozur@sourwood.net>
@@ -154,7 +166,12 @@ www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
 ; Lucas Nealan <mirror-external@lists.facebook.com>
 www36.us		IN	CNAME	proftpd.mirror.facebook.com.
 
+; http://mirror-fpt-telecom.fpt.net/proftpd/
+; Tong Minh Vu <mirror@fpt.net>
+www1.vn		IN	CNAME	mirror-fpt-telecom.fpt.net.
+
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
+www.ar		IN	A	200.32.10.40
 www.ar		IN	A	200.43.192.20
 www.ar		IN	A	190.2.55.3
 www.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
@@ -176,10 +193,13 @@ www.lv		IN	CNAME	proftpd.linux.edu.lv.
 www.nl		IN	CNAME	proftpd.proserve.nl.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
 www.si		IN	CNAME	mirrors.paknet.org.
+www.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
 www.ua		IN	CNAME	proftpd.dnepr.net.
+www.uk		IN	CNAME	proftpd.maytech.net.
 www.us		IN	A	98.118.52.9
 www.us		IN	A	70.60.35.37
 www.us		IN	A	69.63.177.230
+www.vn		IN	CNAME	mirror-fpt-telecom.fpt.net.
 
 ; ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd
 ; Nicolas Sigal <mirrors@localhost.net.ar>
@@ -297,6 +317,10 @@ ftp1.tw		IN	CNAME	ftp.isu.edu.tw.
 ; FTP Admin <master@ftp.ntu.edu.tw>
 ftp3.tw		IN	CNAME	ftp.ntu.edu.tw.
 
+; ftp://proftpd.maytech.net/
+; Mike Futerko <mike@maytech.net>
+ftp1.uk		IN	CNAME	proftpd.maytech.net.
+
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	CNAME	ftp.ibiblio.org.
@@ -312,6 +336,10 @@ ftp25.us		IN	CNAME	mirror.wrpn.net.
 ; ftp://proftpd.mirrors.tds.net/pub/ProFTPD
 ; Shane Brath <mirrors@tds.net>
 ftp35.us		IN	CNAME	proftpd.mirrors.tds.net.
+
+; ftp://mirror-fpt-telecom.fpt.net/proftpd/
+; Tong Minh Vu <mirror@fpt.net>
+ftp1.vn		IN	CNAME	mirror-fpt-telecom.fpt.net.
 
 ; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
 ; FTP Admin <ftpadmin@is.co.za>
@@ -350,8 +378,10 @@ ftp.tr		IN	CNAME	ftp.ulak.net.tr.
 ftp.tw		IN	A	140.127.177.15
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	140.112.2.5
+ftp.uk		IN	CNAME	proftpd.maytech.net.
 ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
+ftp.vn		IN	CNAME	mirror-fpt-telecom.fpt.net.
 ftp.za		IN	CNAME	ftp.is.co.za.
 
