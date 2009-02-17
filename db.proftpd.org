@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009013100      ; Serial
+                              2009021700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -134,6 +134,10 @@ www3.lv		IN	CNAME	proftpd.linux.edu.lv.
 ; Peter Batenburg <peter@proserve.nl>
 www1.nl		IN	CNAME	proftpd.proserve.nl.
 
+; http://proftpd.burina.net
+; Sinisa Burina <sinisa@burina.net>
+www1.rs		IN	CNAME	proftpd.burina.net.
+
 ; http://proftpd.oss.eznetsols.org/
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	CNAME	proftpd.oss.eznetsols.org.
@@ -166,10 +170,6 @@ www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
 ; Lucas Nealan <mirror-external@lists.facebook.com>
 www36.us		IN	CNAME	proftpd.mirror.facebook.com.
 
-; http://mirror-fpt-telecom.fpt.net/proftpd/
-; Tong Minh Vu <mirror@fpt.net>
-www1.vn		IN	CNAME	mirror-fpt-telecom.fpt.net.
-
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
 www.ar		IN	A	200.32.10.40
 www.ar		IN	A	200.43.192.20
@@ -191,6 +191,7 @@ www.kr		IN	CNAME	proftpd.mirror.cdnetworks.com.
 www.li		IN	CNAME	proftpd.lie-comtel.li.
 www.lv		IN	CNAME	proftpd.linux.edu.lv.
 www.nl		IN	CNAME	proftpd.proserve.nl.
+www.rs		IN	CNAME	proftpd.burina.net.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
 www.si		IN	CNAME	mirrors.paknet.org.
 www.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
@@ -199,7 +200,6 @@ www.uk		IN	CNAME	proftpd.maytech.net.
 www.us		IN	A	98.118.52.9
 www.us		IN	A	70.60.35.37
 www.us		IN	A	69.63.177.230
-www.vn		IN	CNAME	mirror-fpt-telecom.fpt.net.
 
 ; ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd
 ; Nicolas Sigal <mirrors@localhost.net.ar>
@@ -216,10 +216,6 @@ ftp1.at		IN	CNAME	ftp.servus.at.
 ; ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
 ftp2.at		IN	CNAME	gd.tuwien.ac.at.
-
-; ftp://proftpd.dknss.com/pub/proftpd/
-; Darrin Khan <darrink@dknss.com>
-ftp2.au		IN	CNAME	proftpd.dknss.com.
 
 ; ftp://ftp.easynet.be/proftpd/
 ; Bert Vermeulen <ftp@be.easynet.net>
@@ -337,10 +333,6 @@ ftp25.us		IN	CNAME	mirror.wrpn.net.
 ; Shane Brath <mirrors@tds.net>
 ftp35.us		IN	CNAME	proftpd.mirrors.tds.net.
 
-; ftp://mirror-fpt-telecom.fpt.net/proftpd/
-; Tong Minh Vu <mirror@fpt.net>
-ftp1.vn		IN	CNAME	mirror-fpt-telecom.fpt.net.
-
 ; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
 ; FTP Admin <ftpadmin@is.co.za>
 ftp1.za		IN	CNAME	ftp.is.co.za.
@@ -349,7 +341,6 @@ ftp.ar		IN	A	200.43.192.20
 ftp.ar		IN	A	190.2.55.3
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
-ftp.au		IN	CNAME	proftpd.dknss.com.
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.be		IN	A	195.160.166.144
@@ -379,9 +370,8 @@ ftp.tw		IN	A	140.127.177.15
 ftp.tw		IN	A	140.127.177.17
 ftp.tw		IN	A	140.112.2.5
 ftp.uk		IN	CNAME	proftpd.maytech.net.
+ftp.us		IN	A	152.46.7.80
 ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
-ftp.vn		IN	CNAME	mirror-fpt-telecom.fpt.net.
 ftp.za		IN	CNAME	ftp.is.co.za.
-
