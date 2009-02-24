@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009021700      ; Serial
+                              2009022400      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -53,10 +53,6 @@ es                  IN A      163.117.156.54
 ; http://proftpd.mirrors.arminco.com/
 ; Vahan Yerkanian <vahan@arminco.com>
 www2.am		IN	CNAME	proftpd.mirrors.arminco.com.
-
-; http://proftpd.patan.com.ar
-; John Knoll <jknoll@patan.com.ar>
-www1.ar		IN	CNAME	proftpd.patan.com.ar.
 
 ; http://proftpd.localhost.net.ar/
 ; Nicolas Sigal <mirrors@localhost.net.ar>
@@ -162,16 +158,11 @@ www1.uk		IN	CNAME	proftpd.maytech.net.
 ; Matt Mozur <matt.mozur@sourwood.net>
 www21.us		IN	CNAME	proftpd.sourwood.net.
 
-; http://proftpd.mirror.wrpn.net/
-; Wesley Haines <kremit@wrpn.net>
-www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
-
 ; http://proftpd.mirror.facebook.com/
 ; Lucas Nealan <mirror-external@lists.facebook.com>
 www36.us		IN	CNAME	proftpd.mirror.facebook.com.
 
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
-www.ar		IN	A	200.32.10.40
 www.ar		IN	A	200.43.192.20
 www.ar		IN	A	190.2.55.3
 www.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
@@ -198,7 +189,6 @@ www.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
 www.ua		IN	CNAME	proftpd.dnepr.net.
 www.uk		IN	CNAME	proftpd.maytech.net.
 www.us		IN	A	98.118.52.9
-www.us		IN	A	70.60.35.37
 www.us		IN	A	69.63.177.230
 
 ; ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd
@@ -216,6 +206,10 @@ ftp1.at		IN	CNAME	ftp.servus.at.
 ; ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
 ftp2.at		IN	CNAME	gd.tuwien.ac.at.
+
+; ftp://proftpd.dknss.com/pub/proftpd/
+; Darrin Khan <darrink@dknss.com>
+ftp2.au		IN	CNAME	proftpd.dknss.com.
 
 ; ftp://ftp.easynet.be/proftpd/
 ; Bert Vermeulen <ftp@be.easynet.net>
@@ -248,10 +242,6 @@ ftp2.de		IN	CNAME	ftp-stud.fht-esslingen.de.
 ; ftp://ftp.franken.de/pub/Linux/proftpd/
 ; Harald Welte <laforge@coruscant.franken.de>
 ftp5.de		IN	CNAME	ftp.franken.de.
-
-; ftp://ftp.uasw.edu/pub/network/proftpd/ftp/
-; Thorsten Ludewig <T.Ludewig@UASW.EDU>
-ftp7.de		IN	CNAME	ftp.uasw.edu.
 
 ; ftp://ftp.fu-berlin.de/unix/ftp/proftpd/
 ; Holger Weiss <ftp@FU-Berlin.DE>
@@ -305,10 +295,6 @@ ftp9.pl		IN	CNAME	ftp.piotrkosoft.net.
 ; Onur BEKTAS <admins@ulakbim.gov.tr>
 ftp2.tr		IN	CNAME	ftp.ulak.net.tr.
 
-; ftp://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/
-; KTH <kth@ftp.isu.edu.tw>
-ftp1.tw		IN	CNAME	ftp.isu.edu.tw.
-
 ; ftp://ftp.ntu.edu.tw/proftpd/
 ; FTP Admin <master@ftp.ntu.edu.tw>
 ftp3.tw		IN	CNAME	ftp.ntu.edu.tw.
@@ -320,14 +306,6 @@ ftp1.uk		IN	CNAME	proftpd.maytech.net.
 ; ftp://ftp.ibiblio.org/pub/mirrors/proftpd/
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	CNAME	ftp.ibiblio.org.
-
-; ftp://ftp.sourwood.net/pub/ProFTPD/
-; Matt Mozur <ftpmaster@sourwood.net>
-ftp24.us		IN	CNAME	ftp.sourwood.net.
-
-; ftp://mirror.wrpn.net/proftpd/
-; Wesley Haines <kremit@wrpn.net>
-ftp25.us		IN	CNAME	mirror.wrpn.net.
 
 ; ftp://proftpd.mirrors.tds.net/pub/ProFTPD
 ; Shane Brath <mirrors@tds.net>
@@ -341,6 +319,7 @@ ftp.ar		IN	A	200.43.192.20
 ftp.ar		IN	A	190.2.55.3
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
+ftp.au		IN	CNAME	proftpd.dknss.com.
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.be		IN	A	195.160.166.144
@@ -350,7 +329,6 @@ ftp.ch		IN	CNAME	ftp.solnet.ch.
 ftp.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
-ftp.de		IN	A	141.41.9.9
 ftp.de		IN	A	130.133.3.130
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
@@ -366,12 +344,7 @@ ftp.nl		IN	A	88.85.76.7
 ftp.no		IN	CNAME	ftp.tomt.net.
 ftp.pl		IN	CNAME	ftp.piotrkosoft.net.
 ftp.tr		IN	CNAME	ftp.ulak.net.tr.
-ftp.tw		IN	A	140.127.177.15
-ftp.tw		IN	A	140.127.177.17
-ftp.tw		IN	A	140.112.2.5
+ftp.tw		IN	CNAME	ftp.ntu.edu.tw.
 ftp.uk		IN	CNAME	proftpd.maytech.net.
-ftp.us		IN	A	152.46.7.80
-ftp.us		IN	A	98.118.52.9
-ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
 ftp.za		IN	CNAME	ftp.is.co.za.
