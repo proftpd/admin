@@ -12,7 +12,6 @@ hamster@proftpd.org:    core@proftpd.org
 
 # TJ Saunders
 tj@proftpd.org:         tj@castaglia.org
-tj2@proftpd.org:        tj@rad.ess.washington.edu
 # Daniel Roesen
 dr@proftpd.org:         dr@cluenet.de
 # John Morrissey 
