@@ -24,7 +24,7 @@ stonki@proftpd.org:	support@stonki.de
 #------------------------------------------------------------
 # Core aliases
 #------------------------------------------------------------
-core@proftpd.org:       tj@proftpd.org,dr@proftpd.org,jwm@proftpd.org,robe@proftpd.org,tj2@proftpd.org,stonki@proftpd.org
+core@proftpd.org:       tj@proftpd.org,dr@proftpd.org,jwm@proftpd.org,robe@proftpd.org,stonki@proftpd.org
 security@proftpd.org:   core@proftpd.org
 bugs@proftpd.org:       core@proftpd.org
 forums@proftpd.org:     tj@proftpd.org,robe@proftpd.org
