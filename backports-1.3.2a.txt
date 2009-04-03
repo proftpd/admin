@@ -17,3 +17,4 @@ For 1.3.2a:
   + mod_wrap2_sql issue (Bug#3215)
   + Command-line -D/--define lost on restart (Bug#3221)
   + SSL/TLS CPU spike (Bug#3234)
+  + File descriptors during restarts (Bug#3225)
