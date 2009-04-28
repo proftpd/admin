@@ -1,16 +1,23 @@
+--------------------------------------------------------------------------
+Nominations for backports.
+
+ '+' indicates nomination
+ 'C' indicates committed to maintenance branch
+
+--------------------------------------------------------------------------
 
 For 1.3.2a:
 
   + French, Bulgarian translation
-  + PQescapeStringConn(): Bug#3123 (plus unescaped_len declaration)
-  + Postgres charset mappings: Bug#3176
-  + First UID/GID lookup cache miss (cvs diff -u -r1.68 -r1.69 src/auth.c)
-  + Signal-handling bit clearing (SIGHUP loop/crash)
+  C PQescapeStringConn(): Bug#3123 (plus unescaped_len declaration)
+  C Postgres charset mappings: Bug#3176
+  C First UID/GID lookup cache miss (cvs diff -u -r1.68 -r1.69 src/auth.c)
+  C Signal-handling bit clearing (SIGHUP loop/crash)
   + Bug#3179 ctrls/event patch
-  + Incorrect logging to wtmp (Bug#3183)
-  + Chrooted proftpd (Bug#3184)
-  + prxs typo (Bug#3188)
-  + MLSD/MLST not honoring <Limit> (Bug#3190)
+  C Incorrect logging to wtmp (Bug#3183)
+  C Chrooted proftpd (Bug#3184)
+  C prxs typo (Bug#3188)
+  C MLSD/MLST not honoring <Limit> (Bug#3190)
   + mod_quotatab off-by-one bug (Bug#3196)
   + mod_sql missing SQL backend (Bug#3203)
   + Controls API symbols missing (Bug#3211)
