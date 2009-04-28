@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009041000      ; Serial
+                              2009042800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -90,10 +90,6 @@ www4.br		IN	CNAME	proftpd.oi.com.br.
 ; Zdenek Bill <mirror@kn.vutbr.cz>
 www2.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 
-; http://proftp.oslevel.de
-; Mirko Hahn <mirror@oslevel.de>
-www16.de		IN	CNAME	proftp.oslevel.de.
-
 ; http://proftpd.online-mirror.de/
 ; Michael Weber <m.weber@olserv.de>
 www20.de		IN	CNAME	proftpd.online-mirror.de.
@@ -180,8 +176,7 @@ www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
 www.br		IN	CNAME	proftpd.oi.com.br.
 www.cz		IN	CNAME	proftpd.kn.vutbr.cz.
-www.de		IN	A	84.19.188.205
-www.de		IN	A	87.230.8.208
+www.de		IN	CNAME	proftpd.online-mirror.de.
 www.hk		IN	CNAME	proftpd.hknetworks.com.
 www.ie		IN	CNAME	proftpd.mirrors.esat.net.
 www.il		IN	CNAME	proftpd.interhost.co.il.
