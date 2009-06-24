@@ -61,6 +61,10 @@ www2.ar		IN	CNAME	proftpd.localhost.net.ar.
 ; Pablo Arturi <parturi@bairesweb.com>
 www3.ar		IN	CNAME	proftpd.bairesweb.com.
 
+; http://proftpd.patan.com.ar
+; John Knoll <jknoll@patan.com.ar>
+www4.ar		IN	CNAME	proftpd.patan.com.ar.
+
 ; http://proftpd.gds.tuwien.ac.at/
 ; Rudi (Rudolf Ladner) <gd@tuwien.ac.at>
 www2.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
@@ -80,10 +84,6 @@ www1.bg		IN	CNAME	proftpd.fixity.net.
 ; http://proftpd.cbox.biz/
 ; Alexander Dulgerov <ad@cbox.biz>
 www3.bg		IN	CNAME	proftpd.cbox.biz.
-
-; http://proftpd.oi.com.br/
-; Oi Internet <wanderson.gonzalez@oi.com.br>
-www4.br		IN	CNAME	proftpd.oi.com.br.
 
 ; http://proftpd.kn.vutbr.cz/
 ; Zdenek Bill <mirror@kn.vutbr.cz>
@@ -161,19 +161,19 @@ www21.us		IN	CNAME	proftpd.sourwood.net.
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
 
-; http://proftpd.mirror.facebook.com/
+; http://proftpd.mirror.facebook.net/
 ; Lucas Nealan <mirror-external@lists.facebook.com>
-www36.us		IN	CNAME	proftpd.mirror.facebook.com.
+www36.us		IN	CNAME	proftpd.mirror.facebook.net.
 
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
 www.ar		IN	A	200.43.192.20
 www.ar		IN	A	190.2.55.3
+www.ar		IN	A	200.32.10.40
 www.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
 www.au		IN	CNAME	proftpd.dknss.com.
 www.be		IN	CNAME	proftpd.mirror.easynet.be.
 www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
-www.br		IN	CNAME	proftpd.oi.com.br.
 www.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 www.de		IN	CNAME	proftpd.online-mirror.de.
 www.hk		IN	CNAME	proftpd.hknetworks.com.
