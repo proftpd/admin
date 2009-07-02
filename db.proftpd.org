@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009062400      ; Serial
+                              2009070200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -125,6 +125,10 @@ www3.lv		IN	CNAME	proftpd.linux.edu.lv.
 ; Peter Batenburg <peter@proserve.nl>
 www1.nl		IN	CNAME	proftpd.proserve.nl.
 
+; http://proftpd.piotrkosoft.net/
+; Piotr Maluty <piotr@maluty.pl>
+www1.pl		IN	CNAME	proftpd.piotrkosoft.net.
+
 ; http://proftpd.burina.net
 ; Sinisa Burina <sinisa@burina.net>
 www1.rs		IN	CNAME	proftpd.burina.net.
@@ -184,6 +188,7 @@ www.kr		IN	CNAME	proftpd.mirror.cdnetworks.com.
 www.li		IN	CNAME	proftpd.lie-comtel.li.
 www.lv		IN	CNAME	proftpd.linux.edu.lv.
 www.nl		IN	CNAME	proftpd.proserve.nl.
+www.pl		IN	CNAME	proftpd.piotrkosoft.net.
 www.rs		IN	CNAME	proftpd.burina.net.
 www.se		IN	CNAME	www.proftpd.mirror2.dataphone.se.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
