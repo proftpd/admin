@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009070201      ; Serial
+                              2009070300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -33,12 +33,6 @@ forums	 1h           	A	83.137.113.9
 bugs			CNAME	boost.horde.net.
 cvs			CNAME	boost.horde.net.
 mirrors			CNAME	boost.horde.net.
-
-; ***********************************************************************
-; Language mirrors
-; ***********************************************************************
-; German site: Stefan Onken <support@stonki.de>
-de                  IN CNAME  www.proftpd.de.
 
 ; ***********************************************************************
 ; Web/FTP mirrors
