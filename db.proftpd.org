@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009070300      ; Serial
+                              2009101300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -44,10 +44,6 @@ mirrors			CNAME	boost.horde.net.
 ; Vahan Yerkanian <vahan@arminco.com>
 www2.am		IN	CNAME	proftpd.mirrors.arminco.com.
 
-; http://proftpd.localhost.net.ar/
-; Nicolas Sigal <mirrors@localhost.net.ar>
-www2.ar		IN	CNAME	proftpd.localhost.net.ar.
-
 ; http://proftpd.bairesweb.com/
 ; Pablo Arturi <parturi@bairesweb.com>
 www3.ar		IN	CNAME	proftpd.bairesweb.com.
@@ -83,10 +79,6 @@ www2.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ; http://proftpd.online-mirror.de/
 ; Michael Weber <m.weber@olserv.de>
 www20.de		IN	CNAME	proftpd.online-mirror.de.
-
-; http://proftpd.hknetworks.com/
-; Stanley Au <mirror@hknetworks.com>
-www3.hk		IN	CNAME	proftpd.hknetworks.com.
 
 ; http://proftpd.mirrors.esat.net/
 ; Dave Burke <ftpadmin@esat.net>
@@ -140,10 +132,6 @@ www2.si		IN	CNAME	mirrors.paknet.org.
 ; Hsun-Chang Chang <hsunchang@gmail.com>
 www1.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
 
-; http://proftpd.dnepr.net/
-; Andrey Lakhno <land@dnepr.net>
-www2.ua		IN	CNAME	proftpd.dnepr.net.
-
 ; http://proftpd.maytech.net/
 ; Mike Futerko <mike@maytech.net>
 www1.uk		IN	CNAME	proftpd.maytech.net.
@@ -161,9 +149,8 @@ www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
 www36.us		IN	CNAME	proftpd.mirror.facebook.net.
 
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
-www.ar		IN	A	200.43.192.20
 www.ar		IN	A	190.2.55.3
-www.ar		IN	A	200.32.10.40
+www.ar		IN	A	201.212.4.243
 www.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
 www.au		IN	CNAME	proftpd.dknss.com.
 www.be		IN	CNAME	proftpd.mirror.easynet.be.
@@ -171,7 +158,6 @@ www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
 www.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 www.de		IN	CNAME	proftpd.online-mirror.de.
-www.hk		IN	CNAME	proftpd.hknetworks.com.
 www.ie		IN	CNAME	proftpd.mirrors.esat.net.
 www.il		IN	CNAME	proftpd.interhost.co.il.
 www.it		IN	CNAME	www.proftpd.topnet.it.
@@ -185,15 +171,10 @@ www.se		IN	CNAME	www.proftpd.mirror2.dataphone.se.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
 www.si		IN	CNAME	mirrors.paknet.org.
 www.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
-www.ua		IN	CNAME	proftpd.dnepr.net.
 www.uk		IN	CNAME	proftpd.maytech.net.
 www.us		IN	A	98.118.52.9
 www.us		IN	A	70.60.35.37
 www.us		IN	A	69.63.177.230
-
-; ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd
-; Nicolas Sigal <mirrors@localhost.net.ar>
-ftp1.ar		IN	CNAME	mirrors.localhost.net.ar.
 
 ; ftp://proftpd.bairesweb.com/pub/proftpd/
 ; Pablo Arturi <parturi@bairesweb.com>
@@ -323,8 +304,7 @@ ftp35.us		IN	CNAME	proftpd.mirrors.tds.net.
 ; FTP Admin <ftpadmin@is.co.za>
 ftp1.za		IN	CNAME	ftp.is.co.za.
 
-ftp.ar		IN	A	200.43.192.20
-ftp.ar		IN	A	190.2.55.3
+ftp.ar		IN	CNAME	proftpd.bairesweb.com.
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
 ftp.au		IN	CNAME	proftpd.dknss.com.
