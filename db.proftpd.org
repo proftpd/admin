@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009110200      ; Serial
+                              2009110201      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -27,7 +27,7 @@ ftp			CNAME	rsync.proftpd.de.
 
 ; Michael Renner <robe@amd.co.at>
 ; hosted by Inqnet GmbH <tech@inqnet.at>
-forums	5m            	A	83.137.113.9
+forums	            	A	83.137.112.21
 
 ; John Morrissey <jwm@horde.net>
 bugs			CNAME	boost.horde.net.
