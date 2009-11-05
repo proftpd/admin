@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009110201      ; Serial
+                              2009110500      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -55,10 +55,6 @@ www4.ar		IN	CNAME	proftpd.patan.com.ar.
 ; http://proftpd.gds.tuwien.ac.at/
 ; Rudi (Rudolf Ladner) <gd@tuwien.ac.at>
 www2.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
-
-; http://proftpd.dknss.com/
-; Darrin Khan <darrink@dknss.com>
-www3.au		IN	CNAME	proftpd.dknss.com.
 
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
@@ -152,7 +148,6 @@ www.am		IN	CNAME	proftpd.mirrors.arminco.com.
 www.ar		IN	A	190.2.55.3
 www.ar		IN	A	201.212.4.243
 www.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
-www.au		IN	CNAME	proftpd.dknss.com.
 www.be		IN	CNAME	proftpd.mirror.easynet.be.
 www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
@@ -187,10 +182,6 @@ ftp1.at		IN	CNAME	ftp.servus.at.
 ; ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/
 ; Antonin <Antonin.Sprinzl@tuwien.ac.at>
 ftp2.at		IN	CNAME	gd.tuwien.ac.at.
-
-; ftp://proftpd.dknss.com/pub/proftpd/
-; Darrin Khan <darrink@dknss.com>
-ftp2.au		IN	CNAME	proftpd.dknss.com.
 
 ; ftp://ftp.easynet.be/proftpd/
 ; Bert Vermeulen <ftp@be.easynet.net>
@@ -268,6 +259,10 @@ ftp11.nl		IN	CNAME	mirror.hostfuss.com.
 ; Andre Tomt <andre@tomt.net>
 ftp5.no		IN	CNAME	ftp.tomt.net.
 
+; ftp://ftp.tpnet.pl/pub/linux/proftpd/
+; Ireneusz Weglewski <Ireneusz.Weglewski@telekomunikacja.pl>
+ftp1.pl		IN	CNAME	ftp.tpnet.pl.
+
 ; ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.proftpd.org/
 ; Piotr Maluty <admin@piotrkosoft.netinet.net>
 ftp9.pl		IN	CNAME	ftp.piotrkosoft.net.
@@ -307,10 +302,10 @@ ftp1.za		IN	CNAME	ftp.is.co.za.
 ftp.ar		IN	CNAME	proftpd.bairesweb.com.
 ftp.at		IN	A	193.170.194.26
 ftp.at		IN	A	192.35.244.50
-ftp.au		IN	CNAME	proftpd.dknss.com.
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.be		IN	A	195.160.166.144
+ftp.be		IN	AAAA	2001:67c:5c:100::c3a0:a690
 ftp.bg		IN	CNAME	ftp.proftpd.cbox.biz.
 ftp.ca		IN	CNAME	ftp.samurai.com.
 ftp.ch		IN	CNAME	ftp.solnet.ch.
@@ -330,7 +325,9 @@ ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	88.85.64.160
 ftp.nl		IN	A	88.85.76.7
 ftp.no		IN	CNAME	ftp.tomt.net.
-ftp.pl		IN	CNAME	ftp.piotrkosoft.net.
+ftp.pl		IN	A	80.50.248.77
+ftp.pl		IN	A	82.139.21.82
+ftp.pl		IN	AAAA	2001:6a0:15e::a:11
 ftp.se		IN	CNAME	mirror2.dataphone.se.
 ftp.tr		IN	CNAME	ftp.ulak.net.tr.
 ftp.tw		IN	CNAME	ftp.ntu.edu.tw.
