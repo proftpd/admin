@@ -4,6 +4,7 @@ Current build toolchain:
   aclocal-1.10
   autoconf-2.61
   libtool-2.2.4
+  make-3.81
 
 To generate the aclocal.m4 file, use:
 
