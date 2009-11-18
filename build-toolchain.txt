@@ -1,0 +1,31 @@
+
+Current build toolchain:
+
+  aclocal-1.10
+  autoconf-2.61
+  libtool-2.2.4
+
+To generate the aclocal.m4 file, use:
+
+  # cd proftpd/
+  # aclocal -I m4 -I lib/libltdl/m4
+
+To generate the configure script, use:
+
+  # cd proftpd/
+  # autoconf
+
+If you change the configure.in file, check in the change -- then wait for
+a minute or two:
+
+  # cvs commit configure.in
+  # <wait>
+  # autoconf
+  # cvs commit configure
+
+This will ensure that the modification time of the configure script in the
+CVS repository is later than the modification time of the configure.in file.
+This is important!  make will try to re-create the configure file if its
+modification timestamp is NOT newer than the configure.in modification time.
+
+Note that automake, autoheader, etc are NOT used.
