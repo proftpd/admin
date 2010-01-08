@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2009110500      ; Serial
+                              2010010800      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -235,10 +235,6 @@ ftp0.ie		IN	CNAME	ftp.esat.net.
 ; Antonio Prado <aprado@topnet.it>
 ftp3.it		IN	CNAME	www.proftpd.topnet.it.
 
-; ftp://proftpd.get7.biz/proftpd/
-; Motohiro Sunouchi <moto@sunouchi.net>
-ftp3.jp		IN	CNAME	proftpd.get7.biz.
-
 ; ftp://ftp.linux.edu.lv/mirrors/ftp.proftpd.org/
 ; Leo Truksans <leot@linux.edu.lv>
 ftp2.lv		IN	CNAME	ftp.linux.edu.lv.
@@ -319,7 +315,6 @@ ftp.fr		IN	A	129.102.1.25
 ftp.fr		IN	AAAA	2001:660:3004:4002::25:80
 ftp.ie		IN	CNAME	ftp.esat.net.
 ftp.it		IN	CNAME	www.proftpd.topnet.it.
-ftp.jp		IN	CNAME	proftpd.get7.biz.
 ftp.lv		IN	CNAME	ftp.linux.edu.lv.
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	88.85.64.160
