@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010011300      ; Serial
+                              2010011301      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -51,10 +51,6 @@ www3.ar		IN	CNAME	proftpd.bairesweb.com.
 ; http://proftpd.patan.com.ar
 ; John Knoll <jknoll@patan.com.ar>
 www4.ar		IN	CNAME	proftpd.patan.com.ar.
-
-; http://proftpd.gds.tuwien.ac.at/
-; Rudi (Rudolf Ladner) <gd@tuwien.ac.at>
-www2.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
 
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
@@ -147,7 +143,6 @@ www36.us		IN	CNAME	proftpd.mirror.facebook.net.
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
 www.ar		IN	A	190.2.55.3
 www.ar		IN	A	201.212.4.243
-www.at		IN	CNAME	proftpd.gds.tuwien.ac.at.
 www.be		IN	CNAME	proftpd.mirror.easynet.be.
 www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
