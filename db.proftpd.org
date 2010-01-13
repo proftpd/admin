@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010010800      ; Serial
+                              2010011300      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -283,6 +283,10 @@ ftp1.uk		IN	CNAME	proftpd.maytech.net.
 ; ibiblio <admin@ibiblio.org>
 ftp1.us		IN	CNAME	ftp.ibiblio.org.
 
+; ftp://ftp.sourwood.net/pub/ProFTPD/
+; Matt Mozur <ftpmaster@sourwood.net>
+ftp24.us		IN	CNAME	ftp.sourwood.net.
+
 ; ftp://mirror.wrpn.net/proftpd/
 ; Wesley Haines <kremit@wrpn.net>
 ftp25.us		IN	CNAME	mirror.wrpn.net.
@@ -309,7 +313,6 @@ ftp.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	130.133.3.130
-ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	129.102.1.25
 ftp.fr		IN	AAAA	2001:660:3004:4002::25:80
@@ -327,6 +330,7 @@ ftp.se		IN	CNAME	mirror2.dataphone.se.
 ftp.tr		IN	CNAME	ftp.ulak.net.tr.
 ftp.tw		IN	CNAME	ftp.ntu.edu.tw.
 ftp.uk		IN	CNAME	proftpd.maytech.net.
+ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
 ftp.za		IN	CNAME	ftp.is.co.za.
