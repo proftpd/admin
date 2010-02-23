@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010011301      ; Serial
+                              2010022301      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -76,10 +76,6 @@ www20.de		IN	CNAME	proftpd.online-mirror.de.
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	CNAME	proftpd.mirrors.esat.net.
 
-; http://proftpd.interhost.co.il
-; Dmitry Sherman <admin@interhost.co.il>
-www2.il		IN	CNAME	proftpd.interhost.co.il.
-
 ; http://www.proftpd.topnet.it/
 ; Antonio Prado <aprado@topnet.it>
 www4.it		IN	CNAME	www.proftpd.topnet.it.
@@ -136,10 +132,6 @@ www21.us		IN	CNAME	proftpd.sourwood.net.
 ; Wesley Haines <kremit@wrpn.net>
 www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
 
-; http://proftpd.mirror.facebook.net/
-; Lucas Nealan <mirror-external@lists.facebook.com>
-www36.us		IN	CNAME	proftpd.mirror.facebook.net.
-
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
 www.ar		IN	A	190.2.55.3
 www.ar		IN	A	201.212.4.243
@@ -149,7 +141,6 @@ www.bg		IN	A	87.118.140.10
 www.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 www.de		IN	CNAME	proftpd.online-mirror.de.
 www.ie		IN	CNAME	proftpd.mirrors.esat.net.
-www.il		IN	CNAME	proftpd.interhost.co.il.
 www.it		IN	CNAME	www.proftpd.topnet.it.
 www.kr		IN	CNAME	proftpd.mirror.cdnetworks.com.
 www.li		IN	CNAME	proftpd.lie-comtel.li.
@@ -164,7 +155,6 @@ www.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
 www.uk		IN	CNAME	proftpd.maytech.net.
 www.us		IN	A	98.118.52.9
 www.us		IN	A	70.60.35.37
-www.us		IN	A	69.63.177.230
 
 ; ftp://proftpd.bairesweb.com/pub/proftpd/
 ; Pablo Arturi <parturi@bairesweb.com>
@@ -308,7 +298,7 @@ ftp.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	130.133.3.130
-ftp.fr		IN	AAAA	2001:660:7401:211::36
+ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	A	129.102.1.25
 ftp.fr		IN	AAAA	2001:660:3004:4002::25:80
 ftp.ie		IN	CNAME	ftp.esat.net.
@@ -319,12 +309,11 @@ ftp.nl		IN	A	88.85.64.160
 ftp.nl		IN	A	88.85.76.7
 ftp.no		IN	CNAME	ftp.tomt.net.
 ftp.pl		IN	A	80.50.248.77
-ftp.pl		IN	A	82.139.21.82
-ftp.pl		IN	AAAA	2001:6a0:15e::a:11
 ftp.se		IN	CNAME	mirror2.dataphone.se.
 ftp.tr		IN	CNAME	ftp.ulak.net.tr.
 ftp.tw		IN	CNAME	ftp.ntu.edu.tw.
 ftp.uk		IN	CNAME	proftpd.maytech.net.
+ftp.us		IN	A	152.46.7.80
 ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
