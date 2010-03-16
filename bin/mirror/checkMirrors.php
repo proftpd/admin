@@ -1,4 +1,4 @@
-#!/usr/local/bin/php -q
+#!/usr/bin/php -q
 <?php
 
 /* ProFTPD Mirror Network Maintenance System
@@ -48,7 +48,7 @@ function checkSite($netUrl, $connectTo = null) {
 			return PEAR::raiseError("Couldn't open connection to $toHost: ($errno) $errstr.");
 		}
 
-		$result = fputs($fp, "GET $netUrl->path/MIRMON.PROBE HTTP/1.1\r\nHost: $netUrl->host\r\n\r\n");
+		$result = fputs($fp, "GET $netUrl->path/MIRMON.PROBE HTTP/1.1\r\nHost: $netUrl->host\r\nAccept: */*\r\nUser-Agent: proftpd.org mirror monitoring system\r\n\r\n");
 		if ($result === false) {
 			return PEAR::raiseError("Couldn't request $netUrl->path/MIRMON.PROBE from $toHost.");
 		}
