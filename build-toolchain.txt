@@ -30,3 +30,9 @@ This is important!  make will try to re-create the configure file if its
 modification timestamp is NOT newer than the configure.in modification time.
 
 Note that automake, autoheader, etc are NOT used.
+
+Tools to use for source code analysis:
+
+  cppcheck
+  rats
+  valgrind
