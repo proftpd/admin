@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010032001      ; Serial
+                              2010041700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -76,6 +76,10 @@ www20.de		IN	CNAME	proftpd.online-mirror.de.
 ; Dave Burke <ftpadmin@esat.net>
 www1.ie		IN	CNAME	proftpd.mirrors.esat.net.
 
+; http://proftpd.interhost.co.il
+; Dmitry Sherman <admin@interhost.co.il>
+www2.il		IN	CNAME	proftpd.interhost.co.il.
+
 ; http://www.proftpd.topnet.it/
 ; Antonio Prado <aprado@topnet.it>
 www4.it		IN	CNAME	www.proftpd.topnet.it.
@@ -141,6 +145,7 @@ www.bg		IN	A	87.118.140.10
 www.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 www.de		IN	CNAME	proftpd.online-mirror.de.
 www.ie		IN	CNAME	proftpd.mirrors.esat.net.
+www.il		IN	CNAME	proftpd.interhost.co.il.
 www.it		IN	CNAME	www.proftpd.topnet.it.
 www.kr		IN	CNAME	proftpd.mirror.cdnetworks.com.
 www.li		IN	CNAME	proftpd.lie-comtel.li.
