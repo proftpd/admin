@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010041700      ; Serial
+                              2010051200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -47,10 +47,6 @@ www2.am		IN	CNAME	proftpd.mirrors.arminco.com.
 ; http://proftpd.bairesweb.com/
 ; Pablo Arturi <parturi@bairesweb.com>
 www3.ar		IN	CNAME	proftpd.bairesweb.com.
-
-; http://proftpd.patan.com.ar
-; John Knoll <jknoll@patan.com.ar>
-www4.ar		IN	CNAME	proftpd.patan.com.ar.
 
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
@@ -137,8 +133,7 @@ www21.us		IN	CNAME	proftpd.sourwood.net.
 www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
 
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
-www.ar		IN	A	190.2.55.3
-www.ar		IN	A	201.212.4.243
+www.ar		IN	CNAME	proftpd.bairesweb.com.
 www.be		IN	CNAME	proftpd.mirror.easynet.be.
 www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
@@ -302,7 +297,6 @@ ftp.ch		IN	CNAME	ftp.solnet.ch.
 ftp.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	193.175.24.42
-ftp.de		IN	A	130.133.3.130
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	129.102.1.25
@@ -325,4 +319,3 @@ ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
 ftp.za		IN	CNAME	ftp.is.co.za.
-
