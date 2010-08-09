@@ -1,0 +1,125 @@
+#!/bin/sh
+
+# Postfix pipe transport destination for domain mail spam filtering.
+# Copyright (c) 2010, John Morrissey <jwm@horde.net>
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of Version 2 of the GNU General Public License as
+# published by the Free Software Foundation
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+# Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+
+# Needs corresponding Postfix configuration:
+#
+# master.cf:
+#   spamassassin
+#            unix  -       n       n       -       -       pipe
+#     flags=Rq user=nobody argv=/usr/local/bin/proftpd-antispam ${sender} ${recipient}
+#
+# main.cf:
+#   transport_maps = hash:/etc/postfix/transport
+#   spamassassin_destination_recipient_limit = 1
+#
+# transport:
+#   proftpd.org   spamassassin:
+
+# Dereferences aliases using $ALIAS_MAP and spam filters the message.
+# Delivers non-spam to the dereferenced aliases and spam to $SPAM_RECIP,
+# if defined.
+
+ALIAS_MAP=hash:/etc/postfix/aliases.proftpd.org
+SPAMC_USER=proftpd
+SPAM_RECIP=jwm@horde.net
+
+# Exit codes from <sysexits.h>
+EX_TEMPFAIL=75
+EX_UNAVAILABLE=69
+
+export PATH="$PATH:/usr/sbin"
+
+umask 077
+
+if ! progname=$(basename "$0"); then
+	logger -sp mail.warning -t "$0" 'Unable to determine \$progname.'
+	exit $EX_TEMPFAIL
+fi
+
+usage="$progname SENDER RECIPIENT"
+
+sender=$1
+shift
+if [ -z "$sender" ]; then
+	echo "$usage"
+	exit 1
+fi
+
+# We'll support multiple incoming recipients here, but the formail
+# Delivered-To injection below only supports a single incoming recipient.
+# Postfix needs ${transportname}_destination_recipient_limit = 1 to limit
+# deliveries to this transport to a single recipient.
+recipients=''
+for recip in $@; do
+	if [ -z "$recip" ]; then
+		echo "$usage"
+		exit 1
+	fi
+
+	# Map the incoming recipient to the alias destination. If we re-inject
+	# the message to the original recipient address, we'll just hit ourselves
+	# again and loop forever.
+	recip=$(postmap -q "$recip" "$ALIAS_MAP")
+	if [ -z "$recip" ]; then
+		logger -sp mail.warning -t "$progname" \
+			'Unable to determine alias destination for recipient.'
+		exit $EX_TEMPFAIL
+	fi
+
+	if [ -z "$recipients" ]; then
+		recipients=$recip
+	else
+		recipients="$recipients,$recip"
+	fi
+done
+
+if ! tmpfile=$(mktemp "/tmp/$progname.XXXXXXXXXX"); then
+	logger -sp mail.warning -t "$progname" \
+		'Unable to create temporary file.'
+	exit $EX_TEMPFAIL
+fi
+
+# Clean up when done or aborting.
+#trap 'rm -f "$tmpfile"' EXIT TERM
+
+spamc -U /var/run/spamd -xEu "$SPAMC_USER" >"$tmpfile"
+status=$?
+
+case $status in
+0)
+	formail <"$tmpfile" \
+		-A "Delivered-To: $1" | \
+		sendmail -if "$sender" "$recipients"
+	exit
+	;;
+1)
+	if [ -z "$SPAM_RECIP" ]; then
+		# Silently drop spam on the floor if there's no spam recipient.
+		exit 0
+	fi
+
+	mail -s "$progname spam" "$SPAM_RECIP" <"$tmpfile"
+	exit
+	;;
+*)
+	logger -sp mail.warning -t "$progname" \
+		"Temporary SpamAssassin failure (spamc returned $status)"
+	exit $EX_TEMPFAIL
+	;;
+esac
