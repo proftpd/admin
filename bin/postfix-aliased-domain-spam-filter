@@ -96,9 +96,9 @@ if ! tmpfile=$(mktemp "/tmp/$progname.XXXXXXXXXX"); then
 fi
 
 # Clean up when done or aborting.
-#trap 'rm -f "$tmpfile"' EXIT TERM
+trap 'rm -f "$tmpfile"' EXIT TERM
 
-spamc -U /var/run/spamd -xEu "$SPAMC_USER" >"$tmpfile"
+spamc -U /var/run/spamd -Exu "$SPAMC_USER" >"$tmpfile"
 status=$?
 
 case $status in
