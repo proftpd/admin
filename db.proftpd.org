@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010062900      ; Serial
+                              2010081700      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -108,10 +108,6 @@ www1.se		IN	CNAME	www.proftpd.mirror2.dataphone.se.
 ; Network Operations Center <mirror-admin@oss.eznetsols.org>
 www1.sg		IN	CNAME	proftpd.oss.eznetsols.org.
 
-; http://mirrors.paknet.org/proftpd/
-; Miha Novak <miha@paknet.org>
-www2.si		IN	CNAME	mirrors.paknet.org.
-
 ; http://proftpd.cs.pu.edu.tw
 ; Hsun-Chang Chang <hsunchang@gmail.com>
 www1.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
@@ -145,7 +141,6 @@ www.pl		IN	CNAME	proftpd.piotrkosoft.net.
 www.rs		IN	CNAME	proftpd.burina.net.
 www.se		IN	CNAME	www.proftpd.mirror2.dataphone.se.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
-www.si		IN	CNAME	mirrors.paknet.org.
 www.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
 www.uk		IN	CNAME	proftpd.maytech.net.
 www.us		IN	A	98.118.52.9
@@ -311,6 +306,7 @@ ftp.se		IN	CNAME	mirror2.dataphone.se.
 ftp.tr		IN	CNAME	ftp.ulak.net.tr.
 ftp.tw		IN	CNAME	ftp.ntu.edu.tw.
 ftp.uk		IN	CNAME	proftpd.maytech.net.
+ftp.us		IN	A	152.46.7.80
 ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.60.35.37
 ftp.us		IN	A	216.165.129.134
