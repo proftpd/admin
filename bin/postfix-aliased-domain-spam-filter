@@ -60,7 +60,7 @@ sender=$1
 shift
 if [ -z "$sender" ]; then
 	echo "$usage"
-	exit 1
+	exit $EX_UNAVAILABLE
 fi
 
 # We'll support multiple incoming recipients here, but the formail
@@ -71,7 +71,7 @@ recipients=''
 for recip in $@; do
 	if [ -z "$recip" ]; then
 		echo "$usage"
-		exit 1
+		exit $EX_UNAVAILABLE
 	fi
 
 	# Map the incoming recipient to the alias destination. If we re-inject
