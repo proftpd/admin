@@ -68,7 +68,7 @@ fi
 # Postfix needs ${transportname}_destination_recipient_limit = 1 to limit
 # deliveries to this transport to a single recipient.
 recipients=''
-for recip in $@; do
+for recip in "$@"; do
 	if [ -z "$recip" ]; then
 		echo "$usage"
 		exit $EX_UNAVAILABLE
