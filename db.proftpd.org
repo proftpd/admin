@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010081700      ; Serial
+                              2010103100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
