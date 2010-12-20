@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010122000      ; Serial
+                              2010122001      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -33,4 +33,4 @@ bugs			CNAME	boost.horde.net.
 cvs			CNAME	boost.horde.net.
 mirrors			CNAME	boost.horde.net.
 
-$INCLUDE db.proftpd.org-mirrors
+$INCLUDE /etc/bind/AdminFiles/db.proftpd.org-mirrors
