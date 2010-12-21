@@ -23,8 +23,11 @@ import socket
 import MySQLdb
 import MySQLdb.cursors
 
-db = MySQLdb.connect(host='localhost', user='', passwd='',
-	db='proftpd', cursorclass=MySQLdb.cursors.DictCursor)
+import mmaint_creds
+
+db = MySQLdb.connect(host=mmaint_creds.DB['host'],
+	user=mmaint_creds.DB['user'], passwd=mmaint_creds.DB['pass'],
+	db=mmaint_creds.DB['db'], cursorclass=MySQLdb.cursors.DictCursor)
 c = db.cursor()
 
 print """

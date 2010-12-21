@@ -24,6 +24,8 @@ import sys
 import MySQLdb
 import MySQLdb.cursors
 
+import mmaint_creds
+
 parser = optparse.OptionParser()
 parser.add_option('-t', '--type', dest='type', default=None,
 	help='type of mirrors to list', metavar='ftp|www')
@@ -39,8 +41,9 @@ if not options.type or options.type not in ['ftp', 'www']:
     sys.exit(1)
 
 
-db = MySQLdb.connect(host='localhost', user='', passwd='',
-	db='proftpd', cursorclass=MySQLdb.cursors.DictCursor)
+db = MySQLdb.connect(host=mmaint_creds.DB['host'],
+	user=mmaint_creds.DB['user'], passwd=mmaint_creds.DB['pass'],
+	db=mmaint_creds.DB['db'], cursorclass=MySQLdb.cursors.DictCursor)
 c = db.cursor()
 
 print """

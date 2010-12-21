@@ -40,6 +40,8 @@ import MySQLdb.cursors
 import pyme.core
 import pyme.pygpgme
 
+import mmaint_creds
+
 def get_via_ftp(url):
 	parts = urlparse.urlparse(url)
 
@@ -201,8 +203,9 @@ for type in options.type:
 		sys.exit(1)
 
 
-db = MySQLdb.connect(host='localhost', user='', passwd='',
-	db='proftpd', cursorclass=MySQLdb.cursors.DictCursor)
+db = MySQLdb.connect(host=mmaint_creds.DB['host'],
+	user=mmaint_creds.DB['user'], passwd=mmaint_creds.DB['pass'],
+	db=mmaint_creds.DB['db'], cursorclass=MySQLdb.cursors.DictCursor)
 c = db.cursor()
 
 for type in options.type:
