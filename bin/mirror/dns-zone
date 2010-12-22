@@ -31,10 +31,10 @@ db = MySQLdb.connect(host=mmaint_creds.DB['host'],
 c = db.cursor()
 
 print """
-; **************************************************************
-; This file is generated automatically; use the ProFTPD Mirror
+; ************************************************************
+; This file is updated automatically; use the ProFTPD Mirror
 ; Maintenance system to update.
-; **************************************************************
+; ************************************************************
 
 """
 
