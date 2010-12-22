@@ -18,8 +18,10 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
 
 # Number of seconds after which a site is considered stale.
-STALE_AFTER = 2 * 24 * 60 * 60
+REACHABLE_STALE_AFTER = 2 * 24 * 60 * 60
+UNREACHABLE_STALE_AFTER = 4 * 24 * 60 * 60
 
+CHECK_SIGNATURES = False
 ALLOWED_SIGNATURE_FINGERPRINTS = [
 	'697E684D1668D6968428405CB78E893FA511976A', # tj@castaglia.org
 ]
@@ -28,6 +30,7 @@ import email.Message
 import ftplib
 import hashlib
 import optparse
+import os
 import re
 import smtplib
 import sys
@@ -57,7 +60,11 @@ def get_via_ftp(url):
 def get_via_http(url, host):
 	parts = urlparse.urlparse(url)
 
-	req = urllib2.Request(url, headers={'Host': parts.netloc})
+	req = urllib2.Request(url, headers={
+		'Host': parts.netloc,
+		'Accept': '*/*',
+		'User-Agent': os.path.basename(sys.argv[0]),
+	})
 	return urllib2.urlopen(req).read()
 
 def check_signatures(parsed):
@@ -225,38 +232,41 @@ for type in options.type:
 		query += ') '
 
 	query += """
-	  GROUP BY country_iso
 	  ORDER BY iso, sequence
 	"""
 
 	c.execute(query)
 
 	for row in c.fetchall():
-		if type == 'ftp':
-			to_check = [
-				row['site'],
-			]
-		elif type == 'www':
-			to_check = [
-				row['site'],
-				'http://www%s.%s.proftpd.org/' % (row['sequence'], row['iso']),
-				'http://www.%s.proftpd.org/' % row['iso'],
-			]
+		parse_site = row['site']
+		if not parse_site.endswith('/'):
+			parse_site += '/'
 
-		host_parts = urlparse.urlparse(row['site'])
+		site_parsed = urlparse.urlparse(parse_site)
 
-		if type == 'ftp':
+		to_check = [
+			parse_site
+		]
+		if type == 'www':
+			to_check.append('http://www%s.%s.proftpd.org/' % (
+				row['sequence'], row['iso']
+			))
+			to_check.append('http://www.%s.proftpd.org/' % \
+				row['iso'])
+
+		if type == 'ftp' and CHECK_SIGNATURES:
 			if options.verbose:
 				print 'Checking tarball signatures on %s...' % row['site']
 
-			check_signatures(host_parts)
+			check_signatures(site_parsed)
 
 		for url in to_check:
 			stale = False
+			tstamp = None
 			try:
 				p = urlparse.urlparse(url)
 				mirmon_url = urlparse.urlunparse((p.scheme,
-					host_parts.netloc,
+					site_parsed.netloc,
 					urlparse.urljoin(p.path, 'MIRMON.PROBE'),
 					p.params, p.query, p.fragment))
 
@@ -266,18 +276,61 @@ for type in options.type:
 				elif url.startswith('http://'):
 					canon_site_hostname = 'www'
 					tstamp = int(get_via_http(mirmon_url,
-						host_parts.hostname))
+						site_parsed.hostname))
 
-				if tstamp + STALE_AFTER < time.time():
+				if tstamp + REACHABLE_STALE_AFTER < time.time():
 					stale = True
 			except Exception, e:
-				print >>sys.stderr, \
-					'Unable to check URL %s for site %s' % (
-						url, row['site'],
-					)
-				stale = True
+				if url == row['site']:
+					print >>sys.stderr, \
+						'Unable to check site %s: %s' % (
+							row['site'], str(e),
+						)
+				else:
+					print >>sys.stderr, \
+						'Unable to check URL %s for site %s: %s' % (
+							url, row['site'], str(e),
+						)
 
-			if stale or options.verbose:
+				print row['last_pull']
+				if not row['last_pull'] or \
+				   time.strptime('%Y-%m-%d %H:%M:%S', row['last_pull']) + \
+				   	UNREACHABLE_STALE_AFTER < time.time():
+					stale = True
+
+			if tstamp != None:
+				query = """
+					UPDATE %smirrors
+					   SET last_pull = %%s
+					 WHERE site = %%s
+				""" % type
+				c.execute(query, [
+					time.strftime('%Y-%m-%d %H:%M:%S',
+						time.localtime(tstamp)),
+					row['site'],
+				])
+
+			if options.verbose:
+				if tstamp:
+					when_pretty = time.strftime('%Y-%b-%d %H:%M:%S',
+						time.localtime(tstamp))
+				elif row['last_pull']:
+					when_pretty = row['last_pull']
+				else:
+					when_pretty = 'none'
+
+                # startswith() to account for the trailing
+                # slash we might have added to url.
+				if url.startswith(row['site']):
+					print '%s last updated at %s (%s)' % (
+						row['site'], tstamp, when_pretty,
+					)
+				else:
+					print '%s (%s) last updated at %s (%s)' % (
+						url, site_parsed.netloc, tstamp, when_pretty,
+					)
+
+			if stale == True:
 				print '%s is out of date: %s (%s)' % (
 					row['site'], tstamp,
 					time.strftime('%Y-%b-%d %H:%M:%S',
@@ -285,11 +338,18 @@ for type in options.type:
 				)
 
 			if stale and options.notify_stale:
+				print 'Sending notification for stale mirror %s...' % \
+					row['site']
+
 				info = row.copy()
 				info.update({
-					'scheme': host_parts.scheme,
+					'scheme': site_parsed.scheme,
 					'canon_site_hostname': canon_site_hostname,
 					'last_updated': time.strftime('%Y-%b-%d %H:%M:%S',
 						time.localtime(tstamp)),
 				})
 				notify_stale_mirror(info)
+
+				# Don't check other URLs for this mirror;
+				# they'll just generate duplicate notifications.
+				break

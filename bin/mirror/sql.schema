@@ -256,6 +256,7 @@ CREATE TABLE `ftpmirrors` (
   `live` enum('false','true') NOT NULL default 'true',
   `city` varchar(255) NOT NULL default '',
   `tstamp` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `last_pull` datetime DEFAULT NULL,
   PRIMARY KEY  (`site`)
 );
 
@@ -270,5 +271,6 @@ CREATE TABLE `wwwmirrors` (
   `live` enum('false','true') NOT NULL default 'true',
   `city` varchar(255) NOT NULL default '',
   `tstamp` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `last_pull` datetime DEFAULT NULL,
   PRIMARY KEY  (`site`)
 );
