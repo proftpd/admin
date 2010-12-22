@@ -152,7 +152,9 @@ This is a semi-automatic email to inform you that your mirror of
 
 	%(scheme)s://%(canon_site_hostname)s.proftpd.org/
 
-does not appear to be functioning properly.
+does not appear to be functioning properly. The URL that failed was:
+
+    %(failed_url)s
 
 The details we have on record for your mirror are:
 
@@ -343,10 +345,11 @@ for type in options.type:
 
 				info = row.copy()
 				info.update({
-					'scheme': site_parsed.scheme,
 					'canon_site_hostname': canon_site_hostname,
+					'failed_url': url,
 					'last_updated': time.strftime('%Y-%b-%d %H:%M:%S',
 						time.localtime(tstamp)),
+					'scheme': site_parsed.scheme,
 				})
 				notify_stale_mirror(info)
 
