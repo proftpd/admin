@@ -4,7 +4,7 @@ set -e
 
 MIRROR_ZONE_SUBFILE=../../db.proftpd.org-mirrors
 
-./dnsZone >"$MIRROR_ZONE_SUBFILE.new"
+./dns-zone >"$MIRROR_ZONE_SUBFILE.new"
 if [ ! -s "$MIRROR_ZONE_SUBFILE.new" ]; then
 	echo "dnsZone(1) exited successfully but $MIRROR_ZONE_SUBFILE.new is zero bytes, not committing." 1>&2
 	exit 1
