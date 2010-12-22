@@ -1,8 +1,9 @@
-; ***********************************************************************
-; Web/FTP mirrors
-;
-; Use the ProFTPD Mirror Maintenance system to update.
-; ***********************************************************************
+
+; ************************************************************
+; This file is updated automatically; use the ProFTPD Mirror
+; Maintenance system to update.
+; ************************************************************
+
 
 ; http://proftpd.mirrors.arminco.com/
 ; Vahan Yerkanian <vahan@arminco.com>
@@ -80,6 +81,10 @@ www1.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
 ; Mike Futerko <mike@maytech.net>
 www1.uk		IN	CNAME	proftpd.maytech.net.
 
+; ftp://ftp.proftpd.co.uk/
+; Daniel Austin <me@dan.me.uk>
+www2.uk		IN	CNAME	ftp.proftpd.co.uk.
+
 ; http://proftpd.sourwood.net/
 ; Matt Mozur <matt.mozur@sourwood.net>
 www21.us		IN	CNAME	proftpd.sourwood.net.
@@ -106,10 +111,11 @@ www.rs		IN	CNAME	proftpd.burina.net.
 www.se		IN	CNAME	www.proftpd.mirror2.dataphone.se.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
 www.tw		IN	CNAME	proftpd.cs.pu.edu.tw.
-www.uk		IN	CNAME	proftpd.maytech.net.
+www.uk		IN	A	91.197.140.190
+www.uk		IN	A	213.160.111.23
+www.uk		IN	AAAA	2a00:1b98:da:11:21e:bff:fec7:87a
 www.us		IN	A	98.118.52.9
-www.us		IN	A	70.60.35.37
-
+www.us		IN	A	70.62.8.117
 ; ftp://proftpd.bairesweb.com/pub/proftpd/
 ; Pablo Arturi <parturi@bairesweb.com>
 ftp2.ar		IN	CNAME	proftpd.bairesweb.com.
@@ -272,6 +278,6 @@ ftp.tw		IN	CNAME	ftp.ntu.edu.tw.
 ftp.uk		IN	CNAME	proftpd.maytech.net.
 ftp.us		IN	A	152.46.7.80
 ftp.us		IN	A	98.118.52.9
-ftp.us		IN	A	70.60.35.37
+ftp.us		IN	A	70.62.8.117
 ftp.us		IN	A	216.165.129.134
 ftp.za		IN	CNAME	ftp.is.co.za.
