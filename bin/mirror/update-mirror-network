@@ -3,11 +3,33 @@
 set -e
 
 MIRROR_ZONE_SUBFILE=../../db.proftpd.org-mirrors
+WEB_SITE_ROOT=../../../www.proftpd.org
+
+pushd $(dirname "$0") >/dev/null
 
 ./dns-zone >"$MIRROR_ZONE_SUBFILE.new"
 if [ ! -s "$MIRROR_ZONE_SUBFILE.new" ]; then
-	echo "dnsZone(1) exited successfully but $MIRROR_ZONE_SUBFILE.new is zero bytes, not committing." 1>&2
+	echo "dns-zone(1) exited successfully but $MIRROR_ZONE_SUBFILE.new is zero bytes, not committing." 1>&2
 	exit 1
 fi
+
+./mirror-list -t ftp >"$WEB_SITE_ROOT/download.epl.new"
+if [ ! -s "$WEB_SITE_ROOT/download.epl.new" ]; then
+	echo "mirror-list(1) exited successfully but $WEB_SITE_ROOT/download.epl.new is zero bytes, not committing." 1>&2
+	exit 1
+fi
+./mirror-list -t www >"$WEB_SITE_ROOT/wwwmirror.epl.new"
+if [ ! -s "$WEB_SITE_ROOT/wwwmirror.epl.new" ]; then
+	echo "mirror-list(1) exited successfully but $WEB_SITE_ROOT/wwwmirror.epl.new is zero bytes, not committing." 1>&2
+	exit 1
+fi
+
 mv -f "$MIRROR_ZONE_SUBFILE.new" "$MIRROR_ZONE_SUBFILE"
 cvs commit -m 'automated update' "$MIRROR_ZONE_SUBFILE"
+
+mv -f "$WEB_SITE_ROOT/download.epl.new" "$WEB_SITE_ROOT/download.epl"
+mv -f "$WEB_SITE_ROOT/wwwmirror.epl.new" "$WEB_SITE_ROOT/wwwmirror.epl"
+cvs commit -m 'automated update' "$WEB_SITE_ROOT/download.epl" \
+	"$WEB_SITE_ROOT/wwwmirror.epl"
+
+popd >/dev/null
