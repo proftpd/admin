@@ -138,6 +138,4 @@ for row in c.fetchall():
 		</p>
     """ % info
 
-print """
-    #include "footer.epl"
-"""
+print '#include "footer.epl"'
