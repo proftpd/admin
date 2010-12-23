@@ -47,12 +47,15 @@ Release Checklist:
    Update include/header.epl with new version, index.epl with announcement.
    Copy NEWS, RELEASE_NOTES files into docs/ directory.
 
-11. Upload tarball, MD5 signature, PGP signatures, RPMs, to ftp.proftpd.org
+11. If the release involves security or sensitive bug fixes, make sure
+    proftpd.org infrastructure is updated with the fix.
 
-12. Announce on lists: announce, devel, users
+12. Upload tarball, MD5 signature, PGP signatures, RPMs, to ftp.proftpd.org
 
-13. Update Bugzilla with new component version tag
+13. Announce on lists: announce, devel, users
 
-14. Post release to freshmeat, c.o.l.a
+14. Update Bugzilla with new component version tag
 
-15. Update include/version.h in CVS.
+15. Post release to freshmeat, c.o.l.a
+
+16. Update include/version.h in CVS.
