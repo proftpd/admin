@@ -122,12 +122,8 @@ def check_signatures(parsed):
 		result = c.op_verify_result()
 
 		for sign in result.signatures:
-			# FIXME: sign.status is always GPGME_VALIDITY_UNKNOWN
-			# instead of GPGME_SIGSUM_VALID, even though AFAICT
-			# the signing key is trusted and the signature valid.
-			if sign.status != pyme.pygpgme.GPGME_SIGSUM_VALID:
-				continue
-			if sign.fpr in ALLOWED_SIGNATURE_FINGERPRINTS:
+			if (sign.summary & pyme.pygpgme.GPGME_SIGSUM_VALID) and \
+			   sign.fpr in ALLOWED_SIGNATURE_FINGERPRINTS:
 				break
 		else:
 			print 'Invalid signature for %s on %s' % (
