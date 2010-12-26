@@ -290,9 +290,8 @@ for type in options.type:
 							url, row['site'], str(e),
 						)
 
-				print row['last_pull']
 				if not row['last_pull'] or \
-				   time.strptime('%Y-%m-%d %H:%M:%S', row['last_pull']) + \
+				   time.mktime(time.strptime(row['last_pull'], '%Y-%m-%d %H:%M:%S')) + \
 				   	UNREACHABLE_STALE_AFTER < time.time():
 					stale = True
 
