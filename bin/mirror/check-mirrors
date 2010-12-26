@@ -144,27 +144,28 @@ def notify_stale_mirror(info):
 	msg.set_payload("""
 %(admin)s,
 
-This is a semi-automatic email to inform you that your mirror of
+This is a automatic e-mail to inform you that your mirror of:
 
-	%(scheme)s://%(canon_site_hostname)s.proftpd.org/
+    %(scheme)s://%(canon_site_hostname)s.proftpd.org/
 
 does not appear to be functioning properly. The URL that failed was:
 
     %(failed_url)s
+    Error: %(error)s
+    Last update pulled on: %(last_updated)s
 
 The details we have on record for your mirror are:
 
-	Site:	     %(site)s
-	Admin:       %(admin)s
-	Admin_email: %(admin_email)s
-	Site Info:   %(other_details)s
-	Updated:     %(last_updated)s
-	Location:    %(city)s/%(country_iso)s
+    Site:        %(site)s
+    Admin:       %(admin)s
+    Admin_email: %(admin_email)s
+    Site Info:   %(other_details)s
+    Location:    %(city)s/%(country_iso)s
 
 Your mirror should be accepting connections for the following sites
 
-	%(scheme)s://%(canon_site_hostname)s.%(country_iso)s.proftpd.org/
-	%(scheme)s://%(canon_site_hostname)s%(sequence)s.%(country_iso)s.proftpd.org/
+    %(scheme)s://%(canon_site_hostname)s.%(country_iso)s.proftpd.org/
+    %(scheme)s://%(canon_site_hostname)s%(sequence)s.%(country_iso)s.proftpd.org/
 
 We have temporarily removed your site from the proftpd.org DNS. Please let
 us know when things are back to normal or if you wish to cease being a
@@ -291,6 +292,7 @@ for type in options.type:
 						'Unable to check URL %s for site %s: %s' % (
 							url, row['site'], str(e),
 						)
+				error = str(e)
 
 				if not row['last_pull'] or \
 				   time.mktime(time.strptime(row['last_pull'], '%Y-%m-%d %H:%M:%S')) + \
@@ -329,7 +331,10 @@ for type in options.type:
 						url, site_parsed.netloc, tstamp, when_pretty,
 					)
 
-			if stale == True:
+			if stale:
+				if tstamp:
+					error = 'Not updated within last %d hours.' % \
+						(REACHABLE_STALE_AFTER / 60 / 60)
 				print '%s is out of date: %s (%s)' % (
 					row['site'], tstamp,
 					time.strftime('%Y-%b-%d %H:%M:%S',
@@ -343,6 +348,7 @@ for type in options.type:
 				info = row.copy()
 				info.update({
 					'canon_site_hostname': canon_site_hostname,
+					'error': error,
 					'failed_url': url,
 					'last_updated': time.strftime('%Y-%b-%d %H:%M:%S',
 						time.localtime(tstamp)),
