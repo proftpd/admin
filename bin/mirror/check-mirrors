@@ -135,7 +135,7 @@ def check_signatures(parsed):
 def notify_stale_mirror(info):
 	msg = email.Message.Message()
 	msg['From'] = 'core@proftpd.org'
-	msg['Cc'] = 'core@proftpd.org'
+	msg['Cc'] = 'ProFTPD Core Team <core@proftpd.org>'
 	msg['To'] = 'To: %s <%s>' % (
 		info['admin'], info['admin_email'],
 	)
@@ -174,9 +174,11 @@ Thanks,
 The ProFTPD Core Team
 """ % info)
 
+	to_addrs = msg.get_all('To') + to_addrs += msg.get_all('Cc')
+
 	s = smtplib.SMTP()
 	s.connect()
-	s.sendmail(msg['From'], msg['To'], msg.as_string())
+	s.sendmail(msg['From'], ', '.join(to_addrs), msg.as_string())
 	s.quit()
 
 
