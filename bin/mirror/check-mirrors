@@ -175,7 +175,7 @@ Thanks,
 The ProFTPD Core Team
 """ % info)
 
-	to_addrs = msg.get_all('To') + to_addrs += msg.get_all('Cc')
+	to_addrs = msg.get_all('To') + msg.get_all('Cc')
 
 	s = smtplib.SMTP()
 	s.connect()
