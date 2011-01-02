@@ -216,6 +216,11 @@ db = MySQLdb.connect(host=mmaint_creds.DB['host'],
 	db=mmaint_creds.DB['db'], cursorclass=MySQLdb.cursors.DictCursor)
 c = db.cursor()
 
+if CHECK_SIGNATURES:
+	if options.verbose:
+		print 'Checking tarball signatures on ftp.proftpd.org...'
+	check_signatures(urlparse.urlparse('ftp://ftp.proftpd.org/'))
+
 for type in options.type:
 	query = """
 	    SELECT *
