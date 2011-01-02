@@ -185,7 +185,7 @@ ftp3.it		IN	CNAME	www.proftpd.topnet.it.
 ftp2.lv		IN	CNAME	ftp.linux.edu.lv.
 
 ; ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/
-;  <mark@NL.UU.NET>
+;  <ftp-admins@eu.uu.net>
 ftp1.nl		IN	CNAME	ftp.nl.uu.net.
 
 ; ftp://proftpd.mirrors.webazilla.nl/
@@ -209,7 +209,7 @@ ftp1.pl		IN	CNAME	ftp.tpnet.pl.
 ftp9.pl		IN	CNAME	ftp.piotrkosoft.net.
 
 ; ftp://mirror2.dataphone.se/pub/ProFTPD
-; Mirror Staff <mirror@dataphone.net>
+; Mirror Staff <ftpmaster@dataphone.net>
 ftp1.se		IN	CNAME	mirror2.dataphone.se.
 
 ; ftp://ftp.ulak.net.tr/proftpd
