@@ -30,6 +30,6 @@ cvs commit -m 'automated update' "$MIRROR_ZONE_SUBFILE"
 mv -f "$WEB_SITE_ROOT/download.epl.new" "$WEB_SITE_ROOT/download.epl"
 mv -f "$WEB_SITE_ROOT/wwwmirror.epl.new" "$WEB_SITE_ROOT/wwwmirror.epl"
 cvs commit -m 'automated update' "$WEB_SITE_ROOT/download.epl" \
-	"$WEB_SITE_ROOT/wwwmirror.epl"
+	"$WEB_SITE_ROOT/wwwmirror.epl" >/dev/null
 
 popd >/dev/null
