@@ -114,7 +114,7 @@ def check_signatures(parsed):
 		m = hashlib.md5(data)
 		if md5_sig != m.hexdigest():
 			print 'Invalid MD5 signature for %s on %s' % (
-				file, row['site'],
+				file, site,
 			)
 
 		c = pyme.core.Context()
