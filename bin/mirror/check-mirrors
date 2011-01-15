@@ -1,7 +1,7 @@
 #!/usr/bin/python -tt
 
 # ProFTPD Mirror Network Maintenance System
-# Copyright (c) 2010, John Morrissey <jwm@horde.net>
+# Copyright (c) 2010, 2011, John Morrissey <jwm@horde.net>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -114,7 +114,7 @@ def check_signatures(parsed):
 		m = hashlib.md5(data)
 		if md5_sig != m.hexdigest():
 			print 'Invalid MD5 signature for %s on %s' % (
-				file, site,
+				file, urlparse.urlunparse(parsed),
 			)
 
 		c = pyme.core.Context()
@@ -128,7 +128,7 @@ def check_signatures(parsed):
 				break
 		else:
 			print 'Invalid signature for %s on %s' % (
-				file, row['site'],
+				file, urlparse.urlunparse(parsed),
 			)
 
 	conn.quit()
@@ -222,7 +222,12 @@ now = datetime.datetime.now()
 if CHECK_SIGNATURES:
 	if options.verbose:
 		print 'Checking tarball signatures on ftp.proftpd.org...'
-	check_signatures(urlparse.urlparse('ftp://ftp.proftpd.org/'))
+	try:
+		check_signatures(urlparse.urlparse('ftp://ftp.proftpd.org/'))
+	except Exception, e:
+		print >>sys.stderr, \
+			'Unable to check signatures for ftp://ftp.proftpd.org/: %s' % \
+			str(e)
 
 for type in options.type:
 	query = """
@@ -267,7 +272,13 @@ for type in options.type:
 			if options.verbose:
 				print 'Checking tarball signatures on %s...' % row['site']
 
-			check_signatures(site_parsed)
+			try:
+				check_signatures(site_parsed)
+			except Exception, e:
+				print >>sys.stderr, \
+					'Unable to check signatures for %s: %s' % (
+					    row['site'], str(e),
+                    )
 
 		for url in to_check:
 			stale = False
