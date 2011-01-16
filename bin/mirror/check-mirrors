@@ -72,8 +72,8 @@ def check_signatures(parsed):
 	conn = ftplib.FTP(parsed.netloc)
 	conn.login()
 
-	files = conn.nlst(urlparse.urljoin(parsed.path,
-		'distrib/source'))
+	conn.cwd(urlparse.urljoin(parsed.path, 'distrib/source'))
+	files = conn.nlst()
 	tarballs = [
 		file
 		for file
