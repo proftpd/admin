@@ -137,8 +137,8 @@ def notify_stale_mirror(info):
 	msg = email.Message.Message()
 	msg['From'] = 'core@proftpd.org'
 	msg['Cc'] = 'ProFTPD Core Team <core@proftpd.org>'
-	msg['To'] = 'To: %s <%s>' % (
-		info['admin'], info['admin_email'],
+	msg['To'] = '"%s" <%s>' % (
+		info['admin'].replace('"', r'\"'), info['admin_email'],
 	)
 	msg['Subject'] = 'proftpd.org mirror update'
 
