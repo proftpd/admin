@@ -41,6 +41,15 @@ REACHABLE_STALE_AFTER = datetime.timedelta(days=2)
 UNREACHABLE_STALE_AFTER = datetime.timedelta(days=4)
 
 CHECK_SIGNATURES = True
+# The only way I've found to mark a signing key as 'valid' to pyme/gpgme's
+# liking is to sign the key in question. Setting 'trust-model always' in
+# ~/.gnupg/gpg.conf doesn't cut it, neither does editing the key to fully
+# trust it ('trust: full').
+#
+# As a result, users running this job with CHECK_SIGNATURES == True must
+# sign all of the keys represented by the fingerprints in
+# ALLOWED_SIGNATURE_FINGERPRINTS. I like to use 'gpg --lsign-key' unless
+# the signature is intended to be distributed "in the wild."
 ALLOWED_SIGNATURE_FINGERPRINTS = [
 	'697E684D1668D6968428405CB78E893FA511976A', # tj@castaglia.org
 ]
