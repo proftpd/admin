@@ -157,7 +157,7 @@ ftp3.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ftp2.de		IN	CNAME	ftp-stud.fht-esslingen.de.
 
 ; ftp://ftp.franken.de/pub/Linux/proftpd/
-; Harald Welte <laforge@coruscant.franken.de>
+; Harald Welte <ftp-admin@ftp.franken.de>
 ftp5.de		IN	CNAME	ftp.franken.de.
 
 ; ftp://ftp.fu-berlin.de/unix/ftp/proftpd/
@@ -240,7 +240,7 @@ ftp25.us		IN	CNAME	mirror.wrpn.net.
 ; Shane Brath <mirrors@tds.net>
 ftp35.us		IN	CNAME	proftpd.mirrors.tds.net.
 
-; ftp://ftp.is.co.za/mirror/ftp.proftpd.org
+; ftp://ftp.is.co.za/mirror/ftp.proftpd.org/
 ; FTP Admin <ftpadmin@is.co.za>
 ftp1.za		IN	CNAME	ftp.is.co.za.
 
