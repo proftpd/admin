@@ -80,7 +80,7 @@ def get_via_http(url, host):
 	})
 	return urllib2.urlopen(req).read()
 
-def check_signatures(parsed, slow_verify=False):
+def check_signatures(parsed):
 	begin = datetime.datetime.now()
 
 	conn = ftplib.FTP(parsed.netloc)
@@ -147,12 +147,7 @@ def check_signatures(parsed, slow_verify=False):
 
 	conn.quit()
 
-	elapsed = datetime.datetime.now() - begin
-	if (not slow_verify and elapsed > SLOW_VERIFY_THRESHOLD) or \
-	   globals()['options'].verbose:
-		print 'Took %s to verify checksums for %s.' % (
-			str(elapsed), urlparse.urlunparse(parsed),
-		)
+	return datetime.datetime.now() - begin
 
 def notify_stale_mirror(info):
 	msg = email.Message.Message()
@@ -266,9 +261,14 @@ for type in options.type:
 		])
 		query += ') '
 
-	query += """
-	  ORDER BY slow_verify, iso, sequence
-	"""
+	if type == 'ftp':
+		query += """
+		  ORDER BY sig_verify_elapsed, iso, sequence
+		"""
+	else:
+		query += """
+		  ORDER BY iso, sequence
+		"""
 
 	c.execute(query)
 
@@ -294,7 +294,16 @@ for type in options.type:
 				print 'Checking tarball signatures on %s...' % row['site']
 
 			try:
-				check_signatures(site_parsed, row['slow_verify'])
+				elapsed = check_signatures(site_parsed)
+				query = """
+					UPDATE %smirrors
+					   SET sig_verify_elapsed = %%s
+					 WHERE site = %%s
+				""" % type
+				c.execute(query, [
+					(elapsed.days * 24 * 60 * 60) + elapsed.seconds,
+					row['site'],
+				])
 			except Exception, e:
 				print >>sys.stderr, \
 					'Unable to check signatures for %s: %s' % (
