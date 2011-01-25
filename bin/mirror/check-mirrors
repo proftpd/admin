@@ -235,7 +235,7 @@ c = db.cursor()
 
 now = datetime.datetime.now()
 
-if CHECK_SIGNATURES:
+if CHECK_SIGNATURES and not options.match:
 	if options.verbose:
 		print 'Checking tarball signatures on ftp.proftpd.org...'
 	try:
