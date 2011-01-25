@@ -41,6 +41,9 @@ REACHABLE_STALE_AFTER = datetime.timedelta(days=2)
 UNREACHABLE_STALE_AFTER = datetime.timedelta(days=4)
 
 CHECK_SIGNATURES = True
+# Complain about mirrors that take this long to transfer files for
+# signature verification, unless the mirror has slow_verify set.
+SLOW_VERIFY_THRESHOLD = datetime.timedelta(minutes=20)
 # The only way I've found to mark a signing key as 'valid' to pyme/gpgme's
 # liking is to sign the key in question. Setting 'trust-model always' in
 # ~/.gnupg/gpg.conf doesn't cut it, neither does editing the key to fully
@@ -77,7 +80,9 @@ def get_via_http(url, host):
 	})
 	return urllib2.urlopen(req).read()
 
-def check_signatures(parsed):
+def check_signatures(parsed, slow_verify=False):
+	begin = datetime.datetime.now()
+
 	conn = ftplib.FTP(parsed.netloc)
 	conn.login()
 
@@ -141,6 +146,13 @@ def check_signatures(parsed):
 			)
 
 	conn.quit()
+
+	elapsed = datetime.datetime.now() - begin
+	if (not slow_verify and elapsed > SLOW_VERIFY_THRESHOLD) or \
+	   globals()['options'].verbose:
+		print 'Took %s to verify checksums for %s.' % (
+			str(elapsed), urlparse.urlunparse(parsed),
+		)
 
 def notify_stale_mirror(info):
 	msg = email.Message.Message()
@@ -255,7 +267,7 @@ for type in options.type:
 		query += ') '
 
 	query += """
-	  ORDER BY iso, sequence
+	  ORDER BY slow_verify, iso, sequence
 	"""
 
 	c.execute(query)
@@ -282,12 +294,12 @@ for type in options.type:
 				print 'Checking tarball signatures on %s...' % row['site']
 
 			try:
-				check_signatures(site_parsed)
+				check_signatures(site_parsed, row['slow_verify'])
 			except Exception, e:
 				print >>sys.stderr, \
 					'Unable to check signatures for %s: %s' % (
-					    row['site'], str(e),
-                    )
+						row['site'], str(e),
+					)
 
 		for url in to_check:
 			stale = False
@@ -345,8 +357,8 @@ for type in options.type:
 				])
 
 			if options.verbose:
-                # startswith() to account for the trailing
-                # slash we might have added to url.
+				# startswith() to account for the trailing
+				# slash we might have added to url.
 				if url.startswith(row['site']):
 					print '%s last updated at %s (%s)' % (
 						row['site'], last_pull, tstamp,
