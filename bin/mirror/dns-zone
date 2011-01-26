@@ -90,5 +90,5 @@ for type in ['www', 'ftp']:
 				for addr in socket.getaddrinfo(host, None, socket.AF_INET6, socket.SOCK_STREAM):
 					print '%s.%s		IN	AAAA	%s' % (type, iso, addr[4][0])
 			except socket.gaierror, e:
-			    if e.errno != socket.EAI_NONAME:
-			        raise
+				if e.errno not in [socket.EAI_NODATA, socket.EAI_NONAME]:
+					raise
