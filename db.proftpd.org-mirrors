@@ -156,10 +156,6 @@ ftp3.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ; Adrian Reber <adrian@lisas.de>
 ftp2.de		IN	CNAME	ftp-stud.fht-esslingen.de.
 
-; ftp://ftp.franken.de/pub/Linux/proftpd/
-; Harald Welte <ftp-admin@ftp.franken.de>
-ftp5.de		IN	CNAME	ftp.franken.de.
-
 ; ftp://ftp.fu-berlin.de/unix/ftp/proftpd/
 ; Holger Weiss <ftp@FU-Berlin.DE>
 ftp13.de		IN	CNAME	ftp.fu-berlin.de.
@@ -171,6 +167,10 @@ ftp5.fr		IN	CNAME	ftp.crihan.fr.
 ; ftp://mirrors.ircam.fr/pub/proftpd
 ; Arnaud Gomes <mirrormaster@ircam.fr>
 ftp12.fr		IN	CNAME	mirrors.ircam.fr.
+
+; ftp://mirror.communilink.net/proftpd
+; Jay <jay.kei@communilink.net>
+ftp1.hk		IN	CNAME	mirror.communilink.net.
 
 ; ftp://ftp.esat.net/mirrors/ftp.proftpd.org/
 ; Dave Burke <ftpadmin@esat.net>
@@ -191,10 +191,6 @@ ftp1.nl		IN	CNAME	ftp.nl.uu.net.
 ; ftp://proftpd.mirrors.webazilla.nl/
 ; Network Operations Center <noc@webazilla.com>
 ftp7.nl		IN	CNAME	proftpd.mirrors.webazilla.nl.
-
-; ftp://mirror.hostfuss.com/proftpd/
-; Frederik Timmerman <mirror@hostfuss.com>
-ftp11.nl		IN	CNAME	mirror.hostfuss.com.
 
 ; ftp://ftp.tomt.net/pub/software/proftpd/
 ; Andre Tomt <andre@tomt.net>
@@ -256,18 +252,17 @@ ftp.ca		IN	CNAME	ftp.samurai.com.
 ftp.ch		IN	CNAME	ftp.solnet.ch.
 ftp.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ftp.de		IN	A	129.143.116.10
-ftp.de		IN	A	193.175.24.42
 ftp.de		IN	A	130.133.3.130
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	129.102.1.25
 ftp.fr		IN	AAAA	2001:660:3004:4002::25:80
+ftp.hk		IN	CNAME	mirror.communilink.net.
 ftp.ie		IN	CNAME	ftp.esat.net.
 ftp.it		IN	CNAME	www.proftpd.topnet.it.
 ftp.lv		IN	CNAME	ftp.linux.edu.lv.
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	88.85.64.160
-ftp.nl		IN	A	88.85.76.7
 ftp.no		IN	CNAME	ftp.tomt.net.
 ftp.pl		IN	A	80.50.248.77
 ftp.pl		IN	A	82.139.21.82
