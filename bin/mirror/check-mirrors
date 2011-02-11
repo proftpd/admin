@@ -394,10 +394,12 @@ for type in options.type:
 					'canon_site_hostname': canon_site_hostname,
 					'error': error,
 					'failed_url': url,
-					'last_updated':
-						last_pull.strftime('%Y-%b-%d %H:%M:%S'),
+					'last_updated': '(none)',
 					'scheme': site_parsed.scheme,
 				})
+				if last_pull:
+					info['last_updated'] = \
+						last_pull.strftime('%Y-%b-%d %H:%M:%S')
 				notify_stale_mirror(info)
 
 				# Don't check other URLs for this mirror;
