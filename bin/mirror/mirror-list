@@ -92,6 +92,7 @@ query = """
     SELECT DISTINCT country_iso 
       FROM %smirrors
      WHERE live = 'true'
+       AND last_pull IS NOT NULL
   ORDER BY country_iso
 """ % options.type
 c.execute(query)

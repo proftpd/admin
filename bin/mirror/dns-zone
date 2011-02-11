@@ -44,6 +44,7 @@ for type in ['www', 'ftp']:
 	    SELECT country_iso, COUNT(*) AS count
 	      FROM %smirrors
 	     WHERE live = 'true'
+	       AND last_pull IS NOT NULL
 	  GROUP BY country_iso""" % type)
 
 	iso_count = {}
