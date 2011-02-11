@@ -100,7 +100,7 @@ fi
 # Clean up when done or aborting.
 trap 'rm -f "$tmpfile"' EXIT TERM
 
-spamc -U /var/run/spamd -Exu "$SPAMC_USER" >"$tmpfile"
+spamc -Exu "$SPAMC_USER" >"$tmpfile"
 status=$?
 
 case $status in
