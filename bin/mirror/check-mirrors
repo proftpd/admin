@@ -39,6 +39,8 @@ import mmaint_creds
 # Amount of time after which a site is considered stale.
 REACHABLE_STALE_AFTER = datetime.timedelta(days=2)
 UNREACHABLE_STALE_AFTER = datetime.timedelta(days=4)
+# Amount of time after which a site is disabled.
+DISABLE_AFTER = datetime.timedelta(days=7)
 
 CHECK_SIGNATURES = True
 # The only way I've found to mark a signing key as 'valid' to pyme/gpgme's
@@ -378,9 +380,22 @@ for type in options.type:
 				if not error:
 					error = 'Not updated within last %s.' % \
 						REACHABLE_STALE_AFTER
-				print '%s is out of date: %s (%s)' % (
-					row['site'], last_pull, tstamp,
-				)
+				if last_pull and last_pull + DISABLE_AFTER < now:
+					print '%s is out of date, disabling: %s (%s)' % (
+						row['site'], last_pull, tstamp,
+					)
+					query = """
+						UPDATE %smirrors
+						   SET live = 'false'
+						 WHERE site = %%s
+					""" % type
+					c.execute(query, [
+						row['site'],
+					])
+				else:
+					print '%s is out of date: %s (%s)' % (
+						row['site'], last_pull, tstamp,
+					)
 
 			if stale and options.notify_stale:
 				print 'Sending notification for stale mirror %s...' % \
