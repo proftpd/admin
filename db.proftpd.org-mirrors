@@ -9,10 +9,6 @@
 ; Vahan Yerkanian <vahan@arminco.com>
 www2.am		IN	CNAME	proftpd.mirrors.arminco.com.
 
-; http://proftpd.bairesweb.com/
-; Pablo Arturi <parturi@bairesweb.com>
-www3.ar		IN	CNAME	proftpd.bairesweb.com.
-
 ; http://proftpd.mirror.easynet.be/
 ; Iyi Dogan Claude <ftp@be.easynet.net>
 www1.be		IN	CNAME	proftpd.mirror.easynet.be.
@@ -94,7 +90,6 @@ www21.us		IN	CNAME	proftpd.sourwood.net.
 www27.us		IN	CNAME	proftpd.mirror.wrpn.net.
 
 www.am		IN	CNAME	proftpd.mirrors.arminco.com.
-www.ar		IN	CNAME	proftpd.bairesweb.com.
 www.be		IN	CNAME	proftpd.mirror.easynet.be.
 www.bg		IN	A	91.195.24.10
 www.bg		IN	A	87.118.140.10
