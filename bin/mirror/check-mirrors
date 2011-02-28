@@ -183,9 +183,9 @@ Your mirror should be accepting connections for the following sites
     %(scheme)s://%(canon_site_hostname)s.%(country_iso)s.proftpd.org/
     %(scheme)s://%(canon_site_hostname)s%(sequence)s.%(country_iso)s.proftpd.org/
 
-We have temporarily removed your site from the proftpd.org DNS. Please let
-us know when things are back to normal or if you wish to cease being a
-mirror site, and we will update our records accordingly.
+$(disabled_mirror)Please let us know when things are back to normal or if
+you wish to cease being a mirror site, and we will update our records
+accordingly.
 
 Thanks,
 The ProFTPD Core Team
@@ -404,6 +404,7 @@ for type in options.type:
 				info = row.copy()
 				info.update({
 					'canon_site_hostname': canon_site_hostname,
+					'disabled_mirror': '',
 					'error': error,
 					'failed_url': url,
 					'last_updated': '(none)',
@@ -412,6 +413,8 @@ for type in options.type:
 				if last_pull:
 					info['last_updated'] = \
 						last_pull.strftime('%Y-%b-%d %H:%M:%S')
+				if last_pull and last_pull + DISABLE_AFTER < now:
+					disabled_mirror = 'We have temporarily removed your site from the proftpd.org DNS.\n'
 				notify_stale_mirror(info)
 
 				# Don't check other URLs for this mirror;
