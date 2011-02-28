@@ -160,7 +160,7 @@ def notify_stale_mirror(info):
 	msg.set_payload("""
 %(admin)s,
 
-This is a automatic e-mail to inform you that your mirror of:
+This is an automatic e-mail to inform you that your mirror of:
 
     %(scheme)s://%(canon_site_hostname)s.proftpd.org/
 
