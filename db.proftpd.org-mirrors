@@ -147,6 +147,10 @@ ftp1.ch		IN	CNAME	ftp.solnet.ch.
 ; Zdenek Bill <mirror@kn.vutbr.cz>
 ftp3.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 
+; ftp://artfiles.org/proftpd.org/
+; Andreas Worbs <mirror@artfiles.org>
+ftp1.de		IN	CNAME	artfiles.org.
+
 ; ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/
 ; Adrian Reber <adrian@lisas.de>
 ftp2.de		IN	CNAME	ftp-stud.fht-esslingen.de.
@@ -246,6 +250,7 @@ ftp.bg		IN	CNAME	ftp.proftpd.cbox.biz.
 ftp.ca		IN	CNAME	ftp.samurai.com.
 ftp.ch		IN	CNAME	ftp.solnet.ch.
 ftp.cz		IN	CNAME	proftpd.kn.vutbr.cz.
+ftp.de		IN	A	80.252.110.38
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	130.133.3.130
 ftp.fr		IN	A	195.221.21.36
