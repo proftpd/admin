@@ -219,10 +219,6 @@ ftp3.tw		IN	CNAME	ftp.ntu.edu.tw.
 ; Mike Futerko <mike@maytech.net>
 ftp1.uk		IN	CNAME	proftpd.maytech.net.
 
-; ftp://mirrors.ibiblio.org/proftpd/
-; ibiblio <mirror-admin@ibiblio.org>
-ftp1.us		IN	CNAME	mirrors.ibiblio.org.
-
 ; ftp://ftp.sourwood.net/pub/ProFTPD/
 ; Matt Mozur <ftpmaster@sourwood.net>
 ftp24.us		IN	CNAME	ftp.sourwood.net.
@@ -271,7 +267,6 @@ ftp.se		IN	CNAME	mirror2.dataphone.se.
 ftp.tr		IN	CNAME	ftp.ulak.net.tr.
 ftp.tw		IN	CNAME	ftp.ntu.edu.tw.
 ftp.uk		IN	CNAME	proftpd.maytech.net.
-ftp.us		IN	A	152.19.134.44
 ftp.us		IN	A	98.118.52.9
 ftp.us		IN	A	70.62.8.117
 ftp.us		IN	A	216.165.129.134
