@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2010122001      ; Serial
+                              2011051201      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -20,6 +20,8 @@ $TTL 1D
 			AAAA	2001:1440:201:101::1
 www			A	195.20.121.96
 			AAAA	2001:1440:201:101::1
+
+master		A	86.59.80.146
 
 ; Stefan Onken <support@stonki.de>
 rsync			CNAME	rsync.proftpd.de.
