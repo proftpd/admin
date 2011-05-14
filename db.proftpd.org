@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2011051201      ; Serial
+                              2011051301      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -32,7 +32,6 @@ forums	           A	86.59.114.194
 
 ; John Morrissey <jwm@horde.net>
 bugs			CNAME	boost.horde.net.
-cvs			CNAME	boost.horde.net.
 mirrors			CNAME	boost.horde.net.
 
 $INCLUDE /etc/bind/AdminFiles/db.proftpd.org-mirrors
