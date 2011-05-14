@@ -21,14 +21,14 @@ $TTL 1D
 www			A	195.20.121.96
 			AAAA	2001:1440:201:101::1
 
-master		A	86.59.80.146
-
 ; Stefan Onken <support@stonki.de>
 rsync			CNAME	rsync.proftpd.de.
 ftp			CNAME	rsync.proftpd.de.
 
 ; Michael Renner <robe@amd.co.at>
 forums	           A	86.59.114.194
+
+master		A	86.59.80.146
 
 ; John Morrissey <jwm@horde.net>
 bugs			CNAME	boost.horde.net.
