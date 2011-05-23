@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   boost.horde.net. core.proftpd.org. (
-                              2011052302      ; Serial
+                              2011052303      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -12,8 +12,7 @@ $TTL 1D
 			NS	ns1.cluenet.de.
 			NS	ns2.cluenet.de.
 
-; jwm@horde.net
-			MX 5	boost.horde.net.
+			MX 5	master
 
 ; Daniel Roesen <dr@cluenet.de>
 			A	195.20.121.96
