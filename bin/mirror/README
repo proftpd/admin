@@ -7,8 +7,8 @@ and the DNS zone's subfile for the mirror network.
 These scripts require Python (2.4+ should be fine), and the Python MySQLdb
 and pyme (GPG signature verification via GPGME) modules.
 
-addMirror.php requires a working PHP interpreter and the PHP mysql
-extension.
+addMirror.php requires a working PHP interpreter, the PHP mysql extension,
+and the PEAR DB and Mail packages.
 
     o addMirror.php (web page)
       Submit a new mirror. This is the script behind
