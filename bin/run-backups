@@ -22,8 +22,6 @@ k
 # boost.horde.net, etc) and manages backups of those data for the Project.
 
 DIR=~proftpd-core/backup/
-SQL_USER=proftpd
-SQL_PASSWORD=
 
 # In days.
 LOCAL_RETENTION=14
@@ -36,7 +34,8 @@ today=$(date +%Y%m%d)
 # - Dump the relevant SQL databases (bugs for Bugzilla, proftpd for the
 #   mirror system).
 # - Expire local SQL backups.
-mysqldump -u"$SQL_USER" -p"$SQL_PASSWORD" --all-databases | \
+mysqldump --defaults-extra-file=/etc/mysql/debian.cnf -udebian-sys-maint \
+	--opt --skip-lock-tables --single-transaction --all-databases | \
 	gzip -9 >"$DIR/sql.$today.gz"
 find "$DIR" -name 'sql.*.gz' -mtime +"$LOCAL_RETENTION" -exec rm {} \;
 
