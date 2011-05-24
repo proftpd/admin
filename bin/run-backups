@@ -1,0 +1,67 @@
+#!/bin/sh
+
+# ProFTPD backup/disaster recovery script
+# Copyright (c) 2005 - 2011, John Morrissey <jwm@horde.net>
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 2 of the License, or (at your option)
+# any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+# or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+# for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+k
+# This script performs various backup operations to the local host. It pulls
+# data from various sources (SF, SQL databases currently hosted on
+# boost.horde.net, etc) and manages backups of those data for the Project.
+
+DIR=~proftpd-core/backup/
+SQL_USER=proftpd
+SQL_PASSWORD=
+
+# In days.
+LOCAL_RETENTION=14
+
+set -e
+umask 007
+
+today=$(date +%Y%m%d)
+
+# - Dump the relevant SQL databases (bugs for Bugzilla, proftpd for the
+#   mirror system).
+# - Expire local SQL backups.
+mysqldump -u"$SQL_USER" -p"$SQL_PASSWORD" --all-databases | \
+	gzip -9 >"$DIR/sql.$today.gz"
+find "$DIR" -name 'sql.*.gz' -mtime +"$LOCAL_RETENTION" -exec rm {} \;
+
+# - Update our local copy of each project's SF CVS root.
+# - Expire local CVS backups.
+# - Explode the latest proftp CVS backup to populate http://cvs.proftpd.org.
+cd "$DIR"
+for project in proftp pdd; do
+	rsync --quiet --compress --recursive --times \
+		rsync://proftp.cvs.sourceforge.net/cvsroot/"$project"/* \
+		"$project-cvsroot"
+	tar czf "$project-cvsroot-$today.tar.gz" "$project-cvsroot"
+
+	newest="$project-cvsroot-$today.tar.gz"
+	# Make sure we exclude the target backup, otherwise we might accidentally
+	# consider it the next newest.
+	next_newest=$(ls -1 "$project"-cvsroot-*.tar.gz |
+		fgrep -vx "$newest" | sort -rn | head -n 1)
+	# Get rid of the previous backup if it's identical to the latest one.
+	if [ ! -z "$next_newest" ]; then
+		if diff "$newest" "$next_newest" >/dev/null; then
+			rm "$next_newest"
+		fi
+	fi
+
+	find "$DIR" -name "$project"-cvsroot-\*.tar.gz \
+		-mtime +"$LOCAL_RETENTION" -exec rm {} \;
+done

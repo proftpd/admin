@@ -1,0 +1,78 @@
+#!/bin/sh
+
+# Push {ftp,www}.proftpd.org content to primary distribution site
+# Copyright (c) 2005 - 2011, John Morrissey <jwm@horde.net>
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 2 of the License, or (at your option)
+# any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+# or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+# for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+
+MAX_LOG_SIZE=$((5 * 1024 * 1024))
+KEEP_LOGS=5
+
+progname=$(basename "$0")
+
+rotate_if_larger() {
+	local file=$1
+	shift
+
+	local threshold=$1
+	shift
+
+	local keep_logs=$1
+	shift
+
+	if [ ! -e "$file" ]; then
+		return 0
+	fi
+
+	if ! size=$(stat -c %s "$file"); then
+		return 1
+	fi
+	if [ "$size" -gt "$threshold" ]; then
+		savelog -qlc "$keep_logs" "$file"
+	fi
+}
+
+if ! tmpfile=$(mktemp -t "$progname.XXXXXXXXXX"); then
+	echo 'unable to make temporary file' 1>&2
+	exit 1
+fi
+
+date +%s >~/ftp.proftpd.org/MIRMON.PROBE
+if ! rsync --verbose --itemize-changes --archive --delete \
+	~/ftp.proftpd.org/ proftpd-core@rsync.proftpd.org:~/data/ftp/ \
+	>>"$tmpfile" 2>&1; then
+	echo 'ftp rsync failed:'
+	cat "$tmpfile"
+fi
+rotate_if_larger ~/logs/"$progname"-ftp "$MAX_LOG_SIZE" "$KEEP_LOGS"
+echo >>~/logs/"$progname"-ftp
+date >>~/logs/"$progname"-ftp
+cat "$tmpfile" >>~/logs/"$progname"-ftp
+
+date +%s >~/www.proftpd.org/MIRMON.PROBE
+if ! rsync --verbose --itemize-changes --archive --delete \
+	--exclude '*.epl' --exclude '*.sgml' \
+	--exclude 'CVS' --exclude '.cvsignore' \
+	~/www.proftpd.org/ proftpd-core@rsync.proftpd.org:~/data/http/ \
+	>>~/logs/"$progname"-www 2>&1; then
+	echo 'www rsync failed:'
+	cat "$tmpfile"
+fi
+rotate_if_larger ~/logs/"$progname"-www "$MAX_LOG_SIZE" "$KEEP_LOGS"
+echo >>~/logs/"$progname"-www
+date >>~/logs/"$progname"-www
+cat "$tmpfile" >>~/logs/"$progname"-www
+
+rm -f "$tmpfile"
