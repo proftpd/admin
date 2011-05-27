@@ -29,7 +29,7 @@ rm -rf proftpd-cvs-????????
 # Keep trying until we've got it; SourceForge's CVS servers can be flaky.
 count=0
 while ! cvs -qz3 -d$CVSROOT co -d proftpd-cvs-$today proftpd >/dev/null 2>&1; do
-	let ++count
+	count=$(($count + 1))
 	if [ $count -ge 25 ]; then
 		echo "Couldn't retrieve source tree after 25 tries, exiting..."
 		exit 1
