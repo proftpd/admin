@@ -114,10 +114,6 @@ ftp2.ar		IN	CNAME	proftpd.bairesweb.com.
 ; Didi Baer <didi@servus.at>
 ftp1.at		IN	CNAME	ftp.servus.at.
 
-; ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/
-; Antonin <Antonin.Sprinzl@tuwien.ac.at>
-ftp2.at		IN	CNAME	gd.tuwien.ac.at.
-
 ; ftp://ftp.easynet.be/proftpd/
 ; Bert Vermeulen <ftp@be.easynet.net>
 ftp1.be		IN	CNAME	ftp.easynet.be.
@@ -129,10 +125,6 @@ ftp3.be		IN	CNAME	mirrors.powersource.cx.
 ; ftp://ftp.proftpd.cbox.biz/proftpd/
 ; Alexander Dulgerov <ad@cbox.biz>
 ftp4.bg		IN	CNAME	ftp.proftpd.cbox.biz.
-
-; ftp://ftp.samurai.com/pub/proftpd/
-; Bryan Fullerton <bryanf@samurai.com>
-ftp1.ca		IN	CNAME	ftp.samurai.com.
 
 ; ftp://ftp.solnet.ch/mirror/proftpd.org/
 ; Erich Hohermuth <hostmaster@solnet.ch>
@@ -231,14 +223,12 @@ ftp35.us		IN	CNAME	proftpd.mirrors.tds.net.
 ftp1.za		IN	CNAME	ftp.is.co.za.
 
 ftp.ar		IN	CNAME	proftpd.bairesweb.com.
-ftp.at		IN	A	193.170.194.26
-ftp.at		IN	A	192.35.244.50
+ftp.at		IN	CNAME	ftp.servus.at.
 ftp.be		IN	A	212.100.160.33
 ftp.be		IN	AAAA	2001:6f8:200:1::5:33
 ftp.be		IN	A	195.160.166.144
 ftp.be		IN	AAAA	2001:67c:5c:100::c3a0:a690
 ftp.bg		IN	CNAME	ftp.proftpd.cbox.biz.
-ftp.ca		IN	CNAME	ftp.samurai.com.
 ftp.ch		IN	CNAME	ftp.solnet.ch.
 ftp.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ftp.de		IN	A	80.252.110.38
