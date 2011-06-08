@@ -19,7 +19,8 @@
 
 export PATH="$PATH:/usr/sbin"
 
-pushd /etc/bind/AdminFiles/ >/dev/null
+# Thanks for not having pushd, dash(1).
+cd /etc/bind/AdminFiles/
 # Keep trying until we've got it; SourceForge's CVS servers are often flaky.
 while :; do
 	if cvs -q update >/dev/null 2>&1; then
@@ -33,11 +34,6 @@ while :; do
 	fi
 	sleep 30
 done
-popd >/dev/null
+cd - >/dev/null
 
-rndc reload proftpd.org in horde-internal | \
-	fgrep -vxe 'zone reload up-to-date' -e 'zone reload queued'
-rndc reload proftpd.org in vpn | \
-	fgrep -vxe 'zone reload up-to-date' -e 'zone reload queued'
-rndc reload proftpd.org in public | \
-	fgrep -vxe 'zone reload up-to-date' -e 'zone reload queued'
+rndc reload proftpd.org | fgrep -vx 'zone reload queued'
