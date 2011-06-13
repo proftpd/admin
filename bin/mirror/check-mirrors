@@ -183,7 +183,7 @@ Your mirror should be accepting connections for the following sites
     %(scheme)s://%(canon_site_hostname)s.%(country_iso)s.proftpd.org/
     %(scheme)s://%(canon_site_hostname)s%(sequence)s.%(country_iso)s.proftpd.org/
 
-$(disabled_mirror)Please let us know when things are back to normal or if
+%(disabled_mirror)Please let us know when things are back to normal or if
 you wish to cease being a mirror site, and we will update our records
 accordingly.
 
