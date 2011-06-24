@@ -236,8 +236,8 @@ ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	130.133.3.130
 ftp.fr		IN	A	195.221.21.36
 ftp.fr		IN	AAAA	2001:660:7401:211::36
-ftp.fr		IN	A	129.102.1.25
-ftp.fr		IN	AAAA	2001:660:3004:4002::25:80
+ftp.fr		IN	A	129.102.1.37
+ftp.fr		IN	AAAA	2001:660:3004:4003::37:80
 ftp.hk		IN	CNAME	mirror.communilink.net.
 ftp.ie		IN	CNAME	ftp.esat.net.
 ftp.it		IN	CNAME	www.proftpd.topnet.it.
