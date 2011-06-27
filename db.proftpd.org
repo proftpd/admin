@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   master.proftpd.org. core.proftpd.org. (
-                              2011061000      ; Serial
+                              2011062600      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -29,6 +29,8 @@ forums	           A	86.59.114.194
 
 master		A	86.59.80.146
 master		AAAA	2001:858:2:5::4
+
+dist		A	86.59.114.198
 
 bugs		CNAME	master
 mirrors		CNAME	master
