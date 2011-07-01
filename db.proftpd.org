@@ -1,39 +1,34 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   master.proftpd.org. core.proftpd.org. (
-                              2011063000      ; Serial
+                              2011070100      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
                               14400           ; min ttl
                               )
 
-			NS	master
+; Daniel Roesen <dr@cluenet.de>
 			NS	ns1.cluenet.de.
 			NS	ns2.cluenet.de.
-
-			MX 5	master
-
-; Daniel Roesen <dr@cluenet.de>
-			A	195.20.121.96
-			AAAA	2001:1440:201:101::1
-www			A	195.20.121.96
-			AAAA	2001:1440:201:101::1
-
-; Stefan Onken <support@stonki.de>
-rsync			CNAME	rsync.proftpd.de.
-ftp			CNAME	rsync.proftpd.de.
-
 ; Michael Renner <robe@amd.co.at>
-forums	           A	86.59.114.194
+			NS	master
+
+			MX	5 master
+			A	86.59.114.198
+			AAAA	2001:858:2:5::5
+www			CNAME	@
 
 master		A	86.59.80.146
 master		AAAA	2001:858:2:5::4
+bugs		CNAME	master
+mirrors		CNAME	master
 
 dist		A	86.59.114.198
 dist		AAAA	2001:858:2:5::5
+rsync		CNAME	dist
+ftp			CNAME	dist
 
-bugs		CNAME	master
-mirrors		CNAME	master
+forums		A	86.59.114.194
 
 $INCLUDE /etc/bind/AdminFiles/db.proftpd.org-mirrors
