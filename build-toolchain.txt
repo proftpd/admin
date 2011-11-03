@@ -14,7 +14,11 @@ To generate the aclocal.m4 file, use:
 To generate the configure script, use:
 
   # cd proftpd/
-  # autoconf
+  # autoconf -W cross
+
+The "-W cross" option will warn of things that will cause problems for
+cross-compilers; we would like people to be able to cross-compile proftpd
+e.g. for mobile platforms.
 
 If you change the configure.in file, check in the change -- then wait for
 a minute or two:

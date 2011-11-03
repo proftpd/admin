@@ -17,6 +17,8 @@ Release Checklist:
    Update locale/files.txt
 
 4. Update autoconf script (if necessary)
+    Use `autoconf -W cross' for main configure.in (and any other configure.in
+    files for modules), to check for cross-compiling issues.
 
 5. Update ChangeLog
 

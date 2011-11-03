@@ -91,10 +91,6 @@ mod_magic
 mod_auth_ntlm
   + authenticating against a Windows box
 
-mod_snmp
-  + expose an interface for SNMP monitoring of the server status
-  + generate traps based on certain events?
-
 mod_slp/mod_zeroconf/mod_bonjour
   + see www.openslp.org, www.zeroconf.org
 
@@ -118,7 +114,5 @@ mod_quotatab
     quotas, quotas based on location rather than ownership.  Much
     complexity in how location-based tallies would interact with
     ownership-based tallies.
-
-prxs
 
 EBCDIC support
