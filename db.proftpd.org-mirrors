@@ -130,10 +130,6 @@ ftp4.bg		IN	CNAME	ftp.proftpd.cbox.biz.
 ; Erich Hohermuth <hostmaster@solnet.ch>
 ftp1.ch		IN	CNAME	ftp.solnet.ch.
 
-; ftp://proftpd.kn.vutbr.cz/pub/proftpd
-; Zdenek Bill <mirror@kn.vutbr.cz>
-ftp3.cz		IN	CNAME	proftpd.kn.vutbr.cz.
-
 ; ftp://artfiles.org/proftpd.org/
 ; Andreas Worbs <mirror@artfiles.org>
 ftp1.de		IN	CNAME	artfiles.org.
@@ -158,10 +154,6 @@ ftp12.fr		IN	CNAME	mirrors.ircam.fr.
 ; Jay <jay.kei@communilink.net>
 ftp1.hk		IN	CNAME	mirror.communilink.net.
 
-; ftp://ftp.esat.net/mirrors/ftp.proftpd.org/
-; Dave Burke <ftpadmin@esat.net>
-ftp0.ie		IN	CNAME	ftp.esat.net.
-
 ; ftp://www.proftpd.topnet.it/pub/mirror/proftpd/
 ; Antonio Prado <aprado@topnet.it>
 ftp3.it		IN	CNAME	www.proftpd.topnet.it.
@@ -178,21 +170,9 @@ ftp1.nl		IN	CNAME	ftp.nl.uu.net.
 ; Network Operations Center <noc@webazilla.com>
 ftp7.nl		IN	CNAME	proftpd.mirrors.webazilla.nl.
 
-; ftp://ftp.tomt.net/pub/software/proftpd/
-; Andre Tomt <andre@tomt.net>
-ftp5.no		IN	CNAME	ftp.tomt.net.
-
 ; ftp://ftp.tpnet.pl/pub/linux/proftpd/
 ; Ireneusz Weglewski <Ireneusz.Weglewski@telekomunikacja.pl>
 ftp1.pl		IN	CNAME	ftp.tpnet.pl.
-
-; ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.proftpd.org/
-; Piotr Maluty <admin@piotrkosoft.netinet.net>
-ftp9.pl		IN	CNAME	ftp.piotrkosoft.net.
-
-; ftp://mirror2.dataphone.se/pub/ProFTPD
-; Mirror Staff <ftpmaster@dataphone.net>
-ftp1.se		IN	CNAME	mirror2.dataphone.se.
 
 ; ftp://ftp.ulak.net.tr/proftpd
 ; Onur BEKTAS <admins@ulakbim.gov.tr>
@@ -230,7 +210,6 @@ ftp.be		IN	A	195.160.166.144
 ftp.be		IN	AAAA	2001:67c:5c:100::c3a0:a690
 ftp.bg		IN	CNAME	ftp.proftpd.cbox.biz.
 ftp.ch		IN	CNAME	ftp.solnet.ch.
-ftp.cz		IN	CNAME	proftpd.kn.vutbr.cz.
 ftp.de		IN	A	80.252.110.38
 ftp.de		IN	A	129.143.116.10
 ftp.de		IN	A	130.133.3.130
@@ -239,16 +218,11 @@ ftp.fr		IN	AAAA	2001:660:7401:211::36
 ftp.fr		IN	A	129.102.1.37
 ftp.fr		IN	AAAA	2001:660:3004:4003::37:80
 ftp.hk		IN	CNAME	mirror.communilink.net.
-ftp.ie		IN	CNAME	ftp.esat.net.
 ftp.it		IN	CNAME	www.proftpd.topnet.it.
 ftp.lv		IN	CNAME	ftp.linux.edu.lv.
 ftp.nl		IN	A	195.129.111.9
 ftp.nl		IN	A	88.85.64.160
-ftp.no		IN	CNAME	ftp.tomt.net.
-ftp.pl		IN	A	80.50.248.77
-ftp.pl		IN	A	82.139.21.82
-ftp.pl		IN	AAAA	2001:6a0:15e::a:11
-ftp.se		IN	CNAME	mirror2.dataphone.se.
+ftp.pl		IN	CNAME	ftp.tpnet.pl.
 ftp.tr		IN	CNAME	ftp.ulak.net.tr.
 ftp.tw		IN	CNAME	ftp.ntu.edu.tw.
 ftp.uk		IN	CNAME	proftpd.maytech.net.
