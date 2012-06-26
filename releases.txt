@@ -33,13 +33,13 @@ Release Checklist:
 7. Tag CVS module for release.
   a. cvs rtag <tag> proftpd, e.g. R1_2_5RC3
 
-8. Create tarball (.tar.gz, .tar.bz2)
+8. Create tarball (.tar.gz)
   a. cvs checkout -r <tag>
   b. remove CVS subdirs, .cvsignore files before tar'ing up.
      ./configure
      make dist
 
-9. Sign/hash tarballs (.tar.{bz2,gz}.asc (PGP), .tar.{bz2,gz}.md5 (MD5))
+9. Sign/hash tarballs (.tar.gz.asc (PGP), .tar.gz.md5 (MD5))
   a. sign tarballs, e.g. pgp -sba
   b. PGP: write email announcement to file, use pgp -sta <file> to
      produce signed message
