@@ -51,7 +51,7 @@ www3.lv		IN	CNAME	proftpd.linux.edu.lv.
 
 ; http://proftpd.proserve.nl/
 ; Peter Batenburg <peter@proserve.nl>
-www1.nl		IN	CNAME	proftpd.proserve.nl.
+www1.nl		IN	CNAME	www.proftpd.org.
 
 ; http://proftpd.burina.net
 ; Sinisa Burina <sinisa@burina.net>
@@ -96,7 +96,7 @@ www.it		IN	CNAME	www.proftpd.topnet.it.
 www.kr		IN	CNAME	proftpd.mirror.cdnetworks.com.
 www.li		IN	CNAME	proftpd.lie-comtel.li.
 www.lv		IN	CNAME	proftpd.linux.edu.lv.
-www.nl		IN	CNAME	proftpd.proserve.nl.
+www.nl		IN	CNAME	www.proftpd.org.
 www.rs		IN	CNAME	proftpd.burina.net.
 www.se		IN	CNAME	www.proftpd.mirror2.dataphone.se.
 www.sg		IN	CNAME	proftpd.oss.eznetsols.org.
