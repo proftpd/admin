@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   master.proftpd.org. core.proftpd.org. (
-                              2012062700      ; Serial
+                              2012070200      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -31,4 +31,84 @@ ftp			CNAME	dist
 
 forums		A	86.59.114.194
 
-$INCLUDE /etc/bind/AdminFiles/db.proftpd.org-mirrors
+www2.am IN CNAME www.proftpd.org
+www1.be IN CNAME www.proftpd.org
+www1.bg IN CNAME www.proftpd.org
+www3.bg IN CNAME www.proftpd.org
+www2.cz IN CNAME www.proftpd.org
+www1.ie IN CNAME www.proftpd.org
+www2.il IN CNAME www.proftpd.org
+www4.it IN CNAME www.proftpd.org
+www1.kr IN CNAME www.proftpd.org
+www1.li IN CNAME www.proftpd.org
+www3.lv IN CNAME www.proftpd.org
+www1.nl IN CNAME www.proftpd.org
+www1.rs IN CNAME www.proftpd.org
+www1.se IN CNAME www.proftpd.org
+www1.sg IN CNAME www.proftpd.org
+www1.tw IN CNAME www.proftpd.org
+www1.uk IN CNAME www.proftpd.org
+www2.uk IN CNAME www.proftpd.org
+www21.us IN CNAME www.proftpd.org
+www27.us IN CNAME www.proftpd.org
+
+www.am IN CNAME www.proftpd.org
+www.be IN CNAME www.proftpd.org
+www.bg IN CNAME www.proftpd.org
+www.cz IN CNAME www.proftpd.org
+www.ie IN CNAME www.proftpd.org
+www.il IN CNAME www.proftpd.org
+www.it IN CNAME www.proftpd.org
+www.kr IN CNAME www.proftpd.org
+www.li IN CNAME www.proftpd.org
+www.lv IN CNAME www.proftpd.org
+www.nl IN CNAME www.proftpd.org
+www.rs IN CNAME www.proftpd.org
+www.se IN CNAME www.proftpd.org
+www.sg IN CNAME www.proftpd.org
+www.tw IN CNAME www.proftpd.org
+www.uk IN CNAME www.proftpd.org
+www.us IN CNAME www.proftpd.org
+
+ftp2.ar IN CNAME ftp.proftpd.org
+ftp1.at IN CNAME ftp.proftpd.org
+ftp1.be IN CNAME ftp.proftpd.org
+ftp3.be IN CNAME ftp.proftpd.org
+ftp4.bg IN CNAME ftp.proftpd.org
+ftp1.ch IN CNAME ftp.proftpd.org
+ftp1.de IN CNAME ftp.proftpd.org
+ftp2.de IN CNAME ftp.proftpd.org
+ftp13.de IN CNAME ftp.proftpd.org
+ftp5.fr IN CNAME ftp.proftpd.org
+ftp12.fr IN CNAME ftp.proftpd.org
+ftp1.hk IN CNAME ftp.proftpd.org
+ftp3.it IN CNAME ftp.proftpd.org
+ftp2.lv IN CNAME ftp.proftpd.org
+ftp1.nl IN CNAME ftp.proftpd.org
+ftp7.nl IN CNAME ftp.proftpd.org
+ftp1.pl IN CNAME ftp.proftpd.org
+ftp2.tr IN CNAME ftp.proftpd.org
+ftp3.tw IN CNAME ftp.proftpd.org
+ftp1.uk IN CNAME ftp.proftpd.org
+ftp24.us IN CNAME ftp.proftpd.org
+ftp25.us IN CNAME ftp.proftpd.org
+ftp35.us IN CNAME ftp.proftpd.org
+ftp1.za IN CNAME ftp.proftpd.org
+
+ftp.ar IN CNAME ftp.proftpd.org
+ftp.at IN CNAME ftp.proftpd.org
+ftp.be IN CNAME ftp.proftpd.org
+ftp.bg IN CNAME ftp.proftpd.org
+ftp.ch IN CNAME ftp.proftpd.org
+ftp.de IN CNAME ftp.proftpd.org
+ftp.fr IN CNAME ftp.proftpd.org
+ftp.hk IN CNAME ftp.proftpd.org
+ftp.it IN CNAME ftp.proftpd.org
+ftp.lv IN CNAME ftp.proftpd.org
+ftp.nl IN CNAME ftp.proftpd.org
+ftp.pl IN CNAME ftp.proftpd.org
+ftp.tr IN CNAME ftp.proftpd.org
+ftp.tw IN CNAME ftp.proftpd.org
+ftp.uk IN CNAME ftp.proftpd.org
+ftp.us IN CNAME ftp.proftpd.org
+ftp.za IN CNAME ftp.proftpd.org
