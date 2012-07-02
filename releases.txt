@@ -54,10 +54,13 @@ Release Checklist:
 
 12. Upload tarball, MD5 signature, PGP signatures, RPMs, to ftp.proftpd.org
 
-13. Announce on lists: announce, devel, users
+13. cd master:~proftpd-core/proftpd.github.com && ./github_upload.rb
+    to update the alternate download site at http://proftpd.github.com.
 
-14. Update Bugzilla with new component version tag
+14. Announce on lists: announce, devel, users
 
-15. Post release to freshmeat, c.o.l.a
+15. Update Bugzilla with new component version tag
 
-16. Update include/version.h in CVS.
+16. Post release to freshmeat, c.o.l.a
+
+17. Update include/version.h in CVS.
