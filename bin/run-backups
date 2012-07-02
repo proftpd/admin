@@ -31,9 +31,7 @@ umask 007
 
 today=$(date +%Y%m%d)
 
-# - Dump the relevant SQL databases (bugs for Bugzilla, proftpd for the
-#   mirror system).
-# - Expire local SQL backups.
+# Dump SQL database(s) and expire local SQL backups.
 mysqldump --defaults-extra-file=/etc/mysql/debian.cnf -udebian-sys-maint \
 	--opt --skip-lock-tables --single-transaction --all-databases | \
 	gzip -9 >"$DIR/sql.$today.gz"
