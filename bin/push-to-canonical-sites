@@ -55,6 +55,15 @@ if ! rsync --verbose --itemize-changes --archive --delete \
 	echo 'ftp rsync failed:'
 	cat "$tmpfile"
 fi
+if ! cd ~proftpd-core/proftpd.github.com >>"$tmpfile" 2>&1; then
+	echo "github_upload script directory ~proftpd-core/proftpd.github.com doesn't exist:"
+	cat "$tmpfile"
+fi
+if ! ./github_upload.rb >>"$tmpfile" 2>&1; then
+	echo 'ftp github_upload failed:'
+	cat "$tmpfile"
+fi
+
 rotate_if_larger ~/logs/"$progname"-ftp "$MAX_LOG_SIZE" "$KEEP_LOGS"
 echo >>~/logs/"$progname"-ftp
 date >>~/logs/"$progname"-ftp
