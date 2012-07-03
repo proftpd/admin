@@ -36,4 +36,4 @@ while :; do
 done
 cd - >/dev/null
 
-rndc reload proftpd.org | fgrep -vx 'zone reload queued'
+rndc reload proftpd.org | fgrep -vxe 'zone reload queued' -e 'zone reload up-to-date'
