@@ -70,21 +70,6 @@ owner-proftp-devel@proftpd.org      proftpd-devel-admin@proftpd.org
 proftp-devel-owner@proftpd.org      proftpd-devel-admin@proftpd.org
 
 #------------------------------------------------------------
-# proftpd-mirrors
-#------------------------------------------------------------
-proftpd-mirrors@proftpd.org         proftp-mirrors@lists.sourceforge.net
-proftpd-mirrors-admin@proftpd.org   proftp-mirrors-admin@lists.sourceforge.net
-proftpd-mirrors-request@proftpd.org proftp-mirrors-request@lists.sourceforge.net
-owner-proftpd-mirrors@proftpd.org   proftp-mirrors-admin@lists.sourceforge.net
-proftpd-mirrors-owner@proftpd.org   proftp-mirrors-admin@lists.sourceforge.net
-
-proftp-mirrors@proftpd.org          proftp-mirrors@lists.sourceforge.net
-proftp-mirrors-admin@proftpd.org    proftp-mirrors-admin@lists.sourceforge.net
-proftp-mirrors-request@proftpd.org  proftp-mirrors-request@lists.sourceforge.net
-owner-proftp-mirrors@proftpd.org    proftp-mirrors-admin@lists.sourceforge.net
-proftp-mirrors-owner@proftpd.org    proftp-mirrors-admin@lists.sourceforge.net
-
-#------------------------------------------------------------
 # proftpd-announce
 #------------------------------------------------------------
 proftpd-announce@proftpd.org         proftp-announce@lists.sourceforge.net
