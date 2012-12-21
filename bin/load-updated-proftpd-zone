@@ -20,7 +20,7 @@
 export PATH="$PATH:/usr/sbin"
 
 # Thanks for not having pushd, dash(1).
-cd /etc/bind/AdminFiles/
+cd /etc/bind/admin.git
 if git pull | fgrep -qx 'Already up-to-date.'; then
 	exit 0
 fi
