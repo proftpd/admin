@@ -72,7 +72,7 @@ cat "$tmpfile" >>~/logs/"$progname"-ftp
 if ! rsync --verbose --itemize-changes --archive --delete \
 	--exclude '*.epl' --exclude '*.sgml' \
 	--exclude '.git' --exclude '.gitignore' \
-	~/www.proftpd.org/ proftpd-core@rsync.proftpd.org:~/data/http/ \
+	~/www.proftpd.org.git/ proftpd-core@rsync.proftpd.org:~/data/http/ \
 	>>~/logs/"$progname"-www 2>&1; then
 	echo 'www rsync failed:'
 	cat "$tmpfile"
