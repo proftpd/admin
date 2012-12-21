@@ -32,7 +32,8 @@ umask 007
 today=$(date +%Y%m%d)
 
 # Dump SQL database(s) and expire local SQL backups.
-mysqldump --defaults-extra-file=/etc/mysql/debian.cnf -udebian-sys-maint \
+mysqldump --defaults-extra-file=~proftpd-core/.db-credentials \
+	-udebian-sys-maint \
 	--opt --skip-lock-tables --single-transaction --all-databases | \
 	gzip -9 >"$DIR/sql.$today.gz"
 find "$DIR" -name 'sql.*.gz' -mtime +"$LOCAL_RETENTION" -exec rm {} \;
