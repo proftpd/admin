@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Reload named(8) when a revision controlled zone is updated
-# Copyright (c) 2011, John Morrissey <jwm@horde.net>
+# Copyright (c) 2011-2, John Morrissey <jwm@horde.net>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,19 +21,9 @@ export PATH="$PATH:/usr/sbin"
 
 # Thanks for not having pushd, dash(1).
 cd /etc/bind/AdminFiles/
-# Keep trying until we've got it; SourceForge's CVS servers are often flaky.
-while :; do
-	if cvs -q update >/dev/null 2>&1; then
-		break
-	fi
-
-	count=$((${count:=0} + 1))
-	if [ $count -ge 5 ]; then
-		echo "Couldn't retrieve source tree after 5 tries, exiting..."
-		exit 1
-	fi
-	sleep 30
-done
+if git pull | fgrep -qx 'Already up-to-date.'; then
+	exit 0
+fi
 cd - >/dev/null
 
 rndc reload proftpd.org | fgrep -vxe 'zone reload queued' -e 'zone reload up-to-date'

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Push {ftp,www}.proftpd.org content to primary distribution site
-# Copyright (c) 2005 - 2012, John Morrissey <jwm@horde.net>
+# Copyright (c) 2005-2012, John Morrissey <jwm@horde.net>
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the Free
@@ -71,7 +71,7 @@ cat "$tmpfile" >>~/logs/"$progname"-ftp
 
 if ! rsync --verbose --itemize-changes --archive --delete \
 	--exclude '*.epl' --exclude '*.sgml' \
-	--exclude 'CVS' --exclude '.cvsignore' \
+	--exclude '.git' --exclude '.gitignore' \
 	~/www.proftpd.org/ proftpd-core@rsync.proftpd.org:~/data/http/ \
 	>>~/logs/"$progname"-www 2>&1; then
 	echo 'www rsync failed:'
