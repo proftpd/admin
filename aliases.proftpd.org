@@ -15,7 +15,7 @@ tj@proftpd.org         tj@castaglia.org
 # Daniel Roesen
 dr@proftpd.org         dr@cluenet.de
 # John Morrissey 
-jwm@proftpd.org        jwm@horde.net
+jwm@proftpd.org        core
 # Michael Renner
 robe@proftpd.org       robe@amd.co.at
 # Stefan Onken
@@ -24,7 +24,7 @@ stonki@proftpd.org	support@stonki.de
 #------------------------------------------------------------
 # Core aliases
 #------------------------------------------------------------
-core@proftpd.org       tj@proftpd.org,dr@proftpd.org,jwm@proftpd.org,robe@proftpd.org,stonki@proftpd.org
+core@proftpd.org       tj@proftpd.org,dr@proftpd.org,robe@proftpd.org,stonki@proftpd.org
 security@proftpd.org   core@proftpd.org
 bugs@proftpd.org       core@proftpd.org
 forums@proftpd.org     tj@proftpd.org,robe@proftpd.org
