@@ -2,7 +2,7 @@
 Current build toolchain:
 
   aclocal-1.10
-  autoconf-2.61
+  autoconf-2.69
   libtool-2.2.4
   make-3.81
 
@@ -20,19 +20,6 @@ The "-W cross" option will warn of things that will cause problems for
 cross-compilers; we would like people to be able to cross-compile proftpd
 e.g. for mobile platforms.
 
-If you change the configure.in file, check in the change -- then wait for
-a minute or two:
-
-  # cvs commit configure.in
-  # <wait>
-  # autoconf
-  # cvs commit configure
-
-This will ensure that the modification time of the configure script in the
-CVS repository is later than the modification time of the configure.in file.
-This is important!  make will try to re-create the configure file if its
-modification timestamp is NOT newer than the configure.in modification time.
-
 Note that automake, autoheader, etc are NOT used.
 
 Tools to use for source code analysis:
@@ -40,3 +27,8 @@ Tools to use for source code analysis:
   cppcheck
   rats
   valgrind
+
+And now various GitHub/OSS linters and checkers:
+
+  Codacy
+  LGTM
