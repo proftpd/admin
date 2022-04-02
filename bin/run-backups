@@ -37,29 +37,3 @@ mysqldump --defaults-extra-file=~proftpd-core/.db-credentials \
 	--opt --skip-lock-tables --single-transaction --all-databases | \
 	gzip -9 >"$DIR/sql.$today.gz"
 find "$DIR" -name 'sql.*.gz' -mtime +"$LOCAL_RETENTION" -exec rm {} \;
-
-# - Update our local copy of each project's SF CVS root.
-# - Expire local CVS backups.
-# - Explode the latest proftp CVS backup to populate http://cvs.proftpd.org.
-cd "$DIR"
-for project in proftp pdd; do
-	rsync --quiet --compress --recursive --times \
-		rsync://proftp.cvs.sourceforge.net/cvsroot/"$project"/* \
-		"$project-cvsroot"
-	tar czf "$project-cvsroot-$today.tar.gz" "$project-cvsroot"
-
-	newest="$project-cvsroot-$today.tar.gz"
-	# Make sure we exclude the target backup, otherwise we might accidentally
-	# consider it the next newest.
-	next_newest=$(ls -1 "$project"-cvsroot-*.tar.gz |
-		fgrep -vx "$newest" | sort -rn | head -n 1)
-	# Get rid of the previous backup if it's identical to the latest one.
-	if [ ! -z "$next_newest" ]; then
-		if diff "$newest" "$next_newest" >/dev/null; then
-			rm "$next_newest"
-		fi
-	fi
-
-	find "$DIR" -name "$project"-cvsroot-\*.tar.gz \
-		-mtime +"$LOCAL_RETENTION" -exec rm {} \;
-done
