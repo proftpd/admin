@@ -1,7 +1,7 @@
 $TTL 1D
 ; $Id$
 @                   IN  SOA   master.proftpd.org. core.proftpd.org. (
-                              2012070202      ; Serial
+                              2026071901      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
@@ -9,22 +9,22 @@ $TTL 1D
                               )
 
 ; Daniel Roesen <dr@cluenet.de>
-			NS	ns1.cluenet.de.
-			NS	ns2.cluenet.de.
+			NS	ns4.as5401.net.
+			NS	ns3.cluenet.de.
 ; Michael Renner <robe@amd.co.at>
 			NS	master
 
 			MX	5 master
 			A	86.59.114.198
-			AAAA	2001:858:2:5::5
+;			AAAA	2001:858:2:5::5
 www			CNAME	@
 
 master		A	86.59.80.146
-master		AAAA	2001:858:2:5::4
+;master		AAAA	2001:858:2:5::4
 bugs		CNAME	master
 
 dist		A	86.59.114.198
-dist		AAAA	2001:858:2:5::5
+;dist		AAAA	2001:858:2:5::5
 rsync		CNAME	dist
 ftp			CNAME	dist
 
