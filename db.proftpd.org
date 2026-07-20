@@ -1,7 +1,7 @@
 $TTL 1H
 ; $Id$
 @                   IN  SOA   master.proftpd.org. core.proftpd.org. (
-                              2026071901      ; Serial
+                              2026072001      ; Serial
                               43200           ; Refresh
                               3600            ; retry
                               604800          ; expire
