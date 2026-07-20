@@ -1,4 +1,4 @@
-$TTL 1D
+$TTL 1H
 ; $Id$
 @                   IN  SOA   master.proftpd.org. core.proftpd.org. (
                               2026071901      ; Serial
